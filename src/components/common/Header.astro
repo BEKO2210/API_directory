@@ -28,7 +28,7 @@ const navLinks = [
   <div class="header-inner">
     <!-- Logo -->
     <a href={`${base}/`} class="logo-link">
-      <svg width="28" height="28" viewBox="0 0 40 40" style="flex-shrink: 0;">
+      <svg width="28" height="28" viewBox="0 0 40 40" style="flex-shrink: 0;" aria-hidden="true" role="img">
         <rect width="40" height="40" rx="8" fill="#09090b"/>
         <text x="20" y="27" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="16" fill="#ffffff" letter-spacing="-0.5">API</text>
       </svg>
@@ -36,7 +36,7 @@ const navLinks = [
     </a>
 
     <!-- Desktop Nav (text links, hidden on mobile) -->
-    <nav class="desktop-nav">
+    <nav class="desktop-nav" aria-label="Main navigation">
       {
         navLinks.map((link) => {
           const fullHref = `${base}${link.href}`;
@@ -55,7 +55,7 @@ const navLinks = [
     </nav>
 
     <!-- Mobile Nav (icon-only, hidden on desktop) -->
-    <nav class="mobile-nav">
+    <nav class="mobile-nav" aria-label="Main navigation">
       {
         navLinks.map((link) => {
           const fullHref = `${base}${link.href}`;

@@ -38,7 +38,7 @@ const year = new Date().getFullYear();
         <p style="font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-4); margin: 0 0 0.75rem;">
           Navigation
         </p>
-        <nav style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <nav aria-label="Site navigation" style="display: flex; flex-direction: column; gap: 0.5rem;">
           <a href={`${base}/`} style="font-size: 0.875rem; color: var(--text-3); text-decoration: none;">Home</a>
           <a href={`${base}/search`} style="font-size: 0.875rem; color: var(--text-3); text-decoration: none;">Suche</a>
           <a href={`${base}/submit`} style="font-size: 0.875rem; color: var(--text-3); text-decoration: none;">API einreichen</a>
@@ -51,7 +51,7 @@ const year = new Date().getFullYear();
         <p style="font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-4); margin: 0 0 0.75rem;">
           Ressourcen
         </p>
-        <nav style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <nav aria-label="Resources" style="display: flex; flex-direction: column; gap: 0.5rem;">
           <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer" style="font-size: 0.875rem; color: var(--text-3); text-decoration: none;">public-apis Repository</a>
           <a href={`${base}/rss.xml`} style="font-size: 0.875rem; color: var(--text-3); text-decoration: none;">RSS Feed</a>
         </nav>
@@ -62,7 +62,7 @@ const year = new Date().getFullYear();
         <p style="font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-4); margin: 0 0 0.75rem;">
           Rechtliches
         </p>
-        <nav style="display: flex; flex-direction: column; gap: 0.5rem;">
+        <nav aria-label="Legal" style="display: flex; flex-direction: column; gap: 0.5rem;">
           <a href={`${base}/impressum`} style="font-size: 0.875rem; color: var(--text-3); text-decoration: none;">Impressum</a>
           <a href={`${base}/datenschutz`} style="font-size: 0.875rem; color: var(--text-3); text-decoration: none;">Datenschutz</a>
           <a href={`${base}/agb`} style="font-size: 0.875rem; color: var(--text-3); text-decoration: none;">AGB</a>
