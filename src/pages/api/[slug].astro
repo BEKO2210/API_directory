@@ -74,8 +74,8 @@ const jsonLd = JSON.stringify({
           align-items: center;
           gap: 0.5rem;
           padding: 0.625rem 1.25rem;
-          background: var(--accent);
-          color: white;
+          background: var(--text-1);
+          color: var(--bg);
           border-radius: var(--r-md);
           font-weight: 600;
           font-size: 0.875rem;
@@ -128,7 +128,7 @@ const jsonLd = JSON.stringify({
           Category
         </div>
         <div style="padding: 0.75rem 1rem; font-size: 0.875rem; color: var(--text-1); border-bottom: 1px solid var(--border);">
-          <a href={`${base}/categories/${api.categorySlug}`} style="color: var(--accent); text-decoration: none;">
+          <a href={`${base}/categories/${api.categorySlug}`} style="color: var(--text-1); text-decoration: underline; text-underline-offset: 2px;">
             {api.category}
           </a>
         </div>

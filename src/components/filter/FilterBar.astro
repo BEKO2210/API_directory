@@ -26,8 +26,8 @@ const { totalCount } = Astro.props;
         padding: 6px 14px;
         border-radius: var(--r-full);
         border: 1px solid var(--border);
-        background: var(--accent);
-        color: white;
+        background: var(--text-1);
+        color: var(--bg);
         font-size: 0.8125rem;
         font-weight: 500;
         cursor: pointer;
@@ -136,8 +136,8 @@ const { totalCount } = Astro.props;
           activeFilters.clear();
           chips.forEach(function (c) {
             c.setAttribute('aria-pressed', c.getAttribute('data-filter') === 'all' ? 'true' : 'false');
-            c.style.background = c.getAttribute('data-filter') === 'all' ? 'var(--accent)' : 'transparent';
-            c.style.color = c.getAttribute('data-filter') === 'all' ? 'white' : 'var(--text-2)';
+            c.style.background = c.getAttribute('data-filter') === 'all' ? 'var(--text-1)' : 'transparent';
+            c.style.color = c.getAttribute('data-filter') === 'all' ? 'var(--bg)' : 'var(--text-2)';
           });
         } else {
           if (activeFilters.has(filter)) {
@@ -150,8 +150,8 @@ const { totalCount } = Astro.props;
             var f = c.getAttribute('data-filter');
             var isActive = f === 'all' ? activeFilters.size === 0 : activeFilters.has(f);
             c.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-            c.style.background = isActive ? 'var(--accent)' : 'transparent';
-            c.style.color = isActive ? 'white' : 'var(--text-2)';
+            c.style.background = isActive ? 'var(--text-1)' : 'transparent';
+            c.style.color = isActive ? 'var(--bg)' : 'var(--text-2)';
           });
         }
         applyFilters();
