@@ -109,4 +109,14 @@ const base = getBaseUrl();
     box-shadow: var(--shadow-md);
     transform: translateY(-1px);
   }
+
+  .api-card:active {
+    transform: scale(0.99);
+  }
+
+  @media (max-width: 639px) {
+    .api-card {
+      padding: 1rem !important;
+    }
+  }
 </style>

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="320" viewBox="0 0 840 320">
+  <defs>
+    <style>
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes checkIn {
+        0% { stroke-dashoffset: 20; opacity: 0; }
+        50% { opacity: 1; }
+        100% { stroke-dashoffset: 0; opacity: 1; }
+      }
+      .bg { fill: #ffffff; }
+      .border { fill: none; stroke: #e4e4e7; stroke-width: 1; }
+      .card { fill: #f4f4f5; rx: 10; }
+      .card-border { fill: none; stroke: #e4e4e7; stroke-width: 1; rx: 10; }
+      .card-title { font-family: system-ui, sans-serif; font-size: 14px; font-weight: 700; fill: #09090b; }
+      .card-desc { font-family: system-ui, sans-serif; font-size: 11px; fill: #71717a; }
+      .feature { animation: fadeIn 0.6s ease-out forwards; opacity: 0; }
+      .f1 { animation-delay: 0.1s; } .f2 { animation-delay: 0.25s; } .f3 { animation-delay: 0.4s; }
+      .f4 { animation-delay: 0.55s; } .f5 { animation-delay: 0.7s; } .f6 { animation-delay: 0.85s; }
+      .icon-circle { fill: #eef2ff; }
+      .icon { stroke: #6366f1; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+      .check { stroke: #22c55e; stroke-width: 2; fill: none; stroke-dasharray: 20; stroke-dashoffset: 20; stroke-linecap: round; }
+      .c1 { animation: checkIn 0.4s ease-out 1.2s forwards; }
+      .c2 { animation: checkIn 0.4s ease-out 1.4s forwards; }
+      .c3 { animation: checkIn 0.4s ease-out 1.6s forwards; }
+      .c4 { animation: checkIn 0.4s ease-out 1.8s forwards; }
+      .c5 { animation: checkIn 0.4s ease-out 2.0s forwards; }
+      .c6 { animation: checkIn 0.4s ease-out 2.2s forwards; }
+      .section-title { font-family: system-ui, sans-serif; font-size: 11px; fill: #a1a1aa; letter-spacing: 1.5px; font-weight: 600; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="840" height="320" rx="12"/>
+  <rect class="border" x="0.5" y="0.5" width="839" height="319" rx="12"/>
+
+  <text class="section-title" x="40" y="30">FEATURES</text>
+
+  <g class="feature f1" transform="translate(40, 45)">
+    <rect class="card" width="245" height="80"/>
+    <rect class="card-border" x="0.5" y="0.5" width="244" height="79"/>
+    <circle class="icon-circle" cx="30" cy="40" r="16"/>
+    <g transform="translate(22, 32)"><circle class="icon" cx="8" cy="8" r="6"/><path class="icon" d="M14 8h2"/></g>
+    <text class="card-title" x="56" y="36">1,400+ APIs</text>
+    <text class="card-desc" x="56" y="54">Searchable, filterable, organized</text>
+    <path class="check c1" d="M220 36 l4 4 l8 -8" />
+  </g>
+
+  <g class="feature f2" transform="translate(298, 45)">
+    <rect class="card" width="245" height="80"/>
+    <rect class="card-border" x="0.5" y="0.5" width="244" height="79"/>
+    <circle class="icon-circle" cx="30" cy="40" r="16"/>
+    <g transform="translate(22, 32)"><path class="icon" d="M2 8 L8 2 L14 8 M8 2 V14"/></g>
+    <text class="card-title" x="56" y="36">Daily Sync</text>
+    <text class="card-desc" x="56" y="54">Automated via GitHub Actions</text>
+    <path class="check c2" d="M220 36 l4 4 l8 -8" />
+  </g>
+
+  <g class="feature f3" transform="translate(556, 45)">
+    <rect class="card" width="245" height="80"/>
+    <rect class="card-border" x="0.5" y="0.5" width="244" height="79"/>
+    <circle class="icon-circle" cx="30" cy="40" r="16"/>
+    <g transform="translate(22, 32)"><circle class="icon" cx="8" cy="6" r="5"/><path class="icon" d="M4 14 L12 14"/></g>
+    <text class="card-title" x="56" y="36">Offline Search</text>
+    <text class="card-desc" x="56" y="54">Pagefind — zero JS bundle</text>
+    <path class="check c3" d="M220 36 l4 4 l8 -8" />
+  </g>
+
+  <g class="feature f4" transform="translate(40, 140)">
+    <rect class="card" width="245" height="80"/>
+    <rect class="card-border" x="0.5" y="0.5" width="244" height="79"/>
+    <circle class="icon-circle" cx="30" cy="40" r="16"/>
+    <g transform="translate(22, 32)"><path class="icon" d="M2 12 A6 6 0 0 1 14 12"/><circle class="icon" cx="8" cy="4" r="2"/></g>
+    <text class="card-title" x="56" y="36">Dark Mode</text>
+    <text class="card-desc" x="56" y="54">System-aware, no FOUC</text>
+    <path class="check c4" d="M220 36 l4 4 l8 -8" />
+  </g>
+
+  <g class="feature f5" transform="translate(298, 140)">
+    <rect class="card" width="245" height="80"/>
+    <rect class="card-border" x="0.5" y="0.5" width="244" height="79"/>
+    <circle class="icon-circle" cx="30" cy="40" r="16"/>
+    <g transform="translate(22, 32)"><path class="icon" d="M2 2 L14 2 L14 14 L2 14Z M6 6 L10 10 M10 6 L6 10"/></g>
+    <text class="card-title" x="56" y="36">PWA Ready</text>
+    <text class="card-desc" x="56" y="54">Installable, works offline</text>
+    <path class="check c5" d="M220 36 l4 4 l8 -8" />
+  </g>
+
+  <g class="feature f6" transform="translate(556, 140)">
+    <rect class="card" width="245" height="80"/>
+    <rect class="card-border" x="0.5" y="0.5" width="244" height="79"/>
+    <circle class="icon-circle" cx="30" cy="40" r="16"/>
+    <g transform="translate(22, 32)"><path class="icon" d="M8 2 V14 M2 8 H14"/></g>
+    <text class="card-title" x="56" y="36">SEO Optimized</text>
+    <text class="card-desc" x="56" y="54">JSON-LD, OG images, sitemap</text>
+    <path class="check c6" d="M220 36 l4 4 l8 -8" />
+  </g>
+
+  <g transform="translate(40, 250)">
+    <text font-family="system-ui, sans-serif" font-size="11" fill="#a1a1aa" letter-spacing="1.5" font-weight="600" y="0">LIGHTHOUSE SCORES</text>
+    <g transform="translate(0, 16)">
+      <rect fill="#f4f4f5" width="760" height="36" rx="8"/>
+      <rect fill="none" stroke="#e4e4e7" x="0.5" y="0.5" width="759" height="35" rx="8"/>
+      <g transform="translate(20, 0)">
+        <text font-family="ui-monospace, monospace" font-size="12" fill="#15803d" y="23" font-weight="600">
+          <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.5s" fill="freeze"/>Performance 95+</text>
+      </g>
+      <g transform="translate(200, 0)">
+        <text font-family="ui-monospace, monospace" font-size="12" fill="#15803d" y="23" font-weight="600">
+          <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.8s" fill="freeze"/>Accessibility 95+</text>
+      </g>
+      <g transform="translate(410, 0)">
+        <text font-family="ui-monospace, monospace" font-size="12" fill="#15803d" y="23" font-weight="600">
+          <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.1s" fill="freeze"/>Best Practices 95+</text>
+      </g>
+      <g transform="translate(630, 0)">
+        <text font-family="ui-monospace, monospace" font-size="12" fill="#15803d" y="23" font-weight="600">
+          <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.4s" fill="freeze"/>SEO 95+</text>
+      </g>
+    </g>
+  </g>
+</svg>

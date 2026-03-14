@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="280" viewBox="0 0 840 280">
+  <defs>
+    <style>
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+      @keyframes countUp {
+        0% { opacity: 0; transform: translateY(10px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .hero-bg { fill: #ffffff; }
+      .hero-border { fill: none; stroke: #e4e4e7; stroke-width: 1; }
+      .accent-line {
+        stroke: url(#grad-l);
+        stroke-width: 3;
+        stroke-dasharray: 840;
+        stroke-dashoffset: 840;
+        animation: dash 2s ease-out forwards;
+      }
+      .title {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 48px;
+        font-weight: 800;
+        fill: #09090b;
+        letter-spacing: -2px;
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+      }
+      .subtitle {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 18px;
+        fill: #3f3f46;
+        animation: fadeInUp 0.8s ease-out 0.3s forwards;
+        opacity: 0;
+      }
+      .stat-num {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 28px;
+        font-weight: 700;
+        fill: #6366f1;
+        animation: countUp 0.6s ease-out forwards;
+        opacity: 0;
+      }
+      .stat-label {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 11px;
+        fill: #a1a1aa;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        animation: fadeInUp 0.6s ease-out forwards;
+        opacity: 0;
+      }
+      .stat-1 .stat-num { animation-delay: 0.6s; }
+      .stat-1 .stat-label { animation-delay: 0.7s; }
+      .stat-2 .stat-num { animation-delay: 0.8s; }
+      .stat-2 .stat-label { animation-delay: 0.9s; }
+      .stat-3 .stat-num { animation-delay: 1.0s; }
+      .stat-3 .stat-label { animation-delay: 1.1s; }
+      .dot { fill: #6366f1; animation: pulse 2s ease-in-out infinite; }
+      .dot2 { animation-delay: 0.3s; }
+      .dot3 { animation-delay: 0.6s; }
+      .cursor { fill: #6366f1; animation: blink 1s step-end infinite; animation-delay: 2s; }
+      .icon-box { fill: #f4f4f5; rx: 8; animation: fadeInUp 0.5s ease-out forwards; opacity: 0; }
+      .icon-box:nth-child(1) { animation-delay: 1.3s; }
+      .icon-box:nth-child(2) { animation-delay: 1.5s; }
+      .icon-box:nth-child(3) { animation-delay: 1.7s; }
+      .icon-box:nth-child(4) { animation-delay: 1.9s; }
+      .icon-text {
+        font-family: system-ui, sans-serif;
+        font-size: 11px;
+        fill: #71717a;
+        text-anchor: middle;
+        animation: fadeInUp 0.5s ease-out forwards;
+        opacity: 0;
+      }
+    </style>
+    <linearGradient id="grad-l" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%">
+        <animate attributeName="stop-color" values="#6366f1;#4f46e5;#6366f1" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%">
+        <animate attributeName="stop-color" values="#4f46e5;#6366f1;#4f46e5" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <rect class="hero-bg" width="840" height="280" rx="12"/>
+  <rect class="hero-border" x="0.5" y="0.5" width="839" height="279" rx="12"/>
+  <line class="accent-line" x1="0" y1="3" x2="840" y2="3"/>
+
+  <text class="title" x="40" y="80">API Hub</text>
+  <text class="subtitle" x="40" y="115">Every Free API, One Place.</text>
+
+  <circle class="dot" cx="280" cy="108" r="2"/>
+  <circle class="dot dot2" cx="290" cy="108" r="2"/>
+  <circle class="dot dot3" cx="300" cy="108" r="2"/>
+
+  <g class="stat-1" transform="translate(40, 150)">
+    <text class="stat-num" y="0">1,424</text>
+    <text class="stat-label" y="20">APIs</text>
+  </g>
+  <g class="stat-2" transform="translate(190, 150)">
+    <text class="stat-num" y="0">51</text>
+    <text class="stat-label" y="20">Categories</text>
+  </g>
+  <g class="stat-3" transform="translate(340, 150)">
+    <text class="stat-num" y="0">Daily</text>
+    <text class="stat-label" y="20">Sync</text>
+  </g>
+
+  <g transform="translate(40, 200)">
+    <rect class="icon-box" x="0" y="0" width="80" height="52" rx="8"/>
+    <text class="icon-text" x="40" y="32" style="animation-delay: 1.4s;">Animals</text>
+    <rect class="icon-box" x="92" y="0" width="80" height="52" rx="8"/>
+    <text class="icon-text" x="132" y="32" style="animation-delay: 1.6s;">Finance</text>
+    <rect class="icon-box" x="184" y="0" width="80" height="52" rx="8"/>
+    <text class="icon-text" x="224" y="32" style="animation-delay: 1.8s;">Weather</text>
+    <rect class="icon-box" x="276" y="0" width="80" height="52" rx="8"/>
+    <text class="icon-text" x="316" y="32" style="animation-delay: 2.0s;">Music</text>
+    <rect class="icon-box" x="368" y="0" width="100" height="52" rx="8"/>
+    <text class="icon-text" x="418" y="32" style="animation-delay: 2.2s;">+ 47 more</text>
+  </g>
+
+  <rect class="cursor" x="242" y="68" width="3" height="30" rx="1"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="160" viewBox="0 0 840 160">
+  <defs>
+    <style>
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes flowRight { 0% { stroke-dashoffset: 40; opacity: 0; } 30% { opacity: 1; } 100% { stroke-dashoffset: 0; opacity: 1; } }
+      @keyframes pulse { 0%, 100% { r: 4; opacity: 0.8; } 50% { r: 6; opacity: 1; } }
+      .bg { fill: #ffffff; }
+      .border { fill: none; stroke: #e4e4e7; stroke-width: 1; }
+      .box { fill: #f4f4f5; rx: 10; }
+      .box-border { fill: none; stroke: #e4e4e7; stroke-width: 1; rx: 10; }
+      .box-text { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 600; fill: #09090b; text-anchor: middle; }
+      .box-sub { font-family: ui-monospace, monospace; font-size: 10px; fill: #a1a1aa; text-anchor: middle; }
+      .arrow { stroke: #6366f1; stroke-width: 1.5; fill: none; stroke-dasharray: 40; stroke-dashoffset: 40; marker-end: url(#ah-l); }
+      .a1 { animation: flowRight 0.8s ease-out 0.5s forwards; }
+      .a2 { animation: flowRight 0.8s ease-out 1.0s forwards; }
+      .a3 { animation: flowRight 0.8s ease-out 1.5s forwards; }
+      .a4 { animation: flowRight 0.8s ease-out 2.0s forwards; }
+      .node { animation: fadeIn 0.4s ease-out forwards; opacity: 0; }
+      .n1 { animation-delay: 0s; } .n2 { animation-delay: 0.5s; } .n3 { animation-delay: 1.0s; } .n4 { animation-delay: 1.5s; } .n5 { animation-delay: 2.0s; }
+      .dot-pulse { fill: #6366f1; animation: pulse 2s ease-in-out infinite; }
+      .dp2 { animation-delay: 0.5s; } .dp3 { animation-delay: 1s; } .dp4 { animation-delay: 1.5s; }
+      .section-title { font-family: system-ui, sans-serif; font-size: 11px; fill: #a1a1aa; letter-spacing: 1.5px; font-weight: 600; }
+    </style>
+    <marker id="ah-l" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#6366f1"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="840" height="160" rx="12"/>
+  <rect class="border" x="0.5" y="0.5" width="839" height="159" rx="12"/>
+  <text class="section-title" x="40" y="28">HOW IT WORKS</text>
+
+  <g class="node n1" transform="translate(20, 55)">
+    <rect class="box" width="140" height="70"/><rect class="box-border" x="0.5" y="0.5" width="139" height="69"/>
+    <text class="box-text" x="70" y="36">public-apis</text><text class="box-sub" x="70" y="52">README.md</text>
+  </g>
+  <line class="arrow a1" x1="165" y1="90" x2="195" y2="90"/><circle class="dot-pulse" cx="180" cy="90" r="3"/>
+  <g class="node n2" transform="translate(200, 55)">
+    <rect class="box" width="140" height="70"/><rect class="box-border" x="0.5" y="0.5" width="139" height="69"/>
+    <text class="box-text" x="70" y="36">GitHub Actions</text><text class="box-sub" x="70" y="52">Daily @ 3 AM</text>
+  </g>
+  <line class="arrow a2" x1="345" y1="90" x2="375" y2="90"/><circle class="dot-pulse dp2" cx="360" cy="90" r="3"/>
+  <g class="node n3" transform="translate(380, 55)">
+    <rect class="box" width="140" height="70"/><rect class="box-border" x="0.5" y="0.5" width="139" height="69"/>
+    <text class="box-text" x="70" y="36">Astro Build</text><text class="box-sub" x="70" y="52">1,481 pages</text>
+  </g>
+  <line class="arrow a3" x1="525" y1="90" x2="555" y2="90"/><circle class="dot-pulse dp3" cx="540" cy="90" r="3"/>
+  <g class="node n4" transform="translate(560, 55)">
+    <rect class="box" width="120" height="70"/><rect class="box-border" x="0.5" y="0.5" width="119" height="69"/>
+    <text class="box-text" x="60" y="36">Pagefind</text><text class="box-sub" x="60" y="52">Index</text>
+  </g>
+  <line class="arrow a4" x1="685" y1="90" x2="715" y2="90"/><circle class="dot-pulse dp4" cx="700" cy="90" r="3"/>
+  <g class="node n5" transform="translate(720, 55)">
+    <rect class="box" width="100" height="70" style="fill: #eef2ff;"/><rect class="box-border" x="0.5" y="0.5" width="99" height="69" style="stroke: #6366f1;"/>
+    <text class="box-text" x="50" y="36" style="fill: #4338ca;">Deploy</text><text class="box-sub" x="50" y="52" style="fill: #6366f1;">GH Pages</text>
+  </g>
+</svg>

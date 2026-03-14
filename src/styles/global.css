@@ -89,12 +89,56 @@
     width: 100%;
     max-width: var(--container);
     margin-inline: auto;
-    padding-inline: 1rem;
+    padding-inline: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
   }
 
   @media (min-width: 640px) {
     .container {
       padding-inline: 1.5rem;
     }
+  }
+
+  /* Mobile touch targets */
+  @media (max-width: 639px) {
+    button,
+    [role='button'],
+    a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+
+    a:not([class]) {
+      min-height: auto;
+      min-width: auto;
+    }
+
+    .logo-text {
+      font-size: 1rem !important;
+    }
+  }
+
+  /* PWA standalone mode */
+  @media (display-mode: standalone) {
+    body {
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  }
+
+  /* Smooth momentum scrolling on iOS */
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent text size adjustment on orientation change */
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  /* Disable pull-to-refresh in PWA */
+  body {
+    overscroll-behavior-y: contain;
   }
 }

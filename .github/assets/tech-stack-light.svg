@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="120" viewBox="0 0 840 120">
+  <defs>
+    <style>
+      @keyframes slideInRight {
+        from { opacity: 0; transform: translateX(-20px); }
+        to { opacity: 1; transform: translateX(0); }
+      }
+      @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 2px rgba(99, 102, 241, 0)); }
+        50% { filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.3)); }
+      }
+      .bg { fill: #ffffff; }
+      .border { fill: none; stroke: #e4e4e7; stroke-width: 1; }
+      .chip {
+        animation: slideInRight 0.5s ease-out forwards;
+        opacity: 0;
+      }
+      .chip:nth-child(2) { animation-delay: 0.1s; }
+      .chip:nth-child(3) { animation-delay: 0.2s; }
+      .chip:nth-child(4) { animation-delay: 0.3s; }
+      .chip:nth-child(5) { animation-delay: 0.4s; }
+      .chip:nth-child(6) { animation-delay: 0.5s; }
+      .chip:nth-child(7) { animation-delay: 0.6s; }
+      .chip-bg { fill: #f4f4f5; rx: 20; }
+      .chip-dot { r: 4; }
+      .chip-text {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #3f3f46;
+      }
+      .astro-dot { fill: #BC52EE; animation: glow 3s ease-in-out infinite; }
+      .tw-dot { fill: #06B6D4; animation: glow 3s ease-in-out infinite 0.5s; }
+      .ts-dot { fill: #3178C6; animation: glow 3s ease-in-out infinite 1s; }
+      .pf-dot { fill: #FFBA18; animation: glow 3s ease-in-out infinite 1.5s; }
+      .gh-dot { fill: #24292e; animation: glow 3s ease-in-out infinite 2s; }
+      .sharp-dot { fill: #22c55e; animation: glow 3s ease-in-out infinite 2.5s; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="840" height="120" rx="12"/>
+  <rect class="border" x="0.5" y="0.5" width="839" height="119" rx="12"/>
+
+  <text x="40" y="30" font-family="system-ui, sans-serif" font-size="11" fill="#a1a1aa" letter-spacing="1.5" font-weight="600">BUILT WITH</text>
+
+  <g transform="translate(40, 50)">
+    <g class="chip">
+      <rect class="chip-bg" x="0" y="0" width="110" height="40"/>
+      <circle class="chip-dot astro-dot" cx="20" cy="20"/>
+      <text class="chip-text" x="32" y="25">Astro 5</text>
+    </g>
+    <g class="chip" transform="translate(122, 0)">
+      <rect class="chip-bg" x="0" y="0" width="135" height="40"/>
+      <circle class="chip-dot tw-dot" cx="20" cy="20"/>
+      <text class="chip-text" x="32" y="25">Tailwind v4</text>
+    </g>
+    <g class="chip" transform="translate(269, 0)">
+      <rect class="chip-bg" x="0" y="0" width="140" height="40"/>
+      <circle class="chip-dot ts-dot" cx="20" cy="20"/>
+      <text class="chip-text" x="32" y="25">TypeScript</text>
+    </g>
+    <g class="chip" transform="translate(421, 0)">
+      <rect class="chip-bg" x="0" y="0" width="120" height="40"/>
+      <circle class="chip-dot pf-dot" cx="20" cy="20"/>
+      <text class="chip-text" x="32" y="25">Pagefind</text>
+    </g>
+    <g class="chip" transform="translate(553, 0)">
+      <rect class="chip-bg" x="0" y="0" width="145" height="40"/>
+      <circle class="chip-dot gh-dot" cx="20" cy="20"/>
+      <text class="chip-text" x="32" y="25">GitHub Pages</text>
+    </g>
+    <g class="chip" transform="translate(710, 0)">
+      <rect class="chip-bg" x="0" y="0" width="100" height="40"/>
+      <circle class="chip-dot sharp-dot" cx="20" cy="20"/>
+      <text class="chip-text" x="32" y="25">Sharp</text>
+    </g>
+  </g>
+</svg>

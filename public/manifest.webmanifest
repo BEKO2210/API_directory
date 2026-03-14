@@ -1,17 +1,57 @@
 {
   "name": "API Hub",
   "short_name": "API Hub",
-  "description": "Browse 1,000+ free public APIs",
+  "description": "Browse 1,400+ free public APIs",
   "start_url": "/API_directory/",
+  "scope": "/API_directory/",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#09090b",
-  "theme_color": "#6366f1",
+  "theme_color": "#09090b",
+  "categories": ["developer", "utilities", "productivity"],
   "icons": [
     {
       "src": "/API_directory/favicon.svg",
       "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/API_directory/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/API_directory/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/API_directory/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/API_directory/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Search APIs",
+      "short_name": "Search",
+      "url": "/API_directory/search",
+      "description": "Search across all APIs"
+    },
+    {
+      "name": "Submit API",
+      "short_name": "Submit",
+      "url": "/API_directory/submit",
+      "description": "Learn how to submit your API"
     }
   ]
 }

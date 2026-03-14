@@ -108,4 +108,14 @@ const base = getBaseUrl();
     box-shadow: var(--shadow-md);
     transform: translateY(-1px);
   }
+
+  .category-card:active {
+    transform: scale(0.98);
+  }
+
+  @media (max-width: 639px) {
+    .category-card {
+      padding: 0.875rem !important;
+    }
+  }
 </style>
