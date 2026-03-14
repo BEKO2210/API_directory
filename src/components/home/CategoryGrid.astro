@@ -34,32 +34,8 @@ const base = getBaseUrl();
           <a
             href={`${base}/categories/${cat.slug}`}
             class="category-card"
-            style="
-              display: flex;
-              align-items: center;
-              gap: 0.75rem;
-              padding: 1rem;
-              background: var(--bg-elevated);
-              border: 1px solid var(--border);
-              border-radius: var(--r-lg);
-              text-decoration: none;
-              transition: box-shadow var(--t-base), transform var(--t-base);
-            "
           >
-            <span
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 40px;
-                height: 40px;
-                border-radius: var(--r-md);
-                background: var(--accent-muted);
-                color: var(--accent);
-                flex-shrink: 0;
-                font-size: 1.125rem;
-              "
-            >
+            <span class="category-card-icon">
               <svg
                 width="20"
                 height="20"
@@ -74,28 +50,17 @@ const base = getBaseUrl();
                 <circle cx="12" cy="14" r="4" />
               </svg>
             </span>
-            <div>
-              <p
-                style="
-                  font-weight: 600;
-                  font-size: 0.9375rem;
-                  color: var(--text-1);
-                  margin: 0;
-                  line-height: 1.3;
-                "
-              >
+            <div style="flex: 1; min-width: 0;">
+              <p class="category-card-name">
                 {cat.name}
               </p>
-              <p
-                style="
-                  font-size: 0.75rem;
-                  color: var(--text-3);
-                  margin: 0.125rem 0 0;
-                "
-              >
+              <p class="category-card-count">
                 {cat.count} APIs
               </p>
             </div>
+            <svg class="category-card-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m9 18 6-6-6-6"/>
+            </svg>
           </a>
         ))
       }
@@ -104,18 +69,69 @@ const base = getBaseUrl();
 </section>
 
 <style>
+  .category-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    text-decoration: none;
+    transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  }
+
   .category-card:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-1px);
+    border-color: var(--accent);
+  }
+
+  .category-card:hover .category-card-chevron {
+    color: var(--accent);
+    transform: translateX(2px);
   }
 
   .category-card:active {
     transform: scale(0.98);
   }
 
-  @media (max-width: 639px) {
+  .category-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--r-md);
+    background: var(--accent-muted);
+    color: var(--accent);
+    flex-shrink: 0;
+    font-size: 1.125rem;
+  }
+
+  .category-card-name {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--text-1);
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  .category-card-count {
+    font-size: 0.75rem;
+    color: var(--text-3);
+    margin: 0.125rem 0 0;
+  }
+
+  .category-card-chevron {
+    flex-shrink: 0;
+    color: var(--text-4);
+    transition: color 0.15s, transform 0.15s;
+  }
+
+  @media (max-width: 767px) {
     .category-card {
-      padding: 0.875rem !important;
+      padding: 0.875rem;
     }
   }
 </style>

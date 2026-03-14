@@ -16,42 +16,24 @@ const base = getBaseUrl();
   data-https={api.https ? 'true' : 'false'}
   data-cors={api.cors}
   data-auth={api.auth || 'none'}
-  style="
-    position: relative;
-    background: var(--bg-elevated);
-    border: 1px solid var(--border);
-    border-radius: var(--r-lg);
-    padding: 1.25rem;
-    transition: box-shadow var(--t-base), transform var(--t-base);
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  "
 >
   <!-- Header -->
   <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem;">
     <a
       href={`${base}/api/${api.slug}`}
-      style="
-        font-weight: 600;
-        font-size: 1rem;
-        color: var(--text-1);
-        text-decoration: none;
-        line-height: 1.4;
-      "
+      class="api-card-title"
     >
       {api.name}
+      <svg class="api-card-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m9 18 6-6-6-6"/>
+      </svg>
     </a>
     <a
       href={api.link}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`Visit ${api.name}`}
-      style="
-        flex-shrink: 0;
-        color: var(--text-4);
-        transition: color var(--t-fast);
-      "
+      class="api-card-external"
     >
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -62,19 +44,7 @@ const base = getBaseUrl();
   </div>
 
   <!-- Description -->
-  <p
-    style="
-      font-size: 0.875rem;
-      color: var(--text-3);
-      margin: 0;
-      line-height: 1.5;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      flex-grow: 1;
-    "
-  >
+  <p class="api-card-desc">
     {api.description}
   </p>
 
@@ -89,15 +59,7 @@ const base = getBaseUrl();
   <div>
     <a
       href={`${base}/categories/${api.categorySlug}`}
-      style="
-        font-size: 0.75rem;
-        color: var(--accent-text);
-        background: var(--accent-muted);
-        padding: 2px 8px;
-        border-radius: var(--r-full);
-        text-decoration: none;
-        font-weight: 500;
-      "
+      class="api-card-category"
     >
       {api.category}
     </a>
@@ -105,6 +67,18 @@ const base = getBaseUrl();
 </article>
 
 <style>
+  .api-card {
+    position: relative;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 1.25rem;
+    transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
   .api-card:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-1px);
@@ -114,9 +88,74 @@ const base = getBaseUrl();
     transform: scale(0.99);
   }
 
-  @media (max-width: 639px) {
+  .api-card-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+    line-height: 1.4;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    min-height: auto;
+    min-width: auto;
+  }
+
+  .api-card-arrow {
+    flex-shrink: 0;
+    color: var(--accent);
+    opacity: 0.5;
+    transition: opacity 0.15s, transform 0.15s;
+  }
+
+  .api-card-title:hover .api-card-arrow,
+  .api-card:hover .api-card-arrow {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+
+  .api-card-external {
+    flex-shrink: 0;
+    color: var(--text-4);
+    transition: color 0.15s;
+    min-height: auto;
+    min-width: auto;
+    display: inline-flex;
+    padding: 0.25rem;
+  }
+
+  .api-card-external:hover {
+    color: var(--accent);
+  }
+
+  .api-card-desc {
+    font-size: 0.875rem;
+    color: var(--text-3);
+    margin: 0;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex-grow: 1;
+  }
+
+  .api-card-category {
+    font-size: 0.75rem;
+    color: var(--accent-text);
+    background: var(--accent-muted);
+    padding: 2px 8px;
+    border-radius: var(--r-full);
+    text-decoration: none;
+    font-weight: 500;
+    min-height: auto;
+    min-width: auto;
+    display: inline-block;
+  }
+
+  @media (max-width: 767px) {
     .api-card {
-      padding: 1rem !important;
+      padding: 1rem;
     }
   }
 </style>
