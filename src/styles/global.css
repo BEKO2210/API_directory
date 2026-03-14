@@ -29,24 +29,24 @@
   }
 
   ::selection {
-    background-color: var(--accent);
-    color: white;
+    background-color: var(--text-1);
+    color: var(--bg);
   }
 
   :focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--text-1);
     outline-offset: 2px;
     border-radius: var(--r-sm);
   }
 
   a {
-    color: var(--accent);
+    color: var(--text-1);
     text-decoration: none;
     transition: color var(--t-fast);
   }
 
   a:hover {
-    color: var(--accent-hover);
+    color: var(--text-2);
   }
 
   code,
@@ -74,8 +74,8 @@
     transform: translateX(-50%);
     z-index: 100;
     padding: 0.5rem 1rem;
-    background: var(--accent);
-    color: white;
+    background: var(--text-1);
+    color: var(--bg);
     border-radius: var(--r-md);
     font-weight: 500;
     transition: top var(--t-base);

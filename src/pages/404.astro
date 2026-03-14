@@ -25,10 +25,10 @@ const categories = getAllCategories().slice(0, 8);
         font-family: 'Geist Mono', monospace;
         font-size: 5rem;
         font-weight: 800;
-        color: var(--accent);
+        color: var(--text-1);
         margin: 0;
         line-height: 1;
-        opacity: 0.3;
+        opacity: 0.15;
       "
     >
       404
@@ -48,8 +48,8 @@ const categories = getAllCategories().slice(0, 8);
         align-items: center;
         gap: 0.5rem;
         padding: 0.75rem 1.5rem;
-        background: var(--accent);
-        color: white;
+        background: var(--text-1);
+        color: var(--bg);
         border-radius: var(--r-md);
         font-weight: 600;
         font-size: 0.9375rem;
@@ -90,7 +90,7 @@ const categories = getAllCategories().slice(0, 8);
     <div style="margin-top: 2rem;">
       <a
         href={`${base}/`}
-        style="font-size: 0.875rem; color: var(--accent); text-decoration: none;"
+        style="font-size: 0.875rem; color: var(--text-2); text-decoration: underline; text-underline-offset: 2px;"
       >
         &larr; Back to homepage
       </a>
