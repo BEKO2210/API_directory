@@ -2,17 +2,8 @@
   <defs>
     <style>
       @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(12px); }
-        to { opacity: 1; transform: translateY(0); }
-      }
-      @keyframes shimmer {
-        0% { opacity: 0.6; }
-        50% { opacity: 1; }
-        100% { opacity: 0.6; }
-      }
-      @keyframes orbit {
-        0% { transform: rotate(0deg) translateX(6px) rotate(0deg); }
-        100% { transform: rotate(360deg) translateX(6px) rotate(-360deg); }
+        from { opacity: 0; }
+        to { opacity: 1; }
       }
       @keyframes checkIn {
         0% { stroke-dashoffset: 20; opacity: 0; }
