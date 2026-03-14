@@ -99,22 +99,12 @@
     }
   }
 
-  /* Mobile touch targets */
-  @media (max-width: 639px) {
-    button,
-    [role='button'],
-    a {
+  /* Mobile touch targets — only for interactive elements in content, not header/nav */
+  @media (max-width: 767px) {
+    main button,
+    main [role='button'] {
       min-height: 44px;
       min-width: 44px;
-    }
-
-    a:not([class]) {
-      min-height: auto;
-      min-width: auto;
-    }
-
-    .logo-text {
-      font-size: 1rem !important;
     }
   }
 
