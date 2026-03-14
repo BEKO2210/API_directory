@@ -1,83 +1,134 @@
 ---
 ---
 
-<button
-  id="theme-toggle"
-  type="button"
-  aria-label="Toggle dark mode"
-  style="
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    border-radius: var(--r-md);
-    border: 1px solid var(--border);
-    background: transparent;
-    color: var(--text-2);
-    cursor: pointer;
-    transition: background var(--t-base), color var(--t-base);
-  "
->
-  <svg
-    class="icon-sun"
-    width="18"
-    height="18"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  >
-    <circle cx="12" cy="12" r="4"></circle>
-    <path d="M12 2v2"></path>
-    <path d="M12 20v2"></path>
-    <path d="m4.93 4.93 1.41 1.41"></path>
-    <path d="m17.66 17.66 1.41 1.41"></path>
-    <path d="M2 12h2"></path>
-    <path d="M20 12h2"></path>
-    <path d="m6.34 17.66-1.41 1.41"></path>
-    <path d="m19.07 4.93-1.41 1.41"></path>
-  </svg>
-  <svg
-    class="icon-moon"
-    width="18"
-    height="18"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  >
-    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-  </svg>
-</button>
+<label class="theme-switch" aria-label="Toggle dark mode">
+  <input id="theme-checkbox" type="checkbox" />
+  <span class="theme-slider">
+    <div class="star star_1"></div>
+    <div class="star star_2"></div>
+    <div class="star star_3"></div>
+    <svg viewBox="0 0 16 16" class="cloud_1 cloud">
+      <path
+        transform="matrix(.77976 0 0 .78395-299.99-418.63)"
+        fill="#fff"
+        d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+      ></path>
+    </svg>
+  </span>
+</label>
 
-<style>
-  [data-theme='light'] .icon-moon,
-  :root:not([data-theme='dark']) .icon-moon {
-    display: none;
+<style is:global>
+  .theme-switch {
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 2.2em;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    cursor: pointer;
+    min-height: auto;
+    min-width: auto;
   }
-  [data-theme='dark'] .icon-sun {
-    display: none;
+
+  .theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
   }
-  [data-theme='light'] .icon-sun {
-    display: block;
+
+  .theme-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2a2a2a;
+    transition: 0.4s;
+    border-radius: 30px;
+    overflow: hidden;
   }
-  button:hover {
-    background: var(--surface) !important;
-    color: var(--text-1) !important;
+
+  .theme-slider:before {
+    position: absolute;
+    content: "";
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 20px;
+    left: 0.5em;
+    bottom: 0.5em;
+    transition: 0.4s;
+    transition-timing-function: cubic-bezier(0.81, -0.04, 0.38, 1.5);
+    box-shadow: inset 8px -4px 0px 0px #fff;
+  }
+
+  .theme-switch input:checked + .theme-slider {
+    background-color: #87ceeb;
+  }
+
+  .theme-switch input:checked + .theme-slider:before {
+    transform: translateX(1.8em);
+    box-shadow: inset 15px -4px 0px 15px #ffcf48;
+  }
+
+  .theme-switch .star {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    transition: all 0.4s;
+  }
+
+  .theme-switch .star_1 {
+    left: 2.5em;
+    top: 0.5em;
+  }
+
+  .theme-switch .star_2 {
+    left: 2.2em;
+    top: 1.2em;
+  }
+
+  .theme-switch .star_3 {
+    left: 3em;
+    top: 0.9em;
+  }
+
+  .theme-switch input:checked ~ .theme-slider .star {
+    opacity: 0;
+  }
+
+  .theme-switch .cloud {
+    width: 3.5em;
+    position: absolute;
+    bottom: -1.4em;
+    left: -1.1em;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  .theme-switch input:checked ~ .theme-slider .cloud {
+    opacity: 1;
   }
 </style>
 
 <script is:inline>
-  document.getElementById('theme-toggle')?.addEventListener('click', () => {
-    const html = document.documentElement;
-    const current = html.getAttribute('data-theme');
-    const next = current === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem('theme', next);
-  });
+  (function () {
+    var checkbox = document.getElementById('theme-checkbox');
+    if (!checkbox) return;
+
+    // Sync checkbox with current theme (checked = light/sun, unchecked = dark/moon)
+    var current = document.documentElement.getAttribute('data-theme');
+    checkbox.checked = current !== 'dark';
+
+    checkbox.addEventListener('change', function () {
+      var next = checkbox.checked ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  })();
 </script>
