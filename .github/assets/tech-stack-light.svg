@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="120" viewBox="0 0 840 120">
   <defs>
     <style>
-      @keyframes slideInRight {
-        from { opacity: 0; transform: translateX(-20px); }
-        to { opacity: 1; transform: translateX(0); }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
       }
       @keyframes glow {
         0%, 100% { filter: drop-shadow(0 0 2px rgba(99, 102, 241, 0)); }
@@ -12,7 +12,7 @@
       .bg { fill: #ffffff; }
       .border { fill: none; stroke: #e4e4e7; stroke-width: 1; }
       .chip {
-        animation: slideInRight 0.5s ease-out forwards;
+        animation: fadeIn 0.5s ease-out forwards;
         opacity: 0;
       }
       .chip:nth-child(2) { animation-delay: 0.1s; }
