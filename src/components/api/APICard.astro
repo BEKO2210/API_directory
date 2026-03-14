@@ -1,0 +1,112 @@
+---
+import type { API } from '@lib/types';
+import APIBadge from './APIBadge.astro';
+import { getBaseUrl } from '@lib/utils';
+
+interface Props {
+  api: API;
+}
+
+const { api } = Astro.props;
+const base = getBaseUrl();
+---
+
+<article
+  class="api-card"
+  data-https={api.https ? 'true' : 'false'}
+  data-cors={api.cors}
+  data-auth={api.auth || 'none'}
+  style="
+    position: relative;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 1.25rem;
+    transition: box-shadow var(--t-base), transform var(--t-base);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  "
+>
+  <!-- Header -->
+  <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 0.5rem;">
+    <a
+      href={`${base}/api/${api.slug}`}
+      style="
+        font-weight: 600;
+        font-size: 1rem;
+        color: var(--text-1);
+        text-decoration: none;
+        line-height: 1.4;
+      "
+    >
+      {api.name}
+    </a>
+    <a
+      href={api.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Visit ${api.name}`}
+      style="
+        flex-shrink: 0;
+        color: var(--text-4);
+        transition: color var(--t-fast);
+      "
+    >
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+        <polyline points="15 3 21 3 21 9"></polyline>
+        <line x1="10" y1="14" x2="21" y2="3"></line>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Description -->
+  <p
+    style="
+      font-size: 0.875rem;
+      color: var(--text-3);
+      margin: 0;
+      line-height: 1.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex-grow: 1;
+    "
+  >
+    {api.description}
+  </p>
+
+  <!-- Badges -->
+  <div style="display: flex; flex-wrap: wrap; gap: 0.375rem; align-items: center;">
+    <APIBadge type="https" value={api.https} />
+    <APIBadge type="cors" value={api.cors} />
+    <APIBadge type="auth" value={api.auth} />
+  </div>
+
+  <!-- Category -->
+  <div>
+    <a
+      href={`${base}/categories/${api.categorySlug}`}
+      style="
+        font-size: 0.75rem;
+        color: var(--accent-text);
+        background: var(--accent-muted);
+        padding: 2px 8px;
+        border-radius: var(--r-full);
+        text-decoration: none;
+        font-weight: 500;
+      "
+    >
+      {api.category}
+    </a>
+  </div>
+</article>
+
+<style>
+  .api-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+</style>

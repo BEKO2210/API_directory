@@ -1,0 +1,113 @@
+---
+import Page from '@layouts/Page.astro';
+import { getSiteStats } from '@lib/getApis';
+
+const stats = getSiteStats();
+---
+
+<Page
+  title="About"
+  description="API Hub is a modern, searchable directory of free public APIs. Learn about the project, its data source, and how it works."
+>
+  <div style="max-width: 640px; margin: 0 auto;">
+    <h1 style="font-size: 1.75rem; font-weight: 700; color: var(--text-1); margin: 0 0 0.75rem;">
+      About API Hub
+    </h1>
+    <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 1.5rem;">
+      API Hub is a modern, fast, and beautifully designed directory that makes it easy to discover free public APIs
+      for your next project. Whether you are building a mobile app, a web service, or just exploring what is
+      available, we have you covered.
+    </p>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
+      Data Source
+    </h2>
+    <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 1.5rem;">
+      All API data is sourced from the
+      <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">public-apis</a>
+      repository on GitHub, one of the most popular open-source projects with over 300,000 stars. The data is
+      synchronized daily to ensure you always have access to the latest entries.
+    </p>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
+      How It Works
+    </h2>
+    <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 1.5rem;">
+      API Hub is a static site built with Astro and deployed on GitHub Pages. Every day, an automated workflow
+      fetches the latest data from the public-apis repository, parses the README, and rebuilds the site.
+      This means zero server costs and blazing-fast performance — every page is pre-rendered HTML.
+    </p>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
+      Stats
+    </h2>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-bottom: 2rem;
+      "
+    >
+      <div
+        style="
+          text-align: center;
+          padding: 1.25rem;
+          background: var(--surface);
+          border-radius: var(--r-lg);
+          border: 1px solid var(--border);
+        "
+      >
+        <p style="font-size: 1.5rem; font-weight: 700; color: var(--accent); margin: 0;">
+          {stats.totalAPIs.toLocaleString()}
+        </p>
+        <p style="font-size: 0.8125rem; color: var(--text-3); margin: 0.25rem 0 0;">APIs</p>
+      </div>
+      <div
+        style="
+          text-align: center;
+          padding: 1.25rem;
+          background: var(--surface);
+          border-radius: var(--r-lg);
+          border: 1px solid var(--border);
+        "
+      >
+        <p style="font-size: 1.5rem; font-weight: 700; color: var(--accent); margin: 0;">
+          {stats.totalCategories}
+        </p>
+        <p style="font-size: 0.8125rem; color: var(--text-3); margin: 0.25rem 0 0;">Categories</p>
+      </div>
+      <div
+        style="
+          text-align: center;
+          padding: 1.25rem;
+          background: var(--surface);
+          border-radius: var(--r-lg);
+          border: 1px solid var(--border);
+        "
+      >
+        <p style="font-size: 1.5rem; font-weight: 700; color: var(--accent); margin: 0;">0</p>
+        <p style="font-size: 0.8125rem; color: var(--text-3); margin: 0.25rem 0 0;">JS Frameworks</p>
+      </div>
+    </div>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
+      Tech Stack
+    </h2>
+    <ul style="padding-left: 1.25rem; margin: 0 0 2rem; color: var(--text-2); line-height: 1.8;">
+      <li><strong style="color: var(--text-1);">Astro</strong> — Static site generation with zero client-side JS by default</li>
+      <li><strong style="color: var(--text-1);">Tailwind CSS v4</strong> — Utility-first styling</li>
+      <li><strong style="color: var(--text-1);">Pagefind</strong> — Offline, zero-bundle-size full-text search</li>
+      <li><strong style="color: var(--text-1);">GitHub Actions</strong> — Daily data sync and automated deployment</li>
+      <li><strong style="color: var(--text-1);">GitHub Pages</strong> — Free, reliable hosting</li>
+    </ul>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
+      Open Source
+    </h2>
+    <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0;">
+      API Hub is open source under the MIT License. Contributions, bug reports, and feature requests are welcome on
+      <a href="https://github.com/BEKO2210/API_directory" target="_blank" rel="noopener noreferrer">GitHub</a>.
+    </p>
+  </div>
+</Page>

@@ -1,0 +1,20 @@
+---
+import Base from './Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  ogType?: string;
+  canonical?: string;
+  jsonLd?: string;
+}
+
+const { title, description, ogImage, ogType, canonical, jsonLd } = Astro.props;
+---
+
+<Base title={title} description={description} ogImage={ogImage} ogType={ogType} canonical={canonical} jsonLd={jsonLd}>
+  <div class="container" style="padding-top: 2rem; padding-bottom: 4rem;">
+    <slot />
+  </div>
+</Base>

@@ -1,0 +1,20 @@
+---
+const enabled = import.meta.env.ENABLE_SPONSORS === 'true';
+---
+
+{
+  enabled && (
+    <div
+      style="
+      text-align: center;
+      padding: 1rem;
+      margin: 2rem 0;
+      background: var(--surface);
+      border-radius: var(--r-lg);
+      border: 1px solid var(--border-subtle);
+    "
+    >
+      <p style="font-size: 0.75rem; color: var(--text-4); margin: 0;">Sponsored by our partners</p>
+    </div>
+  )
+}

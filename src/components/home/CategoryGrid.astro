@@ -1,0 +1,111 @@
+---
+import type { Category } from '@lib/types';
+import { getBaseUrl } from '@lib/utils';
+
+interface Props {
+  categories: Category[];
+}
+
+const { categories } = Astro.props;
+const base = getBaseUrl();
+---
+
+<section style="padding: 3rem 0;">
+  <div class="container">
+    <h2
+      style="
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-1);
+        margin: 0 0 1.5rem;
+      "
+    >
+      Browse by Category
+    </h2>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 0.75rem;
+      "
+    >
+      {
+        categories.map((cat) => (
+          <a
+            href={`${base}/categories/${cat.slug}`}
+            class="category-card"
+            style="
+              display: flex;
+              align-items: center;
+              gap: 0.75rem;
+              padding: 1rem;
+              background: var(--bg-elevated);
+              border: 1px solid var(--border);
+              border-radius: var(--r-lg);
+              text-decoration: none;
+              transition: box-shadow var(--t-base), transform var(--t-base);
+            "
+          >
+            <span
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: var(--r-md);
+                background: var(--accent-muted);
+                color: var(--accent);
+                flex-shrink: 0;
+                font-size: 1.125rem;
+              "
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m13 2-2 2.5h3L12 7" />
+                <circle cx="12" cy="14" r="4" />
+              </svg>
+            </span>
+            <div>
+              <p
+                style="
+                  font-weight: 600;
+                  font-size: 0.9375rem;
+                  color: var(--text-1);
+                  margin: 0;
+                  line-height: 1.3;
+                "
+              >
+                {cat.name}
+              </p>
+              <p
+                style="
+                  font-size: 0.75rem;
+                  color: var(--text-3);
+                  margin: 0.125rem 0 0;
+                "
+              >
+                {cat.count} APIs
+              </p>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .category-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-1px);
+  }
+</style>

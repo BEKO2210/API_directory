@@ -1,0 +1,43 @@
+---
+import { getBaseUrl } from '@lib/utils';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  ogType?: string;
+  canonical?: string;
+  jsonLd?: string;
+}
+
+const base = getBaseUrl();
+const siteName = 'API Hub';
+const { title, description, ogImage, ogType = 'website', canonical, jsonLd } = Astro.props;
+const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
+const resolvedOgImage = ogImage ?? `${base}/og-default.png`;
+const resolvedCanonical = canonical ?? Astro.url.href;
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={resolvedCanonical} />
+
+<!-- Open Graph -->
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={resolvedOgImage} />
+<meta property="og:url" content={resolvedCanonical} />
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content={siteName} />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={resolvedOgImage} />
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" title={siteName} href={`${base}/rss.xml`} />
+
+<!-- JSON-LD -->
+{jsonLd && <script type="application/ld+json" set:html={jsonLd} />}

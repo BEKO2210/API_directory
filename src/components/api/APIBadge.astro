@@ -1,0 +1,49 @@
+---
+interface Props {
+  type: 'https' | 'cors' | 'auth';
+  value: string | boolean;
+}
+
+const { type, value } = Astro.props;
+
+function getStyles(): { bg: string; color: string; label: string } {
+  if (type === 'https') {
+    return value
+      ? { bg: 'var(--green-bg)', color: 'var(--green-text)', label: 'HTTPS' }
+      : { bg: 'var(--red-bg)', color: 'var(--red-text)', label: 'HTTP' };
+  }
+  if (type === 'cors') {
+    const v = String(value).toLowerCase();
+    if (v === 'yes') return { bg: 'var(--blue-bg)', color: 'var(--blue-text)', label: 'CORS' };
+    if (v === 'no') return { bg: 'var(--surface)', color: 'var(--text-4)', label: 'No CORS' };
+    return { bg: 'var(--amber-bg)', color: 'var(--amber-text)', label: 'CORS ?' };
+  }
+  // auth
+  const authStr = String(value);
+  if (!authStr || authStr === '') {
+    return { bg: 'var(--green-bg)', color: 'var(--green-text)', label: 'Free' };
+  }
+  return { bg: 'var(--amber-bg)', color: 'var(--amber-text)', label: authStr };
+}
+
+const { bg, color, label } = getStyles();
+---
+
+<span
+  style={`
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: var(--r-full);
+    font-family: 'Geist Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    background: ${bg};
+    color: ${color};
+    white-space: nowrap;
+  `}
+>
+  {label}
+</span>

@@ -1,0 +1,161 @@
+---
+interface Props {
+  totalCount: number;
+}
+
+const { totalCount } = Astro.props;
+---
+
+<div id="filter-bar" style="margin-bottom: 1.5rem;">
+  <div
+    style="
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    "
+  >
+    <button
+      class="filter-chip active"
+      data-filter="all"
+      type="button"
+      role="button"
+      aria-pressed="true"
+      style="
+        padding: 6px 14px;
+        border-radius: var(--r-full);
+        border: 1px solid var(--border);
+        background: var(--accent);
+        color: white;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all var(--t-fast);
+      "
+    >
+      All
+    </button>
+    <button
+      class="filter-chip"
+      data-filter="https"
+      type="button"
+      role="button"
+      aria-pressed="false"
+      style="
+        padding: 6px 14px;
+        border-radius: var(--r-full);
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--text-2);
+        font-size: 0.8125rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all var(--t-fast);
+      "
+    >
+      HTTPS
+    </button>
+    <button
+      class="filter-chip"
+      data-filter="noauth"
+      type="button"
+      role="button"
+      aria-pressed="false"
+      style="
+        padding: 6px 14px;
+        border-radius: var(--r-full);
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--text-2);
+        font-size: 0.8125rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all var(--t-fast);
+      "
+    >
+      No Auth
+    </button>
+    <button
+      class="filter-chip"
+      data-filter="cors"
+      type="button"
+      role="button"
+      aria-pressed="false"
+      style="
+        padding: 6px 14px;
+        border-radius: var(--r-full);
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--text-2);
+        font-size: 0.8125rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all var(--t-fast);
+      "
+    >
+      CORS
+    </button>
+  </div>
+  <p
+    id="filter-count"
+    style="
+      font-size: 0.8125rem;
+      color: var(--text-3);
+      margin: 0;
+    "
+  >
+    Showing {totalCount} of {totalCount} APIs
+  </p>
+</div>
+
+<script is:inline define:vars={{ totalCount }}>
+  (function () {
+    var chips = document.querySelectorAll('.filter-chip');
+    var cards = document.querySelectorAll('.api-card');
+    var countEl = document.getElementById('filter-count');
+    var activeFilters = new Set();
+
+    function applyFilters() {
+      var shown = 0;
+      cards.forEach(function (card) {
+        var show = true;
+        if (activeFilters.has('https') && card.getAttribute('data-https') !== 'true') show = false;
+        if (activeFilters.has('noauth') && card.getAttribute('data-auth') !== 'none') show = false;
+        if (activeFilters.has('cors') && card.getAttribute('data-cors') !== 'yes') show = false;
+        card.style.display = show ? '' : 'none';
+        if (show) shown++;
+      });
+      if (countEl) countEl.textContent = 'Showing ' + shown + ' of ' + totalCount + ' APIs';
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var filter = chip.getAttribute('data-filter');
+        if (filter === 'all') {
+          activeFilters.clear();
+          chips.forEach(function (c) {
+            c.setAttribute('aria-pressed', c.getAttribute('data-filter') === 'all' ? 'true' : 'false');
+            c.style.background = c.getAttribute('data-filter') === 'all' ? 'var(--accent)' : 'transparent';
+            c.style.color = c.getAttribute('data-filter') === 'all' ? 'white' : 'var(--text-2)';
+          });
+        } else {
+          if (activeFilters.has(filter)) {
+            activeFilters.delete(filter);
+          } else {
+            activeFilters.add(filter);
+          }
+          // Update chip styles
+          chips.forEach(function (c) {
+            var f = c.getAttribute('data-filter');
+            var isActive = f === 'all' ? activeFilters.size === 0 : activeFilters.has(f);
+            c.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+            c.style.background = isActive ? 'var(--accent)' : 'transparent';
+            c.style.color = isActive ? 'white' : 'var(--text-2)';
+          });
+        }
+        applyFilters();
+      });
+    });
+  })();
+</script>

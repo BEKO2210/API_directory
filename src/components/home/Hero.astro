@@ -1,0 +1,111 @@
+---
+import type { SiteStats } from '@lib/types';
+import { getBaseUrl } from '@lib/utils';
+
+interface Props {
+  stats: SiteStats;
+}
+
+const { stats } = Astro.props;
+const base = getBaseUrl();
+---
+
+<section
+  style="
+    padding: 4rem 0 3rem;
+    text-align: center;
+    background-image: url('data:image/svg+xml,%3Csvg viewBox=%270 0 256 256%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noise%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%274%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noise)%27 opacity=%270.03%27/%3E%3C/svg%3E');
+  "
+>
+  <div class="container" style="max-width: 720px;">
+    <h1
+      style="
+        font-size: clamp(2.25rem, 5vw, 3.5rem);
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        color: var(--text-1);
+        margin: 0 0 1rem;
+      "
+    >
+      Every Free API, One Place.
+    </h1>
+    <p
+      style="
+        font-size: 1.125rem;
+        color: var(--text-2);
+        margin: 0 0 2rem;
+        line-height: 1.6;
+      "
+    >
+      Browse, search and filter {stats.totalAPIs.toLocaleString()}+ public APIs across {stats.totalCategories}+ categories.
+      Updated daily from the community.
+    </p>
+
+    <!-- Stats row -->
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+        flex-wrap: wrap;
+      "
+    >
+      <div>
+        <span style="font-size: 1.5rem; font-weight: 700; color: var(--accent);">
+          {stats.totalAPIs.toLocaleString()}
+        </span>
+        <span style="font-size: 0.875rem; color: var(--text-3); display: block;">APIs</span>
+      </div>
+      <div>
+        <span style="font-size: 1.5rem; font-weight: 700; color: var(--accent);">
+          {stats.totalCategories}
+        </span>
+        <span style="font-size: 0.875rem; color: var(--text-3); display: block;">Categories</span>
+      </div>
+      <div>
+        <span style="font-size: 1.5rem; font-weight: 700; color: var(--accent);">Daily</span>
+        <span style="font-size: 0.875rem; color: var(--text-3); display: block;">Updates</span>
+      </div>
+    </div>
+
+    <!-- Search bar -->
+    <a
+      href={`${base}/search`}
+      style="
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 0.75rem 1.25rem;
+        background: var(--bg-elevated);
+        border: 1px solid var(--border);
+        border-radius: var(--r-lg);
+        color: var(--text-4);
+        text-decoration: none;
+        transition: border-color var(--t-base), box-shadow var(--t-base);
+      "
+    >
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.3-4.3"></path>
+      </svg>
+      <span style="flex-grow: 1; text-align: left;">Search APIs...</span>
+      <kbd
+        style="
+          font-family: 'Geist Mono', monospace;
+          font-size: 0.75rem;
+          padding: 2px 6px;
+          border: 1px solid var(--border);
+          border-radius: var(--r-sm);
+          background: var(--surface);
+          color: var(--text-4);
+        "
+      >
+        /
+      </kbd>
+    </a>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+---
+import { getBaseUrl } from '@lib/utils';
+const base = getBaseUrl();
+---
+
+<div id="search-container">
+  <link href={`${base}/pagefind/pagefind-ui.css`} rel="stylesheet" />
+  <div id="pagefind-ui"></div>
+</div>
+
+<script is:inline define:vars={{ base }}>
+  (function () {
+    function loadPagefind() {
+      var script = document.createElement('script');
+      script.src = base + '/pagefind/pagefind-ui.js';
+      script.onload = function () {
+        if (typeof PagefindUI !== 'undefined') {
+          new PagefindUI({
+            element: '#pagefind-ui',
+            showSubResults: true,
+            showImages: false,
+          });
+        }
+      };
+      document.head.appendChild(script);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadPagefind);
+    } else {
+      loadPagefind();
+    }
+  })();
+</script>
+
+<style>
+  #search-container {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+</style>

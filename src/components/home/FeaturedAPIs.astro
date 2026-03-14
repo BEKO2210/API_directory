@@ -1,0 +1,34 @@
+---
+import type { API } from '@lib/types';
+import APICard from '@components/api/APICard.astro';
+
+interface Props {
+  apis: API[];
+}
+
+const { apis } = Astro.props;
+---
+
+<section style="padding: 3rem 0;">
+  <div class="container">
+    <h2
+      style="
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-1);
+        margin: 0 0 1.5rem;
+      "
+    >
+      Featured APIs
+    </h2>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+      "
+    >
+      {apis.map((api) => <APICard api={api} />)}
+    </div>
+  </div>
+</section>

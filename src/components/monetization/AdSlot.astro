@@ -1,0 +1,29 @@
+---
+interface Props {
+  position: 'sidebar' | 'inline' | 'footer';
+}
+
+const { position } = Astro.props;
+const enabled = import.meta.env.ENABLE_ADS === 'true';
+const serve = import.meta.env.CARBON_SERVE;
+const placement = import.meta.env.CARBON_PLACEMENT;
+---
+
+{
+  enabled && serve && placement && (
+    <div
+      class={`ad-slot ad-${position}`}
+      style={`
+      margin: ${position === 'inline' ? '1.5rem 0' : position === 'footer' ? '2rem 0 0' : '0'};
+    `}
+    >
+      <script
+        is:inline
+        async
+        type="text/javascript"
+        src={`https://cdn.carbonads.com/carbon.js?serve=${serve}&placement=${placement}`}
+        id="_carbonads_js"
+      />
+    </div>
+  )
+}

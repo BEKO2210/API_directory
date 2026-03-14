@@ -1,0 +1,66 @@
+---
+import type { API } from '@lib/types';
+import APIBadge from './APIBadge.astro';
+
+interface Props {
+  apis: API[];
+}
+
+const { apis } = Astro.props;
+---
+
+<div style="overflow-x: auto; border: 1px solid var(--border); border-radius: var(--r-lg);">
+  <table
+    style="
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    "
+  >
+    <thead>
+      <tr style="background: var(--surface); border-bottom: 1px solid var(--border);">
+        <th style="text-align: left; padding: 0.75rem 1rem; font-weight: 600; color: var(--text-2);">API</th>
+        <th style="text-align: left; padding: 0.75rem 1rem; font-weight: 600; color: var(--text-2);">Description</th>
+        <th style="text-align: center; padding: 0.75rem 1rem; font-weight: 600; color: var(--text-2);">Auth</th>
+        <th style="text-align: center; padding: 0.75rem 1rem; font-weight: 600; color: var(--text-2);">HTTPS</th>
+        <th style="text-align: center; padding: 0.75rem 1rem; font-weight: 600; color: var(--text-2);">CORS</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        apis.map((api) => (
+          <tr
+            class="api-card"
+            data-https={api.https ? 'true' : 'false'}
+            data-cors={api.cors}
+            data-auth={api.auth || 'none'}
+            style="border-bottom: 1px solid var(--border-subtle);"
+          >
+            <td style="padding: 0.75rem 1rem;">
+              <a
+                href={api.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: var(--accent); text-decoration: none; font-weight: 500;"
+              >
+                {api.name}
+              </a>
+            </td>
+            <td style="padding: 0.75rem 1rem; color: var(--text-3); max-width: 300px;">
+              {api.description}
+            </td>
+            <td style="padding: 0.75rem 1rem; text-align: center;">
+              <APIBadge type="auth" value={api.auth} />
+            </td>
+            <td style="padding: 0.75rem 1rem; text-align: center;">
+              <APIBadge type="https" value={api.https} />
+            </td>
+            <td style="padding: 0.75rem 1rem; text-align: center;">
+              <APIBadge type="cors" value={api.cors} />
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

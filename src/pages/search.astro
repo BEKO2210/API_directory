@@ -1,0 +1,52 @@
+---
+import Page from '@layouts/Page.astro';
+import Search from '@components/search/Search.astro';
+import { getAllCategories } from '@lib/getApis';
+import { getBaseUrl } from '@lib/utils';
+
+const categories = getAllCategories();
+const base = getBaseUrl();
+---
+
+<Page
+  title="Search APIs"
+  description="Search across 1,400+ free public APIs. Find the perfect API for your project by name, description, or category."
+>
+  <h1 style="font-size: 1.75rem; font-weight: 700; color: var(--text-1); margin: 0 0 0.5rem; text-align: center;">
+    Search APIs
+  </h1>
+  <p style="font-size: 0.9375rem; color: var(--text-3); margin: 0 0 2rem; text-align: center;">
+    Find any API by name, description, or category
+  </p>
+
+  <Search />
+
+  <!-- Browse by category fallback -->
+  <div style="margin-top: 3rem; text-align: center;">
+    <h2 style="font-size: 1.125rem; font-weight: 600; color: var(--text-2); margin: 0 0 1rem;">
+      Or browse by category
+    </h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+      {
+        categories.map((cat) => (
+          <a
+            href={`${base}/categories/${cat.slug}`}
+            style="
+              display: inline-block;
+              padding: 6px 14px;
+              border-radius: var(--r-full);
+              border: 1px solid var(--border);
+              font-size: 0.8125rem;
+              color: var(--text-2);
+              text-decoration: none;
+              transition: all var(--t-fast);
+            "
+          >
+            {cat.name}
+            <span style="color: var(--text-4); margin-left: 2px;">({cat.count})</span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Page>

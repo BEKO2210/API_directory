@@ -1,0 +1,210 @@
+---
+import Page from '@layouts/Page.astro';
+import Breadcrumb from '@components/common/Breadcrumb.astro';
+import APIBadge from '@components/api/APIBadge.astro';
+import APICard from '@components/api/APICard.astro';
+import { getAllAPIs, getRelatedAPIs } from '@lib/getApis';
+import { getBaseUrl } from '@lib/utils';
+
+export function getStaticPaths() {
+  const apis = getAllAPIs();
+  return apis.map((api) => ({
+    params: { slug: api.slug },
+    props: { api },
+  }));
+}
+
+const { api } = Astro.props;
+const base = getBaseUrl();
+const related = getRelatedAPIs(api, 3);
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: api.name,
+  description: api.description,
+  url: api.link,
+  applicationCategory: api.category,
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'USD',
+  },
+});
+---
+
+<Page
+  title={`${api.name} API`}
+  description={`${api.name} - ${api.description}. Free ${api.category} API with ${api.https ? 'HTTPS' : 'HTTP'} support.`}
+  jsonLd={jsonLd}
+>
+  <Breadcrumb
+    items={[
+      { label: 'Home', href: '/' },
+      { label: api.category, href: `/categories/${api.categorySlug}` },
+      { label: api.name },
+    ]}
+  />
+
+  <article>
+    <h1 style="font-size: 2rem; font-weight: 700; color: var(--text-1); margin: 0 0 1rem;">
+      {api.name}
+    </h1>
+
+    <!-- Badges -->
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem;">
+      <APIBadge type="https" value={api.https} />
+      <APIBadge type="cors" value={api.cors} />
+      <APIBadge type="auth" value={api.auth} />
+    </div>
+
+    <!-- Description -->
+    <p style="font-size: 1.0625rem; color: var(--text-2); line-height: 1.7; margin: 0 0 2rem; max-width: 640px;">
+      {api.description}
+    </p>
+
+    <!-- Actions -->
+    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2.5rem;">
+      <a
+        href={api.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.625rem 1.25rem;
+          background: var(--accent);
+          color: white;
+          border-radius: var(--r-md);
+          font-weight: 600;
+          font-size: 0.875rem;
+          text-decoration: none;
+          transition: background var(--t-fast);
+        "
+      >
+        Visit API
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </a>
+      <a
+        href="https://github.com/public-apis/public-apis/issues/new"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.625rem 1.25rem;
+          background: transparent;
+          color: var(--text-2);
+          border: 1px solid var(--border);
+          border-radius: var(--r-md);
+          font-weight: 500;
+          font-size: 0.875rem;
+          text-decoration: none;
+          transition: background var(--t-fast);
+        "
+      >
+        Report Issue
+      </a>
+    </div>
+
+    <!-- Metadata -->
+    <div
+      style="
+        border: 1px solid var(--border);
+        border-radius: var(--r-lg);
+        overflow: hidden;
+        margin-bottom: 3rem;
+        max-width: 480px;
+      "
+    >
+      <div style="display: grid; grid-template-columns: 140px 1fr;">
+        <div style="padding: 0.75rem 1rem; background: var(--surface); font-size: 0.8125rem; font-weight: 600; color: var(--text-2); border-bottom: 1px solid var(--border);">
+          Category
+        </div>
+        <div style="padding: 0.75rem 1rem; font-size: 0.875rem; color: var(--text-1); border-bottom: 1px solid var(--border);">
+          <a href={`${base}/categories/${api.categorySlug}`} style="color: var(--accent); text-decoration: none;">
+            {api.category}
+          </a>
+        </div>
+
+        <div style="padding: 0.75rem 1rem; background: var(--surface); font-size: 0.8125rem; font-weight: 600; color: var(--text-2); border-bottom: 1px solid var(--border);">
+          Authentication
+        </div>
+        <div style="padding: 0.75rem 1rem; font-size: 0.875rem; color: var(--text-1); border-bottom: 1px solid var(--border);">
+          {api.auth || 'None required'}
+        </div>
+
+        <div style="padding: 0.75rem 1rem; background: var(--surface); font-size: 0.8125rem; font-weight: 600; color: var(--text-2); border-bottom: 1px solid var(--border);">
+          HTTPS
+        </div>
+        <div style="padding: 0.75rem 1rem; font-size: 0.875rem; color: var(--text-1); border-bottom: 1px solid var(--border);">
+          {api.https ? 'Yes' : 'No'}
+        </div>
+
+        <div style="padding: 0.75rem 1rem; background: var(--surface); font-size: 0.8125rem; font-weight: 600; color: var(--text-2);">
+          CORS
+        </div>
+        <div style="padding: 0.75rem 1rem; font-size: 0.875rem; color: var(--text-1);">
+          {api.cors === 'yes' ? 'Yes' : api.cors === 'no' ? 'No' : 'Unknown'}
+        </div>
+      </div>
+    </div>
+
+    <!-- API URL -->
+    <div style="margin-bottom: 3rem;">
+      <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-3); margin: 0 0 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">
+        API Endpoint
+      </p>
+      <code
+        style="
+          display: block;
+          padding: 0.75rem 1rem;
+          background: var(--surface);
+          border: 1px solid var(--border);
+          border-radius: var(--r-md);
+          font-family: 'Geist Mono', monospace;
+          font-size: 0.8125rem;
+          color: var(--accent-text);
+          word-break: break-all;
+        "
+      >
+        {api.link}
+      </code>
+    </div>
+
+    <!-- Related -->
+    {
+      related.length > 0 && (
+        <section>
+          <h2
+            style="
+              font-size: 1.25rem;
+              font-weight: 700;
+              color: var(--text-1);
+              margin: 0 0 1rem;
+            "
+          >
+            More {api.category} APIs
+          </h2>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+              gap: 1rem;
+            "
+          >
+            {related.map((r) => (
+              <APICard api={r} />
+            ))}
+          </div>
+        </section>
+      )
+    }
+  </article>
+</Page>

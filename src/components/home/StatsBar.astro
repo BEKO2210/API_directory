@@ -1,0 +1,58 @@
+---
+import { getAllAPIs } from '@lib/getApis';
+import type { SiteStats } from '@lib/types';
+
+interface Props {
+  stats: SiteStats;
+}
+
+const { stats } = Astro.props;
+const allAPIs = getAllAPIs();
+const httpsCount = allAPIs.filter((a) => a.https).length;
+const corsCount = allAPIs.filter((a) => a.cors === 'yes').length;
+---
+
+<section style="background: var(--surface); padding: 1.5rem 0;">
+  <div
+    class="container"
+    style="
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      text-align: center;
+    "
+  >
+    <div>
+      <p style="font-size: 1.5rem; font-weight: 700; color: var(--text-1); margin: 0;">
+        {stats.totalAPIs.toLocaleString()}
+      </p>
+      <p style="font-size: 0.8125rem; color: var(--text-3); margin: 0.25rem 0 0;">Total APIs</p>
+    </div>
+    <div>
+      <p style="font-size: 1.5rem; font-weight: 700; color: var(--text-1); margin: 0;">
+        {stats.totalCategories}
+      </p>
+      <p style="font-size: 0.8125rem; color: var(--text-3); margin: 0.25rem 0 0;">Categories</p>
+    </div>
+    <div>
+      <p style="font-size: 1.5rem; font-weight: 700; color: var(--text-1); margin: 0;">
+        {httpsCount.toLocaleString()}
+      </p>
+      <p style="font-size: 0.8125rem; color: var(--text-3); margin: 0.25rem 0 0;">With HTTPS</p>
+    </div>
+    <div>
+      <p style="font-size: 1.5rem; font-weight: 700; color: var(--text-1); margin: 0;">
+        {corsCount.toLocaleString()}
+      </p>
+      <p style="font-size: 0.8125rem; color: var(--text-3); margin: 0.25rem 0 0;">CORS Enabled</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  @media (max-width: 639px) {
+    div[style*='grid-template-columns'] {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+</style>

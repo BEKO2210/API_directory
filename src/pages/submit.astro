@@ -1,0 +1,108 @@
+---
+import Page from '@layouts/Page.astro';
+---
+
+<Page
+  title="Submit an API"
+  description="Learn how to submit your free public API to the API Hub directory. Follow our step-by-step guide to contribute."
+>
+  <div style="max-width: 640px; margin: 0 auto;">
+    <h1 style="font-size: 1.75rem; font-weight: 700; color: var(--text-1); margin: 0 0 0.75rem;">
+      Submit Your API
+    </h1>
+    <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 2rem;">
+      API Hub sources all data from the open-source
+      <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">public-apis</a>
+      repository on GitHub. To get your API listed, you need to contribute directly to that project.
+    </p>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 1rem;">
+      How to Submit
+    </h2>
+
+    <ol style="padding-left: 1.25rem; margin: 0 0 2rem;">
+      <li style="color: var(--text-2); line-height: 1.7; margin-bottom: 1rem;">
+        <strong style="color: var(--text-1);">Fork the repository</strong><br />
+        Go to <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">github.com/public-apis/public-apis</a> and click "Fork".
+      </li>
+      <li style="color: var(--text-2); line-height: 1.7; margin-bottom: 1rem;">
+        <strong style="color: var(--text-1);">Edit the README</strong><br />
+        Find the appropriate category section and add your API entry in alphabetical order within its category.
+      </li>
+      <li style="color: var(--text-2); line-height: 1.7; margin-bottom: 1rem;">
+        <strong style="color: var(--text-1);">Follow the format</strong><br />
+        Each entry must include: API name with link, description, auth type, HTTPS support, and CORS support.
+      </li>
+      <li style="color: var(--text-2); line-height: 1.7; margin-bottom: 1rem;">
+        <strong style="color: var(--text-1);">Submit a Pull Request</strong><br />
+        Create a PR with a clear title describing your addition. The maintainers will review it.
+      </li>
+    </ol>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 1rem;">
+      Entry Format
+    </h2>
+    <div
+      style="
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--r-lg);
+        padding: 1rem;
+        margin-bottom: 2rem;
+        overflow-x: auto;
+      "
+    >
+      <code style="font-family: 'Geist Mono', monospace; font-size: 0.8125rem; color: var(--text-2); white-space: pre;">| [API Name](https://api-url.com) | Short description | `apiKey` | Yes | Yes |</code>
+    </div>
+
+    <h3 style="font-size: 1rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
+      Column Reference
+    </h3>
+    <div style="border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; margin-bottom: 2rem;">
+      <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+        <thead>
+          <tr style="background: var(--surface);">
+            <th style="padding: 0.625rem 1rem; text-align: left; font-weight: 600; color: var(--text-2); border-bottom: 1px solid var(--border);">Column</th>
+            <th style="padding: 0.625rem 1rem; text-align: left; font-weight: 600; color: var(--text-2); border-bottom: 1px solid var(--border);">Values</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 0.625rem 1rem; color: var(--text-1); font-weight: 500;">Auth</td>
+            <td style="padding: 0.625rem 1rem; color: var(--text-3);"><code style="font-family: 'Geist Mono', monospace;">apiKey</code>, <code style="font-family: 'Geist Mono', monospace;">OAuth</code>, <code style="font-family: 'Geist Mono', monospace;">X-Mashape-Key</code>, or empty</td>
+          </tr>
+          <tr style="border-bottom: 1px solid var(--border-subtle);">
+            <td style="padding: 0.625rem 1rem; color: var(--text-1); font-weight: 500;">HTTPS</td>
+            <td style="padding: 0.625rem 1rem; color: var(--text-3);"><code style="font-family: 'Geist Mono', monospace;">Yes</code> or <code style="font-family: 'Geist Mono', monospace;">No</code></td>
+          </tr>
+          <tr>
+            <td style="padding: 0.625rem 1rem; color: var(--text-1); font-weight: 500;">CORS</td>
+            <td style="padding: 0.625rem 1rem; color: var(--text-3);"><code style="font-family: 'Geist Mono', monospace;">Yes</code>, <code style="font-family: 'Geist Mono', monospace;">No</code>, or <code style="font-family: 'Geist Mono', monospace;">Unknown</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="text-align: center;">
+      <a
+        href="https://github.com/public-apis/public-apis/issues/new"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.75rem 1.5rem;
+          background: var(--accent);
+          color: white;
+          border-radius: var(--r-md);
+          font-weight: 600;
+          font-size: 0.9375rem;
+          text-decoration: none;
+        "
+      >
+        Submit on GitHub
+      </a>
+    </div>
+  </div>
+</Page>

@@ -1,0 +1,99 @@
+---
+import Base from '@layouts/Base.astro';
+import { getAllCategories } from '@lib/getApis';
+import { getBaseUrl } from '@lib/utils';
+
+const base = getBaseUrl();
+const categories = getAllCategories().slice(0, 8);
+---
+
+<Base
+  title="404 - Page Not Found"
+  description="The page you are looking for does not exist. Browse our directory of free public APIs instead."
+>
+  <div
+    class="container"
+    style="
+      text-align: center;
+      padding: 6rem 1rem;
+      max-width: 540px;
+      margin: 0 auto;
+    "
+  >
+    <p
+      style="
+        font-family: 'Geist Mono', monospace;
+        font-size: 5rem;
+        font-weight: 800;
+        color: var(--accent);
+        margin: 0;
+        line-height: 1;
+        opacity: 0.3;
+      "
+    >
+      404
+    </p>
+    <h1 style="font-size: 1.5rem; font-weight: 700; color: var(--text-1); margin: 0.5rem 0 0.75rem;">
+      Endpoint Not Found
+    </h1>
+    <p style="font-size: 1rem; color: var(--text-3); margin: 0 0 2rem; line-height: 1.6;">
+      This API route returned an empty response. Maybe it was deprecated, or perhaps you just mistyped the URL.
+    </p>
+
+    <!-- Search -->
+    <a
+      href={`${base}/search`}
+      style="
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--accent);
+        color: white;
+        border-radius: var(--r-md);
+        font-weight: 600;
+        font-size: 0.9375rem;
+        text-decoration: none;
+        margin-bottom: 1rem;
+      "
+    >
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.3-4.3"></path>
+      </svg>
+      Search APIs
+    </a>
+
+    <p style="font-size: 0.875rem; color: var(--text-4); margin: 1.5rem 0 1rem;">
+      or browse popular categories
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+      {
+        categories.map((cat) => (
+          <a
+            href={`${base}/categories/${cat.slug}`}
+            style="
+              padding: 4px 12px;
+              border-radius: var(--r-full);
+              border: 1px solid var(--border);
+              font-size: 0.8125rem;
+              color: var(--text-2);
+              text-decoration: none;
+            "
+          >
+            {cat.name}
+          </a>
+        ))
+      }
+    </div>
+
+    <div style="margin-top: 2rem;">
+      <a
+        href={`${base}/`}
+        style="font-size: 0.875rem; color: var(--accent); text-decoration: none;"
+      >
+        &larr; Back to homepage
+      </a>
+    </div>
+  </div>
+</Base>

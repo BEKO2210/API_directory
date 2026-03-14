@@ -1,0 +1,30 @@
+# build output
+dist/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS
+.DS_Store
+
+# editor
+.vscode/
+*.swp
+*.swo
+
+# astro
+.astro/
+
+# lighthouse
+.lighthouseci/
+
+# pagefind
+dist/pagefind/

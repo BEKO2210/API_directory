@@ -1,0 +1,93 @@
+---
+import CategoryLayout from '@layouts/CategoryLayout.astro';
+import Breadcrumb from '@components/common/Breadcrumb.astro';
+import APICard from '@components/api/APICard.astro';
+import FilterBar from '@components/filter/FilterBar.astro';
+import { getAllCategories, getCategoryBySlug } from '@lib/getApis';
+import { getBaseUrl } from '@lib/utils';
+
+export function getStaticPaths() {
+  const categories = getAllCategories();
+  return categories.map((cat) => ({
+    params: { slug: cat.slug },
+    props: { category: cat },
+  }));
+}
+
+const { category } = Astro.props;
+const base = getBaseUrl();
+
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: `${category.name} APIs`,
+  description: category.description,
+  numberOfItems: category.count,
+  itemListElement: category.apis.map((api, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: api.name,
+    url: api.link,
+  })),
+});
+---
+
+<CategoryLayout
+  title={`${category.name} APIs`}
+  description={category.description}
+  jsonLd={jsonLd}
+>
+  <Breadcrumb
+    items={[
+      { label: 'Home', href: '/' },
+      { label: 'Categories', href: '/' },
+      { label: category.name },
+    ]}
+  />
+
+  <div style="margin-bottom: 2rem;">
+    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+      <span
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          border-radius: var(--r-lg);
+          background: var(--accent-muted);
+          color: var(--accent);
+          font-size: 1.25rem;
+        "
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m13 2-2 2.5h3L12 7"></path>
+          <circle cx="12" cy="14" r="4"></circle>
+        </svg>
+      </span>
+      <div>
+        <h1 style="font-size: 1.75rem; font-weight: 700; color: var(--text-1); margin: 0;">
+          {category.name}
+        </h1>
+        <p style="font-size: 0.875rem; color: var(--text-3); margin: 0.25rem 0 0;">
+          {category.count} APIs available
+        </p>
+      </div>
+    </div>
+    <p style="font-size: 0.9375rem; color: var(--text-2); margin: 0.75rem 0 0; max-width: 640px;">
+      {category.description}
+    </p>
+  </div>
+
+  <FilterBar totalCount={category.count} />
+
+  <div
+    style="
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+    "
+  >
+    {category.apis.map((api) => <APICard api={api} />)}
+  </div>
+</CategoryLayout>

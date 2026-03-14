@@ -1,0 +1,58 @@
+---
+import SEO from '@components/common/SEO.astro';
+import Header from '@components/common/Header.astro';
+import Footer from '@components/common/Footer.astro';
+import BackToTop from '@components/common/BackToTop.astro';
+import '@/styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  ogType?: string;
+  canonical?: string;
+  jsonLd?: string;
+}
+
+const { title, description, ogImage, ogType, canonical, jsonLd } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Prevent FOUC -->
+    <script is:inline>
+      var t = localStorage.getItem('theme');
+      var p = t || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', p);
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/API_directory/favicon.svg" />
+    <link rel="apple-touch-icon" href="/API_directory/apple-touch-icon.png" />
+    <link rel="manifest" href="/API_directory/manifest.webmanifest" />
+    <meta name="theme-color" content="#6366f1" />
+
+    <SEO
+      title={title}
+      description={description}
+      ogImage={ogImage}
+      ogType={ogType}
+      canonical={canonical}
+      jsonLd={jsonLd}
+    />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    <Header />
+    <main id="main-content">
+      <slot />
+    </main>
+    <Footer />
+    <BackToTop />
+  </body>
+</html>

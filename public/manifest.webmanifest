@@ -1,0 +1,17 @@
+{
+  "name": "API Hub",
+  "short_name": "API Hub",
+  "description": "Browse 1,000+ free public APIs",
+  "start_url": "/API_directory/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "/API_directory/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
