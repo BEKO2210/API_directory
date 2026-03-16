@@ -1,12 +1,15 @@
-name: Sync APIs Daily
+name: Sync APIs & Process Issues
 
 on:
   schedule:
     - cron: '0 3 * * *'
   workflow_dispatch:
+  issues:
+    types: [opened, labeled]
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   sync:
@@ -28,25 +31,31 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Fetch latest API data
+      - name: Process GitHub issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node --experimental-strip-types scripts/process-issues.ts
+
+      - name: Fetch latest API data (with community merge)
         run: node --experimental-strip-types scripts/fetch-apis.ts
 
       - name: Check for data changes
         id: diff
         run: |
-          if git diff --quiet src/data/apis-cache.json; then
+          if git diff --quiet src/data/; then
             echo "changed=false" >> $GITHUB_OUTPUT
-            echo "No changes detected in API data."
+            echo "No changes detected."
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            echo "APIs changed. Triggering rebuild."
+            echo "Data changed. Triggering rebuild."
           fi
 
-      - name: Commit and push updated cache
+      - name: Commit and push updated data
         if: steps.diff.outputs.changed == 'true'
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add src/data/apis-cache.json
-          git commit -m "chore(data): sync APIs from public-apis/public-apis [$(date -u +%Y-%m-%d)]"
+          git add src/data/apis-cache.json src/data/community-apis.json src/data/reported-issues.json
+          git commit -m "chore(data): sync APIs & process issues [$(date -u +%Y-%m-%d)]"
           git push

@@ -1,0 +1,43 @@
+name: Report Broken API
+description: Report an API that is no longer working or has changed
+title: "[Broken] "
+labels: ["broken-api", "auto-process"]
+body:
+  - type: input
+    id: api_name
+    attributes:
+      label: API Name
+      description: The exact name of the API as listed on the website
+      placeholder: "e.g. Dog Facts"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: What's wrong?
+      options:
+        - API URL returns an error (4xx/5xx)
+        - API URL redirects to a different service
+        - API is now behind a paywall
+        - API documentation is gone
+        - CORS information is incorrect
+        - HTTPS information is incorrect
+        - Auth information is incorrect
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: new_url
+    attributes:
+      label: New URL (if applicable)
+      description: If the API moved to a new URL, provide it here
+      placeholder: "https://new-api-url.com"
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Details
+      description: Any extra context about the issue
+      placeholder: "e.g. The API started returning 403 errors since last week"

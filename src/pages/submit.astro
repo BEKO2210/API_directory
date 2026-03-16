@@ -4,38 +4,65 @@ import Page from '@layouts/Page.astro';
 
 <Page
   title="Submit an API"
-  description="Learn how to submit your free public API to the API Hub directory. Follow our step-by-step guide to contribute."
+  description="Submit a new free public API to the API Hub directory. Use our issue form or contribute directly via Pull Request."
 >
   <div style="max-width: 640px; margin: 0 auto;">
     <h1 style="font-size: 1.75rem; font-weight: 700; color: var(--text-1); margin: 0 0 0.75rem;">
       Submit Your API
     </h1>
     <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 2rem;">
-      API Hub sources all data from the open-source
-      <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">public-apis</a>
-      repository on GitHub. To get your API listed, you need to contribute directly to that project.
+      API Hub is a community-maintained directory of free public APIs. You can submit a new API
+      directly through our GitHub issue form — it will be automatically added on the next build.
     </p>
 
     <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 1rem;">
-      How to Submit
+      Option 1: Quick Submit (Recommended)
     </h2>
+    <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 1.5rem;">
+      Use our issue template — just fill in the fields and submit. The API will be
+      automatically processed and added to the directory.
+    </p>
+    <div style="text-align: center; margin-bottom: 2.5rem;">
+      <a
+        href="https://github.com/BEKO2210/API_directory/issues/new?template=new-api.yml"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.75rem 1.5rem;
+          background: var(--text-1);
+          color: var(--bg);
+          border-radius: var(--r-md);
+          font-weight: 600;
+          font-size: 0.9375rem;
+          text-decoration: none;
+        "
+      >
+        Submit via Issue Form
+      </a>
+    </div>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 1rem;">
+      Option 2: Pull Request
+    </h2>
+    <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 1rem;">
+      For more control, you can submit a PR directly:
+    </p>
 
     <ol style="padding-left: 1.25rem; margin: 0 0 2rem;">
       <li style="color: var(--text-2); line-height: 1.7; margin-bottom: 1rem;">
         <strong style="color: var(--text-1);">Fork the repository</strong><br />
-        Go to <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">github.com/public-apis/public-apis</a> and click "Fork".
+        Go to <a href="https://github.com/BEKO2210/API_directory" target="_blank" rel="noopener noreferrer">github.com/BEKO2210/API_directory</a> and click "Fork".
       </li>
       <li style="color: var(--text-2); line-height: 1.7; margin-bottom: 1rem;">
-        <strong style="color: var(--text-1);">Edit the README</strong><br />
-        Find the appropriate category section and add your API entry in alphabetical order within its category.
-      </li>
-      <li style="color: var(--text-2); line-height: 1.7; margin-bottom: 1rem;">
-        <strong style="color: var(--text-1);">Follow the format</strong><br />
-        Each entry must include: API name with link, description, auth type, HTTPS support, and CORS support.
+        <strong style="color: var(--text-1);">Edit community-apis.json</strong><br />
+        Add your API entry to the <code style="font-family: 'Geist Mono', monospace;">src/data/community-apis.json</code> file in the <code style="font-family: 'Geist Mono', monospace;">add</code> array.
       </li>
       <li style="color: var(--text-2); line-height: 1.7; margin-bottom: 1rem;">
         <strong style="color: var(--text-1);">Submit a Pull Request</strong><br />
-        Create a PR with a clear title describing your addition. The maintainers will review it.
+        Create a PR with a clear title describing your addition.
       </li>
     </ol>
 
@@ -52,7 +79,15 @@ import Page from '@layouts/Page.astro';
         overflow-x: auto;
       "
     >
-      <code style="font-family: 'Geist Mono', monospace; font-size: 0.8125rem; color: var(--text-2); white-space: pre;">| [API Name](https://api-url.com) | Short description | `apiKey` | Yes | Yes |</code>
+      <code style="font-family: 'Geist Mono', monospace; font-size: 0.8125rem; color: var(--text-2); white-space: pre;" set:html={`{
+  "name": "My API",
+  "link": "https://api.example.com",
+  "description": "What the API does",
+  "category": "Development",
+  "auth": "",
+  "https": true,
+  "cors": "yes"
+}`} />
     </div>
 
     <h3 style="font-size: 1rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
@@ -62,46 +97,90 @@ import Page from '@layouts/Page.astro';
       <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
         <thead>
           <tr style="background: var(--surface);">
-            <th style="padding: 0.625rem 1rem; text-align: left; font-weight: 600; color: var(--text-2); border-bottom: 1px solid var(--border);">Column</th>
+            <th style="padding: 0.625rem 1rem; text-align: left; font-weight: 600; color: var(--text-2); border-bottom: 1px solid var(--border);">Field</th>
             <th style="padding: 0.625rem 1rem; text-align: left; font-weight: 600; color: var(--text-2); border-bottom: 1px solid var(--border);">Values</th>
           </tr>
         </thead>
         <tbody>
           <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 0.625rem 1rem; color: var(--text-1); font-weight: 500;">Auth</td>
-            <td style="padding: 0.625rem 1rem; color: var(--text-3);"><code style="font-family: 'Geist Mono', monospace;">apiKey</code>, <code style="font-family: 'Geist Mono', monospace;">OAuth</code>, <code style="font-family: 'Geist Mono', monospace;">X-Mashape-Key</code>, or empty</td>
+            <td style="padding: 0.625rem 1rem; color: var(--text-1); font-weight: 500;">auth</td>
+            <td style="padding: 0.625rem 1rem; color: var(--text-3);"><code style="font-family: 'Geist Mono', monospace;">"apiKey"</code>, <code style="font-family: 'Geist Mono', monospace;">"OAuth"</code>, <code style="font-family: 'Geist Mono', monospace;">"X-Mashape-Key"</code>, or <code style="font-family: 'Geist Mono', monospace;">""</code> (none)</td>
           </tr>
           <tr style="border-bottom: 1px solid var(--border-subtle);">
-            <td style="padding: 0.625rem 1rem; color: var(--text-1); font-weight: 500;">HTTPS</td>
-            <td style="padding: 0.625rem 1rem; color: var(--text-3);"><code style="font-family: 'Geist Mono', monospace;">Yes</code> or <code style="font-family: 'Geist Mono', monospace;">No</code></td>
+            <td style="padding: 0.625rem 1rem; color: var(--text-1); font-weight: 500;">https</td>
+            <td style="padding: 0.625rem 1rem; color: var(--text-3);"><code style="font-family: 'Geist Mono', monospace;">true</code> or <code style="font-family: 'Geist Mono', monospace;">false</code></td>
           </tr>
           <tr>
-            <td style="padding: 0.625rem 1rem; color: var(--text-1); font-weight: 500;">CORS</td>
-            <td style="padding: 0.625rem 1rem; color: var(--text-3);"><code style="font-family: 'Geist Mono', monospace;">Yes</code>, <code style="font-family: 'Geist Mono', monospace;">No</code>, or <code style="font-family: 'Geist Mono', monospace;">Unknown</code></td>
+            <td style="padding: 0.625rem 1rem; color: var(--text-1); font-weight: 500;">cors</td>
+            <td style="padding: 0.625rem 1rem; color: var(--text-3);"><code style="font-family: 'Geist Mono', monospace;">"yes"</code>, <code style="font-family: 'Geist Mono', monospace;">"no"</code>, or <code style="font-family: 'Geist Mono', monospace;">"unknown"</code></td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <div style="text-align: center;">
+    <div
+      style="
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--r-lg);
+        padding: 1.25rem;
+        margin-bottom: 2rem;
+      "
+    >
+      <p style="font-size: 0.875rem; color: var(--text-3); margin: 0; line-height: 1.6;">
+        <strong style="color: var(--text-2);">Note:</strong> This project builds on the data from the original
+        <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer" style="color: var(--text-1); text-decoration: underline; text-underline-offset: 2px;">public-apis/public-apis</a>
+        repository. Since the original project is no longer actively maintained, we accept contributions directly.
+        See our <a href="https://github.com/BEKO2210/API_directory/blob/main/FORK_NOTICE.md" target="_blank" rel="noopener noreferrer" style="color: var(--text-1); text-decoration: underline; text-underline-offset: 2px;">Fork Notice</a> for the full story.
+      </p>
+    </div>
+
+    <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 1rem;">
+      Report a Problem
+    </h2>
+    <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 1.5rem;">
+      Found a broken API or incorrect information? Let us know:
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center;">
       <a
-        href="https://github.com/public-apis/public-apis/issues/new"
+        href="https://github.com/BEKO2210/API_directory/issues/new?template=broken-api.yml"
         target="_blank"
         rel="noopener noreferrer"
         style="
           display: inline-flex;
           align-items: center;
           gap: 0.5rem;
-          padding: 0.75rem 1.5rem;
-          background: var(--text-1);
-          color: var(--bg);
+          padding: 0.625rem 1.25rem;
+          background: transparent;
+          color: var(--text-2);
+          border: 1px solid var(--border);
           border-radius: var(--r-md);
-          font-weight: 600;
-          font-size: 0.9375rem;
+          font-weight: 500;
+          font-size: 0.875rem;
           text-decoration: none;
         "
       >
-        Submit on GitHub
+        Report Broken API
+      </a>
+      <a
+        href="https://github.com/BEKO2210/API_directory/issues/new?template=update-api.yml"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.625rem 1.25rem;
+          background: transparent;
+          color: var(--text-2);
+          border: 1px solid var(--border);
+          border-radius: var(--r-md);
+          font-weight: 500;
+          font-size: 0.875rem;
+          text-decoration: none;
+        "
+      >
+        Update API Info
       </a>
     </div>
   </div>
