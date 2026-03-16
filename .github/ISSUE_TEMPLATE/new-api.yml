@@ -1,12 +1,19 @@
 name: Submit New API
-description: Suggest a new free public API to add to the directory
+description: Suggest a new free public API to add to the directory.
 title: "[New API] "
 labels: ["new-api", "auto-process"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing! Please fill in all required fields.
+        Your API will be automatically added on the next build if all information is valid.
+
   - type: input
     id: api_name
     attributes:
       label: API Name
+      description: The official name of the API.
       placeholder: "e.g. Open Meteo"
     validations:
       required: true
@@ -15,7 +22,7 @@ body:
     id: api_url
     attributes:
       label: API URL
-      description: Link to the API or its documentation
+      description: Link to the API documentation or homepage. Must start with https://.
       placeholder: "https://open-meteo.com/en/docs"
     validations:
       required: true
@@ -24,7 +31,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Short description of what the API does (max 100 characters)
+      description: A short description of what the API does (max 100 characters).
       placeholder: "Free weather forecast API with no API key required"
     validations:
       required: true
@@ -33,24 +40,25 @@ body:
     id: category
     attributes:
       label: Category
+      description: Choose the category that best fits this API.
       options:
         - Animals
         - Anime
         - Anti-Malware
         - Art & Design
-        - Authentication
+        - Authentication & Authorization
         - Blockchain
         - Books
         - Business
         - Calendar
-        - Cloud Storage
+        - Cloud Storage & File Sharing
         - Continuous Integration
         - Cryptocurrency
         - Currency Exchange
         - Data Validation
         - Development
         - Dictionaries
-        - Documents
+        - Documents & Productivity
         - Email
         - Entertainment
         - Environment
@@ -66,7 +74,7 @@ body:
         - Music
         - News
         - Open Data
-        - Open Source
+        - Open Source Projects
         - Patent
         - Personality
         - Phone
@@ -92,8 +100,9 @@ body:
     id: auth
     attributes:
       label: Authentication
+      description: What authentication does the API require?
       options:
-        - None
+        - None (no authentication required)
         - apiKey
         - OAuth
         - X-Mashape-Key
@@ -105,6 +114,7 @@ body:
     id: https
     attributes:
       label: HTTPS Support
+      description: Does the API support HTTPS?
       options:
         - "Yes"
         - "No"
@@ -115,6 +125,7 @@ body:
     id: cors
     attributes:
       label: CORS Support
+      description: Does the API support CORS (Cross-Origin Resource Sharing)?
       options:
         - "Yes"
         - "No"
@@ -126,4 +137,5 @@ body:
     id: notes
     attributes:
       label: Additional Notes
-      description: Any extra information about this API
+      description: Any extra information (rate limits, special features, example endpoints).
+      placeholder: "e.g. Free tier allows 10,000 requests/day. No signup required."

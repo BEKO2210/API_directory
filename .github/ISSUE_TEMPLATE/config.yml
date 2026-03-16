@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Browse APIs
+    url: https://beko2210.github.io/API_directory
+    about: Search and browse the full API directory on our website.
+  - name: Contributing Guide
+    url: https://github.com/BEKO2210/API_directory/blob/main/CONTRIBUTING.md
+    about: Learn how to contribute via Pull Request.
