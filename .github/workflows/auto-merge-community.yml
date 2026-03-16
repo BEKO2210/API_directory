@@ -1,0 +1,111 @@
+name: Auto-Merge Safe Community PRs
+
+# Auto-merges PRs that ONLY modify API data files (community-apis.json).
+# This is safe because:
+# - Only JSON data changes, no code execution
+# - The merge script validates structure during the next sync
+# - Broken entries are caught at build time
+
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+    paths:
+      - 'src/data/community-apis.json'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  validate-and-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Check PR only touches allowed files
+        id: check-files
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          FILES=$(gh pr diff ${{ github.event.pull_request.number }} --name-only)
+          echo "Changed files:"
+          echo "$FILES"
+
+          SAFE=true
+          while IFS= read -r file; do
+            case "$file" in
+              src/data/community-apis.json) ;;
+              *) SAFE=false; echo "BLOCKED: $file is not an allowed file" ;;
+            esac
+          done <<< "$FILES"
+
+          echo "safe=$SAFE" >> $GITHUB_OUTPUT
+
+      - name: Validate JSON structure
+        if: steps.check-files.outputs.safe == 'true'
+        id: validate
+        run: |
+          FILE="src/data/community-apis.json"
+          if ! python3 -c "import json; json.load(open('$FILE'))"; then
+            echo "valid=false" >> $GITHUB_OUTPUT
+            echo "ERROR: Invalid JSON"
+            exit 0
+          fi
+
+          # Validate structure has expected keys
+          VALID=$(python3 -c "
+          import json, sys
+          data = json.load(open('$FILE'))
+          required = {'meta', 'add', 'remove', 'update'}
+          if not required.issubset(data.keys()):
+            print('false')
+            sys.exit(0)
+          if not isinstance(data['add'], list):
+            print('false')
+            sys.exit(0)
+          if not isinstance(data['remove'], list):
+            print('false')
+            sys.exit(0)
+          if not isinstance(data['update'], list):
+            print('false')
+            sys.exit(0)
+          # Validate each new API entry has required fields
+          for api in data['add']:
+            if not all(k in api for k in ['name', 'link', 'description', 'category']):
+              print('false')
+              sys.exit(0)
+          print('true')
+          ")
+
+          echo "valid=$VALID" >> $GITHUB_OUTPUT
+          if [ "$VALID" = "false" ]; then
+            echo "ERROR: JSON structure is invalid"
+          fi
+
+      - name: Approve and merge
+        if: steps.check-files.outputs.safe == 'true' && steps.validate.outputs.valid == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr review ${{ github.event.pull_request.number }} --approve \
+            --body "Auto-approved: PR only modifies community-apis.json with valid data structure."
+          gh pr merge ${{ github.event.pull_request.number }} --squash \
+            --subject "chore(community): merge API contribution from #${{ github.event.pull_request.number }}"
+
+      - name: Comment if blocked
+        if: steps.check-files.outputs.safe != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} --body \
+            "This PR modifies files outside of \`src/data/community-apis.json\` and cannot be auto-merged. A maintainer will review it manually. Thank you for contributing!"
+
+      - name: Comment if invalid JSON
+        if: steps.check-files.outputs.safe == 'true' && steps.validate.outputs.valid == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} --body \
+            "The \`community-apis.json\` file has an invalid structure. Please ensure it follows the format described in [CONTRIBUTING.md](https://github.com/BEKO2210/API_directory/blob/main/CONTRIBUTING.md). Each API entry needs at least: name, link, description, and category."

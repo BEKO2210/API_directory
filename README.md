@@ -7,13 +7,6 @@
   <img alt="API Hub — Every Free API, One Place" src=".github/assets/hero-dark.svg" width="100%">
 </picture>
 
-<br>
-
-<!-- Animated typing effect -->
-<a href="https://beko2210.github.io/API_directory">
-  <img src="https://readme-typing-svg.demolab.com?font=Geist&weight=600&size=18&duration=3000&pause=1500&color=818CF8&center=true&vCenter=true&multiline=false&width=600&height=30&lines=Community-maintained+API+directory;Browse+1%2C400%2B+APIs+across+51+categories;Submit+APIs+via+issues+—+auto-processed;Built+on+public-apis%2Fpublic-apis+data" alt="Typing animation">
-</a>
-
 <br><br>
 
 <!-- Badge row -->

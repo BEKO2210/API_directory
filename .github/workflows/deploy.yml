@@ -32,10 +32,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Fetch latest API data
-        run: node --experimental-strip-types scripts/fetch-apis.ts
-        continue-on-error: true
-
       - name: Build
         run: pnpm run build
 
