@@ -1,13 +1,19 @@
 name: Update API Information
-description: Request a correction or update to an existing API entry
+description: Request a correction or update to an existing API entry.
 title: "[Update] "
 labels: ["update-api", "auto-process"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us keep the directory accurate!
+        Fill in the API name and only the fields that need to change.
+
   - type: input
     id: api_name
     attributes:
       label: API Name
-      description: The exact name of the API as listed on the website
+      description: The exact name of the API as currently listed on the website.
       placeholder: "e.g. CoinGecko"
     validations:
       required: true
@@ -16,10 +22,10 @@ body:
     id: changes
     attributes:
       label: What needs to be updated?
-      description: Describe what information is wrong and what it should be
+      description: Describe what is wrong and what the correct information should be.
       placeholder: |
         - URL changed to https://new-url.com
-        - Now requires API key
+        - Now requires an API key
         - CORS is actually supported
     validations:
       required: true
@@ -27,16 +33,18 @@ body:
   - type: input
     id: new_url
     attributes:
-      label: New URL (if applicable)
+      label: New URL
+      description: The corrected URL if the API has moved. Leave empty if unchanged.
       placeholder: "https://new-api-url.com"
 
   - type: dropdown
     id: new_auth
     attributes:
-      label: New Auth Type (if changed)
+      label: New Auth Type
+      description: Select only if the authentication method has changed.
       options:
         - No change
-        - None
+        - None (no authentication required)
         - apiKey
         - OAuth
         - X-Mashape-Key
@@ -45,7 +53,8 @@ body:
   - type: dropdown
     id: new_https
     attributes:
-      label: New HTTPS Status (if changed)
+      label: New HTTPS Status
+      description: Select only if the HTTPS support has changed.
       options:
         - No change
         - "Yes"
@@ -54,7 +63,8 @@ body:
   - type: dropdown
     id: new_cors
     attributes:
-      label: New CORS Status (if changed)
+      label: New CORS Status
+      description: Select only if the CORS support has changed.
       options:
         - No change
         - "Yes"

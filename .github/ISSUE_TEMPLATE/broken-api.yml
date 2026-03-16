@@ -1,29 +1,37 @@
 name: Report Broken API
-description: Report an API that is no longer working or has changed
+description: Report an API that is no longer working, has moved, or has incorrect information.
 title: "[Broken] "
 labels: ["broken-api", "auto-process"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping keep the API directory accurate!
+        Please fill in the details below so we can investigate.
+
   - type: input
     id: api_name
     attributes:
       label: API Name
-      description: The exact name of the API as listed on the website
+      description: The exact name of the API as listed on the website.
       placeholder: "e.g. Dog Facts"
     validations:
       required: true
 
   - type: dropdown
-    id: issue_type
+    id: problem_type
     attributes:
-      label: What's wrong?
+      label: Problem Type
+      description: What kind of issue did you encounter?
       options:
         - API URL returns an error (4xx/5xx)
         - API URL redirects to a different service
-        - API is now behind a paywall
+        - API is now behind a paywall (no longer free)
         - API documentation is gone
         - CORS information is incorrect
         - HTTPS information is incorrect
         - Auth information is incorrect
+        - API has been discontinued
         - Other
     validations:
       required: true
@@ -31,13 +39,13 @@ body:
   - type: input
     id: new_url
     attributes:
-      label: New URL (if applicable)
-      description: If the API moved to a new URL, provide it here
+      label: New URL
+      description: If the API moved to a new URL, provide it here. Leave empty if not applicable.
       placeholder: "https://new-api-url.com"
 
   - type: textarea
     id: details
     attributes:
       label: Additional Details
-      description: Any extra context about the issue
-      placeholder: "e.g. The API started returning 403 errors since last week"
+      description: Any extra context that might help (error messages, dates, alternative APIs).
+      placeholder: "e.g. Returns 403 Forbidden since March 2026. A similar API is available at..."
