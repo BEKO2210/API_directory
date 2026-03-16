@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const CACHE_PATH = join(__dirname, '..', 'src', 'data', 'apis-cache.json');
+const COMMUNITY_PATH = join(__dirname, '..', 'src', 'data', 'community-apis.json');
 const README_URL = 'https://raw.githubusercontent.com/public-apis/public-apis/master/README.md';
 
 function slugify(text: string): string {
@@ -94,6 +95,89 @@ function parseReadme(markdown: string): { meta: { totalAPIs: number; totalCatego
   };
 }
 
+function mergeCommunityData(data: ReturnType<typeof parseReadme>): ReturnType<typeof parseReadme> {
+  if (!existsSync(COMMUNITY_PATH)) return data;
+
+  try {
+    const community = JSON.parse(readFileSync(COMMUNITY_PATH, 'utf-8'));
+
+    // Process removals
+    if (Array.isArray(community.remove)) {
+      for (const removal of community.remove) {
+        for (const cat of data.categories) {
+          const before = cat.apis.length;
+          cat.apis = cat.apis.filter(
+            (api) => api.name.toLowerCase() !== removal.name.toLowerCase(),
+          );
+          if (cat.apis.length < before) {
+            data.meta.totalAPIs -= before - cat.apis.length;
+            console.log(`  Removed "${removal.name}" (issue #${removal.source_issue})`);
+          }
+        }
+      }
+    }
+
+    // Process updates
+    if (Array.isArray(community.update)) {
+      for (const update of community.update) {
+        for (const cat of data.categories) {
+          const api = cat.apis.find(
+            (a) => a.name.toLowerCase() === update.name.toLowerCase(),
+          );
+          if (api) {
+            for (const [key, value] of Object.entries(update.fields)) {
+              (api as Record<string, unknown>)[key] = value;
+            }
+            console.log(`  Updated "${update.name}" (issue #${update.source_issue})`);
+            break;
+          }
+        }
+      }
+    }
+
+    // Process additions
+    if (Array.isArray(community.add)) {
+      for (const entry of community.add) {
+        // Find or create category
+        let cat = data.categories.find(
+          (c) => c.name.toLowerCase() === entry.category.toLowerCase(),
+        );
+        if (!cat) {
+          cat = { name: entry.category, slug: slugify(entry.category), apis: [] };
+          data.categories.push(cat);
+          data.meta.totalCategories = data.categories.length;
+        }
+
+        // Check for duplicates
+        const exists = cat.apis.some(
+          (a) => a.name.toLowerCase() === entry.name.toLowerCase() || a.link === entry.link,
+        );
+        if (exists) continue;
+
+        cat.apis.push({
+          name: entry.name,
+          slug: slugify(`${entry.category}-${entry.name}`),
+          description: entry.description,
+          auth: entry.auth,
+          https: entry.https,
+          cors: entry.cors,
+          link: entry.link,
+        });
+        data.meta.totalAPIs++;
+        console.log(`  Added community API "${entry.name}" in ${entry.category} (issue #${entry.source_issue})`);
+      }
+    }
+
+    // Remove empty categories
+    data.categories = data.categories.filter((c) => c.apis.length > 0);
+    data.meta.totalCategories = data.categories.length;
+  } catch (err) {
+    console.warn('Failed to merge community data:', err instanceof Error ? err.message : err);
+  }
+
+  return data;
+}
+
 async function main(): Promise<void> {
   console.log('Fetching API data from public-apis repository...');
 
@@ -109,7 +193,11 @@ async function main(): Promise<void> {
     const data = parseReadme(markdown);
     console.log(`Parsed ${data.meta.totalAPIs} APIs across ${data.meta.totalCategories} categories`);
 
-    writeFileSync(CACHE_PATH, JSON.stringify(data, null, 2), 'utf-8');
+    // Merge community contributions
+    const merged = mergeCommunityData(data);
+    console.log(`After community merge: ${merged.meta.totalAPIs} APIs across ${merged.meta.totalCategories} categories`);
+
+    writeFileSync(CACHE_PATH, JSON.stringify(merged, null, 2), 'utf-8');
     console.log(`Cache written to ${CACHE_PATH}`);
   } catch (error) {
     console.warn('Failed to fetch API data:', error instanceof Error ? error.message : error);

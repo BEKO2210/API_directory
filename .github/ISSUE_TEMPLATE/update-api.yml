@@ -1,0 +1,62 @@
+name: Update API Information
+description: Request a correction or update to an existing API entry
+title: "[Update] "
+labels: ["update-api", "auto-process"]
+body:
+  - type: input
+    id: api_name
+    attributes:
+      label: API Name
+      description: The exact name of the API as listed on the website
+      placeholder: "e.g. CoinGecko"
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: What needs to be updated?
+      description: Describe what information is wrong and what it should be
+      placeholder: |
+        - URL changed to https://new-url.com
+        - Now requires API key
+        - CORS is actually supported
+    validations:
+      required: true
+
+  - type: input
+    id: new_url
+    attributes:
+      label: New URL (if applicable)
+      placeholder: "https://new-api-url.com"
+
+  - type: dropdown
+    id: new_auth
+    attributes:
+      label: New Auth Type (if changed)
+      options:
+        - No change
+        - None
+        - apiKey
+        - OAuth
+        - X-Mashape-Key
+        - User-Agent
+
+  - type: dropdown
+    id: new_https
+    attributes:
+      label: New HTTPS Status (if changed)
+      options:
+        - No change
+        - "Yes"
+        - "No"
+
+  - type: dropdown
+    id: new_cors
+    attributes:
+      label: New CORS Status (if changed)
+      options:
+        - No change
+        - "Yes"
+        - "No"
+        - "Unknown"
