@@ -6,54 +6,53 @@ const stats = getSiteStats();
 ---
 
 <Page
-  title="Über uns"
-  description="Erfahre mehr über API Hub — ein Projekt von Belkis Aslani zur besseren Visualisierung der public-apis Daten."
+  title="About"
+  description="Learn more about API Hub — a project by Belkis Aslani to make public API data more accessible and searchable."
 >
   <div style="max-width: 640px; margin: 0 auto;">
     <h1 style="font-size: 1.75rem; font-weight: 700; color: var(--text-1); margin: 0 0 0.75rem;">
-      Über API Hub
+      About API Hub
     </h1>
 
     <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 1.5rem;">
-      API Hub wurde von <strong style="color: var(--text-1);">Belkis Aslani</strong> ins Leben gerufen,
-      um die umfangreiche Sammlung an kostenlosen, öffentlichen APIs aus dem
+      API Hub was created by <strong style="color: var(--text-1);">Belkis Aslani</strong>
+      to make the extensive collection of free, public APIs from the
       <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer" style="color: var(--text-1); text-decoration: underline; text-underline-offset: 2px;">public-apis/public-apis</a>
-      Repository besser zugänglich und durchsuchbar zu machen.
+      repository more accessible and searchable.
     </p>
 
     <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
-      Warum dieses Projekt?
+      Why This Project?
     </h2>
     <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 1.5rem;">
-      Das <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer" style="color: var(--text-1); text-decoration: underline; text-underline-offset: 2px;">public-apis</a>
-      Repository ist mit über 300.000 Stars eines der beliebtesten Open-Source-Projekte auf GitHub.
-      Es enthält eine riesige Liste an kostenlosen APIs — allerdings nur als Markdown-Tabelle in einer README-Datei.
-      API Hub macht diese Daten durch eine moderne, schnelle und durchsuchbare Oberfläche deutlich
-      besser nutzbar.
+      The <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer" style="color: var(--text-1); text-decoration: underline; text-underline-offset: 2px;">public-apis</a>
+      repository is one of the most popular open-source projects on GitHub with over 300,000 stars.
+      It contains a massive list of free APIs — but only as a Markdown table in a README file.
+      API Hub makes this data significantly more usable through a modern, fast, and searchable interface.
     </p>
 
     <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
       Credits
     </h2>
     <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 1.5rem;">
-      <strong style="color: var(--text-1);">Alle Credits gehen an das Original-Repository
+      <strong style="color: var(--text-1);">All credits go to the original repository
       <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer" style="color: var(--text-1); text-decoration: underline; text-underline-offset: 2px;">public-apis/public-apis</a></strong>
-      und dessen Community. Dieses Projekt visualisiert lediglich die dort gesammelten Daten.
-      Wir erheben keinen Anspruch auf die API-Daten selbst.
+      and its community. This project merely visualizes the data collected there.
+      We make no claim to the API data itself.
     </p>
 
     <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
-      So funktioniert's
+      How It Works
     </h2>
     <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0 0 1.5rem;">
-      API Hub ist eine statische Website, gebaut mit Astro und gehostet auf GitHub Pages. Täglich
-      synchronisiert ein automatisierter GitHub Actions Workflow die neuesten Daten aus dem public-apis
-      Repository, parst die README und generiert die Website neu. Das bedeutet: keine Serverkosten
-      und blitzschnelle Performance — jede Seite ist vorgerendertes HTML.
+      API Hub is a static website built with Astro and hosted on GitHub Pages. Every day,
+      an automated GitHub Actions workflow syncs the latest data from the public-apis
+      repository, parses the README, and rebuilds the site. This means: no server costs
+      and blazing-fast performance — every page is pre-rendered HTML.
     </p>
 
     <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
-      Statistiken
+      Statistics
     </h2>
     <div
       style="
@@ -89,7 +88,7 @@ const stats = getSiteStats();
         <p style="font-size: 1.5rem; font-weight: 700; color: var(--text-1); margin: 0;">
           {stats.totalCategories}
         </p>
-        <p style="font-size: 0.8125rem; color: var(--text-3); margin: 0.25rem 0 0;">Kategorien</p>
+        <p style="font-size: 0.8125rem; color: var(--text-3); margin: 0.25rem 0 0;">Categories</p>
       </div>
       <div
         style="
@@ -100,7 +99,7 @@ const stats = getSiteStats();
           border: 1px solid var(--border);
         "
       >
-        <p style="font-size: 1.5rem; font-weight: 700; color: var(--text-1); margin: 0;">Täglich</p>
+        <p style="font-size: 1.5rem; font-weight: 700; color: var(--text-1); margin: 0;">Daily</p>
         <p style="font-size: 0.8125rem; color: var(--text-3); margin: 0.25rem 0 0;">Sync</p>
       </div>
     </div>
@@ -109,20 +108,20 @@ const stats = getSiteStats();
       Tech Stack
     </h2>
     <ul style="padding-left: 1.25rem; margin: 0 0 2rem; color: var(--text-2); line-height: 1.8;">
-      <li><strong style="color: var(--text-1);">Astro</strong> — Statische Seitengenerierung mit null Client-Side JS</li>
-      <li><strong style="color: var(--text-1);">Tailwind CSS v4</strong> — Utility-First Styling</li>
-      <li><strong style="color: var(--text-1);">Pagefind</strong> — Offline-Volltextsuche ohne Bundle-Overhead</li>
-      <li><strong style="color: var(--text-1);">GitHub Actions</strong> — Tägliche Datensynchronisation</li>
-      <li><strong style="color: var(--text-1);">GitHub Pages</strong> — Kostenloses, zuverlässiges Hosting</li>
+      <li><strong style="color: var(--text-1);">Astro</strong> — Static site generation with zero client-side JS</li>
+      <li><strong style="color: var(--text-1);">Tailwind CSS v4</strong> — Utility-first styling</li>
+      <li><strong style="color: var(--text-1);">Pagefind</strong> — Offline full-text search with no bundle overhead</li>
+      <li><strong style="color: var(--text-1);">GitHub Actions</strong> — Daily data synchronization</li>
+      <li><strong style="color: var(--text-1);">GitHub Pages</strong> — Free, reliable hosting</li>
     </ul>
 
     <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-1); margin: 0 0 0.75rem;">
       Open Source
     </h2>
     <p style="font-size: 1rem; color: var(--text-2); line-height: 1.7; margin: 0;">
-      API Hub ist Open Source unter der MIT-Lizenz. Der Quellcode ist verfügbar auf
+      API Hub is open source under the MIT License. The source code is available on
       <a href="https://github.com/BEKO2210/API_directory" target="_blank" rel="noopener noreferrer" style="color: var(--text-1); text-decoration: underline; text-underline-offset: 2px;">GitHub</a>.
-      Beiträge, Bug-Reports und Feature-Requests sind willkommen.
+      Contributions, bug reports, and feature requests are welcome.
     </p>
   </div>
 </Page>
