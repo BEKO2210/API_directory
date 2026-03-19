@@ -2,7 +2,7 @@
   "meta": {
     "totalAPIs": 1424,
     "totalCategories": 51,
-    "lastUpdated": "2026-03-18T04:51:01.382Z"
+    "lastUpdated": "2026-03-19T04:49:51.910Z"
   },
   "categories": [
     {
@@ -1363,15 +1363,6 @@
       "slug": "calendar",
       "apis": [
         {
-          "name": "Public Holidays",
-          "link": "https://www.abstractapi.com/holidays-api",
-          "description": "Data on national, regional, and religious holidays via API",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "calendar-public-holidays"
-        },
-        {
           "name": "Calendarific",
           "link": "https://calendarific.com/",
           "description": "Worldwide Holidays",
@@ -1487,6 +1478,15 @@
           "https": true,
           "cors": "yes",
           "slug": "calendar-non-working-days"
+        },
+        {
+          "name": "Public Holidays",
+          "link": "https://www.abstractapi.com/holidays-api",
+          "description": "Data on national, regional, and religious holidays via API",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "calendar-public-holidays"
         },
         {
           "name": "Russian Calendar",
@@ -1750,6 +1750,15 @@
       "slug": "cryptocurrency",
       "apis": [
         {
+          "name": "Coinlayer",
+          "link": "https://coinlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "Real-time Crypto Currency Exchange Rates",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "cryptocurrency-coinlayer"
+        },
+        {
           "name": "0x",
           "link": "https://0x.org/api",
           "description": "API for querying token and pool stats across various liquidity pools",
@@ -1775,15 +1784,6 @@
           "https": true,
           "cors": "yes",
           "slug": "cryptocurrency-alchemy-ethereum"
-        },
-        {
-          "name": "apilayer coinlayer",
-          "link": "https://coinlayer.com",
-          "description": "Real-time Crypto Currency Exchange Rates",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "cryptocurrency-apilayer-coinlayer"
         },
         {
           "name": "Binance",
@@ -2332,6 +2332,42 @@
       "slug": "currency-exchange",
       "apis": [
         {
+          "name": "Currencylayer",
+          "link": "https://currencylayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "Exchange rates and currency conversion",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "currency-exchange-currencylayer"
+        },
+        {
+          "name": "Exchangerate.host",
+          "link": "https://exchangerate.host?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "Free foreign exchange & crypto rates API",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "currency-exchange-exchangerate-host"
+        },
+        {
+          "name": "Exchangeratesapi.io",
+          "link": "https://exchangeratesapi.io?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "Exchange rates with currency conversion",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-exchangeratesapi-io"
+        },
+        {
+          "name": "Fixer",
+          "link": "https://fixer.io?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "Exchange rates and currency conversion",
+          "auth": "apiKey",
+          "https": false,
+          "cors": "unknown",
+          "slug": "currency-exchange-fixer"
+        },
+        {
           "name": "1Forge",
           "link": "https://1forge.com/forex-data-api/api-documentation",
           "description": "Forex currency market data",
@@ -2348,15 +2384,6 @@
           "https": true,
           "cors": "unknown",
           "slug": "currency-exchange-amdoren"
-        },
-        {
-          "name": "apilayer fixer.io",
-          "link": "https://fixer.io",
-          "description": "Exchange rates and currency conversion",
-          "auth": "apiKey",
-          "https": false,
-          "cors": "unknown",
-          "slug": "currency-exchange-apilayer-fixer-io"
         },
         {
           "name": "Bank of Russia",
@@ -2384,15 +2411,6 @@
           "https": true,
           "cors": "yes",
           "slug": "currency-exchange-currencyfreaks"
-        },
-        {
-          "name": "Currencylayer",
-          "link": "https://currencylayer.com/documentation",
-          "description": "Exchange rates and currency conversion",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "currency-exchange-currencylayer"
         },
         {
           "name": "CurrencyScoop",
@@ -2429,24 +2447,6 @@
           "https": true,
           "cors": "yes",
           "slug": "currency-exchange-exchangerate-api"
-        },
-        {
-          "name": "Exchangerate.host",
-          "link": "https://exchangerate.host",
-          "description": "Free foreign exchange & crypto rates API",
-          "auth": "No",
-          "https": true,
-          "cors": "unknown",
-          "slug": "currency-exchange-exchangerate-host"
-        },
-        {
-          "name": "Exchangeratesapi.io",
-          "link": "https://exchangeratesapi.io",
-          "description": "Exchange rates with currency conversion",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "currency-exchange-exchangeratesapi-io"
         },
         {
           "name": "Frankfurter",
@@ -2490,6 +2490,15 @@
       "name": "Data Validation",
       "slug": "data-validation",
       "apis": [
+        {
+          "name": "VATlayer",
+          "link": "https://vatlayer.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "VAT number validation",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "data-validation-vatlayer"
+        },
         {
           "name": "Lob.com",
           "link": "https://lob.com/",
@@ -2543,15 +2552,6 @@
           "https": true,
           "cors": "yes",
           "slug": "data-validation-us-street-address"
-        },
-        {
-          "name": "vatlayer",
-          "link": "https://vatlayer.com/documentation",
-          "description": "VAT number validation",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "data-validation-vatlayer"
         }
       ]
     },
@@ -2560,6 +2560,15 @@
       "slug": "development",
       "apis": [
         {
+          "name": "Userstack",
+          "link": "https://userstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "Secure User-Agent String Lookup JSON API",
+          "auth": "OAuth",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-userstack"
+        },
+        {
           "name": "24 Pull Requests",
           "link": "https://24pullrequests.com/api",
           "description": "Project to promote open source collaboration during December",
@@ -2567,15 +2576,6 @@
           "https": true,
           "cors": "yes",
           "slug": "development-24-pull-requests"
-        },
-        {
-          "name": "Screenshot",
-          "link": "https://www.abstractapi.com/website-screenshot-api",
-          "description": "Take programmatic screenshots of web pages from any website",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "development-screenshot"
         },
         {
           "name": "Agify.io",
@@ -2612,15 +2612,6 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-apiflash"
-        },
-        {
-          "name": "apilayer userstack",
-          "link": "https://userstack.com/",
-          "description": "Secure User-Agent String Lookup JSON API",
-          "auth": "OAuth",
-          "https": true,
-          "cors": "unknown",
-          "slug": "development-apilayer-userstack"
         },
         {
           "name": "APIs.guru",
@@ -3514,6 +3505,15 @@
           "slug": "development-scrapingdog"
         },
         {
+          "name": "Screenshot",
+          "link": "https://www.abstractapi.com/website-screenshot-api",
+          "description": "Take programmatic screenshots of web pages from any website",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-screenshot"
+        },
+        {
           "name": "ScreenshotAPI.net",
           "link": "https://screenshotapi.net/",
           "description": "Create pixel-perfect website screenshots",
@@ -4027,22 +4027,13 @@
       "slug": "email",
       "apis": [
         {
-          "name": "apilayer mailboxlayer",
-          "link": "https://mailboxlayer.com",
+          "name": "mailboxlayer",
+          "link": "https://mailboxlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
           "description": "Email address validation",
           "auth": "apiKey",
           "https": true,
           "cors": "unknown",
-          "slug": "email-apilayer-mailboxlayer"
-        },
-        {
-          "name": "Email Validation",
-          "link": "https://www.abstractapi.com/email-verification-validation-api",
-          "description": "Validate email addresses for deliverability and spam",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "email-email-validation"
+          "slug": "email-mailboxlayer"
         },
         {
           "name": "Cloudmersive Validate",
@@ -4070,6 +4061,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "email-dropmail"
+        },
+        {
+          "name": "Email Validation",
+          "link": "https://www.abstractapi.com/email-verification-validation-api",
+          "description": "Validate email addresses for deliverability and spam",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "email-email-validation"
         },
         {
           "name": "EVA",
@@ -4474,13 +4474,13 @@
       "slug": "finance",
       "apis": [
         {
-          "name": "VAT Validation",
-          "link": "https://www.abstractapi.com/vat-validation-rates-api",
-          "description": "Validate VAT numbers and calculate VAT rates",
+          "name": "Marketstack",
+          "link": "https://marketstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "Real-Time, Intraday & Historical Market Data API",
           "auth": "apiKey",
           "https": true,
-          "cors": "yes",
-          "slug": "finance-vat-validation"
+          "cors": "unknown",
+          "slug": "finance-marketstack"
         },
         {
           "name": "Aletheia",
@@ -4508,15 +4508,6 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-alpha-vantage"
-        },
-        {
-          "name": "apilayer marketstack",
-          "link": "https://marketstack.com/",
-          "description": "Real-Time, Intraday & Historical Market Data API",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "finance-apilayer-marketstack"
         },
         {
           "name": "Banco do Brasil",
@@ -4823,6 +4814,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-twelve-data"
+        },
+        {
+          "name": "VAT Validation",
+          "link": "https://www.abstractapi.com/vat-validation-rates-api",
+          "description": "Validate VAT numbers and calculate VAT rates",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-vat-validation"
         },
         {
           "name": "WallstreetBets",
@@ -5959,13 +5959,22 @@
       "slug": "geocoding",
       "apis": [
         {
-          "name": "IP Geolocation",
-          "link": "https://www.abstractapi.com/ip-geolocation-api",
-          "description": "Geolocate website visitors from their IPs",
+          "name": "IPstack",
+          "link": "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "Locate and identify website visitors by IP address",
           "auth": "apiKey",
           "https": true,
-          "cors": "yes",
-          "slug": "geocoding-ip-geolocation"
+          "cors": "unknown",
+          "slug": "geocoding-ipstack"
+        },
+        {
+          "name": "ipapi.com",
+          "link": "https://ipapi.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "Real-time Geolocation & Reverse IP Lookup REST API",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "geocoding-ipapi-com"
         },
         {
           "name": "Actinia Grass GIS",
@@ -6011,15 +6020,6 @@
           "https": true,
           "cors": "yes",
           "slug": "geocoding-apiip"
-        },
-        {
-          "name": "apilayer ipstack",
-          "link": "https://ipstack.com/",
-          "description": "Locate and identify website visitors by IP address",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "geocoding-apilayer-ipstack"
         },
         {
           "name": "Battuta",
@@ -6337,6 +6337,15 @@
           "slug": "geocoding-ip-api"
         },
         {
+          "name": "IP Geolocation",
+          "link": "https://www.abstractapi.com/ip-geolocation-api",
+          "description": "Geolocate website visitors from their IPs",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-ip-geolocation"
+        },
+        {
           "name": "IP2Location",
           "link": "https://www.ip2location.com/web-service/ip2location",
           "description": "IP geolocation web service to get more than 55 parameters",
@@ -6362,15 +6371,6 @@
           "https": true,
           "cors": "yes",
           "slug": "geocoding-ipapi-co"
-        },
-        {
-          "name": "ipapi.com",
-          "link": "https://ipapi.com/",
-          "description": "Real-time Geolocation & Reverse IP Lookup REST API",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "geocoding-ipapi-com"
         },
         {
           "name": "IPGEO",
@@ -8470,13 +8470,13 @@
       "slug": "news",
       "apis": [
         {
-          "name": "apilayer mediastack",
-          "link": "https://mediastack.com/",
+          "name": "Mediastack",
+          "link": "https://mediastack.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
           "description": "Free, Simple REST API for Live News & Blog Articles",
           "auth": "apiKey",
           "https": true,
           "cors": "unknown",
-          "slug": "news-apilayer-mediastack"
+          "slug": "news-mediastack"
         },
         {
           "name": "Associated Press",
@@ -9310,22 +9310,13 @@
       "slug": "phone",
       "apis": [
         {
-          "name": "Phone Validation",
-          "link": "https://www.abstractapi.com/phone-validation-api",
-          "description": "Validate phone numbers globally",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "phone-phone-validation"
-        },
-        {
-          "name": "apilayer numverify",
-          "link": "https://numverify.com",
+          "name": "Numverify",
+          "link": "https://numverify.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
           "description": "Phone number validation",
           "auth": "apiKey",
           "https": true,
           "cors": "unknown",
-          "slug": "phone-apilayer-numverify"
+          "slug": "phone-numverify"
         },
         {
           "name": "Cloudmersive Validate",
@@ -9346,6 +9337,15 @@
           "slug": "phone-phone-specification"
         },
         {
+          "name": "Phone Validation",
+          "link": "https://www.abstractapi.com/phone-validation-api",
+          "description": "Validate phone numbers globally",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "phone-phone-validation"
+        },
+        {
           "name": "Veriphone",
           "link": "https://veriphone.io",
           "description": "Phone number validation & carrier lookup",
@@ -9361,13 +9361,13 @@
       "slug": "photography",
       "apis": [
         {
-          "name": "apilayer screenshotlayer",
-          "link": "https://screenshotlayer.com",
-          "description": "URL 2 Image",
+          "name": "Screenshotlayer",
+          "link": "https://screenshotlayer.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "URL to screenshot",
           "auth": "No",
           "https": true,
           "cors": "unknown",
-          "slug": "photography-apilayer-screenshotlayer"
+          "slug": "photography-screenshotlayer"
         },
         {
           "name": "APITemplate.io",
@@ -12847,6 +12847,15 @@
       "slug": "weather",
       "apis": [
         {
+          "name": "Weatherstack",
+          "link": "https://weatherstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
+          "description": "Real-Time & Historical World Weather Data API",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "weather-weatherstack"
+        },
+        {
           "name": "7Timer!",
           "link": "http://www.7timer.info/doc.php?lang=en",
           "description": "Weather, especially for Astroweather",
@@ -12872,15 +12881,6 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-aemet"
-        },
-        {
-          "name": "apilayer weatherstack",
-          "link": "https://weatherstack.com/",
-          "description": "Real-Time & Historical World Weather Data API",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "weather-apilayer-weatherstack"
         },
         {
           "name": "APIXU",
