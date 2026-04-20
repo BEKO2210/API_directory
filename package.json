@@ -16,13 +16,13 @@
     "lighthouse": "lhci autorun --config=.lighthouserc.cjs"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.0",
-    "@astrojs/sitemap": "^3.0.0",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
     "@fontsource-variable/geist": "^5.0.0",
     "@fontsource/geist-mono": "^5.0.0",
-    "@playform/compress": "^0.2.2",
+    "@playform/compress": "^0.2.3",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "^6.0.8",
+    "astro": "^6.1.8",
     "lucide-astro": "^0.453.0",
     "satori": "^0.26.0",
     "sharp": "^0.33.0"
