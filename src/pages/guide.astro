@@ -1,0 +1,702 @@
+---
+import Page from '@layouts/Page.astro';
+import { getBaseUrl } from '@lib/utils';
+
+const base = getBaseUrl();
+
+const sections = [
+  { id: 'what-is-an-api', label: 'What is an API?' },
+  { id: 'authentication', label: 'Authentication' },
+  { id: 'https', label: 'HTTPS' },
+  { id: 'cors', label: 'CORS' },
+  { id: 'rate-limits', label: 'Rate Limits' },
+  { id: 'errors', label: 'Errors' },
+  { id: 'security', label: 'Security' },
+  { id: 'first-request', label: 'Your First Request' },
+  { id: 'tools', label: 'Tools' },
+  { id: 'checklist', label: 'Checklist' },
+];
+---
+
+<Page
+  title="API Usage Guide"
+  description="A practical guide to using free public APIs. Authentication, HTTPS, CORS, rate limits, error handling, security and best practices — everything you need to ship safely."
+>
+  <div class="guide-wrap">
+    <!-- Sticky TOC (desktop) -->
+    <aside class="guide-toc" aria-label="Guide sections">
+      <p class="guide-toc-title">On this page</p>
+      <nav>
+        {
+          sections.map((s) => (
+            <a href={`#${s.id}`} class="guide-toc-link">
+              {s.label}
+            </a>
+          ))
+        }
+      </nav>
+    </aside>
+
+    <article class="guide-article">
+      <header class="reveal" style="margin-bottom: 2.5rem;">
+        <p class="guide-eyebrow">Developer Guide</p>
+        <h1 class="guide-h1">How to Use a Public API</h1>
+        <p class="guide-lead">
+          Picking an API from the directory is just step one. This guide walks through
+          everything you need to know to ship a production-quality integration —
+          authentication, security, rate limits, errors, and the small details that
+          separate a hobby script from a real product.
+        </p>
+      </header>
+
+      <!-- What is an API -->
+      <section id="what-is-an-api" class="guide-section reveal">
+        <h2 class="guide-h2">What is an API?</h2>
+        <p>
+          An <strong>API</strong> (Application Programming Interface) is a contract that lets
+          one piece of software talk to another over a network. Most APIs in this directory
+          are <strong>HTTP REST APIs</strong>: you send a request to a URL, the server returns
+          JSON, and your code processes the result.
+        </p>
+        <p>
+          Every API has its own conventions. Before writing any code, open the docs and look
+          for: the base URL, the authentication scheme, available endpoints, request/response
+          formats, rate limits, and pricing tiers (yes — even "free" APIs can have caps).
+        </p>
+      </section>
+
+      <!-- Authentication -->
+      <section id="authentication" class="guide-section reveal">
+        <h2 class="guide-h2">Authentication</h2>
+        <p>
+          APIs in this directory are tagged with one of these auth types. Each has different
+          implications for how you build and where you store credentials.
+        </p>
+
+        <div class="guide-grid">
+          <div class="guide-card">
+            <p class="guide-card-title">No auth</p>
+            <p class="guide-card-body">
+              Public endpoints. Great for learning and prototypes. Often heavily rate-limited
+              and can disappear without notice.
+            </p>
+          </div>
+          <div class="guide-card">
+            <p class="guide-card-title">apiKey</p>
+            <p class="guide-card-body">
+              You register, get a token, and send it in a header like
+              <code>X-API-Key</code> or as a query parameter. Treat keys like passwords —
+              never commit them to git.
+            </p>
+          </div>
+          <div class="guide-card">
+            <p class="guide-card-title">OAuth</p>
+            <p class="guide-card-body">
+              Used when the API acts on behalf of a user (Google, Spotify, GitHub).
+              Involves a redirect flow and short-lived access tokens. More complex but more
+              secure.
+            </p>
+          </div>
+          <div class="guide-card">
+            <p class="guide-card-title">User-Agent</p>
+            <p class="guide-card-body">
+              The API requires a non-default <code>User-Agent</code> header. Always identify
+              your app with a descriptive value (e.g. <code>my-app/1.0</code>).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HTTPS -->
+      <section id="https" class="guide-section reveal">
+        <h2 class="guide-h2">HTTPS</h2>
+        <p>
+          Always prefer APIs that support <strong>HTTPS</strong>. Plain HTTP transmits
+          requests, headers, and responses in cleartext — anyone on the network path can
+          read or modify them. If an API is listed as HTTPS-only in the directory badge,
+          you're already covered.
+        </p>
+        <div class="guide-callout">
+          <strong>Rule of thumb:</strong> never send an API key, OAuth token, or any user
+          data to a non-HTTPS endpoint. If the only option is HTTP, treat the data as
+          public.
+        </div>
+      </section>
+
+      <!-- CORS -->
+      <section id="cors" class="guide-section reveal">
+        <h2 class="guide-h2">CORS — when it matters</h2>
+        <p>
+          <strong>CORS</strong> (Cross-Origin Resource Sharing) only matters when calling an
+          API directly from browser JavaScript. The badge tells you what to expect:
+        </p>
+        <ul class="guide-list">
+          <li>
+            <strong>Yes</strong> — you can call it from a frontend with <code>fetch()</code>.
+          </li>
+          <li>
+            <strong>No</strong> — the browser will block the request. You'll need a backend
+            proxy or serverless function in between.
+          </li>
+          <li>
+            <strong>Unknown</strong> — try it. If the browser console shows
+            <code>Access-Control-Allow-Origin</code> errors, you'll need a proxy.
+          </li>
+        </ul>
+        <p>
+          Server-to-server calls (Node, Python, Go, etc.) are never affected by CORS — it's
+          purely a browser security model.
+        </p>
+      </section>
+
+      <!-- Rate limits -->
+      <section id="rate-limits" class="guide-section reveal">
+        <h2 class="guide-h2">Rate Limits</h2>
+        <p>
+          Almost every free API has limits — requests per second, per minute, or per day.
+          Hitting them returns <code>429 Too Many Requests</code>. Build for it from day
+          one:
+        </p>
+        <ul class="guide-list">
+          <li>Read the <code>X-RateLimit-*</code> response headers when present.</li>
+          <li>Cache responses you'll re-use within their freshness window.</li>
+          <li>
+            Implement <strong>exponential backoff</strong>: on a 429, wait
+            1s, 2s, 4s, 8s before retrying.
+          </li>
+          <li>Batch requests where the API supports it instead of looping one-by-one.</li>
+        </ul>
+      </section>
+
+      <!-- Errors -->
+      <section id="errors" class="guide-section reveal">
+        <h2 class="guide-h2">Errors &amp; Status Codes</h2>
+        <p>
+          Don't trust the network. Connections drop, services go down, and even a 200
+          response can contain garbage. Always check the status:
+        </p>
+        <div class="guide-table-wrap">
+          <table class="guide-table">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Meaning</th>
+                <th>What to do</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>200 / 204</td><td>Success</td><td>Parse the body.</td></tr>
+              <tr><td>400</td><td>Bad request</td><td>Fix your payload — log the request and review the docs.</td></tr>
+              <tr><td>401 / 403</td><td>Auth failure</td><td>Check your key, scopes, or token expiry.</td></tr>
+              <tr><td>404</td><td>Not found</td><td>Verify the URL and resource ID.</td></tr>
+              <tr><td>429</td><td>Rate-limited</td><td>Back off and retry — see the section above.</td></tr>
+              <tr><td>5xx</td><td>Server error</td><td>Retry with backoff. If it persists, the API is down.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Security -->
+      <section id="security" class="guide-section reveal">
+        <h2 class="guide-h2">Security &amp; Secret Handling</h2>
+        <p>The single biggest mistake when starting out is leaking an API key. Avoid it:</p>
+        <ul class="guide-list">
+          <li>
+            <strong>Never put keys in client-side JavaScript.</strong> Anything shipped to a
+            browser is public. Use a backend, edge function, or serverless proxy.
+          </li>
+          <li>
+            Store secrets in environment variables (<code>.env</code>) and add
+            <code>.env</code> to <code>.gitignore</code>.
+          </li>
+          <li>
+            If you accidentally commit a key — <strong>rotate it immediately</strong>. Just
+            deleting the commit isn't enough; git history is forever.
+          </li>
+          <li>
+            Use the minimum scope. If an OAuth API offers read-only tokens, never request
+            write.
+          </li>
+        </ul>
+      </section>
+
+      <!-- First request -->
+      <section id="first-request" class="guide-section reveal">
+        <h2 class="guide-h2">Your First Request</h2>
+        <p>A minimal example using <code>fetch</code> in modern JavaScript:</p>
+        <pre class="guide-code"><code>{`async function getJoke() {
+  const res = await fetch('https://icanhazdadjoke.com/', {
+    headers: {
+      Accept: 'application/json',
+      'User-Agent': 'my-app/1.0 (https://example.com)',
+    },
+  });
+
+  if (!res.ok) {
+    throw new Error(\`API returned \${res.status}\`);
+  }
+
+  const data = await res.json();
+  return data.joke;
+}`}</code></pre>
+        <p>The same pattern in Python:</p>
+        <pre class="guide-code"><code>{`import requests
+
+def get_joke():
+    res = requests.get(
+        'https://icanhazdadjoke.com/',
+        headers={
+            'Accept': 'application/json',
+            'User-Agent': 'my-app/1.0 (https://example.com)',
+        },
+        timeout=10,
+    )
+    res.raise_for_status()
+    return res.json()['joke']`}</code></pre>
+      </section>
+
+      <!-- Tools -->
+      <section id="tools" class="guide-section reveal">
+        <h2 class="guide-h2">Useful Tools</h2>
+        <div class="guide-grid">
+          <div class="guide-card">
+            <p class="guide-card-title">curl</p>
+            <p class="guide-card-body">
+              The universal HTTP client. Quickest way to verify an endpoint works before
+              writing any code.
+            </p>
+          </div>
+          <div class="guide-card">
+            <p class="guide-card-title">Postman / Insomnia / Bruno</p>
+            <p class="guide-card-body">
+              GUI clients with collections, environments, and request history. Great for
+              exploring unfamiliar APIs.
+            </p>
+          </div>
+          <div class="guide-card">
+            <p class="guide-card-title">httpie</p>
+            <p class="guide-card-body">
+              A friendlier curl. Color output, JSON-aware, sensible defaults.
+            </p>
+          </div>
+          <div class="guide-card">
+            <p class="guide-card-title">jq</p>
+            <p class="guide-card-body">
+              Pipe JSON responses through it on the command line to inspect, filter, and
+              reshape.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Checklist -->
+      <section id="checklist" class="guide-section reveal">
+        <h2 class="guide-h2">Pre-flight Checklist</h2>
+        <p>Before shipping any integration, make sure you can answer "yes" to each of these:</p>
+        <ul class="guide-checklist">
+          <li>I read the official docs, not just a blog post.</li>
+          <li>I'm using HTTPS.</li>
+          <li>My API key is in an environment variable, not source code.</li>
+          <li>I handle non-200 responses without crashing.</li>
+          <li>I respect rate limits and back off on 429s.</li>
+          <li>I cache responses where it makes sense.</li>
+          <li>I have a plan for when the API is down.</li>
+          <li>I monitor my usage so I know before I hit a quota.</li>
+        </ul>
+      </section>
+
+      <!-- CTA -->
+      <section class="guide-cta reveal">
+        <h2 class="guide-cta-title">Ready to build?</h2>
+        <p class="guide-cta-text">
+          Browse the directory and pick an API that fits your project.
+        </p>
+        <div class="guide-cta-actions">
+          <a href={`${base}/`} class="cta-button">Browse Categories</a>
+          <a href={`${base}/search`} class="cta-button cta-button--ghost">Search APIs</a>
+        </div>
+      </section>
+    </article>
+  </div>
+</Page>
+
+<style>
+  .guide-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  /* Desktop: TOC + content */
+  @media (min-width: 1024px) {
+    .guide-wrap {
+      grid-template-columns: 200px 1fr;
+      max-width: 1100px;
+      gap: 3rem;
+    }
+  }
+
+  /* TOC */
+  .guide-toc {
+    display: none;
+  }
+
+  @media (min-width: 1024px) {
+    .guide-toc {
+      display: block;
+      position: sticky;
+      top: calc(var(--header-h) + 1.5rem);
+      align-self: start;
+      max-height: calc(100vh - var(--header-h) - 3rem);
+      overflow-y: auto;
+    }
+  }
+
+  .guide-toc-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: var(--text-4);
+    margin: 0 0 0.75rem;
+  }
+
+  .guide-toc nav {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--border);
+  }
+
+  .guide-toc-link {
+    font-size: 0.8125rem;
+    color: var(--text-3);
+    text-decoration: none;
+    padding: 0.375rem 0 0.375rem 0.875rem;
+    margin-left: -1px;
+    border-left: 1px solid transparent;
+    transition: color var(--t-fast), border-color var(--t-fast);
+  }
+
+  .guide-toc-link:hover,
+  .guide-toc-link.active {
+    color: var(--text-1);
+    border-left-color: var(--text-1);
+  }
+
+  /* Article */
+  .guide-article {
+    min-width: 0;
+  }
+
+  .guide-eyebrow {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    color: var(--text-4);
+    margin: 0 0 0.5rem;
+  }
+
+  .guide-h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--text-1);
+    margin: 0 0 1rem;
+  }
+
+  .guide-lead {
+    font-size: 1.0625rem;
+    color: var(--text-2);
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .guide-section {
+    padding: 1.75rem 0;
+    border-top: 1px solid var(--border-subtle);
+    scroll-margin-top: calc(var(--header-h) + 1rem);
+  }
+
+  .guide-section:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .guide-h2 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--text-1);
+    margin: 0 0 1rem;
+    letter-spacing: -0.01em;
+  }
+
+  .guide-section p {
+    font-size: 0.9375rem;
+    color: var(--text-2);
+    line-height: 1.7;
+    margin: 0 0 1rem;
+  }
+
+  .guide-section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .guide-section code {
+    font-family: 'Geist Mono', ui-monospace, monospace;
+    font-size: 0.8125em;
+    background: var(--surface);
+    padding: 1px 6px;
+    border-radius: var(--r-sm);
+    color: var(--text-1);
+    border: 1px solid var(--border-subtle);
+  }
+
+  .guide-section strong {
+    color: var(--text-1);
+    font-weight: 600;
+  }
+
+  /* Lists */
+  .guide-list {
+    padding-left: 1.25rem;
+    margin: 0 0 1rem;
+    color: var(--text-2);
+    line-height: 1.8;
+    font-size: 0.9375rem;
+  }
+
+  .guide-list li {
+    margin-bottom: 0.375rem;
+  }
+
+  /* Cards grid */
+  .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.75rem;
+    margin: 1rem 0 0;
+  }
+
+  .guide-card {
+    padding: 1rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    transition: border-color var(--t-base), transform var(--t-base), box-shadow var(--t-base);
+  }
+
+  .guide-card:hover {
+    border-color: var(--text-4);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .guide-card-title {
+    font-weight: 600;
+    color: var(--text-1);
+    font-size: 0.9375rem;
+    margin: 0 0 0.375rem;
+  }
+
+  .guide-card-body {
+    font-size: 0.8125rem;
+    color: var(--text-3);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Callout */
+  .guide-callout {
+    padding: 1rem 1.125rem;
+    background: var(--surface);
+    border-left: 3px solid var(--text-1);
+    border-radius: var(--r-md);
+    font-size: 0.9375rem;
+    color: var(--text-2);
+    line-height: 1.6;
+    margin: 1rem 0 0;
+  }
+
+  /* Code blocks */
+  .guide-code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 1rem 1.125rem;
+    overflow-x: auto;
+    font-family: 'Geist Mono', ui-monospace, monospace;
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    color: var(--text-1);
+    margin: 0.5rem 0 1rem;
+  }
+
+  .guide-code code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+  }
+
+  /* Table */
+  .guide-table-wrap {
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    overflow-x: auto;
+    margin: 1rem 0 0;
+  }
+
+  .guide-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+
+  .guide-table th,
+  .guide-table td {
+    text-align: left;
+    padding: 0.625rem 0.875rem;
+    border-bottom: 1px solid var(--border-subtle);
+    color: var(--text-2);
+  }
+
+  .guide-table th {
+    background: var(--surface);
+    font-weight: 600;
+    color: var(--text-1);
+    white-space: nowrap;
+  }
+
+  .guide-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .guide-table td:first-child {
+    font-family: 'Geist Mono', ui-monospace, monospace;
+    color: var(--text-1);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* Checklist */
+  .guide-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .guide-checklist li {
+    font-size: 0.9375rem;
+    color: var(--text-2);
+    line-height: 1.5;
+    padding-left: 1.75rem;
+    position: relative;
+  }
+
+  .guide-checklist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.25rem;
+    width: 18px;
+    height: 18px;
+    border-radius: var(--r-sm);
+    border: 1.5px solid var(--border);
+    background: var(--bg-elevated);
+    transition: background var(--t-base), border-color var(--t-base);
+  }
+
+  .guide-checklist li::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    width: 8px;
+    height: 4px;
+    border-left: 2px solid var(--text-1);
+    border-bottom: 2px solid var(--text-1);
+    transform: rotate(-45deg);
+    opacity: 0.45;
+    transition: opacity var(--t-base);
+  }
+
+  .guide-checklist li:hover::before {
+    border-color: var(--text-1);
+  }
+
+  .guide-checklist li:hover::after {
+    opacity: 1;
+  }
+
+  /* CTA */
+  .guide-cta {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-xl);
+    text-align: center;
+  }
+
+  .guide-cta-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-1);
+    margin: 0 0 0.5rem;
+  }
+
+  .guide-cta-text {
+    font-size: 0.9375rem;
+    color: var(--text-3);
+    margin: 0 0 1.25rem;
+  }
+
+  .guide-cta-actions {
+    display: flex;
+    gap: 0.625rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+</style>
+
+<script is:inline>
+  // Highlight active TOC item on scroll
+  (function () {
+    if (typeof window === 'undefined') return;
+    var links = document.querySelectorAll('.guide-toc-link');
+    if (!links.length || !('IntersectionObserver' in window)) return;
+
+    var byId = {};
+    links.forEach(function (a) {
+      var href = a.getAttribute('href');
+      if (href && href.charAt(0) === '#') byId[href.slice(1)] = a;
+    });
+
+    var obs = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            links.forEach(function (l) {
+              l.classList.remove('active');
+            });
+            var link = byId[entry.target.id];
+            if (link) link.classList.add('active');
+          }
+        });
+      },
+      { rootMargin: '-30% 0px -60% 0px', threshold: 0 },
+    );
+
+    document.querySelectorAll('.guide-section').forEach(function (s) {
+      obs.observe(s);
+    });
+  })();
+</script>

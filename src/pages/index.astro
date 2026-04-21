@@ -3,30 +3,14 @@ import Base from '@layouts/Base.astro';
 import Hero from '@components/home/Hero.astro';
 import StatsBar from '@components/home/StatsBar.astro';
 import CategoryGrid from '@components/home/CategoryGrid.astro';
-import FeaturedAPIs from '@components/home/FeaturedAPIs.astro';
-import { getAllAPIs, getAllCategories, getSiteStats } from '@lib/getApis';
+import { getAllCategories, getSiteStats } from '@lib/getApis';
 import { getBaseUrl } from '@lib/utils';
 
 const stats = getSiteStats();
 const categories = getAllCategories();
-const allAPIs = getAllAPIs();
 const base = getBaseUrl();
 
-// Hand-picked popular APIs from diverse categories
-const featuredNames = [
-  'GitHub',
-  'Spotify',
-  'OpenWeatherMap',
-  'NASA',
-  'REST Countries',
-  'JSONPlaceholder',
-  'CoinGecko',
-  'Unsplash',
-];
-
-const featured = featuredNames
-  .map((name) => allAPIs.find((api) => api.name === name))
-  .filter((api): api is NonNullable<typeof api> => api !== undefined);
+const description = `Browse, search and filter ${stats.totalAPIs.toLocaleString()}+ free public APIs across ${stats.totalCategories}+ categories. The most complete directory of open APIs for developers.`;
 
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
@@ -42,18 +26,13 @@ const jsonLd = JSON.stringify({
 });
 ---
 
-<Base
-  title="API Hub"
-  description="Browse, search and filter 1,400+ free public APIs across 50+ categories. The most complete directory of open APIs for developers."
-  jsonLd={jsonLd}
->
+<Base title="API Hub" description={description} jsonLd={jsonLd}>
   <Hero stats={stats} />
   <StatsBar stats={stats} />
   <CategoryGrid categories={categories} />
-  <FeaturedAPIs apis={featured} />
 
   <!-- CTA Section -->
-  <section style="padding: 3rem 0;">
+  <section class="reveal" style="padding: 3rem 0;">
     <div
       class="container"
       style="
@@ -80,19 +59,7 @@ const jsonLd = JSON.stringify({
       </p>
       <a
         href={`${base}/submit`}
-        style="
-          display: inline-flex;
-          align-items: center;
-          gap: 0.5rem;
-          padding: 0.625rem 1.25rem;
-          background: var(--text-1);
-          color: var(--bg);
-          border-radius: var(--r-md);
-          font-weight: 600;
-          font-size: 0.875rem;
-          text-decoration: none;
-          transition: background var(--t-fast);
-        "
+        class="cta-button"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 5v14M5 12h14"/>

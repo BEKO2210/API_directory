@@ -131,4 +131,153 @@
   body {
     overscroll-behavior-y: contain;
   }
+
+  /* ========================================================================
+     Micro-interactions & motion
+     ======================================================================== */
+
+  /* Smooth color transitions on theme change */
+  body,
+  .site-header,
+  .site-footer {
+    transition: background-color var(--t-base), color var(--t-base);
+  }
+
+  /* Reveal-on-scroll: starts hidden, slides up on intersect */
+  .reveal {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 600ms var(--ease), transform 600ms var(--ease);
+    will-change: opacity, transform;
+  }
+
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Page-load fade for the main content (avoids janky flash) */
+  main {
+    animation: page-in 400ms var(--ease) both;
+  }
+
+  @keyframes page-in {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Subtle hero entrance */
+  .hero-section h1,
+  .hero-section > .container > p,
+  .hero-section > .container > div {
+    animation: hero-up 700ms var(--ease) both;
+  }
+  .hero-section h1 { animation-delay: 0ms; }
+  .hero-section > .container > p { animation-delay: 80ms; }
+  .hero-section > .container > div { animation-delay: 160ms; }
+
+  @keyframes hero-up {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Shared CTA button styles (used on home + guide) */
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    background: var(--text-1);
+    color: var(--bg);
+    border: 1px solid var(--text-1);
+    border-radius: var(--r-md);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: transform var(--t-fast), box-shadow var(--t-base), background var(--t-fast),
+      color var(--t-fast), border-color var(--t-fast);
+    cursor: pointer;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    color: var(--bg);
+  }
+
+  .cta-button:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: var(--shadow-xs);
+  }
+
+  .cta-button--ghost {
+    background: transparent;
+    color: var(--text-1);
+    border-color: var(--border);
+  }
+
+  .cta-button--ghost:hover {
+    background: var(--surface);
+    color: var(--text-1);
+    border-color: var(--text-4);
+  }
+
+  /* Category chip — used in /search & /404 */
+  .cat-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    border-radius: var(--r-full);
+    border: 1px solid var(--border);
+    font-size: 0.8125rem;
+    color: var(--text-2);
+    text-decoration: none;
+    background: var(--bg-elevated);
+    transition: transform var(--t-fast), border-color var(--t-fast),
+      background var(--t-fast), color var(--t-fast);
+  }
+
+  .cat-chip:hover {
+    transform: translateY(-1px);
+    border-color: var(--text-1);
+    color: var(--text-1);
+  }
+
+  .cat-chip:active {
+    transform: translateY(0) scale(0.97);
+  }
+
+  /* Refined hero search bar interaction (used on Hero) */
+  .hero-section a[href$='/search']:hover {
+    border-color: var(--text-2) !important;
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Reduce motion: respect user preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
 }

@@ -41,22 +41,7 @@ const categories = getAllCategories().slice(0, 8);
     </p>
 
     <!-- Search -->
-    <a
-      href={`${base}/search`}
-      style="
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.75rem 1.5rem;
-        background: var(--text-1);
-        color: var(--bg);
-        border-radius: var(--r-md);
-        font-weight: 600;
-        font-size: 0.9375rem;
-        text-decoration: none;
-        margin-bottom: 1rem;
-      "
-    >
+    <a href={`${base}/search`} class="cta-button" style="margin-bottom: 1rem;">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"></circle>
         <path d="m21 21-4.3-4.3"></path>
@@ -70,17 +55,7 @@ const categories = getAllCategories().slice(0, 8);
     <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
       {
         categories.map((cat) => (
-          <a
-            href={`${base}/categories/${cat.slug}`}
-            style="
-              padding: 4px 12px;
-              border-radius: var(--r-full);
-              border: 1px solid var(--border);
-              font-size: 0.8125rem;
-              color: var(--text-2);
-              text-decoration: none;
-            "
-          >
+          <a href={`${base}/categories/${cat.slug}`} class="cat-chip">
             {cat.name}
           </a>
         ))
