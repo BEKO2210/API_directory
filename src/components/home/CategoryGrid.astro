@@ -10,7 +10,7 @@ const { categories } = Astro.props;
 const base = getBaseUrl();
 ---
 
-<section style="padding: 3rem 0;">
+<section class="reveal" style="padding: 3rem 0;">
   <div class="container">
     <h2
       style="
@@ -70,6 +70,7 @@ const base = getBaseUrl();
 
 <style>
   .category-card {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -78,22 +79,48 @@ const base = getBaseUrl();
     border: 1px solid var(--border);
     border-radius: var(--r-lg);
     text-decoration: none;
-    transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+    transition: box-shadow 250ms var(--ease), transform 250ms var(--ease),
+      border-color 250ms var(--ease);
+    overflow: hidden;
+  }
+
+  .category-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(
+      circle at var(--mx, 50%) var(--my, 50%),
+      color-mix(in srgb, var(--text-1) 6%, transparent),
+      transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 200ms var(--ease);
+    pointer-events: none;
+  }
+
+  .category-card:hover::before {
+    opacity: 1;
   }
 
   .category-card:hover {
     box-shadow: var(--shadow-md);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
     border-color: var(--text-1);
   }
 
   .category-card:hover .category-card-chevron {
     color: var(--text-1);
-    transform: translateX(2px);
+    transform: translateX(3px);
+  }
+
+  .category-card:hover .category-card-icon {
+    transform: scale(1.05);
   }
 
   .category-card:active {
-    transform: scale(0.98);
+    transform: translateY(0) scale(0.98);
+    transition-duration: 100ms;
   }
 
   .category-card-icon {
@@ -107,6 +134,7 @@ const base = getBaseUrl();
     color: var(--text-1);
     flex-shrink: 0;
     font-size: 1.125rem;
+    transition: transform 250ms var(--ease);
   }
 
   .category-card-name {
@@ -134,4 +162,28 @@ const base = getBaseUrl();
       padding: 0.875rem;
     }
   }
+
+  @media (hover: none) {
+    .category-card::before {
+      display: none;
+    }
+  }
 </style>
+
+<script is:inline>
+  (function () {
+    if (typeof window === 'undefined') return;
+    if (window.matchMedia && window.matchMedia('(hover: none)').matches) return;
+
+    var cards = document.querySelectorAll('.category-card');
+    cards.forEach(function (card) {
+      card.addEventListener('pointermove', function (e) {
+        var rect = card.getBoundingClientRect();
+        var x = ((e.clientX - rect.left) / rect.width) * 100;
+        var y = ((e.clientY - rect.top) / rect.height) * 100;
+        card.style.setProperty('--mx', x + '%');
+        card.style.setProperty('--my', y + '%');
+      });
+    });
+  })();
+</script>

@@ -73,7 +73,8 @@ const base = getBaseUrl();
     border: 1px solid var(--border);
     border-radius: var(--r-lg);
     padding: 1.25rem;
-    transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+    transition: box-shadow 250ms var(--ease), transform 250ms var(--ease),
+      border-color 250ms var(--ease);
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -81,11 +82,13 @@ const base = getBaseUrl();
 
   .api-card:hover {
     box-shadow: var(--shadow-md);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    border-color: var(--text-4);
   }
 
   .api-card:active {
-    transform: scale(0.99);
+    transform: translateY(0) scale(0.99);
+    transition-duration: 100ms;
   }
 
   .api-card-title {

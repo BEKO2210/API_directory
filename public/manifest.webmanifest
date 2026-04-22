@@ -1,7 +1,7 @@
 {
   "name": "API Hub",
   "short_name": "API Hub",
-  "description": "Browse 1,400+ free public APIs",
+  "description": "Browse free public APIs across dozens of categories.",
   "start_url": "/API_directory/",
   "scope": "/API_directory/",
   "display": "standalone",
