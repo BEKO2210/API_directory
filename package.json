@@ -22,7 +22,7 @@
     "@fontsource/geist-mono": "^5.0.0",
     "@playform/compress": "^0.2.3",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "^6.1.8",
+    "astro": "^6.1.9",
     "lucide-astro": "^0.453.0",
     "satori": "^0.26.0",
     "sharp": "^0.33.0"
