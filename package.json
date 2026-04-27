@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@lhci/cli": "^0.14.0",
-    "@tailwindcss/vite": "^4.2.2",
+    "@tailwindcss/vite": "^4.2.4",
     "@typescript-eslint/eslint-plugin": "^8.57.2",
     "@typescript-eslint/parser": "^8.57.2",
     "eslint": "^10.1.0",
@@ -37,7 +37,7 @@
     "pagefind": "^1.5.2",
     "prettier": "^3.0.0",
     "prettier-plugin-astro": "^0.14.0",
-    "tailwindcss": "^4.2.2",
+    "tailwindcss": "^4.2.4",
     "typescript": "^6.0.2"
   },
   "pnpm": {
