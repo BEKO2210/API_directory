@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1424,
+    "totalAPIs": 1441,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-02T05:28:56.928Z"
+    "lastUpdated": "2026-05-03T05:49:49.864Z"
   },
   "categories": [
     {
@@ -34,6 +34,15 @@
           "auth": "No",
           "https": true,
           "cors": "no",
+          "slug": "animals-cat-facts"
+        },
+        {
+          "name": "Cat Facts",
+          "link": "https://catfact.ninja/",
+          "description": "Random cat facts",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
           "slug": "animals-cat-facts"
         },
         {
@@ -1099,6 +1108,15 @@
           "slug": "books-rig-veda"
         },
         {
+          "name": "Runyankole Bible",
+          "link": "https://runyankole-bible-api.vercel.app",
+          "description": "Free REST API for the Runyankore-Rukiga Bible — 66 books, 31106 verses",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "books-runyankole-bible"
+        },
+        {
           "name": "The Bible",
           "link": "https://docs.api.bible",
           "description": "Everything you need from the Bible in one discoverable place",
@@ -1115,6 +1133,15 @@
           "https": true,
           "cors": "yes",
           "slug": "books-thirukkural"
+        },
+        {
+          "name": "Urantia Papers",
+          "link": "https://urantia.dev",
+          "description": "Full-text + semantic search across the Urantia Papers, with audio narration, entities, translations",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "books-urantia-papers"
         },
         {
           "name": "Vedic Society",
@@ -3604,6 +3631,15 @@
           "slug": "development-supportivekoala"
         },
         {
+          "name": "Suprsonic",
+          "link": "https://suprsonic.ai",
+          "description": "Unified agent API: search, scrape, enrich, image gen, TTS, STT, messaging. One key, 20+ capabilities",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-suprsonic"
+        },
+        {
           "name": "Tyk",
           "link": "https://tyk.io/open-source/",
           "description": "Api and service management platform",
@@ -5089,15 +5125,6 @@
       "slug": "games-comics",
       "apis": [
         {
-          "name": "Age of Empires II",
-          "link": "https://age-of-empires-2-api.herokuapp.com",
-          "description": "Get information about Age of Empires II resources",
-          "auth": "No",
-          "https": true,
-          "cors": "no",
-          "slug": "games-comics-age-of-empires-ii"
-        },
-        {
           "name": "AmiiboAPI",
           "link": "https://amiiboapi.com/",
           "description": "Nintendo Amiibo Information",
@@ -6031,6 +6058,15 @@
           "slug": "geocoding-battuta"
         },
         {
+          "name": "BdAPIs",
+          "link": "https://bdapis.com/",
+          "description": "Get divisions, districts, and upazzilas of Bangladesh",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "geocoding-bdapis"
+        },
+        {
           "name": "BigDataCloud",
           "link": "https://www.bigdatacloud.com/ip-geolocation-apis",
           "description": "Provides fast and accurate IP geolocation APIs along with security checks and confidence area",
@@ -6580,6 +6616,15 @@
           "slug": "geocoding-postcodes-io"
         },
         {
+          "name": "PostalCodes",
+          "link": "https://postalcodes.info/api",
+          "description": "Postal code search, country exports, and address validation data",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "geocoding-postalcodes"
+        },
+        {
           "name": "Queimadas INPE",
           "link": "https://queimadas.dgi.inpe.br/queimadas/dados-abertos/",
           "description": "Access to heat focus data (probable wildfire)",
@@ -7007,6 +7052,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-gun-policy"
+        },
+        {
+          "name": "Indian Pincode",
+          "link": "https://indianpincode.com/",
+          "description": "Free India PIN code lookup with GPS coordinates, 165k+ post offices, state & district data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-indian-pincode"
         },
         {
           "name": "INEI",
@@ -7457,6 +7511,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-open-government-west-australia"
+        },
+        {
+          "name": "OpenRegistry",
+          "link": "https://openregistry.sophymarine.com",
+          "description": "Real-time queries to 27 national company registries (UK, FR, DE, IT, ES, KR + 21 more)",
+          "auth": "OAuth",
+          "https": true,
+          "cors": "unknown",
+          "slug": "government-openregistry"
         },
         {
           "name": "PRC Exam Schedule",
@@ -7990,6 +8053,15 @@
           "slug": "machine-learning-cloudmersive"
         },
         {
+          "name": "DeepAI",
+          "link": "https://deepai.org/",
+          "description": "Provides AI-powered APIs for text generation, image processing, and more",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-deepai"
+        },
+        {
           "name": "Deepcode",
           "link": "https://www.deepcode.ai",
           "description": "AI for code review",
@@ -8132,6 +8204,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "machine-learning-skybiometry"
+        },
+        {
+          "name": "TensorFeed",
+          "link": "https://tensorfeed.ai/developers",
+          "description": "Real-time AI news, model pricing, service status, and agent activity feeds",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-tensorfeed"
         },
         {
           "name": "Time Door",
@@ -8437,6 +8518,15 @@
           "slug": "music-spotify"
         },
         {
+          "name": "Sunor",
+          "link": "https://docs.sunor.cc",
+          "description": "AI music generation API via Suno, with pay-as-you-go credits",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "music-sunor"
+        },
+        {
           "name": "TasteDive",
           "link": "https://tastedive.com/read/api",
           "description": "Similar artist API (also works for movies and TV shows)",
@@ -8499,7 +8589,7 @@
         {
           "name": "Currents",
           "link": "https://currentsapi.services/",
-          "description": "Latest news published in various news sources, blogs and forums",
+          "description": "Real-time and historical global news with multilingual support",
           "auth": "apiKey",
           "https": true,
           "cors": "yes",
@@ -8933,6 +9023,15 @@
           "https": false,
           "cors": "no",
           "slug": "open-data-urban-observatory"
+        },
+        {
+          "name": "Voidly",
+          "link": "https://voidly.ai/api-docs",
+          "description": "Internet censorship measurements, incidents, and ISP-level blocking data across 126 countries",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "open-data-voidly"
         },
         {
           "name": "Wikidata",
@@ -9697,6 +9796,15 @@
           "slug": "science-math-arxiv"
         },
         {
+          "name": "CodeCogs",
+          "link": "https://editor.codecogs.com/docs/4-LaTeX_rendering.php",
+          "description": "Render LaTeX equations in PNG, GIF, SVG, EMF, PDF, JSON, or download formats with styling options",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "science-math-codecogs"
+        },
+        {
           "name": "CORE",
           "link": "https://core.ac.uk/services#api",
           "description": "Access the world's Open Access research papers",
@@ -10178,6 +10286,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "security-intelligence-x"
+        },
+        {
+          "name": "IPLogs",
+          "link": "https://iplogs.com/docs",
+          "description": "Free VPN, proxy, Tor and datacenter IP detection. 13 sources, active probing.",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-iplogs"
         },
         {
           "name": "LoginRadius",
@@ -11017,6 +11134,15 @@
           "slug": "sports-fitness-premier-league-standings"
         },
         {
+          "name": "RacingHub",
+          "link": "https://racinghub.net/api/v1/docs#/",
+          "description": "Formula 1 historical data and statistics",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "sports-fitness-racinghub"
+        },
+        {
           "name": "Sport Data",
           "link": "https://sportdataapi.com",
           "description": "Get sports data from all over the world",
@@ -11425,6 +11551,15 @@
           "slug": "text-analysis-google-cloud-natural"
         },
         {
+          "name": "GeoScore",
+          "link": "https://geoscoreapi.com",
+          "description": "Score content for AI search citation readiness. Returns a 0-100 GEO score, 8 structural metrics, and improvement fixes",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "text-analysis-geoscore"
+        },
+        {
           "name": "Hirak OCR",
           "link": "https://ocr.hirak.site/",
           "description": "Image to text -text recognition- from image more than 100 language, accurate, unlimited requests",
@@ -11633,6 +11768,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "transportation-apilayer-aviationstack"
+        },
+        {
+          "name": "Apimetro",
+          "link": "https://apimetro.dev/swagger/index.html",
+          "description": "Geospatial data for Mexico City public transport system (Metro, Metrobús, Cablebús, RTP, etc.)",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-apimetro"
         },
         {
           "name": "AviationAPI",
@@ -13034,6 +13178,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-openweathermap"
+        },
+        {
+          "name": "Pirate Weather",
+          "link": "https://pirateweather.net/en/latest/",
+          "description": "Free weather API with forecast data similar to Dark Sky",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "weather-pirate-weather"
         },
         {
           "name": "QWeather",
