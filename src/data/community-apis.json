@@ -1,9 +1,19 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-03-16T00:00:00.000Z"
+    "lastUpdated": "2026-05-04T00:00:00.000Z"
   },
-  "add": [],
+  "add": [
+    {
+      "name": "PostalCodes.info",
+      "link": "https://postalcodes.info/api",
+      "description": "Postal-code lookup, country exports, and address validation data",
+      "category": "Geocoding",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown"
+    }
+  ],
   "remove": [],
   "update": []
 }
