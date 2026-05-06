@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1441,
+    "totalAPIs": 1444,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-05T05:34:00.569Z"
+    "lastUpdated": "2026-05-06T05:48:40.722Z"
   },
   "categories": [
     {
@@ -3190,6 +3190,15 @@
           "slug": "development-jsonbin-io"
         },
         {
+          "name": "JSONPlaceholder",
+          "link": "https://jsonplaceholder.typicode.com",
+          "description": "Fake REST API for testing and prototyping",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-jsonplaceholder"
+        },
+        {
           "name": "Kroki",
           "link": "https://kroki.io",
           "description": "Creates diagrams from textual descriptions",
@@ -4099,6 +4108,15 @@
           "slug": "email-dropmail"
         },
         {
+          "name": "EmailJS",
+          "link": "https://www.emailjs.com/docs/",
+          "description": "Send emails directly from client-side JavaScript without a backend server",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "email-emailjs"
+        },
+        {
           "name": "Email Validation",
           "link": "https://www.abstractapi.com/email-verification-validation-api",
           "description": "Validate email addresses for deliverability and spam",
@@ -4292,6 +4310,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "entertainment-random-useless-facts"
+        },
+        {
+          "name": "TasteDive",
+          "link": "https://tastedive.com/read/api",
+          "description": "Content-based recommendations for movies, music, TV shows, books, games, and podcasts",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "entertainment-tastedive"
         },
         {
           "name": "Techy",
