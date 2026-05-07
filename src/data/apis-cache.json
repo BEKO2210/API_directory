@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1444,
+    "totalAPIs": 1446,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-06T05:48:40.722Z"
+    "lastUpdated": "2026-05-07T05:52:37.863Z"
   },
   "categories": [
     {
@@ -8773,6 +8773,15 @@
           "slug": "open-data-18f"
         },
         {
+          "name": "AcreLens",
+          "link": "https://www.acrelens.com",
+          "description": "Land suitability scoring API for any US property: off-grid, rural, recreational, investment",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "open-data-acrelens"
+        },
+        {
           "name": "API Setu",
           "link": "https://www.apisetu.gov.in/",
           "description": "An Indian Government platform that provides a lot of APIS for KYC, business, education & employment",
@@ -10640,6 +10649,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-blogger"
+        },
+        {
+          "name": "Bluesky",
+          "link": "https://docs.bsky.app/",
+          "description": "Decentralized social networking via the AT protocol",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-bluesky"
         },
         {
           "name": "Cisco Spark",
