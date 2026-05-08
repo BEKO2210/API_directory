@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1446,
+    "totalAPIs": 1455,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-07T05:52:37.863Z"
+    "lastUpdated": "2026-05-08T05:22:36.900Z"
   },
   "categories": [
     {
@@ -1813,6 +1813,15 @@
           "slug": "cryptocurrency-alchemy-ethereum"
         },
         {
+          "name": "Alpha (Mossland)",
+          "link": "https://alpha.moss.land/developers",
+          "description": "Korean crypto channel stance + RAG Q&A + canonical entity/topic/event store",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-alpha-mossland"
+        },
+        {
           "name": "Binance",
           "link": "https://github.com/binance/binance-spot-api-docs",
           "description": "Exchange for Trading Cryptocurrencies based in China",
@@ -3161,6 +3170,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-ipinfo"
+        },
+        {
+          "name": "isitdownstatus",
+          "link": "https://isitdownstatus.com",
+          "description": "Check if websites and online services are currently down",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-isitdownstatus"
         },
         {
           "name": "jsDelivr",
@@ -4859,6 +4877,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-styvio"
+        },
+        {
+          "name": "Tax Data API",
+          "link": "https://apilayer.com/marketplace/tax_data-api",
+          "description": "Instant VAT number and tax validation across the globe",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-tax-data-api"
         },
         {
           "name": "Tradier",
@@ -8917,6 +8944,15 @@
           "slug": "open-data-microlink-io"
         },
         {
+          "name": "ModelPartFinder Error Codes",
+          "link": "https://modelpartfinder.com/docs/api",
+          "description": "Lookup appliance and equipment error codes by brand and code, with recommended replacement parts",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-modelpartfinder-error-codes"
+        },
+        {
           "name": "Nasdaq Data Link",
           "link": "https://docs.data.nasdaq.com/",
           "description": "Stock market data",
@@ -9444,6 +9480,15 @@
       "name": "Phone",
       "slug": "phone",
       "apis": [
+        {
+          "name": "Numlookup",
+          "link": "https://numlookupapi.com",
+          "description": "Phone number validation and carrier lookup API with global coverage",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "phone-numlookup"
+        },
         {
           "name": "Numverify",
           "link": "https://numverify.com?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
@@ -10010,6 +10055,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "science-math-open-science-framework"
+        },
+        {
+          "name": "OpenAlex",
+          "link": "https://docs.openalex.org/",
+          "description": "Open catalog of scholarly works, authors, institutions, sources, and concepts",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-openalex"
         },
         {
           "name": "Purple Air",
@@ -11053,6 +11107,15 @@
           "slug": "sports-fitness-collegefootballdata-com"
         },
         {
+          "name": "DiscGolf",
+          "link": "https://discgolfapi.com/docs/",
+          "description": "Structured disc golf course data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-discgolf"
+        },
+        {
           "name": "Ergast F1",
           "link": "http://ergast.com/mrd/",
           "description": "F1 data from the beginning of the world championships in 1950",
@@ -11762,6 +11825,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "tracking-whatpulse"
+        },
+        {
+          "name": "WhereParcel",
+          "link": "https://whereparcel.com/docs",
+          "description": "Unified parcel tracking API across 60+ carriers worldwide (USPS, FedEx, UPS, DHL, etc.)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "tracking-whereparcel"
         }
       ]
     },
@@ -13313,6 +13385,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-weatherbit"
+        },
+        {
+          "name": "wttr.in",
+          "link": "https://wttr.in/:help",
+          "description": "Weather in your terminal, supports JSON output",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "weather-wttr-in"
         },
         {
           "name": "Yandex.Weather",
