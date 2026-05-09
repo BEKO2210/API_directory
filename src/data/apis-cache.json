@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1455,
+    "totalAPIs": 1461,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-08T05:22:36.900Z"
+    "lastUpdated": "2026-05-09T05:39:40.957Z"
   },
   "categories": [
     {
@@ -417,7 +417,7 @@
           "description": "A useful tool to get the exact scene of an anime from a screenshot",
           "auth": "No",
           "https": true,
-          "cors": "no",
+          "cors": "yes",
           "slug": "anime-trace-moe"
         },
         {
@@ -2512,6 +2512,15 @@
           "slug": "currency-exchange-national-bank-of-poland"
         },
         {
+          "name": "paralelo.bo",
+          "link": "https://paralelo.bo/api",
+          "description": "Bolivia parallel-market USD/BOB exchange rate, aggregated from P2P sources every 60s",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-paralelo-bo"
+        },
+        {
           "name": "VATComply.com",
           "link": "https://www.vatcomply.com/documentation",
           "description": "Exchange rates, geolocation and VAT number validation",
@@ -4223,6 +4232,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "email-mailtrap"
+        },
+        {
+          "name": "PostStack",
+          "link": "https://poststack.dev/docs",
+          "description": "EU-hosted email API for transactional and marketing email, with contacts, broadcasts, and analytics",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-poststack"
         },
         {
           "name": "Sendgrid",
@@ -6892,6 +6910,15 @@
           "slug": "government-brazilian-chamber-of-deputies-open-data"
         },
         {
+          "name": "CPFHub",
+          "link": "https://cpfhub.io",
+          "description": "Brazilian CPF lookup — returns full name, birth date, and gender for any CPF",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-cpfhub"
+        },
+        {
           "name": "Census.gov",
           "link": "https://www.census.gov/data/developers/data-sets.html",
           "description": "The US Census Bureau provides various APIs and data sets on demographics and businesses",
@@ -7780,6 +7807,15 @@
           "slug": "health-dataflow-kit-covid-19"
         },
         {
+          "name": "Edamam",
+          "link": "https://developer.edamam.com/",
+          "description": "Food and nutrition data API with recipe search",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "health-edamam"
+        },
+        {
           "name": "FoodData Central",
           "link": "https://fdc.nal.usda.gov/",
           "description": "National Nutrient Database for Standard Reference",
@@ -8659,6 +8695,15 @@
           "slug": "news-feedbin"
         },
         {
+          "name": "Florida Man",
+          "link": "https://github.com/juliayxhuang/florida-man-api#readme",
+          "description": "Static JSON dataset of 10,000+ Florida Man headlines by date",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "news-florida-man"
+        },
+        {
           "name": "GNews",
           "link": "https://gnews.io/",
           "description": "Search for news from various sources",
@@ -8969,6 +9014,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-nobel-prize"
+        },
+        {
+          "name": "Onyx Bazaar",
+          "link": "https://onyx-actions.onrender.com/bazaar",
+          "description": "Free public leaderboard of x402 paid HTTP services indexed from Coinbase CDP discovery API",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "open-data-onyx-bazaar"
         },
         {
           "name": "Open Data Minneapolis",
