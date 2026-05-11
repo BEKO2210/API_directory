@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1466,
+    "totalAPIs": 1478,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-10T05:55:28.477Z"
+    "lastUpdated": "2026-05-11T06:28:52.763Z"
   },
   "categories": [
     {
@@ -1603,6 +1603,15 @@
           "slug": "cloud-storage-file-sharing-filestack"
         },
         {
+          "name": "FileUp",
+          "link": "https://github.com/RealSinaSnp/FileUp",
+          "description": "Temporary file hosting with upload API, expiration times, and view limits",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "cloud-storage-file-sharing-fileup"
+        },
+        {
           "name": "GoFile",
           "link": "https://gofile.io/api",
           "description": "Unlimited size file uploads for free",
@@ -2749,6 +2758,15 @@
           "slug": "development-brainshop-ai"
         },
         {
+          "name": "BrewPage",
+          "link": "https://brewpage.app",
+          "description": "Free hosting for HTML, JSON, key-value, files, multi-file sites with short URLs and TTL retention",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "development-brewpage"
+        },
+        {
           "name": "Browshot",
           "link": "https://browshot.com/api/documentation",
           "description": "Easily make screenshots of web pages in any screen size, as any device",
@@ -3886,6 +3904,15 @@
           "slug": "documents-productivity-asana"
         },
         {
+          "name": "BuildPDF",
+          "link": "https://buildpdf.co/api/docs",
+          "description": "Convert HTML, images, and text to PDF",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-buildpdf"
+        },
+        {
           "name": "ClickUp",
           "link": "https://clickup.com/api",
           "description": "ClickUp is a robust, cloud-based project management tool for boosting productivity",
@@ -4762,6 +4789,15 @@
           "slug": "finance-front-accounting-apis"
         },
         {
+          "name": "Helium",
+          "link": "https://heliumtrades.com/mcp-page/",
+          "description": "News with media bias scoring, balanced news synthesis, live market data, AI options pricing",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-helium"
+        },
+        {
           "name": "Hotstoks",
           "link": "https://hotstoks.com?utm_source=public-apis",
           "description": "Stock market data powered by SQL",
@@ -4769,6 +4805,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-hotstoks"
+        },
+        {
+          "name": "IBANforge",
+          "link": "https://api.ibanforge.com",
+          "description": "IBAN validation and BIC/SWIFT lookup for 75+ countries with 121K+ bank entries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-ibanforge"
         },
         {
           "name": "IEX Cloud",
@@ -5117,6 +5162,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "food-drink-punkapi"
+        },
+        {
+          "name": "RecipeAPI",
+          "link": "https://recipeapi.io",
+          "description": "Recipes, ingredients, nutrition data and cooking instructions",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "food-drink-recipeapi"
         },
         {
           "name": "Rustybeer",
@@ -6128,6 +6182,15 @@
           "https": true,
           "cors": "yes",
           "slug": "geocoding-administrative-divisons-db"
+        },
+        {
+          "name": "ApogeoAPI",
+          "link": "https://apogeoapi.com",
+          "description": "Bundled API for countries, states, cities, IP geolocation, and live exchange rates",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-apogeoapi"
         },
         {
           "name": "adresse.data.gouv.fr",
@@ -8002,6 +8065,15 @@
       "slug": "jobs",
       "apis": [
         {
+          "name": "AI Dev Jobs",
+          "link": "https://aidevboard.com/openapi.yaml",
+          "description": "AI/ML engineering job aggregator with REST, RSS, and MCP endpoints",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-ai-dev-jobs"
+        },
+        {
           "name": "Adzuna",
           "link": "https://developer.adzuna.com/overview",
           "description": "Job board aggregator",
@@ -8224,6 +8296,15 @@
           "slug": "machine-learning-exude-api"
         },
         {
+          "name": "Groq",
+          "link": "https://console.groq.com/docs/quickstart",
+          "description": "Fast AI inference API with free tier, supports Llama, Mixtral, Gemma models",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-groq"
+        },
+        {
           "name": "Hirak FaceAPI",
           "link": "https://faceapi.hirak.site/",
           "description": "Face detection, face recognition with age estimation/gender estimation, accurate, no quota limits",
@@ -8231,6 +8312,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "machine-learning-hirak-faceapi"
+        },
+        {
+          "name": "Hugging Face",
+          "link": "https://huggingface.co",
+          "description": "AI model hub with inference API for NLP, computer vision, and audio",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-hugging-face"
         },
         {
           "name": "Imagga",
@@ -8687,6 +8777,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "music-vagalume"
+        },
+        {
+          "name": "Verome",
+          "link": "https://github.com/Kirazul/Verome-API",
+          "description": "Music API for searching, streaming, and exploring music data from YouTube Music, YouTube, and Last.fm",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "music-verome"
         }
       ]
     },
@@ -13313,6 +13412,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-hong-kong-obervatory"
+        },
+        {
+          "name": "IPMA",
+          "link": "https://api.ipma.pt/open-data/",
+          "description": "Portuguese weather and climate data",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "weather-ipma"
         },
         {
           "name": "MetaWeather",
