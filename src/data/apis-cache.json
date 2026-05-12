@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1478,
+    "totalAPIs": 1482,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-11T06:28:52.763Z"
+    "lastUpdated": "2026-05-12T05:57:37.784Z"
   },
   "categories": [
     {
@@ -563,7 +563,7 @@
         },
         {
           "name": "VirusTotal",
-          "link": "https://www.virustotal.com/en/documentation/public-api/",
+          "link": "https://docs.virustotal.com/reference/overview",
           "description": "VirusTotal File/URL Analysis",
           "auth": "apiKey",
           "https": true,
@@ -2324,6 +2324,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-poloniex"
+        },
+        {
+          "name": "PumpFunData",
+          "link": "https://pumpfundata.com/docs",
+          "description": "Historical Pump.fun and PumpSwap AMM swap data as hourly Parquet files",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "cryptocurrency-pumpfundata"
         },
         {
           "name": "Solana JSON RPC",
@@ -4373,6 +4382,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "entertainment-imgflip"
+        },
+        {
+          "name": "justmeme.wtf",
+          "link": "https://justmeme.wtf/api-docs",
+          "description": "Free meme API with 2400+ templates, search, trending, and AI generation",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "entertainment-justmeme-wtf"
         },
         {
           "name": "Meme Maker",
@@ -8137,6 +8155,15 @@
           "slug": "jobs-graphql-jobs"
         },
         {
+          "name": "HeroHunt People Search",
+          "link": "https://www.herohunt.ai/people-search-api",
+          "description": "Search 1 billion people profiles across LinkedIn and GitHub for talent sourcing",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-herohunt-people-search"
+        },
+        {
           "name": "Jobs2Careers",
           "link": "http://api.jobs2careers.com/api/spec.pdf",
           "description": "Job aggregator",
@@ -10457,6 +10484,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "security-crxcavator"
+        },
+        {
+          "name": "dead-drop",
+          "link": "https://api.dead-drop.xyz/api/v1/docs",
+          "description": "Ephemeral zero-knowledge encrypted data sharing",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-dead-drop"
         },
         {
           "name": "Dehash.lt",
