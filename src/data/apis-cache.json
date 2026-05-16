@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1482,
+    "totalAPIs": 1483,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-15T06:24:23.487Z"
+    "lastUpdated": "2026-05-16T05:46:02.108Z"
   },
   "categories": [
     {
@@ -11573,6 +11573,15 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-thesportsdb"
+        },
+        {
+          "name": "TourneyRadar",
+          "link": "https://tourneyradar-api.vercel.app",
+          "description": "Upcoming chess tournaments from 140+ national federations worldwide",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "sports-fitness-tourneyradar"
         },
         {
           "name": "Tredict",
