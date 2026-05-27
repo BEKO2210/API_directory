@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1483,
+    "totalAPIs": 1486,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-26T06:38:40.581Z"
+    "lastUpdated": "2026-05-27T06:55:16.445Z"
   },
   "categories": [
     {
@@ -953,6 +953,15 @@
           "https": true,
           "cors": "no",
           "slug": "books-a-b-blia-digital"
+        },
+        {
+          "name": "Amanah Sunnah",
+          "link": "https://sunnah.amanahagent.cloud/developers",
+          "description": "Semantic search across Quran, Hadith, Tafsir & 18K+ Rijal narrators",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "books-amanah-sunnah"
         },
         {
           "name": "Bhagavad Gita",
@@ -6479,6 +6488,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "geocoding-graph-countries"
+        },
+        {
+          "name": "HackMyIP",
+          "link": "https://hackmyip.com/api",
+          "description": "IP geolocation, ISP and privacy/VPN scoring, email breach checks, DNS and WHOIS lookups",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-hackmyip"
         },
         {
           "name": "HelloSalut",
@@ -12308,6 +12326,15 @@
           "https": true,
           "cors": "yes",
           "slug": "transportation-open-charge-map"
+        },
+        {
+          "name": "Orizn Visa",
+          "link": "https://visa.orizn.app",
+          "description": "Visa requirements for 199 countries, 39K+ passport-destination pairs in 15 languages",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-orizn-visa"
         },
         {
           "name": "OpenSky Network",
