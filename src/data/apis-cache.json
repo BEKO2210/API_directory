@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1486,
+    "totalAPIs": 1487,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-27T06:55:16.445Z"
+    "lastUpdated": "2026-05-28T06:43:29.350Z"
   },
   "categories": [
     {
@@ -11882,6 +11882,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "text-analysis-aylien-text-analysis"
+        },
+        {
+          "name": "Audexum",
+          "link": "https://audexum.com/docs",
+          "description": "Text-to-speech REST API with 43 voices and 33 languages",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "text-analysis-audexum"
         },
         {
           "name": "Cloudmersive Natural Language Processing",
