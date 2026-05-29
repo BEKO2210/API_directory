@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1487,
+    "totalAPIs": 1492,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-28T06:43:29.350Z"
+    "lastUpdated": "2026-05-29T06:45:02.249Z"
   },
   "categories": [
     {
@@ -1391,6 +1391,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "business-trello"
+        },
+        {
+          "name": "Signaliz",
+          "slug": "business-signaliz",
+          "description": "GTM enrichment, email verification, and lead generation APIs for AI agents",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://signaliz.docs.buildwithfern.com/signaliz-api-public-docs/introduction"
         }
       ]
     },
@@ -3469,6 +3478,15 @@
           "slug": "development-pusher-beams"
         },
         {
+          "name": "QR & Barcode",
+          "link": "https://solsigs.com/qrapi/",
+          "description": "QR codes and barcodes (Code 128, EAN-13, Data Matrix, PDF417 + more). SVG or PNG output",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-qr-barcode"
+        },
+        {
           "name": "QR code",
           "link": "https://www.qrtag.net/api/",
           "description": "Create an easy to read QR code and URL shortener",
@@ -4760,6 +4778,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-econdb"
+        },
+        {
+          "name": "EconPulse",
+          "link": "https://econpulse.io",
+          "description": "Live economic data — CPI, PPI, energy, treasury rates, BTC premium",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-econpulse"
         },
         {
           "name": "Fed Treasury",
@@ -9223,6 +9250,15 @@
           "slug": "open-data-open-data-minneapolis"
         },
         {
+          "name": "Open Scholarships",
+          "link": "https://scholarships.grudged.io",
+          "description": "Free, openly-licensed directory of US scholarships and student aid from official sources",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-open-scholarships"
+        },
+        {
           "name": "openAFRICA",
           "link": "https://africaopendata.org/",
           "description": "Large datasets repository of African open data",
@@ -12881,6 +12917,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "url-shorteners-rebrandly"
+        },
+        {
+          "name": "RedirHub",
+          "link": "https://redirhub.com",
+          "description": "URL redirect management with custom domains, HTTPS, analytics, and REST API",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "url-shorteners-redirhub"
         },
         {
           "name": "Short Link",
