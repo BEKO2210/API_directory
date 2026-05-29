@@ -12,6 +12,15 @@
       "auth": "apiKey",
       "https": true,
       "cors": "unknown"
+    },
+    {
+      "name": "Signaliz",
+      "link": "https://signaliz.docs.buildwithfern.com/signaliz-api-public-docs/introduction",
+      "description": "GTM enrichment, email verification, and lead generation APIs for AI agents",
+      "category": "Business",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown"
     }
   ],
   "remove": [],
