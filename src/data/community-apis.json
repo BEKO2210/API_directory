@@ -21,6 +21,15 @@
       "auth": "apiKey",
       "https": true,
       "cors": "unknown"
+    },
+    {
+      "name": "Longevity World Cup",
+      "link": "https://longevityworldcup.com/api/data/athletes",
+      "description": "Public longevity sport leaderboard and biological-age competition data",
+      "category": "Health",
+      "auth": "",
+      "https": true,
+      "cors": "yes"
     }
   ],
   "remove": [],
