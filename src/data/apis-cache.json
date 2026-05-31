@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1492,
+    "totalAPIs": 1493,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-30T06:15:22.513Z"
+    "lastUpdated": "2026-05-31T06:50:14.147Z"
   },
   "categories": [
     {
@@ -8120,6 +8120,15 @@
           "https": true,
           "cors": "yes",
           "slug": "health-quarantine"
+        },
+        {
+          "name": "Longevity World Cup",
+          "slug": "health-longevity-world-cup",
+          "description": "Public longevity sport leaderboard and biological-age competition data",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://longevityworldcup.com/api/data/athletes"
         }
       ]
     },
