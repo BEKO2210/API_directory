@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1493,
+    "totalAPIs": 1500,
     "totalCategories": 51,
-    "lastUpdated": "2026-05-31T06:50:14.147Z"
+    "lastUpdated": "2026-06-01T08:25:35.457Z"
   },
   "categories": [
     {
@@ -1417,13 +1417,13 @@
           "slug": "calendar-calendarific"
         },
         {
-          "name": "Checkiday - National Holiday API",
+          "name": "Checkiday - National Holiday",
           "link": "https://apilayer.com/marketplace/checkiday-api",
-          "description": "Industry-leading Holiday API. Over 5,000 holidays and thousands of descriptions. Trusted by the World’s leading companies",
+          "description": "Industry-leading holiday data with over 5,000 holidays and thousands of descriptions",
           "auth": "apiKey",
           "https": true,
           "cors": "unknown",
-          "slug": "calendar-checkiday-national-holiday-api"
+          "slug": "calendar-checkiday-national-holiday"
         },
         {
           "name": "Church Calendar",
@@ -3730,6 +3730,15 @@
           "slug": "development-suprsonic"
         },
         {
+          "name": "Talordata",
+          "link": "https://docs.talordata.com/",
+          "description": "SERP data from major search engines with a free trial",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-talordata"
+        },
+        {
           "name": "Thunderbit",
           "link": "https://thunderbit.com/docs/introduction",
           "description": "Extract web pages as Markdown or structured data for AI apps",
@@ -4111,6 +4120,15 @@
           "slug": "documents-productivity-prexview"
         },
         {
+          "name": "Renderly",
+          "link": "https://renderlyapi.com",
+          "description": "HTML to PDF conversion API built on Chromium",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-renderly"
+        },
+        {
           "name": "Restpack",
           "link": "https://restpack.io/",
           "description": "Provides screenshot, HTML to PDF and content extraction APIs",
@@ -4129,13 +4147,13 @@
           "slug": "documents-productivity-todoist"
         },
         {
-          "name": "Smart Image Enhancement API",
+          "name": "Smart Image Enhancement",
           "link": "https://apilayer.com/marketplace/image_enhancement-api",
           "description": "Performs image upscaling by adding detail to images through multiple super-resolution algorithms",
           "auth": "apiKey",
           "https": true,
           "cors": "unknown",
-          "slug": "documents-productivity-smart-image-enhancement-api"
+          "slug": "documents-productivity-smart-image-enhancement"
         },
         {
           "name": "staffSign",
@@ -4726,13 +4744,13 @@
           "slug": "finance-banco-do-brasil"
         },
         {
-          "name": "Bank Data API",
+          "name": "Bank Data",
           "link": "https://apilayer.com/marketplace/bank_data-api",
           "description": "Instant IBAN and SWIFT number validation across the globe",
           "auth": "apiKey",
           "https": true,
           "cors": "unknown",
-          "slug": "finance-bank-data-api"
+          "slug": "finance-bank-data"
         },
         {
           "name": "Billplz",
@@ -4960,6 +4978,15 @@
           "slug": "finance-openfigi"
         },
         {
+          "name": "Plaid",
+          "link": "https://www.plaid.com/docs",
+          "description": "Connect with user's bank accounts and access transaction data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-plaid"
+        },
+        {
           "name": "Polygon",
           "link": "https://polygon.io/",
           "description": "Historical stock market data",
@@ -5032,13 +5059,13 @@
           "slug": "finance-styvio"
         },
         {
-          "name": "Tax Data API",
+          "name": "Tax Data",
           "link": "https://apilayer.com/marketplace/tax_data-api",
           "description": "Instant VAT number and tax validation across the globe",
           "auth": "apiKey",
           "https": true,
           "cors": "unknown",
-          "slug": "finance-tax-data-api"
+          "slug": "finance-tax-data"
         },
         {
           "name": "Tradier",
@@ -8050,6 +8077,15 @@
           "slug": "health-makeup"
         },
         {
+          "name": "MedlinePlus Genetics",
+          "link": "https://medlineplus.gov/about/developers/geneticsdatafilesapi/",
+          "description": "Genetic conditions, genes, chromosomes and mtDNA data",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "health-medlineplus-genetics"
+        },
+        {
           "name": "MyVaccination",
           "link": "https://documenter.getpostman.com/view/16605343/Tzm8GG7u",
           "description": "Vaccination data for Malaysia",
@@ -8862,7 +8898,7 @@
         {
           "name": "Verome",
           "link": "https://github.com/Kirazul/Verome-API",
-          "description": "Music API for searching, streaming, and exploring music data from YouTube Music, YouTube, and Last.fm",
+          "description": "Music API for searching, streaming and exploring music data from YouTube Music, YouTube, and Last.fm",
           "auth": "No",
           "https": true,
           "cors": "unknown",
@@ -10677,7 +10713,7 @@
         {
           "name": "IPLogs",
           "link": "https://iplogs.com/docs",
-          "description": "Free VPN, proxy, Tor and datacenter IP detection. 13 sources, active probing.",
+          "description": "Free VPN, proxy, Tor and datacenter IP detection. 13 sources, active probing",
           "auth": "No",
           "https": true,
           "cors": "yes",
@@ -11090,6 +11126,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-full-contact"
+        },
+        {
+          "name": "GetXAPI",
+          "link": "https://www.getxapi.com/",
+          "description": "Read Twitter / X data and post tweets, likes, retweets, follows, DMs via REST",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "social-getxapi"
         },
         {
           "name": "HackerNews",
@@ -11902,13 +11947,13 @@
       "slug": "text-analysis",
       "apis": [
         {
-          "name": "Code Detection API",
+          "name": "Code Detection",
           "link": "https://codedetectionapi.runtime.dev",
           "description": "Detect, label, format and enrich the code in your app or in your data pipeline",
           "auth": "OAuth",
           "https": true,
           "cors": "unknown",
-          "slug": "text-analysis-code-detection-api"
+          "slug": "text-analysis-code-detection"
         },
         {
           "name": "apilayer languagelayer",
@@ -11976,7 +12021,7 @@
         {
           "name": "GeoScore",
           "link": "https://geoscoreapi.com",
-          "description": "Score content for AI search citation readiness. Returns a 0-100 GEO score, 8 structural metrics, and improvement fixes",
+          "description": "Score content for AI search citation readiness with a 0-100 GEO score and 8 structural metrics",
           "auth": "apiKey",
           "https": true,
           "cors": "yes",
@@ -13033,6 +13078,15 @@
           "slug": "vehicle-nhtsa"
         },
         {
+          "name": "RevCarData",
+          "link": "https://revcardata.com",
+          "description": "86,000+ global vehicle specifications and EV metrics",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "vehicle-revcardata"
+        },
+        {
           "name": "Smartcar",
           "link": "https://smartcar.com/docs/",
           "description": "Lock and unlock vehicles and get data like odometer reading and location. Works on most new cars",
@@ -13154,6 +13208,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "video-harry-potter-charactes"
+        },
+        {
+          "name": "Hyperserve",
+          "link": "https://hyperserve.io/",
+          "description": "Video backend API: upload any format, transcode to MP4, deliver via CDN",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-hyperserve"
         },
         {
           "name": "IMDb-API",
