@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1500,
+    "totalAPIs": 1501,
     "totalCategories": 51,
-    "lastUpdated": "2026-06-01T08:25:35.457Z"
+    "lastUpdated": "2026-06-02T07:17:01.797Z"
   },
   "categories": [
     {
@@ -11672,6 +11672,15 @@
           "https": false,
           "cors": "no",
           "slug": "sports-fitness-suredbits"
+        },
+        {
+          "name": "TheRundown",
+          "link": "https://therundown.io/",
+          "description": "Real-time sports data: odds, scores, stats & prediction markets, 30+ leagues, 18+ sportsbooks",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-therundown"
         },
         {
           "name": "TheSportsDB",
