@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1501,
+    "totalAPIs": 1505,
     "totalCategories": 51,
-    "lastUpdated": "2026-06-03T08:07:12.951Z"
+    "lastUpdated": "2026-06-04T07:15:55.723Z"
   },
   "categories": [
     {
@@ -1407,6 +1407,15 @@
       "name": "Calendar",
       "slug": "calendar",
       "apis": [
+        {
+          "name": "caldays",
+          "link": "https://caldays.com/api",
+          "description": "Public holidays for 195+ countries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "calendar-caldays"
+        },
         {
           "name": "Calendarific",
           "link": "https://calendarific.com/",
@@ -4190,6 +4199,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "documents-productivity-zube"
+        },
+        {
+          "name": "Zero Retention PDF",
+          "link": "https://xeropdf.com",
+          "description": "Zero-retention HTML to PDF conversion",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "documents-productivity-zero-retention-pdf"
         }
       ]
     },
@@ -4787,6 +4805,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-citi"
+        },
+        {
+          "name": "CongressInvests",
+          "link": "https://congressinvests.com",
+          "description": "Real-time U.S. congressional stock trade disclosures from Senate EFD and House Clerk",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-congressinvests"
         },
         {
           "name": "Econdb",
@@ -11573,6 +11600,15 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-openligadb"
+        },
+        {
+          "name": "Padel Snipe",
+          "link": "https://padelsnipe.com/fr/world/api",
+          "description": "4,000+ mapped padel clubs across 9 European countries with GPS and courts",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-padel-snipe"
         },
         {
           "name": "Premier League Standings",
