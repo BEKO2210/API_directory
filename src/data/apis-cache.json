@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1538,
+    "totalAPIs": 1544,
     "totalCategories": 51,
-    "lastUpdated": "2026-06-06T06:21:18.210Z"
+    "lastUpdated": "2026-06-07T06:58:51.856Z"
   },
   "categories": [
     {
@@ -748,6 +748,15 @@
           "slug": "art-design-rijksmuseum"
         },
         {
+          "name": "UpRes",
+          "link": "https://upres.ai/docs/api",
+          "description": "AI image upscaling to 8K with 18 models (Real-ESRGAN, SeedVR2, AuraSR)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-upres"
+        },
+        {
           "name": "Word Cloud",
           "link": "https://wordcloudapi.com/",
           "description": "Easily create word clouds",
@@ -920,6 +929,15 @@
           "https": false,
           "cors": "no",
           "slug": "blockchain-steem"
+        },
+        {
+          "name": "TWZRD Agent Intel",
+          "link": "https://intel.twzrd.xyz",
+          "description": "Solana on-chain agent trust scoring via MCP; 4 free tools to score, resolve and verify AI agent wallets",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "blockchain-twzrd-agent-intel"
         },
         {
           "name": "The Graph",
@@ -7378,6 +7396,15 @@
           "slug": "government-colorado-information-marketplace"
         },
         {
+          "name": "Conversor IAE CNAE",
+          "link": "https://www.conversoriaecnae.es/api/v1/docs",
+          "description": "Spanish IAE/CNAE tax activity codes, 2009→2025 crosswalk and AEAT obligations",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "government-conversor-iae-cnae"
+        },
+        {
           "name": "Data USA",
           "link": "https://datausa.io/about/api/",
           "description": "US Public Data",
@@ -11621,6 +11648,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-vk"
+        },
+        {
+          "name": "xfetch",
+          "link": "https://xfetch.io",
+          "description": "Read API for X/Twitter search, profiles, tweets, and social graph",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-xfetch"
         }
       ]
     },
@@ -11897,6 +11933,15 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-sport-vision"
+        },
+        {
+          "name": "SportScore",
+          "link": "https://sportscore.com/developers/",
+          "description": "Live scores, fixtures, standings and stats for football, basketball, cricket and tennis",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-sportscore"
         },
         {
           "name": "Sportmonks Cricket",
@@ -14060,6 +14105,15 @@
           "https": true,
           "cors": "yes",
           "slug": "weather-qweather"
+        },
+        {
+          "name": "Rainbow Weather",
+          "link": "https://developer.rainbow.ai/",
+          "description": "Global real-time nowcasting API powered by radar + satellite fusion",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "weather-rainbow-weather"
         },
         {
           "name": "RainViewer",
