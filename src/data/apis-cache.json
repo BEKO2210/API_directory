@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1544,
+    "totalAPIs": 1554,
     "totalCategories": 51,
-    "lastUpdated": "2026-06-07T06:58:51.856Z"
+    "lastUpdated": "2026-06-08T07:23:23.329Z"
   },
   "categories": [
     {
@@ -4165,6 +4165,15 @@
           "slug": "documents-productivity-notion"
         },
         {
+          "name": "OCR.Space",
+          "link": "https://ocr.space/ocrapi",
+          "description": "OCR text extraction from images and PDFs with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "documents-productivity-ocr-space"
+        },
+        {
           "name": "PandaDoc",
           "link": "https://developers.pandadoc.com",
           "description": "DocGen and eSignatures API",
@@ -4766,6 +4775,15 @@
           "https": true,
           "cors": "no",
           "slug": "environment-srp-energy"
+        },
+        {
+          "name": "SustainMetrics",
+          "link": "https://www.sustainmetrics.net/api",
+          "description": "18,000+ GHG emission factors from DEFRA, EPA, ADEME, Ember",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-sustainmetrics"
         },
         {
           "name": "UK Carbon Intensity",
@@ -6832,6 +6850,15 @@
           "slug": "geocoding-ip2proxy"
         },
         {
+          "name": "ip2geo.dev",
+          "link": "https://ip2geo.dev",
+          "description": "Programmatically convert IP addresses into geolocation data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-ip2geo-dev"
+        },
+        {
           "name": "ipapi.co",
           "link": "https://ipapi.co/api/#introduction",
           "description": "Find IP address location information",
@@ -7459,6 +7486,15 @@
           "slug": "government-epa"
         },
         {
+          "name": "FastDOL",
+          "link": "https://www.fastdol.com/docs",
+          "description": "Federal enforcement records for US employers: OSHA, WHD, MSHA, EPA, NLRB, and more",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-fastdol"
+        },
+        {
           "name": "FBI Wanted",
           "link": "https://www.fbi.gov/wanted/api",
           "description": "Access information on the FBI Wanted program",
@@ -8077,6 +8113,15 @@
       "slug": "health",
       "apis": [
         {
+          "name": "Clinical Trials Directory",
+          "link": "https://trials.starfile.org/api",
+          "description": "Every clinical trial registered with ClinicalTrials.gov, indexed by condition and sponsor",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-clinical-trials-directory"
+        },
+        {
           "name": "CMS.gov",
           "link": "https://data.cms.gov/provider-data/",
           "description": "Access to the data from the CMS - medicare.gov",
@@ -8497,6 +8542,15 @@
           "slug": "jobs-juju"
         },
         {
+          "name": "JobDataLake",
+          "link": "https://www.jobdatalake.com/docs",
+          "description": "1M+ enriched job listings from 20,000+ companies with salary, skills, seniority",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-jobdatalake"
+        },
+        {
           "name": "Open Skills",
           "link": "https://github.com/workforce-data-initiative/skills-api/wiki/API-Overview",
           "description": "Job titles, skills and related jobs data",
@@ -8690,6 +8744,15 @@
           "https": true,
           "cors": "yes",
           "slug": "machine-learning-irisnet"
+        },
+        {
+          "name": "Jina AI",
+          "link": "https://jina.ai",
+          "description": "Free AI API for embeddings, reranking, and text processing",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-jina-ai"
         },
         {
           "name": "Keen IO",
@@ -9590,6 +9653,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-socrata"
+        },
+        {
+          "name": "Statistics of the World",
+          "link": "https://statisticsoftheworld.com/api-docs",
+          "description": "Economic data for 218 countries — GDP, population, inflation, and 440+ indicators from IMF and World Bank",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-statistics-of-the-world"
         },
         {
           "name": "Teleport",
@@ -12697,6 +12769,15 @@
           "slug": "transportation-cts"
         },
         {
+          "name": "FAA N-Number Registry",
+          "link": "https://n-number.starfile.org/api",
+          "description": "Every FAA-registered civil aircraft in the United States, lookup by N-number or Mode S hex code",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-faa-n-number-registry"
+        },
+        {
           "name": "Grab",
           "link": "https://developer.grab.com/docs/",
           "description": "Track deliveries, ride fares, payments and loyalty points",
@@ -12821,6 +12902,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "transportation-refuge-restrooms"
+        },
+        {
+          "name": "Road511",
+          "link": "https://road511.com/docs.html",
+          "description": "Unified traffic data from 65 US/CA jurisdictions: events, cameras, signs, bridges, truck routes",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-road511"
         },
         {
           "name": "Sabre for Developers",
