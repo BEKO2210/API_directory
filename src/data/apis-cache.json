@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1554,
+    "totalAPIs": 1563,
     "totalCategories": 51,
-    "lastUpdated": "2026-06-12T07:13:18.285Z"
+    "lastUpdated": "2026-06-13T06:49:25.702Z"
   },
   "categories": [
     {
@@ -1339,6 +1339,15 @@
           "slug": "business-orb-intelligence"
         },
         {
+          "name": "Pick an Agency",
+          "link": "https://www.pickanagency.com/developers",
+          "description": "Search 47,000+ marketing agencies by service, location and rating",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-pick-an-agency"
+        },
+        {
           "name": "Redash",
           "link": "https://redash.io/help/user-guide/integrations-and-api/api",
           "description": "Access your queries and dashboards on Redash",
@@ -2252,6 +2261,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-huobi"
+        },
+        {
+          "name": "Hyperliquid Market Data",
+          "link": "https://rapidapi.com/theliminalguy/api/hyperliquid-market-data-oi-funding-open-interest",
+          "description": "Hyperliquid open interest, funding and cross-venue predicted rates per coin",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-hyperliquid-market-data"
         },
         {
           "name": "icy.tools",
@@ -6823,6 +6841,15 @@
           "slug": "geocoding-ip-api"
         },
         {
+          "name": "IP-API.io",
+          "link": "https://ip-api.io",
+          "description": "IP geolocation with VPN/proxy/Tor detection, reputation and risk score",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-ip-api-io"
+        },
+        {
           "name": "IP Geolocation",
           "link": "https://www.abstractapi.com/ip-geolocation-api",
           "description": "Geolocate website visitors from their IPs",
@@ -6929,6 +6956,15 @@
           "https": true,
           "cors": "yes",
           "slug": "geocoding-kiprio-uk-postcode"
+        },
+        {
+          "name": "LatLng",
+          "link": "https://www.latlng.work/docs",
+          "description": "Geocoding, reverse geocoding, places, and static maps",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-latlng"
         },
         {
           "name": "LocationIQ",
@@ -8257,6 +8293,15 @@
           "slug": "health-covid-id"
         },
         {
+          "name": "Cure Cancer With AI",
+          "link": "https://www.curecancerwithai.com/developers",
+          "description": "Oncology research, clinical trials, FDA approvals, news, and MAMMAL predictions",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "health-cure-cancer-with-ai"
+        },
+        {
           "name": "Dataflow Kit COVID-19",
           "link": "https://covid-19.dataflowkit.com",
           "description": "COVID-19 live statistics into sites per hour",
@@ -9325,6 +9370,15 @@
           "slug": "news-newsx"
         },
         {
+          "name": "Noozra",
+          "link": "https://noozra.com/api",
+          "description": "Free news headlines from 200+ curated RSS sources",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "news-noozra"
+        },
+        {
           "name": "NPR One",
           "link": "http://dev.npr.org/api/",
           "description": "Personalized news listening experience from NPR",
@@ -9493,6 +9547,15 @@
           "slug": "open-data-genesis"
         },
         {
+          "name": "InfraNode",
+          "link": "https://infranode.dev",
+          "description": "Unified German city open data: weather, air quality, EV chargers, transit, demographics",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "open-data-infranode"
+        },
+        {
           "name": "Joshua Project",
           "link": "https://api.joshuaproject.net/",
           "description": "People groups of the world with the fewest followers of Christ",
@@ -9500,6 +9563,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "open-data-joshua-project"
+        },
+        {
+          "name": "K-Data Gate",
+          "link": "https://kdata-gate.vercel.app/docs",
+          "description": "Korean market data: K-beauty/K-food products, Naver trends, stocks, real estate, weather",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "open-data-k-data-gate"
         },
         {
           "name": "Kaggle",
@@ -10181,6 +10253,15 @@
           "https": true,
           "cors": "yes",
           "slug": "phone-veriphone"
+        },
+        {
+          "name": "VeriRoute Intel",
+          "link": "https://verirouteintel.com",
+          "description": "CNAM caller ID, carrier/LRN lookup and spam scoring for North American phone numbers",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "phone-veriroute-intel"
         }
       ]
     },
