@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1563,
+    "totalAPIs": 1567,
     "totalCategories": 51,
-    "lastUpdated": "2026-06-19T08:25:27.773Z"
+    "lastUpdated": "2026-06-20T06:54:37.810Z"
   },
   "categories": [
     {
@@ -2002,6 +2002,15 @@
           "slug": "cryptocurrency-brave-newcoin"
         },
         {
+          "name": "btcnode.uk",
+          "link": "https://btcnode.uk",
+          "description": "Bitcoin blockchain data, fees, mempool, SEC insider trades, Reddit sentiment. x402 micropayments for paid endpoints.",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "cryptocurrency-btcnode-uk"
+        },
+        {
           "name": "BtcTurk",
           "link": "https://docs.btcturk.com/",
           "description": "Real-time cryptocurrency data, graphs and API that allows buy&sell",
@@ -3764,6 +3773,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "development-shoutcloud"
+        },
+        {
+          "name": "SiteIntel",
+          "link": "https://siteintel.duckdns.org",
+          "description": "Extract metadata, tech stack, emails, and screenshots from any URL",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-siteintel"
         },
         {
           "name": "Sonar",
@@ -8728,6 +8746,15 @@
           "slug": "machine-learning-exude-api"
         },
         {
+          "name": "GoldBean",
+          "link": "https://goldbean-api.xyz/docs",
+          "description": "OCR, Translation, NLP & ERNIE LLM via Baidu AI (free tier available)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "machine-learning-goldbean"
+        },
+        {
           "name": "Groq",
           "link": "https://console.groq.com/docs/quickstart",
           "description": "Fast AI inference API with free tier, supports Llama, Mixtral, Gemma models",
@@ -11291,6 +11318,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-best-buy"
+        },
+        {
+          "name": "BuyWhere",
+          "link": "https://buywhere.ai",
+          "description": "Real-time product catalog API for AI agents across merchants in 7 countries (SG, MY, TH, VN, PH, ID, US)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "shopping-buywhere"
         },
         {
           "name": "Digi-Key",
