@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1567,
+    "totalAPIs": 1570,
     "totalCategories": 51,
-    "lastUpdated": "2026-06-24T06:36:30.029Z"
+    "lastUpdated": "2026-06-25T04:59:53.819Z"
   },
   "categories": [
     {
@@ -7531,6 +7531,15 @@
           "slug": "government-district-of-columbia-open-data"
         },
         {
+          "name": "eCourtsIndia",
+          "link": "https://ecourtsindia.com/api",
+          "description": "Indian court case status, judgments, and hearing schedule API",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-ecourtsindia"
+        },
+        {
           "name": "EPA",
           "link": "https://www.epa.gov/developers/data-data-products#apis",
           "description": "Web services and data sets from the US Environmental Protection Agency",
@@ -8087,6 +8096,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-open-government-west-australia"
+        },
+        {
+          "name": "OpenMercantil",
+          "link": "https://openmercantil.es/api/documentacion",
+          "description": "Spanish company public data and BORME event timelines",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-openmercantil"
         },
         {
           "name": "OpenRegistry",
@@ -11033,6 +11051,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "security-dehash-lt"
+        },
+        {
+          "name": "Domain Intelligence",
+          "link": "https://oti-labs.com/domain-intelligence-api",
+          "description": "DNS, WHOIS/RDAP, SSL, subdomain enumeration, and email security in one parallel call",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "security-domain-intelligence"
         },
         {
           "name": "EmailRep",
