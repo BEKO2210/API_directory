@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1570,
+    "totalAPIs": 1580,
     "totalCategories": 51,
-    "lastUpdated": "2026-06-27T06:21:49.412Z"
+    "lastUpdated": "2026-06-28T06:54:47.278Z"
   },
   "categories": [
     {
@@ -179,15 +179,6 @@
           "https": true,
           "cors": "yes",
           "slug": "animals-placedog"
-        },
-        {
-          "name": "PlaceKitten",
-          "link": "https://placekitten.com/",
-          "description": "Placeholder Kitten pictures",
-          "auth": "No",
-          "https": true,
-          "cors": "yes",
-          "slug": "animals-placekitten"
         },
         {
           "name": "RandomDog",
@@ -1330,6 +1321,15 @@
           "slug": "business-markerapi"
         },
         {
+          "name": "Meirra",
+          "link": "https://meirra.com/api",
+          "description": "SEO monitoring, email verification, lead generation, and marketing analytics",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-meirra"
+        },
+        {
           "name": "ORB Intelligence",
           "link": "https://api.orb-intelligence.com/docs/",
           "description": "Company lookup",
@@ -1975,6 +1975,15 @@
           "slug": "cryptocurrency-block"
         },
         {
+          "name": "Block Lottos",
+          "link": "https://blocklottos.com/openapi.json",
+          "description": "On-chain lottery, draw history, jackpot and advertising endpoints",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-block-lottos"
+        },
+        {
           "name": "Blockchain",
           "link": "https://www.blockchain.com/api",
           "description": "Bitcoin Payment, Wallet & Transaction Data",
@@ -2362,6 +2371,15 @@
           "slug": "cryptocurrency-messari"
         },
         {
+          "name": "Mexc",
+          "link": "https://www.mexc.com/api-docs",
+          "description": "Cryptocurrency info, place order",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "cryptocurrency-mexc"
+        },
+        {
           "name": "Nexchange",
           "link": "https://nexchange2.docs.apiary.io/",
           "description": "Automated cryptocurrency exchange service",
@@ -2618,6 +2636,15 @@
           "https": true,
           "cors": "yes",
           "slug": "currency-exchange-paralelo-bo"
+        },
+        {
+          "name": "TaxID",
+          "link": "https://www.taxid.dev/docs",
+          "description": "EU VAT number validation with company name and address lookup across all 27 member states",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "currency-exchange-taxid"
         },
         {
           "name": "VATComply.com",
@@ -3883,6 +3910,15 @@
           "slug": "development-wandbox"
         },
         {
+          "name": "Webclaw",
+          "link": "https://webclaw.io/docs/api",
+          "description": "Web content extraction for LLMs with scrape, crawl, search, and summarize",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-webclaw"
+        },
+        {
           "name": "WebScraping.AI",
           "link": "https://webscraping.ai/",
           "description": "Web Scraping API with built-in proxies and JS rendering",
@@ -4219,6 +4255,15 @@
           "slug": "documents-productivity-pandadoc"
         },
         {
+          "name": "PDFFleet",
+          "link": "https://pdffleet.com",
+          "description": "HTML and URL to PDF API with templates and a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-pdffleet"
+        },
+        {
           "name": "Pocket",
           "link": "https://getpocket.com/developer/",
           "description": "Bookmarking service",
@@ -4235,6 +4280,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "documents-productivity-podio"
+        },
+        {
+          "name": "PolyDoc",
+          "link": "https://polydoc.tech",
+          "description": "HTML/URL to PDF and screenshots, plus Factur-X/ZUGFeRD e-invoices; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "documents-productivity-polydoc"
         },
         {
           "name": "PrexView",
@@ -5005,6 +5059,15 @@
           "slug": "finance-econpulse"
         },
         {
+          "name": "Edgrapi",
+          "link": "https://edgrapi.com",
+          "description": "Clean SEC EDGAR company financials, ratios, filings and 10-K/10-Q sections as normalized JSON",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-edgrapi"
+        },
+        {
           "name": "Fed Treasury",
           "link": "https://fiscaldata.treasury.gov/api-documentation/",
           "description": "U.S. Department of the Treasury Data",
@@ -5246,6 +5309,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-stockdata"
+        },
+        {
+          "name": "StockFit",
+          "link": "https://api.stockfit.io/docs",
+          "description": "SEC filings, financial statements, earnings, ETF holdings and ownership data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-stockfit"
         },
         {
           "name": "Styvio",
@@ -8888,6 +8960,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "machine-learning-nlp-cloud"
+        },
+        {
+          "name": "Not Human Search",
+          "link": "https://nothumansearch.ai/openapi.yaml",
+          "description": "AI tool discovery with agentic scoring for 8,600+ tools and MCP servers",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-not-human-search"
         },
         {
           "name": "OpenVisionAPI",
@@ -12689,6 +12770,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "tracking-correios"
+        },
+        {
+          "name": "Mapbox",
+          "link": "https://docs.mapbox.com/api/",
+          "description": "Maps, directions, geocoding",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "tracking-mapbox"
         },
         {
           "name": "Pixela",
