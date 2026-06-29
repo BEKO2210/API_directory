@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1580,
+    "totalAPIs": 1581,
     "totalCategories": 51,
-    "lastUpdated": "2026-06-28T06:54:47.278Z"
+    "lastUpdated": "2026-06-29T07:21:50.393Z"
   },
   "categories": [
     {
@@ -1946,6 +1946,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-bitfinex"
+        },
+        {
+          "name": "BitPanda",
+          "link": "https://developers.bitpanda.com",
+          "description": "Cryptocurrency Information",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "cryptocurrency-bitpanda"
         },
         {
           "name": "Bitmex",
