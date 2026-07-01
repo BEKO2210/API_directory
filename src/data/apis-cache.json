@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1581,
+    "totalAPIs": 1586,
     "totalCategories": 51,
-    "lastUpdated": "2026-06-30T06:46:56.949Z"
+    "lastUpdated": "2026-07-01T07:04:02.519Z"
   },
   "categories": [
     {
@@ -2611,6 +2611,15 @@
           "slug": "currency-exchange-exchangerate-api"
         },
         {
+          "name": "Exchangerate.dev",
+          "link": "https://exchangerate.dev/docs",
+          "description": "Live & historical FX, 168 pairs back to 1999, Frankfurter-compatible, free 10k/mo",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "currency-exchange-exchangerate-dev"
+        },
+        {
           "name": "Frankfurter",
           "link": "https://www.frankfurter.app/docs",
           "description": "Exchange rates, currency conversion and time series",
@@ -3557,6 +3566,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-opengraphr"
+        },
+        {
+          "name": "OpenQR",
+          "link": "https://openqr.uk/api",
+          "description": "Generate QR codes and manage dynamic (editable) QR codes with scan analytics",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-openqr"
         },
         {
           "name": "oyyi",
@@ -4867,6 +4885,15 @@
           "slug": "environment-pvwatts"
         },
         {
+          "name": "Solematica",
+          "link": "https://www.solematica.it/sviluppatori",
+          "description": "Compare Italian solar (photovoltaic) installer offers, energy prices (PUN/ARERA) and satellite roof data",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "environment-solematica"
+        },
+        {
           "name": "Srp Energy",
           "link": "https://srpenergy-api-client-python.readthedocs.io/en/latest/api.html",
           "description": "Hourly usage energy report for Srp customers",
@@ -5129,6 +5156,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-front-accounting-apis"
+        },
+        {
+          "name": "Goldprice.dev",
+          "link": "https://goldprice.dev/docs",
+          "description": "Cross-validated gold, silver & copper spot, futures & 30-year history in 13 currencies",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-goldprice-dev"
         },
         {
           "name": "Helium",
@@ -9826,6 +9862,15 @@
           "slug": "open-data-opensanctions"
         },
         {
+          "name": "Pan Africa Data",
+          "link": "https://panafricadata.com",
+          "description": "Macroeconomic and subnational income distribution data for all 54 African countries",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "open-data-pan-africa-data"
+        },
+        {
           "name": "PeakMetrics",
           "link": "https://rapidapi.com/peakmetrics-peakmetrics-default/api/peakmetrics-news",
           "description": "News articles and public datasets",
@@ -13152,7 +13197,7 @@
           "description": "Unified traffic data from 65 US/CA jurisdictions: events, cameras, signs, bridges, truck routes",
           "auth": "apiKey",
           "https": true,
-          "cors": "yes",
+          "cors": "no",
           "slug": "transportation-road511"
         },
         {
