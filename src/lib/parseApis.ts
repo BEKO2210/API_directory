@@ -64,13 +64,14 @@ export function parseReadme(markdown: string): ParsedData {
     // Skip non-category sections
     if (categoryName.toLowerCase() === 'index' || categoryName.includes('[')) continue;
 
-    const tableLines = lines.filter((line) => line.startsWith('|') && !line.startsWith('| API') && !line.match(/^\|\s*-/));
+    const tableLines = lines.filter(
+      (line) => line.startsWith('|') && !line.startsWith('| API') && !line.match(/^\|\s*-/),
+    );
 
     const apis: RawCategory['apis'] = [];
     for (const line of tableLines) {
       const parsed = parseTableRow(line);
       if (parsed) {
-        const categorySlug = slugify(categoryName);
         apis.push({
           name: parsed.name,
           slug: slugify(`${categoryName}-${parsed.name}`),

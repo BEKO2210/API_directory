@@ -101,7 +101,9 @@ function parseIssueBody(body: string): Record<string, string> {
   for (const line of lines) {
     const headerMatch = line.match(/^###\s+(.+)/);
     if (headerMatch) {
-      currentKey = slugify(headerMatch[1].trim());
+      const header = headerMatch[1];
+      if (!header) continue;
+      currentKey = slugify(header.trim());
       continue;
     }
 
@@ -209,10 +211,7 @@ async function commentOnIssue(issueNumber: number, comment: string): Promise<voi
 /*  Process: New API                                                   */
 /* ------------------------------------------------------------------ */
 
-async function processNewApi(
-  issue: GitHubIssue,
-  community: CommunityData,
-): Promise<boolean> {
+async function processNewApi(issue: GitHubIssue, community: CommunityData): Promise<boolean> {
   const fields = parseIssueBody(issue.body);
 
   const name = fields['api-name'];
@@ -239,34 +238,39 @@ async function processNewApi(
     return false;
   }
 
+  const apiName = name!;
+  const apiLink = link!;
+  const apiDescription = description!;
+  const apiCategory = category!;
+
   // Validate URL
-  if (!isValidUrl(link)) {
-    console.log(`  Issue #${issue.number}: Invalid URL "${link}"`);
+  if (!isValidUrl(apiLink)) {
+    console.log(`  Issue #${issue.number}: Invalid URL "${apiLink}"`);
     await commentOnIssue(
       issue.number,
-      `Could not auto-process this submission. The API URL \`${link}\` is not a valid HTTP/HTTPS URL.\n\nPlease correct the URL and add the \`auto-process\` label to retry.`,
+      `Could not auto-process this submission. The API URL \`${apiLink}\` is not a valid HTTP/HTTPS URL.\n\nPlease correct the URL and add the \`auto-process\` label to retry.`,
     );
     return false;
   }
 
   // Validate description length
-  if (description.length > 120) {
-    console.log(`  Issue #${issue.number}: Description too long (${description.length} chars)`);
+  if (apiDescription.length > 120) {
+    console.log(`  Issue #${issue.number}: Description too long (${apiDescription.length} chars)`);
     await commentOnIssue(
       issue.number,
-      `Could not auto-process this submission. The description is ${description.length} characters — please keep it under 100 characters.\n\nPlease shorten it and add the \`auto-process\` label to retry.`,
+      `Could not auto-process this submission. The description is ${apiDescription.length} characters — please keep it under 100 characters.\n\nPlease shorten it and add the \`auto-process\` label to retry.`,
     );
     return false;
   }
 
   // Check for duplicate in community data
   const isDuplicateCommunity = community.add.some(
-    (a) => a.name.toLowerCase() === name.toLowerCase() || a.link === link,
+    (a) => a.name.toLowerCase() === apiName.toLowerCase() || a.link === apiLink,
   );
   if (isDuplicateCommunity) {
     await closeIssue(
       issue.number,
-      `**${name}** has already been submitted and is pending inclusion. Closing as duplicate. Thank you for contributing!`,
+      `**${apiName}** has already been submitted and is pending inclusion. Closing as duplicate. Thank you for contributing!`,
     );
     return false;
   }
@@ -276,10 +280,10 @@ async function processNewApi(
   const corsValue = (cors ?? 'unknown').toLowerCase();
 
   community.add.push({
-    name,
-    link,
-    description,
-    category,
+    name: apiName,
+    link: apiLink,
+    description: apiDescription,
+    category: apiCategory,
     auth: authValue,
     https: httpsValue,
     cors: corsValue,
@@ -289,7 +293,7 @@ async function processNewApi(
   await closeIssue(
     issue.number,
     [
-      `**${name}** has been added to the community API list!`,
+      `**${apiName}** has been added to the community API list!`,
       '',
       '| Field | Value |',
       '|:------|:------|',
@@ -364,7 +368,9 @@ async function processBrokenApi(
       newUrl ? `| New URL | ${newUrl} |` : '',
       '',
       'The report has been logged and will be reviewed. If the API has moved, the new URL will be updated in a future build.',
-    ].filter(Boolean).join('\n'),
+    ]
+      .filter(Boolean)
+      .join('\n'),
   );
 
   console.log(`  Issue #${issue.number}: Logged broken API report for "${name}" (${problemType})`);
@@ -375,10 +381,7 @@ async function processBrokenApi(
 /*  Process: Update API                                                */
 /* ------------------------------------------------------------------ */
 
-async function processUpdateApi(
-  issue: GitHubIssue,
-  community: CommunityData,
-): Promise<boolean> {
+async function processUpdateApi(issue: GitHubIssue, community: CommunityData): Promise<boolean> {
   const fields = parseIssueBody(issue.body);
   const name = fields['api-name'];
   const newUrl = fields['new-url'];
@@ -442,7 +445,9 @@ async function processUpdateApi(
     ].join('\n'),
   );
 
-  console.log(`  Issue #${issue.number}: Recorded update for "${name}" (${Object.keys(updateFields).join(', ')})`);
+  console.log(
+    `  Issue #${issue.number}: Recorded update for "${name}" (${Object.keys(updateFields).join(', ')})`,
+  );
   return true;
 }
 
@@ -481,7 +486,10 @@ async function main(): Promise<void> {
         console.log(`    No matching label (new-api, broken-api, update-api), skipping`);
       }
     } catch (err) {
-      console.error(`    Error processing #${issue.number}:`, err instanceof Error ? err.message : err);
+      console.error(
+        `    Error processing #${issue.number}:`,
+        err instanceof Error ? err.message : err,
+      );
     }
   }
 
