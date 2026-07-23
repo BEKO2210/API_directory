@@ -49,7 +49,10 @@ function parseTableRow(row: string): Omit<RawAPI, 'slug'> | null {
   };
 }
 
-function parseReadme(markdown: string): { meta: { totalAPIs: number; totalCategories: number; lastUpdated: string }; categories: RawCategory[] } {
+function parseReadme(markdown: string): {
+  meta: { totalAPIs: number; totalCategories: number; lastUpdated: string };
+  categories: RawCategory[];
+} {
   const sections = markdown.split(/^###\s+/m);
   const categories: RawCategory[] = [];
   let totalAPIs = 0;
@@ -121,12 +124,10 @@ function mergeCommunityData(data: ReturnType<typeof parseReadme>): ReturnType<ty
     if (Array.isArray(community.update)) {
       for (const update of community.update) {
         for (const cat of data.categories) {
-          const api = cat.apis.find(
-            (a) => a.name.toLowerCase() === update.name.toLowerCase(),
-          );
+          const api = cat.apis.find((a) => a.name.toLowerCase() === update.name.toLowerCase());
           if (api) {
             for (const [key, value] of Object.entries(update.fields)) {
-              (api as Record<string, unknown>)[key] = value;
+              (api as unknown as Record<string, unknown>)[key] = value;
             }
             console.log(`  Updated "${update.name}" (issue #${update.source_issue})`);
             break;
@@ -164,7 +165,9 @@ function mergeCommunityData(data: ReturnType<typeof parseReadme>): ReturnType<ty
           link: entry.link,
         });
         data.meta.totalAPIs++;
-        console.log(`  Added community API "${entry.name}" in ${entry.category} (issue #${entry.source_issue})`);
+        console.log(
+          `  Added community API "${entry.name}" in ${entry.category} (issue #${entry.source_issue})`,
+        );
       }
     }
 
@@ -191,11 +194,15 @@ async function main(): Promise<void> {
     console.log(`Fetched README: ${(markdown.length / 1024).toFixed(1)} KB`);
 
     const data = parseReadme(markdown);
-    console.log(`Parsed ${data.meta.totalAPIs} APIs across ${data.meta.totalCategories} categories`);
+    console.log(
+      `Parsed ${data.meta.totalAPIs} APIs across ${data.meta.totalCategories} categories`,
+    );
 
     // Merge community contributions
     const merged = mergeCommunityData(data);
-    console.log(`After community merge: ${merged.meta.totalAPIs} APIs across ${merged.meta.totalCategories} categories`);
+    console.log(
+      `After community merge: ${merged.meta.totalAPIs} APIs across ${merged.meta.totalCategories} categories`,
+    );
 
     writeFileSync(CACHE_PATH, JSON.stringify(merged, null, 2), 'utf-8');
     console.log(`Cache written to ${CACHE_PATH}`);
