@@ -1,4 +1,5 @@
 ---
+import { getAllAPIs } from '@lib/getApis';
 import type { SiteStats } from '@lib/types';
 import { getBaseUrl } from '@lib/utils';
 
@@ -8,6 +9,10 @@ interface Props {
 
 const { stats } = Astro.props;
 const base = getBaseUrl();
+const allAPIs = getAllAPIs();
+const httpsPercent = Math.round(
+  (allAPIs.filter((api) => api.https).length / stats.totalAPIs) * 100,
+);
 ---
 
 <section
@@ -17,7 +22,8 @@ const base = getBaseUrl();
     background-image: url('data:image/svg+xml,%3Csvg viewBox=%270 0 256 256%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noise%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%274%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noise)%27 opacity=%270.03%27/%3E%3C/svg%3E');
   "
 >
-  <div class="container" style="max-width: 720px;">
+  <div class="container" style="max-width: 760px;">
+    <p class="hero-eyebrow">Community-powered API discovery</p>
     <h1
       style="
         font-size: clamp(2.25rem, 5vw, 3.5rem);
@@ -38,8 +44,9 @@ const base = getBaseUrl();
         line-height: 1.6;
       "
     >
-      Browse, search and filter {stats.totalAPIs.toLocaleString()}+ public APIs across {stats.totalCategories}+ categories.
-      Updated daily from the community.
+      Browse, search and filter {stats.totalAPIs.toLocaleString()}+ public APIs across {
+        stats.totalCategories
+      }+ categories. Updated daily from the community.
     </p>
 
     <!-- Stats row -->
@@ -48,7 +55,7 @@ const base = getBaseUrl();
         display: flex;
         justify-content: center;
         gap: 2rem;
-        margin-bottom: 2.5rem;
+        margin-bottom: 2rem;
         flex-wrap: wrap;
       "
     >
@@ -70,49 +77,153 @@ const base = getBaseUrl();
       </div>
     </div>
 
+    <div class="hero-actions" aria-label="Primary actions">
+      <a href={`${base}/search`} class="hero-primary">Start exploring</a>
+      <a href={`${base}/submit`} class="hero-secondary">Submit an API</a>
+    </div>
+
     <!-- Search bar -->
-    <a
-      href={`${base}/search`}
-      style="
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        max-width: 480px;
-        margin: 0 auto;
-        padding: 0.75rem 1.25rem;
-        background: var(--bg-elevated);
-        border: 1px solid var(--border);
-        border-radius: var(--r-lg);
-        color: var(--text-4);
-        text-decoration: none;
-        transition: border-color var(--t-base), box-shadow var(--t-base);
-      "
-    >
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <a href={`${base}/search`} class="hero-search" aria-label="Open API search">
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
         <circle cx="11" cy="11" r="8"></circle>
         <path d="m21 21-4.3-4.3"></path>
       </svg>
       <span style="flex-grow: 1; text-align: left;">Search APIs...</span>
-      <kbd
-        style="
-          font-family: 'Geist Mono', monospace;
-          font-size: 0.75rem;
-          padding: 2px 6px;
-          border: 1px solid var(--border);
-          border-radius: var(--r-sm);
-          background: var(--surface);
-          color: var(--text-4);
-        "
-      >
-        /
-      </kbd>
+      <kbd> / </kbd>
     </a>
+
+    <div class="hero-trust-strip" aria-label="Directory highlights">
+      <span><strong>{httpsPercent}%</strong> HTTPS-ready</span>
+      <span><strong>Offline</strong> search index</span>
+      <span><strong>Open</strong> submissions</span>
+    </div>
   </div>
 </section>
 
 <style>
   .hero-section {
     padding: 3rem 0 2.5rem;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0.75rem;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--r-full);
+    background: var(--surface);
+    color: var(--text-3);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-primary,
+  .hero-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.75rem 1.1rem;
+    border-radius: var(--r-lg);
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+      transform var(--t-base),
+      box-shadow var(--t-base),
+      border-color var(--t-base);
+  }
+
+  .hero-primary {
+    background: var(--accent);
+    color: var(--bg);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .hero-secondary {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    color: var(--text-1);
+  }
+
+  .hero-primary:hover,
+  .hero-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .hero-search {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 0.75rem 1.25rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    color: var(--text-4);
+    text-decoration: none;
+    transition:
+      border-color var(--t-base),
+      box-shadow var(--t-base);
+  }
+
+  .hero-search:hover,
+  .hero-search:focus-visible {
+    border-color: var(--text-1);
+    box-shadow: var(--shadow-sm);
+    outline: none;
+  }
+
+  .hero-search kbd {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    color: var(--text-4);
+  }
+
+  .hero-trust-strip {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    color: var(--text-3);
+    font-size: 0.8125rem;
+  }
+
+  .hero-trust-strip span {
+    padding: 0.4rem 0.65rem;
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--r-full);
+  }
+
+  .hero-trust-strip strong {
+    color: var(--text-1);
   }
 
   @media (min-width: 640px) {

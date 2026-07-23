@@ -3,8 +3,7 @@ import CategoryLayout from '@layouts/CategoryLayout.astro';
 import Breadcrumb from '@components/common/Breadcrumb.astro';
 import APICard from '@components/api/APICard.astro';
 import FilterBar from '@components/filter/FilterBar.astro';
-import { getAllCategories, getCategoryBySlug } from '@lib/getApis';
-import { getBaseUrl } from '@lib/utils';
+import { getAllCategories } from '@lib/getApis';
 
 export function getStaticPaths() {
   const categories = getAllCategories();
@@ -15,7 +14,6 @@ export function getStaticPaths() {
 }
 
 const { category } = Astro.props;
-const base = getBaseUrl();
 
 const jsonLd = JSON.stringify({
   '@context': 'https://schema.org',
@@ -32,11 +30,7 @@ const jsonLd = JSON.stringify({
 });
 ---
 
-<CategoryLayout
-  title={`${category.name} APIs`}
-  description={category.description}
-  jsonLd={jsonLd}
->
+<CategoryLayout title={`${category.name} APIs`} description={category.description} jsonLd={jsonLd}>
   <Breadcrumb
     items={[
       { label: 'Home', href: '/' },
@@ -60,7 +54,16 @@ const jsonLd = JSON.stringify({
           font-size: 1.25rem;
         "
       >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
           <path d="m13 2-2 2.5h3L12 7"></path>
           <circle cx="12" cy="14" r="4"></circle>
         </svg>

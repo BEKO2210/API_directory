@@ -4,8 +4,8 @@ import Base from './Base.astro';
 interface Props {
   title: string;
   description: string;
-  ogImage?: string;
-  jsonLd?: string;
+  ogImage?: string | undefined;
+  jsonLd?: string | undefined;
 }
 
 const { title, description, ogImage, jsonLd } = Astro.props;
