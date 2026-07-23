@@ -270,7 +270,7 @@ async function commentOnIssue(issueNumber: number, comment: string): Promise<voi
 /* ------------------------------------------------------------------ */
 
 async function processNewApi(issue: GitHubIssue, community: CommunityData): Promise<boolean> {
-  const fields = getIssueFields(issue);
+  const fields = parseIssueBody(issue.body);
 
   const name = fields['api-name'];
   const link = fields['api-url'];
@@ -306,7 +306,7 @@ async function processNewApi(issue: GitHubIssue, community: CommunityData): Prom
     console.log(`  Issue #${issue.number}: Invalid URL "${apiLink}"`);
     await commentOnIssue(
       issue.number,
-      `Could not auto-process this submission. The API URL \`${apiLink}\` is not a valid HTTP/HTTPS URL.\n\nPlease correct the URL. It will be retried automatically by the next sync run.`,
+      `Could not auto-process this submission. The API URL \`${apiLink}\` is not a valid HTTP/HTTPS URL.\n\nPlease correct the URL and add the \`auto-process\` label to retry.`,
     );
     return false;
   }
@@ -316,7 +316,7 @@ async function processNewApi(issue: GitHubIssue, community: CommunityData): Prom
     console.log(`  Issue #${issue.number}: Description too long (${apiDescription.length} chars)`);
     await commentOnIssue(
       issue.number,
-      `Could not auto-process this submission. The description is ${apiDescription.length} characters — please keep it under 100 characters.\n\nPlease shorten it. It will be retried automatically by the next sync run.`,
+      `Could not auto-process this submission. The description is ${apiDescription.length} characters — please keep it under 100 characters.\n\nPlease shorten it and add the \`auto-process\` label to retry.`,
     );
     return false;
   }
@@ -440,7 +440,7 @@ async function processBrokenApi(
 /* ------------------------------------------------------------------ */
 
 async function processUpdateApi(issue: GitHubIssue, community: CommunityData): Promise<boolean> {
-  const fields = getIssueFields(issue);
+  const fields = parseIssueBody(issue.body);
   const name = fields['api-name'];
   const newUrl = fields['new-url'];
   const newAuth = fields['new-auth-type'];
