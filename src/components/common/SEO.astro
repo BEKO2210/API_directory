@@ -4,10 +4,10 @@ import { getBaseUrl } from '@lib/utils';
 interface Props {
   title: string;
   description: string;
-  ogImage?: string;
-  ogType?: string;
-  canonical?: string;
-  jsonLd?: string;
+  ogImage?: string | undefined;
+  ogType?: string | undefined;
+  canonical?: string | undefined;
+  jsonLd?: string | undefined;
 }
 
 const base = getBaseUrl();
@@ -40,4 +40,4 @@ const resolvedCanonical = canonical ?? Astro.url.href;
 <link rel="alternate" type="application/rss+xml" title={siteName} href={`${base}/rss.xml`} />
 
 <!-- JSON-LD -->
-{jsonLd && <script type="application/ld+json" set:html={jsonLd} />}
+{jsonLd && <script is:inline type="application/ld+json" set:html={jsonLd} />}

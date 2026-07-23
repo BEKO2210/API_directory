@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-05-04T00:00:00.000Z"
+    "lastUpdated": "2026-07-23T00:00:00.000Z"
   },
   "add": [
     {
@@ -30,6 +30,36 @@
       "auth": "",
       "https": true,
       "cors": "yes"
+    },
+    {
+      "name": "DomainIntel",
+      "link": "https://domainintel.onrender.com",
+      "description": "Real-time domain intelligence with RDAP, DNS-over-HTTPS, Certificate Transparency and bulk lookups",
+      "category": "Security",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 50
+    },
+    {
+      "name": "World Cup 2026 Tour Public API",
+      "link": "https://ay-worldcup2026.zeabur.app/developers",
+      "description": "Free JSON API for all 104 World Cup 2026 fixtures with local kickoff-time conversion",
+      "category": "Sports & Fitness",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 47
+    },
+    {
+      "name": "OpenMercantil API",
+      "link": "https://openmercantil.es/api/documentacion",
+      "description": "Spanish company and BORME public data API with JSON and CSV access",
+      "category": "Open Data",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 41
     }
   ],
   "remove": [],

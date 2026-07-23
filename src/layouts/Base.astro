@@ -8,10 +8,10 @@ import '@/styles/global.css';
 interface Props {
   title: string;
   description: string;
-  ogImage?: string;
-  ogType?: string;
-  canonical?: string;
-  jsonLd?: string;
+  ogImage?: string | undefined;
+  ogType?: string | undefined;
+  canonical?: string | undefined;
+  jsonLd?: string | undefined;
 }
 
 const { title, description, ogImage, ogType, canonical, jsonLd } = Astro.props;
