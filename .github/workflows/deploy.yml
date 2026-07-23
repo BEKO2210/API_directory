@@ -22,11 +22,11 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 10
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -34,9 +34,6 @@ jobs:
 
       - name: Build
         run: pnpm run build
-
-      - name: Run Pagefind
-        run: npx pagefind --site dist
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
