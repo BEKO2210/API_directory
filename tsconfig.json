@@ -8,6 +8,7 @@
       "@layouts/*": ["src/layouts/*"],
       "@lib/*": ["src/lib/*"],
       "@data/*": ["src/data/*"]
-    }
+    },
+    "ignoreDeprecations": "6.0"
   }
 }

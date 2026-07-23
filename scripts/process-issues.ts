@@ -1,6 +1,7 @@
 /**
- * Process GitHub issues labeled 'auto-process' and apply changes to community-apis.json
- * or reported-issues.json. Runs as part of the sync workflow.
+ * Process open GitHub issues and apply new API submissions, update requests,
+ * and broken API reports to community-apis.json or reported-issues.json.
+ * Runs as part of the sync workflow.
  *
  * Requires: GITHUB_TOKEN environment variable with repo scope.
  *
@@ -71,7 +72,10 @@ interface GitHubIssue {
   body: string;
   labels: Array<{ name: string }>;
   created_at: string;
+  pull_request?: unknown;
 }
+
+type IssueKind = 'new-api' | 'broken-api' | 'update-api';
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
@@ -117,6 +121,59 @@ function parseIssueBody(body: string): Record<string, string> {
   }
 
   return fields;
+}
+
+function parseJsonIssueBody(body: string): Record<string, string> {
+  const fencedJson = body.match(/```json\s*([\s\S]*?)\s*```/i);
+  const rawJson = fencedJson?.[1] ?? (body.trim().startsWith('{') ? body : '');
+  if (!rawJson) return {};
+
+  try {
+    const parsed = JSON.parse(rawJson) as Record<string, unknown>;
+    const fields: Record<string, string> = {};
+
+    if (typeof parsed.name === 'string') fields['api-name'] = parsed.name;
+    if (typeof parsed.link === 'string') fields['api-url'] = parsed.link;
+    if (typeof parsed.description === 'string') fields['description'] = parsed.description;
+    if (typeof parsed.category === 'string') fields['category'] = parsed.category;
+    if (typeof parsed.auth === 'string')
+      fields['authentication'] = parsed.auth || 'None (no authentication required)';
+    if (typeof parsed.https === 'boolean') fields['https-support'] = parsed.https ? 'Yes' : 'No';
+    if (typeof parsed.cors === 'string') fields['cors-support'] = parsed.cors;
+
+    return fields;
+  } catch {
+    return {};
+  }
+}
+
+function getIssueFields(issue: GitHubIssue): Record<string, string> {
+  return {
+    ...parseJsonIssueBody(issue.body),
+    ...parseIssueBody(issue.body),
+  };
+}
+
+function classifyIssue(issue: GitHubIssue): IssueKind | null {
+  const labels = issue.labels.map((label) => label.name);
+  if (labels.includes('new-api')) return 'new-api';
+  if (labels.includes('broken-api')) return 'broken-api';
+  if (labels.includes('update-api')) return 'update-api';
+
+  const normalizedTitle = issue.title.toLowerCase();
+  const fields = getIssueFields(issue);
+
+  if (normalizedTitle.includes('[new api]') || (fields['api-name'] && fields['api-url'])) {
+    return 'new-api';
+  }
+  if (normalizedTitle.includes('[broken]') || fields['problem-type']) {
+    return 'broken-api';
+  }
+  if (normalizedTitle.includes('[update]') || fields['what-needs-to-be-updated']) {
+    return 'update-api';
+  }
+
+  return null;
 }
 
 /**
@@ -169,13 +226,14 @@ async function fetchIssues(): Promise<GitHubIssue[]> {
     return [];
   }
 
-  const response = await githubApi('/issues?labels=auto-process&state=open&per_page=50');
+  const response = await githubApi('/issues?state=open&per_page=100');
   if (!response.ok) {
     console.warn(`Failed to fetch issues: HTTP ${response.status}`);
     return [];
   }
 
-  return response.json();
+  const issues = (await response.json()) as GitHubIssue[];
+  return issues.filter((issue) => !issue.pull_request && classifyIssue(issue) !== null);
 }
 
 async function closeIssue(issueNumber: number, comment: string): Promise<void> {
@@ -233,7 +291,7 @@ async function processNewApi(issue: GitHubIssue, community: CommunityData): Prom
     console.log(`  Issue #${issue.number}: Missing required fields: ${missing.join(', ')}`);
     await commentOnIssue(
       issue.number,
-      `Could not auto-process this submission. Missing required fields: **${missing.join(', ')}**.\n\nPlease update the issue with the missing information and add the \`auto-process\` label to retry.`,
+      `Could not auto-process this submission. Missing required fields: **${missing.join(', ')}**.\n\nPlease update the issue with the missing information. It will be retried automatically by the next sync run.`,
     );
     return false;
   }
@@ -320,7 +378,7 @@ async function processBrokenApi(
   issue: GitHubIssue,
   reportedIssues: ReportedIssue[],
 ): Promise<boolean> {
-  const fields = parseIssueBody(issue.body);
+  const fields = getIssueFields(issue);
   const name = fields['api-name'];
   const problemType = fields['problem-type'];
   const newUrl = fields['new-url'];
@@ -330,7 +388,7 @@ async function processBrokenApi(
     console.log(`  Issue #${issue.number}: Missing API name, skipping`);
     await commentOnIssue(
       issue.number,
-      'Could not auto-process this report. The **API Name** field is missing.\n\nPlease update the issue and add the `auto-process` label to retry.',
+      'Could not auto-process this report. The **API Name** field is missing.\n\nPlease update the issue. It will be retried automatically by the next sync run.',
     );
     return false;
   }
@@ -393,7 +451,7 @@ async function processUpdateApi(issue: GitHubIssue, community: CommunityData): P
     console.log(`  Issue #${issue.number}: Missing API name, skipping`);
     await commentOnIssue(
       issue.number,
-      'Could not auto-process this update. The **API Name** field is missing.\n\nPlease update the issue and add the `auto-process` label to retry.',
+      'Could not auto-process this update. The **API Name** field is missing.\n\nPlease update the issue. It will be retried automatically by the next sync run.',
     );
     return false;
   }
@@ -417,7 +475,7 @@ async function processUpdateApi(issue: GitHubIssue, community: CommunityData): P
     console.log(`  Issue #${issue.number}: No actionable update fields found for "${name}"`);
     await commentOnIssue(
       issue.number,
-      `Could not auto-process this update for **${name}**. No changed fields were detected in the dropdowns.\n\nIf you described the changes only in the text field, a maintainer will review it manually. Otherwise, please re-submit with the correct dropdown selections and add the \`auto-process\` label.`,
+      `Could not auto-process this update for **${name}**. No changed fields were detected in the dropdowns.\n\nIf you described the changes only in the text field, a maintainer will review it manually. Otherwise, please re-submit with the correct dropdown selections.`,
     );
     return false;
   }
@@ -473,17 +531,18 @@ async function main(): Promise<void> {
 
   for (const issue of issues) {
     const labels = issue.labels.map((l) => l.name);
-    console.log(`\n  Processing #${issue.number}: "${issue.title}" [${labels.join(', ')}]`);
+    const kind = classifyIssue(issue);
+    console.log(
+      `\n  Processing #${issue.number}: "${issue.title}" as ${kind} [${labels.join(', ')}]`,
+    );
 
     try {
-      if (labels.includes('new-api')) {
+      if (kind === 'new-api') {
         if (await processNewApi(issue, community)) changed = true;
-      } else if (labels.includes('broken-api')) {
+      } else if (kind === 'broken-api') {
         if (await processBrokenApi(issue, reportedIssues)) changed = true;
-      } else if (labels.includes('update-api')) {
+      } else if (kind === 'update-api') {
         if (await processUpdateApi(issue, community)) changed = true;
-      } else {
-        console.log(`    No matching label (new-api, broken-api, update-api), skipping`);
       }
     } catch (err) {
       console.error(
