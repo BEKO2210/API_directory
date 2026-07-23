@@ -13,19 +13,17 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 10
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '24'
           cache: 'pnpm'
 
       - run: pnpm install --frozen-lockfile
 
       - name: Build
         run: pnpm run build
-
-      - run: npx pagefind --site dist
 
       - name: Run Lighthouse CI
         run: npx lhci autorun --config=.lighthouserc.cjs
