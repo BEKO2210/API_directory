@@ -2,7 +2,7 @@
   "meta": {
     "totalAPIs": 1589,
     "totalCategories": 51,
-    "lastUpdated": "2026-07-23T00:00:00.000Z"
+    "lastUpdated": "2026-07-24T05:40:24.009Z"
   },
   "categories": [
     {
@@ -10016,12 +10016,12 @@
         },
         {
           "name": "OpenMercantil API",
-          "link": "https://openmercantil.es/api/documentacion",
+          "slug": "open-data-openmercantil-api",
           "description": "Spanish company and BORME public data API with JSON and CSV access",
-          "auth": "No",
+          "auth": "",
           "https": true,
           "cors": "yes",
-          "slug": "open-data-openmercantil-api"
+          "link": "https://openmercantil.es/api/documentacion"
         }
       ]
     },
@@ -11477,12 +11477,12 @@
         },
         {
           "name": "DomainIntel",
-          "link": "https://domainintel.onrender.com",
+          "slug": "security-domainintel",
           "description": "Real-time domain intelligence with RDAP, DNS-over-HTTPS, Certificate Transparency and bulk lookups",
           "auth": "apiKey",
           "https": true,
           "cors": "yes",
-          "slug": "security-domainintel"
+          "link": "https://domainintel.onrender.com"
         }
       ]
     },
@@ -12404,12 +12404,12 @@
         },
         {
           "name": "World Cup 2026 Tour Public API",
-          "link": "https://ay-worldcup2026.zeabur.app/developers",
+          "slug": "sports-fitness-world-cup-2026-tour-public-api",
           "description": "Free JSON API for all 104 World Cup 2026 fixtures with local kickoff-time conversion",
-          "auth": "No",
+          "auth": "",
           "https": true,
           "cors": "yes",
-          "slug": "sports-fitness-world-cup-2026-tour-public-api"
+          "link": "https://ay-worldcup2026.zeabur.app/developers"
         }
       ]
     },
