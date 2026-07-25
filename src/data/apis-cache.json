@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1589,
+    "totalAPIs": 1605,
     "totalCategories": 51,
-    "lastUpdated": "2026-07-24T05:40:24.009Z"
+    "lastUpdated": "2026-07-25T05:34:45.635Z"
   },
   "categories": [
     {
@@ -739,6 +739,15 @@
           "slug": "art-design-rijksmuseum"
         },
         {
+          "name": "Thisispaper",
+          "link": "https://www.thisispaper.com/intelligence/api-docs",
+          "description": "Curated architecture, design, photography and art projects with visual-similarity and taste metadata",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-thisispaper"
+        },
+        {
           "name": "UpRes",
           "link": "https://upres.ai/docs/api",
           "description": "AI image upscaling to 8K with 18 models (Real-ESRGAN, SeedVR2, AuraSR)",
@@ -746,6 +755,15 @@
           "https": true,
           "cors": "yes",
           "slug": "art-design-upres"
+        },
+        {
+          "name": "Text-till-Kladdesign",
+          "link": "https://text-till-klad-design.gracestack.se/api/v1/openapi.json",
+          "description": "AI fashion design generator — transform Swedish text into clothing concepts",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-text-till-kladdesign"
         },
         {
           "name": "Word Cloud",
@@ -1984,6 +2002,15 @@
           "slug": "cryptocurrency-block"
         },
         {
+          "name": "BlazePhoenix",
+          "link": "https://blazephoenix.xyz/api",
+          "description": "On-chain DEX aggregator quotes and route execution data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-blazephoenix"
+        },
+        {
           "name": "Block Lottos",
           "link": "https://blocklottos.com/openapi.json",
           "description": "On-chain lottery, draw history, jackpot and advertising endpoints",
@@ -2477,6 +2504,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-worldcoinindex"
+        },
+        {
+          "name": "Zennet",
+          "link": "https://zennet.cloud",
+          "description": "x402 pay-per-use APIs: Polymarket signals, CEX/DEX spreads, contract risk scores, gas oracle",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-zennet"
         },
         {
           "name": "ZMOK",
@@ -3494,6 +3530,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-my-ip"
+        },
+        {
+          "name": "MyIPRightNow",
+          "link": "https://myiprightnow.com",
+          "description": "Public IP address with network, location, and connection details",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-myiprightnow"
         },
         {
           "name": "Nationalize.io",
@@ -5077,6 +5122,15 @@
           "slug": "finance-congressinvests"
         },
         {
+          "name": "Dino.markets",
+          "link": "https://dino.markets/docs",
+          "description": "Matched Kalshi and Polymarket prediction-market data, cross-venue spreads",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "finance-dino-markets"
+        },
+        {
           "name": "Econdb",
           "link": "https://www.econdb.com/api/",
           "description": "Global macroeconomic data",
@@ -5390,6 +5444,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-tax-data"
+        },
+        {
+          "name": "Top 5 Stocks",
+          "link": "https://top5stocks.netlify.app/developers",
+          "description": "Daily AI-ranked stock and crypto watchlists",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-top-5-stocks"
         },
         {
           "name": "Tradier",
@@ -7639,6 +7702,15 @@
           "slug": "government-deutscher-bundestag-dip"
         },
         {
+          "name": "Disclosed Capitol",
+          "link": "https://www.disclosedcapitol.com/data-files/api",
+          "description": "US congressional & executive-branch stock trade disclosures (STOCK Act + OGE)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "government-disclosed-capitol"
+        },
+        {
           "name": "District of Columbia Open Data",
           "link": "http://opendata.dc.gov/pages/using-apis",
           "description": "Contains D.C. government public datasets, including crime, GIS, financial data, and so on",
@@ -8668,6 +8740,15 @@
           "slug": "jobs-arbeitsamt"
         },
         {
+          "name": "Artificial Intelligence Jobs",
+          "link": "https://artificialintelligencejobs.co/developers",
+          "description": "Live AI/ML job listings from 260+ companies' own career pages, with salary, location, remote and seniority filters",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-artificial-intelligence-jobs"
+        },
+        {
           "name": "Careerjet",
           "link": "https://www.careerjet.com/partners/api/",
           "description": "Job search engine",
@@ -8693,6 +8774,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "jobs-findwork"
+        },
+        {
+          "name": "freehire",
+          "link": "https://freehire.dev/docs/api",
+          "description": "Open-source search engine aggregating tech jobs from company ATS boards",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "jobs-freehire"
         },
         {
           "name": "GraphQL Jobs",
@@ -9925,6 +10015,15 @@
           "slug": "open-data-teleport"
         },
         {
+          "name": "Tilth",
+          "link": "https://www.tilth.uk/data",
+          "description": "Free daily UK fertiliser price index across nine grades, CC BY 4.0 licensed",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-tilth"
+        },
+        {
           "name": "Umeå Open Data",
           "link": "https://opendata.umea.se/api/",
           "description": "Open data of the city Umeå in northen Sweden",
@@ -10982,6 +11081,15 @@
           "https": true,
           "cors": "yes",
           "slug": "science-math-openalex"
+        },
+        {
+          "name": "OrbitalWiki",
+          "link": "https://orbitalwiki.com/developers",
+          "description": "Catalog of 16,000+ satellites merging CelesTrak, GCAT, Wikidata; free tier included",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-orbitalwiki"
         },
         {
           "name": "Purple Air",
@@ -12169,6 +12277,15 @@
           "slug": "sports-fitness-jcdecaux-bike"
         },
         {
+          "name": "Lumify",
+          "link": "https://lumify.ai/docs",
+          "description": "Real-time sports intelligence: scores, odds, betting splits & AI bet analysis across 8 sports",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "sports-fitness-lumify"
+        },
+        {
           "name": "MLB Records and Stats",
           "link": "https://appac.github.io/mlb-data-api-docs/",
           "description": "Current and historical MLB statistics",
@@ -12203,6 +12320,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "sports-fitness-nhl-records-and-stats"
+        },
+        {
+          "name": "Odds-API",
+          "link": "https://docs.odds-api.io",
+          "description": "Real-time sports betting odds from 265+ bookmakers across 34 sports via REST and WebSocket",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-odds-api"
         },
         {
           "name": "Oddsmagnet",
@@ -12417,6 +12543,15 @@
       "name": "Test Data",
       "slug": "test-data",
       "apis": [
+        {
+          "name": "AddressMock",
+          "link": "https://addressmock.com/api",
+          "description": "Random US, Hong Kong and Cape Verde addresses with matched city, state and ZIP",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "test-data-addressmock"
+        },
         {
           "name": "Bacon Ipsum",
           "link": "https://baconipsum.com/json-api/",
@@ -13073,6 +13208,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "transportation-compare-flight-prices"
+        },
+        {
+          "name": "CruiseFeed",
+          "link": "https://cruisefeed.io",
+          "description": "Normalized cruise line inventory: ships, sailings, itineraries, ports and lead-in fares",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "transportation-cruisefeed"
         },
         {
           "name": "CTS",
