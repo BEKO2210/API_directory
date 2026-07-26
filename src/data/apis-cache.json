@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1605,
+    "totalAPIs": 1617,
     "totalCategories": 51,
-    "lastUpdated": "2026-07-25T05:34:45.635Z"
+    "lastUpdated": "2026-07-26T05:50:54.267Z"
   },
   "categories": [
     {
@@ -3701,6 +3701,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-qr-code"
+        },
+        {
+          "name": "QR Code Crafter",
+          "link": "https://qrcodecrafter.com/qr-code-api",
+          "description": "Generate static QR codes in SVG, PNG, JPG, WebP, PDF, or EPS",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-qr-code-crafter"
         },
         {
           "name": "Qrcode Monkey",
@@ -8857,6 +8866,15 @@
           "slug": "jobs-reed"
         },
         {
+          "name": "TechRole Index",
+          "link": "https://techrole.ru/open-data-daily",
+          "description": "Russian IT profession, vacancy publication and salary aggregates",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-techrole-index"
+        },
+        {
           "name": "The Muse",
           "link": "https://www.themuse.com/developers/api/v2",
           "description": "Job board and company profiles",
@@ -9622,6 +9640,15 @@
           "slug": "news-newsdata"
         },
         {
+          "name": "Newsflash",
+          "link": "https://newsflash.sh/docs",
+          "description": "Deduplicated news events from 260+ sources with corroboration/confidence scores for AI agents",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "news-newsflash"
+        },
+        {
           "name": "NewsX",
           "link": "https://rapidapi.com/machaao-inc-machaao-inc-default/api/newsx/",
           "description": "Get or Search Latest Breaking News with ML Powered Summaries 🤖",
@@ -9869,6 +9896,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-microlink-io"
+        },
+        {
+          "name": "MostExpensiveWatches",
+          "link": "https://mostexpensivewatches.net/api",
+          "description": "Documented luxury watch auction records, live listings, valuations and price indices",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-mostexpensivewatches"
         },
         {
           "name": "ModelPartFinder Error Codes",
@@ -10792,6 +10828,15 @@
           "slug": "photography-sirv"
         },
         {
+          "name": "Tinify.dev",
+          "link": "https://tinify.dev/developers",
+          "description": "Image compression, resize and crop API with usage metadata",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "photography-tinify-dev"
+        },
+        {
           "name": "Unsplash",
           "link": "https://unsplash.com/developers",
           "description": "Photography",
@@ -11146,6 +11191,15 @@
           "slug": "science-math-sunrise-and-sunset"
         },
         {
+          "name": "Tallytopia",
+          "link": "https://tallytopia.com/api-docs",
+          "description": "Calculators for finance, health, math, space and sports with step-by-step results",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-tallytopia"
+        },
+        {
           "name": "Times Adder",
           "link": "https://github.com/FranP-code/API-Times-Adder",
           "description": "With this API you can add each of the times introduced in the array sended",
@@ -11350,6 +11404,15 @@
           "slug": "security-fingerprintjs-pro"
         },
         {
+          "name": "FOFA",
+          "link": "https://en.fofa.info/api",
+          "description": "Search engine for Internet connected assets and devices",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "security-fofa"
+        },
+        {
           "name": "FraudLabs Pro",
           "link": "https://www.fraudlabspro.com/developer/api/screen-order",
           "description": "Screen order information using AI to detect frauds",
@@ -11402,6 +11465,15 @@
           "https": true,
           "cors": "yes",
           "slug": "security-hashable"
+        },
+        {
+          "name": "Hybrid Analysis",
+          "link": "https://www.hybrid-analysis.com/docs/api/v2",
+          "description": "File and URL malware analysis powered by Falcon Sandbox",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "security-hybrid-analysis"
         },
         {
           "name": "HaveIBeenPwned",
@@ -11537,6 +11609,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "security-spyse"
+        },
+        {
+          "name": "SSL Domain Health Check",
+          "link": "https://rapidapi.com/goktugbk/api/ssl-domain-health-check",
+          "description": "SSL certificate validity, domain WHOIS status, and DNS record checks for any domain",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "security-ssl-domain-health-check"
         },
         {
           "name": "Threat Jammer",
@@ -11990,6 +12071,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-pinterest"
+        },
+        {
+          "name": "PostLake",
+          "link": "https://postlake.dev/docs/",
+          "description": "One API to publish, schedule, and read analytics across every major social network",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "social-postlake"
         },
         {
           "name": "Product Hunt",
@@ -12908,6 +12998,15 @@
           "https": true,
           "cors": "yes",
           "slug": "text-analysis-kiprio-translate"
+        },
+        {
+          "name": "Langbly",
+          "link": "https://langbly.com/docs",
+          "description": "Context-aware text translation and language detection for 100+ languages",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "text-analysis-langbly"
         },
         {
           "name": "Lecto Translation",
@@ -14564,6 +14663,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-ipma"
+        },
+        {
+          "name": "Meltema",
+          "link": "https://meltema.com/docs",
+          "description": "Multi-model weather: GFS, ECMWF AIFS/IFS and a 31-member GEFS ensemble, keyless point forecasts",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "weather-meltema"
         },
         {
           "name": "Meteorologisk Institutt",
