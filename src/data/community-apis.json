@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-07-23T00:00:00.000Z"
+    "lastUpdated": "2026-07-27T20:28:35.544Z"
   },
   "add": [
     {
@@ -60,6 +60,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 41
+    },
+    {
+      "name": "Mydentify Public API",
+      "link": "https://mydentify.com/openapi.json",
+      "description": "Free no-key API for structured product directories and weekly software leaderboards",
+      "category": "Business",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 62
     }
   ],
   "remove": [],

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1617,
+    "totalAPIs": 1618,
     "totalCategories": 51,
-    "lastUpdated": "2026-07-27T06:17:16.008Z"
+    "lastUpdated": "2026-07-27T20:28:35.852Z"
   },
   "categories": [
     {
@@ -1472,6 +1472,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "business-trello"
+        },
+        {
+          "name": "Mydentify Public API",
+          "slug": "business-mydentify-public-api",
+          "description": "Free no-key API for structured product directories and weekly software leaderboards",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://mydentify.com/openapi.json"
         }
       ]
     },
