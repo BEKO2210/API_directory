@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-07-27T20:28:35.544Z"
+    "lastUpdated": "2026-07-28T06:23:42.430Z"
   },
   "add": [
     {
@@ -70,6 +70,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 62
+    },
+    {
+      "name": "llmsmap.me API",
+      "link": "https://llmsmap.me/api-docs/",
+      "description": "Search and discover AI-ready websites from the international llms.txt directory.",
+      "category": "Development",
+      "auth": "",
+      "https": true,
+      "cors": "no",
+      "source_issue": 63
     }
   ],
   "remove": [],

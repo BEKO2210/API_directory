@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1618,
+    "totalAPIs": 1619,
     "totalCategories": 51,
-    "lastUpdated": "2026-07-28T05:37:38.459Z"
+    "lastUpdated": "2026-07-28T06:23:42.604Z"
   },
   "categories": [
     {
@@ -4025,6 +4025,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-zenrows"
+        },
+        {
+          "name": "llmsmap.me API",
+          "slug": "development-llmsmap-me-api",
+          "description": "Search and discover AI-ready websites from the international llms.txt directory.",
+          "auth": "",
+          "https": true,
+          "cors": "no",
+          "link": "https://llmsmap.me/api-docs/"
         }
       ]
     },
