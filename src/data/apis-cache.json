@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1619,
+    "totalAPIs": 1634,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-03T06:09:48.658Z"
+    "lastUpdated": "2026-08-04T05:38:50.849Z"
   },
   "categories": [
     {
@@ -386,7 +386,7 @@
         },
         {
           "name": "Studio Ghibli",
-          "link": "https://ghibliapi.herokuapp.com",
+          "link": "https://ghibliapi.vercel.app",
           "description": "Resources from Studio Ghibli films",
           "auth": "No",
           "https": true,
@@ -773,15 +773,6 @@
           "https": true,
           "cors": "unknown",
           "slug": "art-design-word-cloud"
-        },
-        {
-          "name": "xColors",
-          "link": "https://x-colors.herokuapp.com/",
-          "description": "Generate & convert colors",
-          "auth": "No",
-          "https": true,
-          "cors": "yes",
-          "slug": "art-design-xcolors"
         }
       ]
     },
@@ -893,6 +884,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "blockchain-chainpoint"
+        },
+        {
+          "name": "ClearTrace",
+          "link": "https://cleartracedata.com/docs",
+          "description": "Cross-frontend DEX attribution and execution quality data across Ethereum and L2s",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "blockchain-cleartrace"
         },
         {
           "name": "Covalent",
@@ -1153,15 +1153,6 @@
           "slug": "books-quran-api"
         },
         {
-          "name": "Rig Veda",
-          "link": "https://aninditabasu.github.io/indica/html/rv.html",
-          "description": "Gods and poets, their categories, and the verse meters, with the mandal and sukta number",
-          "auth": "No",
-          "https": true,
-          "cors": "unknown",
-          "slug": "books-rig-veda"
-        },
-        {
           "name": "Runyankole Bible",
           "link": "https://runyankole-bible-api.vercel.app",
           "description": "Free REST API for the Runyankore-Rukiga Bible — 66 books, 31106 verses",
@@ -1196,15 +1187,6 @@
           "https": true,
           "cors": "yes",
           "slug": "books-urantia-papers"
-        },
-        {
-          "name": "Vedic Society",
-          "link": "https://aninditabasu.github.io/indica/html/vs.html",
-          "description": "Descriptions of all nouns (names, places, animals, things) from vedic literature",
-          "auth": "No",
-          "https": true,
-          "cors": "unknown",
-          "slug": "books-vedic-society"
         },
         {
           "name": "Wizard World",
@@ -1274,6 +1256,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "business-freelancer"
+        },
+        {
+          "name": "Funding Signals",
+          "link": "https://fundingsignals.net/docs",
+          "description": "Companies that just raised funding, scored as sales leads, from public SEC filings",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "business-funding-signals"
         },
         {
           "name": "Gmail",
@@ -1472,6 +1463,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "business-trello"
+        },
+        {
+          "name": "Village",
+          "link": "https://docs.village.ai",
+          "description": "Person and company enrichment plus warm introduction paths through your network",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-village"
         },
         {
           "name": "Mydentify Public API",
@@ -1964,6 +1964,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-bitcoincharts"
+        },
+        {
+          "name": "Bitcoin Halving",
+          "link": "https://why21million.com/halving-api/",
+          "description": "Halving era, block reward, and schedule arithmetic for any Bitcoin block height",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-bitcoin-halving"
         },
         {
           "name": "Bitfinex",
@@ -2506,6 +2515,24 @@
           "slug": "cryptocurrency-valr"
         },
         {
+          "name": "ScriptMasterLabs x402",
+          "link": "https://acp-x402-scriptmasterlabs.onrender.com",
+          "description": "100+ SEC, DeFi, crypto, and macro endpoints for AI agents via x402 micropayments",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-scriptmasterlabs-x402"
+        },
+        {
+          "name": "ScriptMasterLabs MCP",
+          "link": "https://mcp-x402.onrender.com",
+          "description": "Model Context Protocol server with web search, social search & LLM chat paid via x402",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-scriptmasterlabs-mcp"
+        },
+        {
           "name": "WorldCoinIndex",
           "link": "https://www.worldcoinindex.com/apiservice",
           "description": "Cryptocurrencies Prices",
@@ -2992,6 +3019,15 @@
           "slug": "development-ciprand"
         },
         {
+          "name": "Cloudflare",
+          "link": "https://developers.cloudflare.com/api/",
+          "description": "Manage DNS, CDN, Workers and other services; documented with an official OpenAPI 3.0 spec",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-cloudflare"
+        },
+        {
           "name": "Cloudflare Trace",
           "link": "https://github.com/fawazahmed0/cloudflare-trace-api",
           "description": "Get IP Address, Timestamp, User Agent, Country Code, IATA, HTTP Version, TLS/SSL Version & More",
@@ -3071,6 +3107,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-domaindb-info"
+        },
+        {
+          "name": "dotsweep",
+          "link": "https://dotsweep.com/docs",
+          "description": "Domain availability across 1200+ TLDs with registration and renewal prices",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-dotsweep"
         },
         {
           "name": "DownStatus",
@@ -3665,6 +3710,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-proxycrawl"
+        },
+        {
+          "name": "ProxyForge",
+          "link": "https://proxyforge.dev",
+          "description": "Free auto-updating list of live-tested proxies (HTTP/HTTPS/SOCKS4/SOCKS5), refreshed every 6 h",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-proxyforge"
         },
         {
           "name": "ProxyKingdom",
@@ -4264,6 +4318,15 @@
           "slug": "documents-productivity-craftmypdf"
         },
         {
+          "name": "DocStruct",
+          "link": "https://docstruct.pages.dev",
+          "description": "AI extraction of invoices, receipts, bank statements & contracts into structured JSON/CSV",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-docstruct"
+        },
+        {
           "name": "Flowdash",
           "link": "https://docs.flowdash.com/docs/api-introduction",
           "description": "Automate business workflows",
@@ -4424,6 +4487,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "documents-productivity-restpack"
+        },
+        {
+          "name": "RunConvert",
+          "link": "https://www.runconvert.com/docs",
+          "description": "Convert video, audio, image, and document files programmatically",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-runconvert"
         },
         {
           "name": "Todoist",
@@ -4631,8 +4703,8 @@
         },
         {
           "name": "Mailtrap",
-          "link": "https://mailtrap.docs.apiary.io/#",
-          "description": "A service for the safe testing of emails sent from the development and staging environments",
+          "link": "https://mailtrap.io",
+          "description": "Email API and SMTP for sending transactional and bulk emails, with email testing sandbox for safe development",
           "auth": "apiKey",
           "https": true,
           "cors": "unknown",
@@ -5248,6 +5320,15 @@
           "slug": "finance-goldprice-dev"
         },
         {
+          "name": "Halal Terminal",
+          "link": "https://api.halalterminal.com/docs",
+          "description": "Shariah-compliant stock and ETF screening across 5 methodologies, zakat and purification",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-halal-terminal"
+        },
+        {
           "name": "Helium",
           "link": "https://heliumtrades.com/mcp-page/",
           "description": "News with media bias scoring, balanced news synthesis, live market data, AI options pricing",
@@ -5536,6 +5617,15 @@
           "slug": "finance-ynab"
         },
         {
+          "name": "Zelothorn",
+          "link": "https://zelothorn.com/developers",
+          "description": "Plain-English explanations of US public companies with SEC filings and earnings data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-zelothorn"
+        },
+        {
           "name": "Zoho Books",
           "link": "https://www.zoho.com/books/api/v3/",
           "description": "Online accounting software, built for your business",
@@ -5594,6 +5684,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "food-drink-edamam-recipes"
+        },
+        {
+          "name": "Food Info",
+          "link": "https://food-info.org/developer",
+          "description": "Nutrition data for millions of foods from six national food composition datasets",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "food-drink-food-info"
         },
         {
           "name": "Foodish",
@@ -7513,6 +7612,15 @@
       "slug": "government",
       "apis": [
         {
+          "name": "AI Law Tracker",
+          "link": "https://ai-law-tracker.com/developers",
+          "description": "AI regulation laws by jurisdiction (US, EU, global) as read-only JSON; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "government-ai-law-tracker"
+        },
+        {
           "name": "Bank Negara Malaysia Open Data",
           "link": "https://apikijangportal.bnm.gov.my/",
           "description": "Malaysia Central Bank Open Data",
@@ -8348,6 +8456,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-represent-by-open-north"
+        },
+        {
+          "name": "Tollmint",
+          "link": "https://api.tollmint.com",
+          "description": "Advertising, subscription, AI-disclosure and accessibility rules across the US, EU and UK",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-tollmint"
         },
         {
           "name": "UK Companies House",
@@ -9575,6 +9692,15 @@
           "https": true,
           "cors": "yes",
           "slug": "news-currents"
+        },
+        {
+          "name": "DataCube AI",
+          "link": "https://www.datacubeai.space/en/tools/ai-news-api",
+          "description": "Daily curated AI industry news, funding rounds and trends in 8 languages",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "news-datacube-ai"
         },
         {
           "name": "Feedbin",
@@ -12821,6 +12947,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "test-data-randomuser"
+        },
+        {
+          "name": "restful-api",
+          "link": "https://restful-api.dev",
+          "description": "Fake REST API for testing and prototyping with CRUD endpoints",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "test-data-restful-api"
         },
         {
           "name": "RoboHash",
