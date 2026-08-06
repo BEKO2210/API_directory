@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1634,
+    "totalAPIs": 1635,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-05T05:36:34.163Z"
+    "lastUpdated": "2026-08-06T05:39:09.732Z"
   },
   "categories": [
     {
@@ -9060,6 +9060,15 @@
       "name": "Machine Learning",
       "slug": "machine-learning",
       "apis": [
+        {
+          "name": "AI Economics Tools",
+          "link": "https://piszczek.pl/tools/api",
+          "description": "Token cost, LLM energy, agent-hour and Proof-Adjusted Autonomy calculators by Michał Piszczek",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-ai-economics-tools"
+        },
         {
           "name": "AI For Thai",
           "link": "https://aiforthai.in.th/index.php",
