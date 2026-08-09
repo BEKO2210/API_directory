@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1635,
+    "totalAPIs": 1651,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-08T04:04:47.273Z"
+    "lastUpdated": "2026-08-09T04:10:09.818Z"
   },
   "categories": [
     {
@@ -2788,6 +2788,15 @@
           "slug": "data-validation-purgomalum"
         },
         {
+          "name": "SchemaShield",
+          "link": "https://rapidapi.com/kaiasistentedavid/api/schema-change-risk",
+          "description": "Read-only preflight for breaking schema changes and downstream query impact",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "data-validation-schemashield"
+        },
+        {
           "name": "US Autocomplete",
           "link": "https://www.smarty.com/docs/cloud/us-autocomplete-pro-api",
           "description": "Enter address data quickly with real-time address suggestions",
@@ -2855,6 +2864,15 @@
           "https": true,
           "cors": "no",
           "slug": "development-amazonscraperapi"
+        },
+        {
+          "name": "AmberOne",
+          "link": "https://scubamike124.github.io/amberone-api/",
+          "description": "Turn any website into a build-ready Android, iOS, PWA or Electron app project",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-amberone"
         },
         {
           "name": "API Grátis",
@@ -3080,6 +3098,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-databricks"
+        },
+        {
+          "name": "Diagrams.so",
+          "link": "https://diagrams.so/developers",
+          "description": "Generate editable draw.io architecture diagrams from text or infrastructure code",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-diagrams-so"
         },
         {
           "name": "DigitalOcean Status",
@@ -4045,6 +4072,15 @@
           "slug": "development-tyk"
         },
         {
+          "name": "Utilorax",
+          "link": "https://utilorax.com/api",
+          "description": "203 JSON endpoints: hashing, encoding, unit conversion, text, dates and file conversion",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-utilorax"
+        },
+        {
           "name": "Wandbox",
           "link": "https://github.com/melpon/wandbox/blob/master/kennel2/API.rst",
           "description": "Code compiler supporting 35+ languages mentioned at wandbox.org",
@@ -4574,6 +4610,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "email-mailboxlayer"
+        },
+        {
+          "name": "AGPC Domain Check",
+          "link": "https://guild.tradeuniquecapital.com/api",
+          "description": "Check a domain's SPF, DKIM, DMARC and MX with a graded shareable report",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "email-agpc-domain-check"
         },
         {
           "name": "Cloudmersive Validate",
@@ -5349,10 +5394,10 @@
         {
           "name": "IBANforge",
           "link": "https://api.ibanforge.com",
-          "description": "IBAN validation and BIC/SWIFT lookup for 75+ countries with 121K+ bank entries",
-          "auth": "No",
+          "description": "IBAN validation and BIC/SWIFT lookup for 89 countries with 121k+ BIC entries",
+          "auth": "apiKey",
           "https": true,
-          "cors": "yes",
+          "cors": "no",
           "slug": "finance-ibanforge"
         },
         {
@@ -7936,6 +7981,15 @@
           "slug": "government-gun-policy"
         },
         {
+          "name": "Indian Mandi Prices",
+          "link": "https://mandi-api.vercel.app/docs",
+          "description": "Free, keyless daily wholesale mandi prices for 5 Indian states, sourced from data.gov.in",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-indian-mandi-prices"
+        },
+        {
           "name": "Indian Pincode",
           "link": "https://indianpincode.com/",
           "description": "Free India PIN code lookup with GPS coordinates, 165k+ post offices, state & district data",
@@ -8689,6 +8743,15 @@
           "slug": "health-edamam"
         },
         {
+          "name": "ERstat",
+          "link": "https://erstat.ca/developers",
+          "description": "Live Canadian emergency room closures and service disruptions, by province",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-erstat"
+        },
+        {
           "name": "FoodData Central",
           "link": "https://fdc.nal.usda.gov/",
           "description": "National Nutrient Database for Standard Reference",
@@ -9302,6 +9365,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "machine-learning-skybiometry"
+        },
+        {
+          "name": "Statlyte",
+          "link": "https://statlyte.com/api",
+          "description": "Live pricing, context windows and model ids for major LLM APIs",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-statlyte"
         },
         {
           "name": "TensorFeed",
@@ -9970,6 +10042,15 @@
           "slug": "open-data-enigma-public"
         },
         {
+          "name": "EOSL",
+          "link": "https://eosl.ai/api/",
+          "description": "Hardware end-of-sale and end-of-service-life dates by part number, source-linked",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-eosl"
+        },
+        {
           "name": "French Address Search",
           "link": "https://geo.api.gouv.fr/adresse",
           "description": "Address search via the French Government",
@@ -10166,6 +10247,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "open-data-recreation-information-database"
+        },
+        {
+          "name": "Registrum",
+          "link": "https://api.registrum.co.uk/docs",
+          "description": "UK company data: profiles, directors, PSC, iXBRL-parsed financials, ECCTA status",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "open-data-registrum"
         },
         {
           "name": "Scoop.it",
@@ -11914,6 +12004,15 @@
           "slug": "shopping-lazada"
         },
         {
+          "name": "Marketplace Fee Data",
+          "link": "https://www.sellerscalc.com/data",
+          "description": "Seller fee schedules for 21 e-commerce marketplaces and payment processors as JSON",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-marketplace-fee-data"
+        },
+        {
           "name": "Mercadolibre",
           "link": "https://developers.mercadolibre.cl/es_ar/api-docs-es",
           "description": "Manage sales, ads, products, services and Shops",
@@ -12244,6 +12343,15 @@
           "slug": "social-product-hunt"
         },
         {
+          "name": "Publora",
+          "link": "https://docs.publora.com",
+          "description": "Publish and schedule posts to ten social networks from one endpoint",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "social-publora"
+        },
+        {
           "name": "Reddit",
           "link": "https://www.reddit.com/dev/api",
           "description": "Homepage of the internet",
@@ -12251,6 +12359,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-reddit"
+        },
+        {
+          "name": "RedditAPIs",
+          "link": "https://www.redditapis.com/",
+          "description": "Reddit data API: subreddit listings, post/comment/community/user search, comment trees, top posts",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "social-redditapis"
         },
         {
           "name": "Revolt",
@@ -12343,6 +12460,15 @@
           "slug": "social-tumblr"
         },
         {
+          "name": "TweetAPI",
+          "link": "https://tweetapi.com/docs",
+          "description": "Public Twitter data for posts, profiles, followers, search, lists and communities",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "social-tweetapi"
+        },
+        {
           "name": "Twitch",
           "link": "https://dev.twitch.tv/docs",
           "description": "Game Streaming API",
@@ -12377,6 +12503,15 @@
           "https": true,
           "cors": "yes",
           "slug": "social-xfetch"
+        },
+        {
+          "name": "XFlux",
+          "link": "https://www.xfluxapi.com/docs/api",
+          "description": "Read X/Twitter profiles, search, timelines; account monitors with signed webhooks",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "social-xflux"
         }
       ]
     },
@@ -12410,6 +12545,15 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-balldontlie"
+        },
+        {
+          "name": "Bet Better",
+          "link": "https://betbetter.world/api/",
+          "description": "Sports model win probabilities and fair odds across 13 leagues",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-bet-better"
         },
         {
           "name": "Canadian Football League (CFL)",
