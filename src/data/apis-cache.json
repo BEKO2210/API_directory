@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1651,
+    "totalAPIs": 1659,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-11T04:11:27.436Z"
+    "lastUpdated": "2026-08-12T04:40:30.823Z"
   },
   "categories": [
     {
@@ -461,6 +461,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "anti-malware-google-safe-browsing"
+        },
+        {
+          "name": "IPWhois.net Blacklist",
+          "link": "https://ipwhois.net/blacklist/docs",
+          "description": "Community IP blacklist to check and report abusive IP addresses",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "anti-malware-ipwhois-net-blacklist"
         },
         {
           "name": "MalDatabase",
@@ -1301,6 +1310,15 @@
           "https": true,
           "cors": "no",
           "slug": "business-invovate"
+        },
+        {
+          "name": "Legal Sandbox Georgia",
+          "link": "https://legal.ge/api/openapi.json",
+          "description": "Find verified legal specialists in Georgia from natural-language queries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-legal-sandbox-georgia"
         },
         {
           "name": "Mailchimp",
@@ -4090,6 +4108,15 @@
           "slug": "development-wandbox"
         },
         {
+          "name": "Web Metadata & Contact Extractor",
+          "link": "https://rapidapi.com/josejuanjocoding/api/web-metadata-and-contact-extractor",
+          "description": "Extract SEO metadata, contact emails, social links, and tech stack (<200ms)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-web-metadata-contact-extractor"
+        },
+        {
           "name": "Webclaw",
           "link": "https://webclaw.io/docs/api",
           "description": "Web content extraction for LLMs with scrape, crawl, search, and summarize",
@@ -4619,6 +4646,15 @@
           "https": true,
           "cors": "yes",
           "slug": "email-agpc-domain-check"
+        },
+        {
+          "name": "Atomic Mail",
+          "link": "https://atomic-mail.github.io/atomic-mail-agentic/",
+          "description": "Email for AI agents: programmatic inbox creation and send/receive over JMAP",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "email-atomic-mail"
         },
         {
           "name": "Cloudmersive Validate",
@@ -5471,6 +5507,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-moov"
+        },
+        {
+          "name": "NORTH7 Agent",
+          "link": "https://north7.ai/v1/docs",
+          "description": "Trading signals, market analysis and geopolitical intelligence",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-north7-agent"
         },
         {
           "name": "Nordigen",
@@ -6410,6 +6455,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "games-comics-jservice"
+        },
+        {
+          "name": "KrakenKeys",
+          "link": "https://krakenkeys.com/api-docs",
+          "description": "Steam game key price comparison across 20+ stores, deals, and price history",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "games-comics-krakenkeys"
         },
         {
           "name": "Lichess",
@@ -9140,6 +9194,15 @@
           "https": true,
           "cors": "yes",
           "slug": "machine-learning-ai-for-thai"
+        },
+        {
+          "name": "BRAINIALL",
+          "link": "https://github.com/fasuizu-br/brainiall-transcription-skill",
+          "description": "PT-BR and Spanish audio transcription with diarization and SRT/VTT",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-brainiall"
         },
         {
           "name": "Clarifai",
@@ -13595,6 +13658,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "transportation-boston-mbta-transit"
+        },
+        {
+          "name": "Can I enter",
+          "link": "https://canienter.com",
+          "description": "Visa and entry requirements for 199 passports, cited to official sources, verified daily",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-can-i-enter"
         },
         {
           "name": "Community Transit",
