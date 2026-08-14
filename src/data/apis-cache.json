@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1666,
+    "totalAPIs": 1678,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-13T04:44:23.182Z"
+    "lastUpdated": "2026-08-14T04:42:01.475Z"
   },
   "categories": [
     {
@@ -2191,6 +2191,15 @@
           "slug": "cryptocurrency-coinlib"
         },
         {
+          "name": "CoinLobster",
+          "link": "https://coinlobster.com/developers",
+          "description": "Live executed whale trades across 15 exchanges and on-chain DEX with an unusualness radar",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-coinlobster"
+        },
+        {
           "name": "Coinlore",
           "link": "https://www.coinlore.com/cryptocurrency-data-api",
           "description": "Cryptocurrencies prices, volume and more",
@@ -2450,6 +2459,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-mexc"
+        },
+        {
+          "name": "monerometrics",
+          "link": "https://monerometrics.net",
+          "description": "Reorg-aware Monero (XMR) network metrics, mining-pool centralization and chain reorganizations",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-monerometrics"
         },
         {
           "name": "Nexchange",
@@ -3730,6 +3748,15 @@
           "slug": "development-openqr"
         },
         {
+          "name": "OutageDeck",
+          "link": "https://outagedeck.com/developers/api",
+          "description": "Live status and incidents for 170+ cloud and SaaS providers from official feeds",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-outagedeck"
+        },
+        {
           "name": "oyyi",
           "link": "https://oyyi.xyz/docs/1.0",
           "description": "API for Fake Data, image/video conversion, optimization, pdf optimization and thumbnail generation",
@@ -4888,6 +4915,15 @@
           "slug": "entertainment-corporate-buzz-words"
         },
         {
+          "name": "CosmyDay Astrology",
+          "link": "https://cosmyday.com/api-docs",
+          "description": "Natal charts and sky events computed from Swiss Ephemeris",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "entertainment-cosmyday-astrology"
+        },
+        {
           "name": "Excuser",
           "link": "https://excuser.herokuapp.com/",
           "description": "Get random excuses for various situations",
@@ -5372,6 +5408,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-fed-treasury"
+        },
+        {
+          "name": "Filingrail",
+          "link": "https://rapidapi.com/hudson-enterprises-llc-hudson-enterprises-llc-default/api/filingrail",
+          "description": "SEC EDGAR filings, XBRL financials, Form 4 insider trades, 8-K events and 13F holdings",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-filingrail"
         },
         {
           "name": "Finage",
@@ -9277,6 +9322,15 @@
           "slug": "machine-learning-dialogflow"
         },
         {
+          "name": "DreamThreads",
+          "link": "https://mydreamthreads.xyz/dream-interpretation-api",
+          "description": "Parse dreams into structured entities, emotions, agency, threat, and outcomes",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-dreamthreads"
+        },
+        {
           "name": "EXUDE-API",
           "link": "http://uttesh.com/exude-api/",
           "description": "Used for the primary ways for filtering the stopping, stemming words from the text data",
@@ -10211,6 +10265,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-linkpreview"
+        },
+        {
+          "name": "LottoLens PH",
+          "link": "https://remo65588-boop.github.io/lottolens-ph-public-data/api/",
+          "description": "Fixed Philippine PCSO historical results and normal draw schedules",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-lottolens-ph"
         },
         {
           "name": "Lowy Asia Power Index",
@@ -11308,6 +11371,15 @@
           "slug": "science-math-core"
         },
         {
+          "name": "CycleCalcs",
+          "link": "https://www.cyclecalcs.com/api.html",
+          "description": "Interpreted astronomy: sun and moon times, moon phases, planets, eclipses, seasons",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-cyclecalcs"
+        },
+        {
           "name": "GBIF",
           "link": "https://www.gbif.org/developer/summary",
           "description": "Global Biodiversity Information Facility",
@@ -11585,6 +11657,15 @@
           "https": true,
           "cors": "no",
           "slug": "science-math-usgs-water-services"
+        },
+        {
+          "name": "VedIntel™ AstroAPI",
+          "link": "https://vedintelastroapi.com/docs",
+          "description": "Vedic astrology computation — birth charts, dashas, panchang, AI narratives",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-vedintel-astroapi"
         },
         {
           "name": "World Bank",
@@ -12880,6 +12961,15 @@
           "slug": "sports-fitness-padel-snipe"
         },
         {
+          "name": "PlayerElo",
+          "link": "https://playerelo.football/api-access",
+          "description": "Player-level Elo ratings, predictions and history for 176 football leagues",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "sports-fitness-playerelo"
+        },
+        {
           "name": "Premier League Standings",
           "link": "https://rapidapi.com/heisenbug/api/premier-league-live-scores/",
           "description": "All Current Premier League Standings and Statistics",
@@ -13928,6 +14018,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "transportation-schiphol-airport"
+        },
+        {
+          "name": "Strait of Hormuz Ship Monitor",
+          "link": "https://hormuz.data-tracking.net/llms.txt",
+          "description": "Live AIS vessel traffic, crossings and oil flow through the Strait of Hormuz",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "transportation-strait-of-hormuz-ship-monitor"
         },
         {
           "name": "Tankerkoenig",
@@ -15077,6 +15176,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-foreca"
+        },
+        {
+          "name": "Hail History",
+          "link": "https://hail-history-noaa.netlify.app/api-docs.html",
+          "description": "Radar-detected hail history for any US address from NOAA NEXRAD Level-III hail detections, by year",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "weather-hail-history"
         },
         {
           "name": "HG Weather",
