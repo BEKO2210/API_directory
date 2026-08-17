@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1678,
+    "totalAPIs": 1683,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-16T03:39:29.336Z"
+    "lastUpdated": "2026-08-17T03:40:56.580Z"
   },
   "categories": [
     {
@@ -683,6 +683,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "art-design-iconfinder"
+        },
+        {
+          "name": "Iconify",
+          "link": "https://iconify.design/docs/api/",
+          "description": "Search and fetch SVG icons from 200+ open source icon sets",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-iconify"
         },
         {
           "name": "Icons8",
@@ -2833,6 +2842,15 @@
           "slug": "data-validation-schemashield"
         },
         {
+          "name": "Temsor",
+          "link": "https://api.temsor.com/docs",
+          "description": "Validates Turkish national ID, tax number, IBAN, phone, plate and parses addresses",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "data-validation-temsor"
+        },
+        {
           "name": "US Autocomplete",
           "link": "https://www.smarty.com/docs/cloud/us-autocomplete-pro-api",
           "description": "Enter address data quickly with real-time address suggestions",
@@ -3629,6 +3647,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-micro-db"
+        },
+        {
+          "name": "Micro-SaaS AI Suite",
+          "link": "https://microsaas-agent-api.vercel.app/openapi.json",
+          "description": "8 serverless AI APIs for sentiment analysis, copy generation, email verification, & OCR",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-micro-saas-ai-suite"
         },
         {
           "name": "MicroENV",
@@ -8024,6 +8051,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-district-of-columbia-open-data"
+        },
+        {
+          "name": "DistrictAPI",
+          "link": "https://districtapi.dev/docs",
+          "description": "US school districts and schools by address, with enrollment and boundaries",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-districtapi"
         },
         {
           "name": "eCourtsIndia",
@@ -15392,6 +15428,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-weatherbit"
+        },
+        {
+          "name": "World Time & Weather",
+          "link": "https://worldtimeweather.com/api.html",
+          "description": "Current weather, local time, UTC offset and DST rules for 400 cities as static JSON",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "weather-world-time-weather"
         },
         {
           "name": "wttr.in",
