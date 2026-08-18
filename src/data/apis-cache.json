@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1683,
+    "totalAPIs": 1688,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-17T03:40:56.580Z"
+    "lastUpdated": "2026-08-18T03:36:01.372Z"
   },
   "categories": [
     {
@@ -5146,6 +5146,15 @@
           "slug": "environment-iqair"
         },
         {
+          "name": "kanari",
+          "link": "https://kanari.io/en/api",
+          "description": "Real-time worldwide wildfire detections, water bomber tracking and open fire archive",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-kanari"
+        },
+        {
           "name": "Luchtmeetnet",
           "link": "https://api-docs.luchtmeetnet.nl/",
           "description": "Predicted and actual air quality components for The Netherlands (RIVM)",
@@ -6761,6 +6770,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "games-comics-rawg-io"
+        },
+        {
+          "name": "Rblxdb",
+          "link": "https://rblxdb.com/developers",
+          "description": "Verified Roblox music codes and decal IDs with live working status",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-rblxdb"
         },
         {
           "name": "Rick and Morty",
@@ -9385,6 +9403,15 @@
           "slug": "machine-learning-goldbean"
         },
         {
+          "name": "Google Gemini",
+          "link": "https://ai.google.dev/gemini-api/docs",
+          "description": "Multimodal generative AI for text, vision, and code generation",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "machine-learning-google-gemini"
+        },
+        {
           "name": "Groq",
           "link": "https://console.groq.com/docs/quickstart",
           "description": "Fast AI inference API with free tier, supports Llama, Mixtral, Gemma models",
@@ -11809,6 +11836,15 @@
           "slug": "security-crxcavator"
         },
         {
+          "name": "CSR.plus",
+          "link": "https://csr.plus/docs/api",
+          "description": "Generate certificate signing requests and private keys without OpenSSL",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-csr-plus"
+        },
+        {
           "name": "dead-drop",
           "link": "https://api.dead-drop.xyz/api/v1/docs",
           "description": "Ephemeral zero-knowledge encrypted data sharing",
@@ -12281,6 +12317,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-shopee"
+        },
+        {
+          "name": "Sparepilot",
+          "link": "https://sparepilot.com/developers",
+          "description": "Spare parts catalog, OEM cross-references & price comparison for garden power equipment",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "shopping-sparepilot"
         },
         {
           "name": "Tokopedia",
