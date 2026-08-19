@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1688,
+    "totalAPIs": 1697,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-18T03:36:01.372Z"
+    "lastUpdated": "2026-08-19T03:37:56.906Z"
   },
   "categories": [
     {
@@ -929,6 +929,15 @@
           "https": true,
           "cors": "yes",
           "slug": "blockchain-etherscan"
+        },
+        {
+          "name": "Get Started with Web3",
+          "link": "https://github.com/beihaili/Get-Started-with-Web3/blob/main/docs/api.md",
+          "description": "Bilingual Web3 lessons, glossary search and role-based learning paths",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "blockchain-get-started-with-web3"
         },
         {
           "name": "Helium",
@@ -2806,6 +2815,15 @@
           "slug": "data-validation-vatlayer"
         },
         {
+          "name": "Attestwire",
+          "link": "https://api.attestwire.com/docs",
+          "description": "Validate EN 16931 e-invoices: XRechnung, ZUGFeRD, Factur-X, Peppol BIS",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "data-validation-attestwire"
+        },
+        {
           "name": "Lob.com",
           "link": "https://lob.com/",
           "description": "US Address Verification",
@@ -3029,7 +3047,7 @@
         },
         {
           "name": "Bored",
-          "link": "https://www.boredapi.com/",
+          "link": "https://bored-api.appbrewery.com/",
           "description": "Find random activities to fight boredom",
           "auth": "No",
           "https": true,
@@ -3773,6 +3791,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-openqr"
+        },
+        {
+          "name": "Orca Scan",
+          "link": "https://orcascan.com/guides/free-barcode-image-api-0e4a4fa6",
+          "description": "Generate barcode images (QR, Code 128, EAN, Data Matrix and more) in SVG, PNG, JPG or PDF",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-orca-scan"
         },
         {
           "name": "OutageDeck",
@@ -4898,6 +4925,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "email-sendinblue"
+        },
+        {
+          "name": "uchecker",
+          "link": "https://api.uchecker.net/docs",
+          "description": "Bulk email verification with full SMTP server responses",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "email-uchecker"
         },
         {
           "name": "Verifier",
@@ -6718,6 +6754,15 @@
           "slug": "games-comics-pok-mon-tcg"
         },
         {
+          "name": "PokéSprite",
+          "link": "https://msikma.github.io/pokesprite/",
+          "description": "Database of Pokémon sprites and icons",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-pok-sprite"
+        },
+        {
           "name": "Psychonauts",
           "link": "https://psychonauts-api.netlify.app/",
           "description": "Psychonauts World Characters Information and PSI Powers",
@@ -6860,6 +6905,15 @@
           "https": true,
           "cors": "no",
           "slug": "games-comics-steam"
+        },
+        {
+          "name": "SteamGPT",
+          "link": "https://steamgpt.net",
+          "description": "Steam profiles, SteamID conversion, VAC/game bans, FACEIT stats and friends",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-steamgpt"
         },
         {
           "name": "SuperHeroes",
@@ -7469,6 +7523,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "geocoding-ipstack"
+        },
+        {
+          "name": "ipwhois",
+          "link": "https://ipwhois.io/documentation",
+          "description": "IP geolocation with country, city, coordinates, ISP, timezone and flag data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-ipwhois"
         },
         {
           "name": "Kakao Maps",
@@ -11224,6 +11287,15 @@
           "slug": "photography-objectcut"
         },
         {
+          "name": "Pexafy",
+          "link": "https://docs.pexafy.com",
+          "description": "Semantic image search across 9+ free stock photo sources with a unified JSON schema",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "photography-pexafy"
+        },
+        {
           "name": "Pexels",
           "link": "https://www.pexels.com/api/",
           "description": "Free Stock Photos and Videos",
@@ -14972,6 +15044,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "video-ron-swanson-quotes"
+        },
+        {
+          "name": "Shotstack",
+          "link": "https://shotstack.io/",
+          "description": "Cloud video editing API to create and render videos programmatically",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "video-shotstack"
         },
         {
           "name": "Simkl",
