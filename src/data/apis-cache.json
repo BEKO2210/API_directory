@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1697,
+    "totalAPIs": 1701,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-19T03:37:56.906Z"
+    "lastUpdated": "2026-08-20T03:37:55.155Z"
   },
   "categories": [
     {
@@ -8807,6 +8807,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-usaspending-gov"
+        },
+        {
+          "name": "Vett",
+          "link": "https://wimberly.solutions/api/free-sanctions-check/",
+          "description": "Screen names & companies against OFAC, PEP, watchlists & recalls",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-vett"
         }
       ]
     },
@@ -10301,6 +10310,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "open-data-collegescorecard-ed-gov"
+        },
+        {
+          "name": "CuttingToolsAI",
+          "link": "https://cuttingtoolsai.eu/api",
+          "description": "Cross-brand carbide insert grade equivalents by ISO application class",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-cuttingtoolsai"
         },
         {
           "name": "Enigma Public",
@@ -12997,6 +13015,15 @@
           "slug": "sports-fitness-football-soccer-videos"
         },
         {
+          "name": "Football Charts",
+          "link": "https://www.football-charts.com/developers",
+          "description": "Tables, results, model probabilities and Monte Carlo season projections for 93 leagues",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-football-charts"
+        },
+        {
           "name": "Football Standings",
           "link": "https://github.com/azharimm/football-standings-api",
           "description": "Display football standings e.g epl, la liga, serie a etc. The data is based on espn site",
@@ -15206,6 +15233,15 @@
           "https": true,
           "cors": "yes",
           "slug": "video-unogs"
+        },
+        {
+          "name": "VidWords",
+          "link": "https://vidwords.com/api-docs",
+          "description": "YouTube transcripts and subtitles as TXT, SRT, VTT or DOCX, plus AI video analysis",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "video-vidwords"
         },
         {
           "name": "Vimeo",
