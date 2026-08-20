@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1701,
+    "totalAPIs": 1702,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-20T03:37:55.155Z"
+    "lastUpdated": "2026-08-20T18:53:35.827Z"
   },
   "categories": [
     {
@@ -2894,6 +2894,15 @@
           "https": true,
           "cors": "yes",
           "slug": "data-validation-us-street-address"
+        },
+        {
+          "name": "Venue Authority",
+          "slug": "data-validation-venue-authority",
+          "description": "Verify US food-service facilities against supported regulator records",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "link": "https://venueauthority.com/developers"
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-08-12T13:08:49.354Z"
+    "lastUpdated": "2026-08-20T18:53:35.525Z"
   },
   "add": [
     {
@@ -90,6 +90,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 67
+    },
+    {
+      "name": "Venue Authority",
+      "link": "https://venueauthority.com/developers",
+      "description": "Verify US food-service facilities against supported regulator records",
+      "category": "Data Validation",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "no",
+      "source_issue": 68
     }
   ],
   "remove": [],
