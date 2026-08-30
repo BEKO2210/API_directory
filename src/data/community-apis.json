@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-08-20T18:53:35.525Z"
+    "lastUpdated": "2026-08-30T17:45:21.831Z"
   },
   "add": [
     {
@@ -100,6 +100,16 @@
       "https": true,
       "cors": "no",
       "source_issue": 68
+    },
+    {
+      "name": "DomScan",
+      "link": "https://domscan.net/docs",
+      "description": "Public internet intelligence APIs for domains, DNS, web data, security, identity, and monitoring",
+      "category": "Security",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 70
     }
   ],
   "remove": [],

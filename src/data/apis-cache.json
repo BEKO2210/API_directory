@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1713,
+    "totalAPIs": 1724,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-30T08:40:39.807Z"
+    "lastUpdated": "2026-08-30T17:45:22.133Z"
   },
   "categories": [
     {
@@ -1330,6 +1330,15 @@
           "slug": "business-invovate"
         },
         {
+          "name": "Katalis UK Company Enrichment",
+          "link": "https://meetkatalis.com/apis",
+          "description": "Verified UK company profiles with an AI summary and accuracy score, from Companies House data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "business-katalis-uk-company-enrichment"
+        },
+        {
           "name": "Legal Sandbox Georgia",
           "link": "https://legal.ge/api/openapi.json",
           "description": "Find verified legal specialists in Georgia from natural-language queries",
@@ -1481,6 +1490,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "business-tenders-in-ukraine"
+        },
+        {
+          "name": "TradeDataHub",
+          "link": "https://www.tradedatahub.net",
+          "description": "U.S. contractor datasets with a free discovery API for coverage, pricing and masked previews",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-tradedatahub"
         },
         {
           "name": "Tomba email finder",
@@ -3010,6 +3028,15 @@
           "slug": "development-apis-guru"
         },
         {
+          "name": "Aquanode",
+          "link": "https://docs.aquanode.io/docs/api/marketplace",
+          "description": "Live GPU rental prices and availability across nine cloud providers",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "development-aquanode"
+        },
+        {
           "name": "Azure DevOps",
           "link": "https://docs.microsoft.com/en-us/rest/api/azure/devops",
           "description": "The Azure DevOps basic components of a REST API request/response pair",
@@ -4061,6 +4088,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-scrapingdog"
+        },
+        {
+          "name": "Scrax",
+          "link": "https://rapidapi.com/mtaahoperators/api/scrax",
+          "description": "Web scraping API that only bills for successful scrapes",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-scrax"
         },
         {
           "name": "Screenshot",
@@ -5317,6 +5353,15 @@
           "slug": "environment-uk-carbon-intensity"
         },
         {
+          "name": "WattFigure",
+          "link": "https://api.wattfigure.com/",
+          "description": "US electricity rates by state, with appliance and EV charging running costs",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-wattfigure"
+        },
+        {
           "name": "Website Carbon",
           "link": "https://api.websitecarbon.com/",
           "description": "API to estimate the carbon footprint of loading web pages",
@@ -5732,6 +5777,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-openfigi"
+        },
+        {
+          "name": "PIT Financial State",
+          "link": "https://agent-economy-pit-evaluation.onrender.com/docs",
+          "description": "Point-in-time quarterly revenue for 20 U.S. issuers",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-pit-financial-state"
         },
         {
           "name": "Plaid",
@@ -6392,6 +6446,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "games-comics-dota-2"
+        },
+        {
+          "name": "DotaSense Timings",
+          "link": "https://dotasense.com/cheat-sheet#timing-api",
+          "description": "Reviewed Dota 2 objective timings in JSON and CSV",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-dotasense-timings"
         },
         {
           "name": "Dungeons and Dragons",
@@ -10609,6 +10672,15 @@
           "slug": "open-data-peakmetrics"
         },
         {
+          "name": "PublicDataHub",
+          "link": "https://publicdatahub.org/api",
+          "description": "US public schools, hospitals and federal agency budgets as JSON/CSV, with provenance",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-publicdatahub"
+        },
+        {
           "name": "Recreation Information Database",
           "link": "https://ridb.recreation.gov/",
           "description": "Recreational areas, federal lands, historic sites, museums, and other attractions/resources(US)",
@@ -12338,6 +12410,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://domainintel.onrender.com"
+        },
+        {
+          "name": "DomScan",
+          "slug": "security-domscan",
+          "description": "Public internet intelligence APIs for domains, DNS, web data, security, identity, and monitoring",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://domscan.net/docs"
         }
       ]
     },
@@ -13487,6 +13568,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "test-data-fakestoreapi"
+        },
+        {
+          "name": "flaky",
+          "link": "https://flakyapi.dev",
+          "description": "Fake REST API with chaos controls: force any status code, add latency, or a failure rate",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "test-data-flaky"
         },
         {
           "name": "GeneradorDNI",
@@ -14657,6 +14747,15 @@
           "https": true,
           "cors": "no",
           "slug": "transportation-velib-metropolis-paris-france"
+        },
+        {
+          "name": "Wander Atlas",
+          "link": "https://wanderatlasguides.com/api/",
+          "description": "Hourly quiet and busy crowd windows for 620+ tourist attractions in 20 countries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-wander-atlas"
         }
       ]
     },
