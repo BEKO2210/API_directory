@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1724,
+    "totalAPIs": 1727,
     "totalCategories": 51,
-    "lastUpdated": "2026-08-31T09:03:46.186Z"
+    "lastUpdated": "2026-09-01T08:06:34.544Z"
   },
   "categories": [
     {
@@ -3305,6 +3305,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-geekflare"
+        },
+        {
+          "name": "GcrawlAI",
+          "link": "https://gcrawlai.com",
+          "description": "Web scraping, SERP API, screenshots, URL to Markdown and prebuilt extractors",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-gcrawlai"
         },
         {
           "name": "Genderize.io",
@@ -7132,6 +7141,15 @@
           "slug": "games-comics-when-is-next-mcu-film"
         },
         {
+          "name": "Worth the Rip",
+          "link": "https://worththerip.com/api/",
+          "description": "Sealed trading-card product prices and expected value across 10 TCGs, refreshed every 2 hours",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-worth-the-rip"
+        },
+        {
           "name": "xkcd",
           "link": "https://xkcd.com/json.html",
           "description": "Retrieve xkcd comics as JSON",
@@ -10661,6 +10679,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "open-data-pan-africa-data"
+        },
+        {
+          "name": "PayCrunch",
+          "link": "https://paycrunch.co/api.html",
+          "description": "US wages for 1,008 occupations and by state, from BLS OEWS May 2025, static JSON, CC BY 4.0",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-paycrunch"
         },
         {
           "name": "PeakMetrics",
