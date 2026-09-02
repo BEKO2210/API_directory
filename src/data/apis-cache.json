@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1727,
+    "totalAPIs": 1745,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-01T08:06:34.544Z"
+    "lastUpdated": "2026-09-02T07:25:54.887Z"
   },
   "categories": [
     {
@@ -2344,6 +2344,15 @@
           "slug": "cryptocurrency-cryptonator"
         },
         {
+          "name": "DefiLlama",
+          "link": "https://defillama.com/docs/api",
+          "description": "Open and transparent DeFi data, TVL, coin prices, volumes, and yields",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-defillama"
+        },
+        {
           "name": "dYdX",
           "link": "https://docs.dydx.exchange/",
           "description": "Decentralized cryptocurrency exchange",
@@ -2699,6 +2708,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "currency-exchange-amdoren"
+        },
+        {
+          "name": "api-mint",
+          "link": "https://api-mint.hoiwan.workers.dev",
+          "description": "Free utility APIs: timezone, forex rates, crypto prices, page metadata",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-api-mint"
         },
         {
           "name": "Bank of Russia",
@@ -3217,6 +3235,15 @@
           "slug": "development-countapi"
         },
         {
+          "name": "Crawl Readiness",
+          "link": "https://crawlreadiness.com",
+          "description": "Check if AI crawlers (ChatGPT, Claude, Perplexity, 30+ others) can access any website",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-crawl-readiness"
+        },
+        {
           "name": "Databricks",
           "link": "https://docs.databricks.com/dev-tools/api/latest/index.html",
           "description": "Service to manage your databricks account,clusters, notebooks, jobs and workspaces",
@@ -3685,6 +3712,15 @@
           "slug": "development-kroki"
         },
         {
+          "name": "Labelixa",
+          "link": "https://labelixa.com/docs/api",
+          "description": "Render, validate and generate Zebra ZPL label barcodes as PNG/PDF",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-labelixa"
+        },
+        {
           "name": "License-API",
           "link": "https://github.com/cmccandless/license-api/blob/master/README.md",
           "description": "Unofficial REST API for choosealicense.com",
@@ -3982,6 +4018,15 @@
           "slug": "development-qr-code-crafter"
         },
         {
+          "name": "QR Codes",
+          "link": "https://qr-api.62-238-102-93.sslip.io/docs",
+          "description": "Generate QR codes via a single GET request, with logo embedding and custom colors",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-qr-codes"
+        },
+        {
           "name": "Qrcode Monkey",
           "link": "https://www.qrcode-monkey.com/qr-code-api-with-logo/",
           "description": "Integrate custom and unique looking QR codes into your system or workflow",
@@ -4151,6 +4196,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-sheetsu"
+        },
+        {
+          "name": "Shotanvil",
+          "link": "https://shotanvil.com",
+          "description": "Screenshot, PDF and HTML rendering API with a free tier, API key or x402 auth",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-shotanvil"
         },
         {
           "name": "SHOUTCLOUD",
@@ -5299,6 +5353,15 @@
           "slug": "environment-openaq"
         },
         {
+          "name": "Open-Meteo",
+          "link": "https://open-meteo.com/",
+          "description": "Free weather API for non-commercial use",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-open-meteo"
+        },
+        {
           "name": "PM2.5 Open Data Portal",
           "link": "https://pm25.lass-net.org/#apis",
           "description": "Open low-cost PM2.5 sensor data",
@@ -5635,6 +5698,15 @@
           "slug": "finance-front-accounting-apis"
         },
         {
+          "name": "FXNewsBias",
+          "link": "https://fxnewsbias.com/developers",
+          "description": "AI-scored news sentiment for the 8 major forex currencies, refreshed every 3 hours",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-fxnewsbias"
+        },
+        {
           "name": "Goldprice.dev",
           "link": "https://goldprice.dev/docs",
           "description": "Cross-validated gold, silver & copper spot, futures & 30-year history in 13 currencies",
@@ -5653,6 +5725,15 @@
           "slug": "finance-halal-terminal"
         },
         {
+          "name": "Helious",
+          "link": "https://helious.io/developers/",
+          "description": "US Treasury auction results with the tail and bidder split, plus scored economic releases",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-helious"
+        },
+        {
           "name": "Helium",
           "link": "https://heliumtrades.com/mcp-page/",
           "description": "News with media bias scoring, balanced news synthesis, live market data, AI options pricing",
@@ -5669,6 +5750,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-hotstoks"
+        },
+        {
+          "name": "IBAN Analyzer",
+          "link": "https://iban-analyzer.com/free-iban-api",
+          "description": "Resolve an IBAN to its bank name, BIC, city and address for 60+ countries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-iban-analyzer"
         },
         {
           "name": "IBANforge",
@@ -8062,6 +8152,15 @@
           "slug": "government-bclaws"
         },
         {
+          "name": "Bidledger",
+          "link": "https://jaydemks.github.io/bidledger/api.html",
+          "description": "Every open public tender in the European Union, rebuilt daily from the official TED data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-bidledger"
+        },
+        {
           "name": "Brazil",
           "link": "https://brasilapi.com.br/",
           "description": "Community driven API for Brazil Public Data",
@@ -9148,6 +9247,15 @@
           "slug": "health-erstat"
         },
         {
+          "name": "FindSaunaPlunge",
+          "link": "https://findsaunaplunge.com/api/",
+          "description": "US cold plunge and sauna venues with dated, source-quoted temperatures and prices",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-findsaunaplunge"
+        },
+        {
           "name": "FoodData Central",
           "link": "https://fdc.nal.usda.gov/",
           "description": "National Nutrient Database for Standard Reference",
@@ -9299,6 +9407,15 @@
           "https": true,
           "cors": "yes",
           "slug": "health-quarantine"
+        },
+        {
+          "name": "Urgences Québec",
+          "link": "https://sante.handled.tools/api",
+          "description": "Hourly emergency room occupancy, stretcher counts and wait times for every hospital in Quebec, Canada",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-urgences-qu-bec"
         }
       ]
     },
@@ -12313,6 +12430,15 @@
           "slug": "security-national-vulnerability-database"
         },
         {
+          "name": "Neetix Liveliness",
+          "link": "https://liveliness.neetix.in/api-reference",
+          "description": "Face liveness, presentation-attack detection and 1:1 face match for identity verification",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "security-neetix-liveliness"
+        },
+        {
           "name": "Passwordinator",
           "link": "https://github.com/fawazsullia/password-generator/",
           "description": "Generate random passwords of varying complexities",
@@ -13321,6 +13447,15 @@
           "slug": "sports-fitness-openf1"
         },
         {
+          "name": "OpenFoot API",
+          "link": "https://openfootapi.com/docs",
+          "description": "Football fixtures, results, standings, lineups, live events and shot-level xG across 75 competitions",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-openfoot-api"
+        },
+        {
           "name": "OpenLigaDB",
           "link": "https://www.openligadb.de",
           "description": "Crowd sourced sports league results",
@@ -14137,6 +14272,15 @@
           "slug": "transportation-apimetro"
         },
         {
+          "name": "Aviation Safety Data",
+          "link": "https://himaxym.com/developers",
+          "description": "164,068 aircraft accident narratives from 128 official investigation authorities, plus FAA data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-aviation-safety-data"
+        },
+        {
           "name": "AviationAPI",
           "link": "https://docs.aviationapi.com",
           "description": "FAA Aeronautical Charts and Publications, Airport Information, and Airport Weather",
@@ -14306,6 +14450,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "transportation-land-transport-authority-datamall-singapore"
+        },
+        {
+          "name": "LiveTrafficCam",
+          "link": "https://bzsasson.github.io/traffic-camera-sources/api.html",
+          "description": "Live US state DOT traffic cameras with verified live status and measured uptime",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "transportation-livetrafficcam"
         },
         {
           "name": "Metro Lisboa",
@@ -15824,6 +15977,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-weatherbit"
+        },
+        {
+          "name": "WeatherTotals",
+          "link": "https://weathertotals.com/api",
+          "description": "Measured US snow, rain, hail and aurora totals by state and city",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "weather-weathertotals"
         },
         {
           "name": "World Time & Weather",
