@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1745,
+    "totalAPIs": 1752,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-05T07:12:38.443Z"
+    "lastUpdated": "2026-09-05T19:51:04.762Z"
   },
   "categories": [
     {
@@ -4759,6 +4759,15 @@
           "slug": "documents-productivity-prexview"
         },
         {
+          "name": "PrintSocket",
+          "link": "https://www.printsocket.com/docs",
+          "description": "Send PDFs, ZPL labels and ESC/POS receipts to your own printers from any language; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-printsocket"
+        },
+        {
           "name": "Renderly",
           "link": "https://renderlyapi.com",
           "description": "HTML to PDF conversion API built on Chromium",
@@ -5633,6 +5642,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-eod-historical-data"
+        },
+        {
+          "name": "FarmDash",
+          "link": "https://www.farmdash.one/agents",
+          "description": "DeFi intelligence, protocol risk, yield simulation plus 84 MCP agent tools, free Scout tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-farmdash"
         },
         {
           "name": "Fed Treasury",
@@ -7921,6 +7939,15 @@
           "slug": "geocoding-pinball-map"
         },
         {
+          "name": "PontoFato",
+          "link": "https://pontofato.com/api/",
+          "description": "Brazilian postal codes (CEP) with IBGE coordinates, addresses and the companies registered there",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "geocoding-pontofato"
+        },
+        {
           "name": "positionstack",
           "link": "https://positionstack.com/",
           "description": "Forward & Reverse Batch Geocoding REST API",
@@ -8393,6 +8420,15 @@
           "https": true,
           "cors": "yes",
           "slug": "government-ecourtsindia"
+        },
+        {
+          "name": "EditalMD",
+          "link": "https://editalmd.com/api/",
+          "description": "Brazilian public procurement (PNCP) notices as Markdown with deadlines and requirements",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-editalmd"
         },
         {
           "name": "EPA",
@@ -8987,6 +9023,15 @@
           "https": true,
           "cors": "yes",
           "slug": "government-prc-exam-schedule"
+        },
+        {
+          "name": "Radar CNPJ",
+          "link": "https://radar-cnpj.com/api/",
+          "description": "Brazilian companies (CNPJ) lookup and search, with a market check by area and monitoring",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "government-radar-cnpj"
         },
         {
           "name": "Represent by Open North",
@@ -13652,6 +13697,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://ay-worldcup2026.zeabur.app/developers"
+        },
+        {
+          "name": "ParlayAPI",
+          "slug": "sports-fitness-parlayapi",
+          "description": "Sports odds for personal/internal research; free tier of 1,000 credits/month",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://parlay-api.com/docs"
         }
       ]
     },
@@ -15368,6 +15422,15 @@
           "https": true,
           "cors": "no",
           "slug": "video-json2video"
+        },
+        {
+          "name": "KPainter",
+          "link": "https://api.kpainter.ai/openapi/v1/docs",
+          "description": "Create video, image, and interactive app outputs from prompts or source files",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-kpainter"
         },
         {
           "name": "KinoPipe",

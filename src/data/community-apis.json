@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-08-30T17:45:21.831Z"
+    "lastUpdated": "2026-09-05T19:51:04.433Z"
   },
   "add": [
     {
@@ -110,6 +110,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 70
+    },
+    {
+      "name": "ParlayAPI",
+      "link": "https://parlay-api.com/docs",
+      "description": "Sports odds for personal/internal research; free tier of 1,000 credits/month",
+      "category": "Sports & Fitness",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 73
     }
   ],
   "remove": [],
