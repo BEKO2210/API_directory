@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1752,
+    "totalAPIs": 1765,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-05T19:51:04.762Z"
+    "lastUpdated": "2026-09-06T07:25:12.184Z"
   },
   "categories": [
     {
@@ -3235,6 +3235,15 @@
           "slug": "development-countapi"
         },
         {
+          "name": "crates.io",
+          "link": "https://crates.io/data-access",
+          "description": "Rust crate versions, downloads and dependency metadata",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-crates-io"
+        },
+        {
           "name": "Crawl Readiness",
           "link": "https://crawlreadiness.com",
           "description": "Check if AI crawlers (ChatGPT, Claude, Perplexity, 30+ others) can access any website",
@@ -3919,6 +3928,15 @@
           "slug": "development-oyyi"
         },
         {
+          "name": "Packagist",
+          "link": "https://packagist.org/apidoc",
+          "description": "PHP Composer package versions and dist metadata",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "development-packagist"
+        },
+        {
           "name": "PageCDN",
           "link": "https://pagecdn.com/docs/public-api",
           "description": "Public API for javascript, css and font libraries on PageCDN",
@@ -4079,6 +4097,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-rss-feed-to-json"
+        },
+        {
+          "name": "RubyGems",
+          "link": "https://guides.rubygems.org/rubygems-org-api/",
+          "description": "Ruby gem metadata, versions, dependencies and search",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-rubygems"
         },
         {
           "name": "SavePage.io",
@@ -5308,6 +5335,15 @@
           "slug": "environment-danish-data-service-energi"
         },
         {
+          "name": "gridcarbon",
+          "link": "https://gridcarbon.dev",
+          "description": "Hourly grid carbon intensity in gCO2eq/kWh for 45 zones in Europe, the US and Great Britain",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-gridcarbon"
+        },
+        {
           "name": "GrünstromIndex",
           "link": "https://gruenstromindex.de/",
           "description": "Green Power Index for Germany (Grünstromindex/GSI)",
@@ -5716,6 +5752,15 @@
           "slug": "finance-front-accounting-apis"
         },
         {
+          "name": "Futures Clock",
+          "link": "https://futuresclock.com/en/data-methodology/#open-data",
+          "description": "Trading hours and session windows for 65 futures products on 16 global exchanges",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-futures-clock"
+        },
+        {
           "name": "FXNewsBias",
           "link": "https://fxnewsbias.com/developers",
           "description": "AI-scored news sentiment for the 8 major forex currencies, refreshed every 3 hours",
@@ -5831,6 +5876,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-klarna"
+        },
+        {
+          "name": "KmalServico Gold Price Dataset",
+          "link": "https://www.kmalservico.com/data",
+          "description": "Current gold price per gram at 6 purities for 188 countries, JSON, no auth",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "finance-kmalservico-gold-price-dataset"
         },
         {
           "name": "LiquiLens",
@@ -6047,6 +6101,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-twelve-data"
+        },
+        {
+          "name": "US Mortgage Calculator",
+          "link": "https://www.usmortgagecalc.com/developers/api",
+          "description": "Mortgage payment, amortization, affordability and 50-state property tax data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-us-mortgage-calculator"
         },
         {
           "name": "VAT Validation",
@@ -9898,6 +9961,15 @@
           "slug": "machine-learning-messengerx-io"
         },
         {
+          "name": "Modelfax",
+          "link": "https://bytebrujo.github.io/modelfax/",
+          "description": "LLM pricing, context windows and deprecation dates, schema-validated and updated daily",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-modelfax"
+        },
+        {
           "name": "NLP Cloud",
           "link": "https://nlpcloud.io",
           "description": "NLP API using spaCy and transformers for NER, sentiments, classification, summarization, and more",
@@ -10546,6 +10618,15 @@
           "slug": "open-data-18f"
         },
         {
+          "name": "49 Gallery Historical Data",
+          "link": "https://api.181649.com/docs",
+          "description": "Normalized historical records and 25 daily-updated reference series",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-49-gallery-historical-data"
+        },
+        {
           "name": "AcreLens",
           "link": "https://www.acrelens.com",
           "description": "Land suitability scoring API for any US property: off-grid, rural, recreational, investment",
@@ -10589,6 +10670,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "open-data-botsarchive"
+        },
+        {
+          "name": "BTU Graph",
+          "link": "https://btugraph.com/data/",
+          "description": "Source-reviewed energy company knowledge graph and directory exports",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-btu-graph"
         },
         {
           "name": "Callook.info",
@@ -11857,6 +11947,15 @@
           "slug": "science-math-cyclecalcs"
         },
         {
+          "name": "Europe PMC",
+          "link": "https://europepmc.org/RestfulWebService",
+          "description": "Life-science literature search with abstracts, citations and full-text links",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-europe-pmc"
+        },
+        {
           "name": "GBIF",
           "link": "https://www.gbif.org/developer/summary",
           "description": "Global Biodiversity Information Facility",
@@ -12554,6 +12653,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "security-ssl-domain-health-check"
+        },
+        {
+          "name": "SSL Labs",
+          "link": "https://github.com/ssllabs/ssllabs-scan/blob/master/ssllabs-api-docs-v3.md",
+          "description": "Deep SSL/TLS server analysis with A+ to F grading",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "security-ssl-labs"
         },
         {
           "name": "Threat Jammer",
@@ -13811,6 +13919,15 @@
           "https": true,
           "cors": "no",
           "slug": "test-data-itsthisforthat"
+        },
+        {
+          "name": "JsonFabrica",
+          "link": "https://jsonfabrica.com/docs/api-reference",
+          "description": "Generate realistic relational synthetic JSON test data from reusable templates",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "test-data-jsonfabrica"
         },
         {
           "name": "JSONPlaceholder",
