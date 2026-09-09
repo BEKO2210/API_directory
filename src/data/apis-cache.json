@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1765,
+    "totalAPIs": 1768,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-08T07:33:28.705Z"
+    "lastUpdated": "2026-09-09T07:45:34.374Z"
   },
   "categories": [
     {
@@ -3044,6 +3044,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-apis-guru"
+        },
+        {
+          "name": "APIzone",
+          "link": "https://apizone.io/api-docs",
+          "description": "Independent uptime & status monitoring for 200+ popular APIs",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-apizone"
         },
         {
           "name": "Aquanode",
@@ -9640,6 +9649,15 @@
           "slug": "jobs-jobs2careers"
         },
         {
+          "name": "Jobven",
+          "link": "https://jobven.com/docs/getting-started",
+          "description": "Job postings tracked as roles open and close, with webhooks on changes, from employer career pages",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-jobven"
+        },
+        {
           "name": "Jooble",
           "link": "https://jooble.org/api/about",
           "description": "Job search engine",
@@ -11198,6 +11216,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-source-projects-github-readme-stats"
+        },
+        {
+          "name": "Libraries.io",
+          "link": "https://libraries.io/api",
+          "description": "Metadata, dependencies and release history for open-source packages across 30+ managers",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-source-projects-libraries-io"
         },
         {
           "name": "Metabase",
