@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1768,
+    "totalAPIs": 1778,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-09T07:45:34.374Z"
+    "lastUpdated": "2026-09-10T07:37:51.182Z"
   },
   "categories": [
     {
@@ -1319,6 +1319,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "business-instatus"
+        },
+        {
+          "name": "InvoiceIn",
+          "link": "https://invoicein.peculiar.systems/",
+          "description": "Parse and validate received e-invoices: XRechnung, ZUGFeRD, Peppol, FatturaPA, KSeF",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-invoicein"
         },
         {
           "name": "Invovate",
@@ -3865,6 +3874,15 @@
           "slug": "development-npm-registry"
         },
         {
+          "name": "NuGet",
+          "link": "https://learn.microsoft.com/en-us/nuget/api/overview",
+          "description": ".NET package versions, metadata and search",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-nuget"
+        },
+        {
           "name": "OneSignal",
           "link": "https://documentation.onesignal.com/docs/onesignal-api",
           "description": "Self-serve customer engagement solution for Push Notifications, Email, SMS & In-App",
@@ -3953,6 +3971,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-pagecdn"
+        },
+        {
+          "name": "Peak",
+          "link": "https://peak.fo/docs",
+          "description": "Cloudflare Turnstile and 5-second challenge solving, pay per successful solve, 1,000 free solves",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-peak"
         },
         {
           "name": "Phone Specs",
@@ -5140,6 +5167,15 @@
           "slug": "entertainment-anycrap"
         },
         {
+          "name": "Bucketlist Dream of the Day",
+          "link": "https://bucketlist.nl/samenwerken?lang=en#droom-van-de-dag",
+          "description": "Daily travel and life-experience inspiration with canonical links and images",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "entertainment-bucketlist-dream-of-the-day"
+        },
+        {
           "name": "chucknorris.io",
           "link": "https://api.chucknorris.io",
           "description": "JSON API for hand curated Chuck Norris jokes",
@@ -5687,6 +5723,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-eod-historical-data"
+        },
+        {
+          "name": "EstimateTax",
+          "link": "https://estimatetax.net/api/",
+          "description": "US federal, state and local income tax calculation for 2026, with the source of every figure",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-estimatetax"
         },
         {
           "name": "FarmDash",
@@ -11005,6 +11050,15 @@
           "slug": "open-data-scoop-it"
         },
         {
+          "name": "SlashYear",
+          "link": "https://slashyear.com/api",
+          "description": "86,902 historical events as JSON, each quoted from a cited Wikipedia revision",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-slashyear"
+        },
+        {
           "name": "Socrata",
           "link": "https://dev.socrata.com/",
           "description": "Access to Open Data from Governments, Non-profits and NGOs around the world",
@@ -12190,6 +12244,15 @@
           "slug": "science-math-remote-calc"
         },
         {
+          "name": "Semantic Scholar",
+          "link": "https://api.semanticscholar.org/",
+          "description": "Academic search engine for papers, authors, and citations",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "science-math-semantic-scholar"
+        },
+        {
           "name": "SHARE",
           "link": "https://share.osf.io/api/v2/",
           "description": "A free, open, dataset about research and scholarly activities",
@@ -13178,6 +13241,15 @@
           "https": true,
           "cors": "no",
           "slug": "social-postlake"
+        },
+        {
+          "name": "Postproxy",
+          "link": "https://postproxy.dev/getting-started/quickstart/",
+          "description": "Publish posts, comments, DMs, and more",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "social-postproxy"
         },
         {
           "name": "Product Hunt",
@@ -14294,6 +14366,15 @@
           "https": true,
           "cors": "yes",
           "slug": "text-analysis-tisane"
+        },
+        {
+          "name": "ToHuman",
+          "link": "https://tohuman.io/ai-humanizer-api",
+          "description": "Rewrite AI-assisted drafts into natural, human-sounding text that reads like you wrote it",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "text-analysis-tohuman"
         },
         {
           "name": "Watson Natural Language Understanding",
@@ -15416,6 +15497,15 @@
           "https": true,
           "cors": "yes",
           "slug": "vehicle-smartcar"
+        },
+        {
+          "name": "Wheelwise",
+          "link": "https://cars.limoja.ai/api/search?q=BMW&limit=1",
+          "description": "UK used-car listings with fair-price grade, 36-month resale forecast and true monthly cost per advert",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "vehicle-wheelwise"
         }
       ]
     },
