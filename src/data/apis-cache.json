@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1778,
+    "totalAPIs": 1782,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-10T07:37:51.182Z"
+    "lastUpdated": "2026-09-11T07:35:42.499Z"
   },
   "categories": [
     {
@@ -755,6 +755,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "art-design-rijksmuseum"
+        },
+        {
+          "name": "Smithsonian Open Access",
+          "link": "https://github.com/Smithsonian/smithsonian-openaccess",
+          "description": "Smithsonian collection metadata and open-access digital media",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "art-design-smithsonian-open-access"
         },
         {
           "name": "Thisispaper",
@@ -9178,6 +9187,15 @@
           "slug": "government-uk-companies-house"
         },
         {
+          "name": "UK Legislation Changes",
+          "link": "https://uk-legal-changes.pages.dev/docs",
+          "description": "Point-in-time amendment history for UK law",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-uk-legislation-changes"
+        },
+        {
           "name": "US Presidential Election Data by TogaTech",
           "link": "https://uselection.togatech.org/api/",
           "description": "Basic candidate data and live electoral vote counts for top two parties in US presidential election",
@@ -11872,6 +11890,15 @@
           "slug": "photography-resmush-it"
         },
         {
+          "name": "Screenshot Studio",
+          "link": "https://www.screenshot-studio.com/docs",
+          "description": "Capture web pages as images through a public HTTP API",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "photography-screenshot-studio"
+        },
+        {
           "name": "shutterstock",
           "link": "https://api-reference.shutterstock.com/",
           "description": "Stock Photos and Videos",
@@ -13385,6 +13412,15 @@
           "https": true,
           "cors": "yes",
           "slug": "social-trash-nothing"
+        },
+        {
+          "name": "TrendsMCP",
+          "link": "https://www.trendsmcp.ai/docs",
+          "description": "Live keyword trend data from Google, TikTok, YouTube, Amazon and Reddit",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "social-trendsmcp"
         },
         {
           "name": "Tumblr",
