@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-09-13T01:58:00.922Z"
+    "lastUpdated": "2026-09-13T10:29:30.472Z"
   },
   "add": [
     {
@@ -130,6 +130,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 75
+    },
+    {
+      "name": "ES·pera",
+      "link": "https://es-pera.org/metodologia/api/",
+      "description": "Spanish healthcare waiting-list and hospital-activity data",
+      "category": "Health",
+      "auth": "",
+      "https": true,
+      "cors": "no",
+      "source_issue": 76
     }
   ],
   "remove": [],

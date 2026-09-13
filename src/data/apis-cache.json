@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1788,
+    "totalAPIs": 1800,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-13T07:46:51.404Z"
+    "lastUpdated": "2026-09-13T10:29:30.653Z"
   },
   "categories": [
     {
@@ -1303,6 +1303,15 @@
           "slug": "business-funding-signals"
         },
         {
+          "name": "GlobalEntity",
+          "link": "https://www.globalentityapi.com/docs",
+          "description": "Official company data from 56 European business registers as normalized JSON",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-globalentity"
+        },
+        {
           "name": "Gmail",
           "link": "https://developers.google.com/gmail/api/",
           "description": "Flexible, RESTful access to the user's inbox",
@@ -1355,6 +1364,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "business-katalis-uk-company-enrichment"
+        },
+        {
+          "name": "KontragentPro",
+          "link": "https://kontragentpro.ru/api/v2/docs",
+          "description": "Russian company data from state registers by INN or OGRN: profile, finances, timeline",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-kontragentpro"
         },
         {
           "name": "Legal Sandbox Georgia",
@@ -2279,6 +2297,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-coinmarketcap"
+        },
+        {
+          "name": "CoinNudge",
+          "link": "https://coinnudge.site/data/api-docs",
+          "description": "Current crypto market breadth, funding and open-interest research datasets",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "cryptocurrency-coinnudge"
         },
         {
           "name": "Coinpaprika",
@@ -4252,6 +4279,15 @@
           "slug": "development-serialif-color"
         },
         {
+          "name": "Serply",
+          "link": "https://serply.io/docs",
+          "description": "Google, Bing, News, Scholar and Maps search results and page scraping as JSON",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-serply"
+        },
+        {
           "name": "serpstack",
           "link": "https://serpstack.com/",
           "description": "Real-Time & Accurate Google Search Results API",
@@ -4795,6 +4831,15 @@
           "slug": "documents-productivity-pdffleet"
         },
         {
+          "name": "PDFMint",
+          "link": "https://pdf.mintapis.com/docs",
+          "description": "HTML, Markdown or a URL to PDF or PNG, with a no-key demo endpoint and a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-pdfmint"
+        },
+        {
           "name": "Pocket",
           "link": "https://getpocket.com/developer/",
           "description": "Bookmarking service",
@@ -5051,6 +5096,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "email-improvmx"
+        },
+        {
+          "name": "inboxsink",
+          "link": "https://inboxsink.com/docs",
+          "description": "Disposable inboxes for end-to-end tests that wait for the email and extract OTP codes",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-inboxsink"
         },
         {
           "name": "Kickbox",
@@ -6200,6 +6254,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-wallstreetbets"
+        },
+        {
+          "name": "XFINLAB",
+          "link": "https://www.xfinlab.com/intelligence-api.html",
+          "description": "Market events, sentiment, technical analysis and macro data for stocks",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-xfinlab"
         },
         {
           "name": "Yahoo Finance",
@@ -8200,6 +8263,15 @@
           "slug": "geocoding-tomtom"
         },
         {
+          "name": "TrustyData",
+          "link": "https://trustydata.fr/docs/",
+          "description": "French address checks, INSEE company search and routing on official open data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-trustydata"
+        },
+        {
           "name": "Uebermaps",
           "link": "https://uebermaps.com/api/v2",
           "description": "Discover and share maps with friends",
@@ -8207,6 +8279,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "geocoding-uebermaps"
+        },
+        {
+          "name": "Unblock Master IP",
+          "link": "https://www.unblockmaster.com/free-ip-api/",
+          "description": "IP geolocation plus datacenter and VPN detection for any IPv4 or IPv6 address",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-unblock-master-ip"
         },
         {
           "name": "US ZipCode",
@@ -9598,6 +9679,15 @@
           "slug": "health-quarantine"
         },
         {
+          "name": "Stanza DSCSA Verifier",
+          "link": "https://stanzaapi.com/tools/pharma-dscsa",
+          "description": "Verify FDA DSCSA and EU FMD pharmaceutical serialization barcodes",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "health-stanza-dscsa-verifier"
+        },
+        {
           "name": "Urgences Québec",
           "link": "https://sante.handled.tools/api",
           "description": "Hourly emergency room occupancy, stretcher counts and wait times for every hospital in Quebec, Canada",
@@ -9605,6 +9695,15 @@
           "https": true,
           "cors": "yes",
           "slug": "health-urgences-qu-bec"
+        },
+        {
+          "name": "ES·pera",
+          "slug": "health-es-pera",
+          "description": "Spanish healthcare waiting-list and hospital-activity data",
+          "auth": "",
+          "https": true,
+          "cors": "no",
+          "link": "https://es-pera.org/metodologia/api/"
         }
       ]
     },
@@ -13376,6 +13475,15 @@
           "https": true,
           "cors": "no",
           "slug": "social-socialswarm"
+        },
+        {
+          "name": "SwarmMemo",
+          "link": "https://swarmmemo.com/protocol.md",
+          "description": "Public bulletin board where AI agents and humans read, post and reply, no account or key needed",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-swarmmemo"
         },
         {
           "name": "TamTam",
