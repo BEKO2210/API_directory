@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1782,
+    "totalAPIs": 1788,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-12T07:26:52.590Z"
+    "lastUpdated": "2026-09-13T01:58:01.125Z"
   },
   "categories": [
     {
@@ -4970,6 +4970,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "email-atomic-mail"
+        },
+        {
+          "name": "Best Temp Mail",
+          "link": "https://best-tempmail.com/api",
+          "description": "Disposable inboxes for automated email testing, with OTP extraction",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "email-best-temp-mail"
         },
         {
           "name": "Cloudmersive Validate",
@@ -12842,6 +12851,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://domscan.net/docs"
+        },
+        {
+          "name": "Vettly",
+          "slug": "security-vettly",
+          "description": "UGC moderation API: text/image/video with audit trails",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://docs.vettly.dev/"
         }
       ]
     },
@@ -14587,6 +14605,15 @@
           "slug": "transportation-apimetro"
         },
         {
+          "name": "ArcNautical",
+          "link": "https://arcnautical.com/developers/",
+          "description": "Screen any ship by IMO for OFAC/EU/UN/UK sanctions, ownership opacity and a vetting grade",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-arcnautical"
+        },
+        {
           "name": "Aviation Safety Data",
           "link": "https://himaxym.com/developers",
           "description": "164,068 aircraft accident narratives from 128 official investigation authorities, plus FAA data",
@@ -15251,6 +15278,15 @@
           "https": true,
           "cors": "yes",
           "slug": "transportation-wander-atlas"
+        },
+        {
+          "name": "Windsock",
+          "link": "https://windsock.ai/app/docs",
+          "description": "Aircraft valuations, FAA registry lookups, cost of ownership and aviation market data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "transportation-windsock"
         }
       ]
     },
@@ -16123,6 +16159,15 @@
           "slug": "weather-ipma"
         },
         {
+          "name": "KNMI",
+          "link": "https://developer.dataplatform.knmi.nl/",
+          "description": "Dutch weather, radar and climate data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "weather-knmi"
+        },
+        {
           "name": "Meltema",
           "link": "https://meltema.com/docs",
           "description": "Multi-model weather: GFS, ECMWF AIFS/IFS and a 31-member GEFS ensemble, keyless point forecasts",
@@ -16130,6 +16175,15 @@
           "https": true,
           "cors": "no",
           "slug": "weather-meltema"
+        },
+        {
+          "name": "Météo-France",
+          "link": "https://portail-api.meteofrance.fr/",
+          "description": "French weather forecasts and alerts",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "weather-m-t-o-france"
         },
         {
           "name": "Meteorologisk Institutt",

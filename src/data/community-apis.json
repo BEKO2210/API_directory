@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-09-05T19:51:04.433Z"
+    "lastUpdated": "2026-09-13T01:58:00.922Z"
   },
   "add": [
     {
@@ -120,6 +120,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 73
+    },
+    {
+      "name": "Vettly",
+      "link": "https://docs.vettly.dev/",
+      "description": "UGC moderation API: text/image/video with audit trails",
+      "category": "Security",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 75
     }
   ],
   "remove": [],
