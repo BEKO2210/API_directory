@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1800,
+    "totalAPIs": 1812,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-13T10:29:30.653Z"
+    "lastUpdated": "2026-09-14T08:17:54.823Z"
   },
   "categories": [
     {
@@ -1994,9 +1994,9 @@
         },
         {
           "name": "1inch",
-          "link": "https://1inch.io/api/",
+          "link": "https://business.1inch.com/portal/documentation",
           "description": "API for querying decentralize exchange",
-          "auth": "No",
+          "auth": "apiKey",
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-1inch"
@@ -2863,6 +2863,15 @@
           "slug": "currency-exchange-freeforexapi"
         },
         {
+          "name": "FXpeek",
+          "link": "https://fxpeek.com/en/api",
+          "description": "Source-linked historical reference exchange rates with CSV, JSON and an MCP server",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "currency-exchange-fxpeek"
+        },
+        {
           "name": "National Bank of Poland",
           "link": "http://api.nbp.pl/en.html",
           "description": "A collection of currency exchange rates (data in XML and JSON)",
@@ -3388,6 +3397,15 @@
           "slug": "development-extendsclass-json-storage"
         },
         {
+          "name": "Fair Draw",
+          "link": "https://bettip.co.za/fair-draw/api/",
+          "description": "Verifiable random draws bound to the drand public randomness beacon",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-fair-draw"
+        },
+        {
           "name": "GeekFlare",
           "link": "https://apidocs.geekflare.com/docs/geekflare-api",
           "description": "Provide numerous capabilities for important testing and monitoring methods for websites",
@@ -3550,6 +3568,15 @@
           "slug": "development-heroku"
         },
         {
+          "name": "Hex",
+          "link": "https://github.com/hexpm/specifications",
+          "description": "Elixir and Erlang package versions and docs",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-hex"
+        },
+        {
           "name": "host-t.com",
           "link": "https://host-t.com",
           "description": "Basic DNS query via HTTP GET request",
@@ -3710,6 +3737,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-ipinfo"
+        },
+        {
+          "name": "Is This Site Down?",
+          "link": "https://downforjustmeoreveryone.com/api",
+          "description": "Check if any website is down, from two continents; live status, uptime history and TLS expiry",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-is-this-site-down"
         },
         {
           "name": "isitdownstatus",
@@ -6245,6 +6281,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-vat-validation"
+        },
+        {
+          "name": "VoxOdds",
+          "link": "https://voxodds.com/api",
+          "description": "Polymarket and Kalshi odds, all-in executable quotes, EV checks and audited forecast scores",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "finance-voxodds"
         },
         {
           "name": "WallstreetBets",
@@ -9259,6 +9304,15 @@
           "slug": "government-represent-by-open-north"
         },
         {
+          "name": "Right to Disconnect",
+          "link": "https://righttodisconnect.jdries.nl/api/",
+          "description": "Right-to-disconnect employment law by EU country: binding status, statute, and sanctions",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-right-to-disconnect"
+        },
+        {
           "name": "Tollmint",
           "link": "https://api.tollmint.com",
           "description": "Advertising, subscription, AI-disclosure and accessibility rules across the US, EU and UK",
@@ -11599,6 +11653,15 @@
           "slug": "personality-personality-fyi"
         },
         {
+          "name": "PositiveQuotation",
+          "link": "https://positivequotation.com/developers/public-domain-quotes-api",
+          "description": "Source-verified public-domain English proverbs with provenance",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "personality-positivequotation"
+        },
+        {
           "name": "Programming Quotes",
           "link": "https://github.com/skolakoda/programming-quotes-api",
           "description": "Programming Quotes API for open source projects",
@@ -12253,6 +12316,15 @@
           "slug": "science-math-minor-planet-center"
         },
         {
+          "name": "MyGene.info",
+          "link": "https://docs.mygene.info/",
+          "description": "Gene annotation queries and ID lookup",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-mygene-info"
+        },
+        {
           "name": "NASA",
           "link": "https://api.nasa.gov",
           "description": "NASA data, including imagery",
@@ -12368,6 +12440,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "science-math-purple-air"
+        },
+        {
+          "name": "RCSB PDB",
+          "link": "https://data.rcsb.org/",
+          "description": "3D structures of proteins and nucleic acids",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-rcsb-pdb"
         },
         {
           "name": "Remote Calc",
@@ -12824,6 +12905,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "security-phishstats"
+        },
+        {
+          "name": "Presend",
+          "link": "https://presend.pages.dev/api",
+          "description": "Security and developer utility API -- malware, vulnerability, and domain checks, no signup",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-presend"
         },
         {
           "name": "Privacy.com",
@@ -14290,6 +14380,15 @@
           "slug": "test-data-robohash"
         },
         {
+          "name": "Sampuli",
+          "link": "https://sampuli.site/api",
+          "description": "Format-true synthetic test data for 90 countries: IDs, IBANs, cards, addresses",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "test-data-sampuli"
+        },
+        {
           "name": "Spanish random names",
           "link": "https://random-names-api.herokuapp.com/public",
           "description": "Generate spanish names (with gender) randomly",
@@ -15677,6 +15776,15 @@
           "https": true,
           "cors": "yes",
           "slug": "vehicle-smartcar"
+        },
+        {
+          "name": "TransparentCars",
+          "link": "https://transparent.pt/en/api",
+          "description": "Fair-price valuation and yearly road tax (IUC) for used cars in Portugal",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "vehicle-transparentcars"
         },
         {
           "name": "Wheelwise",
