@@ -1,23 +1,14 @@
 {
   "meta": {
-    "totalAPIs": 1812,
+    "totalAPIs": 1825,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-14T08:17:54.823Z"
+    "lastUpdated": "2026-09-15T08:10:16.797Z"
   },
   "categories": [
     {
       "name": "Animals",
       "slug": "animals",
       "apis": [
-        {
-          "name": "AdoptAPet",
-          "link": "https://www.adoptapet.com/public/apis/pet_list.html",
-          "description": "Resource to help get pets adopted",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "animals-adoptapet"
-        },
         {
           "name": "Axolotl",
           "link": "https://theaxolotlapi.netlify.app/",
@@ -44,15 +35,6 @@
           "https": true,
           "cors": "yes",
           "slug": "animals-cat-facts"
-        },
-        {
-          "name": "Cataas",
-          "link": "https://cataas.com/",
-          "description": "Cat as a service (cats pictures and gifs)",
-          "auth": "No",
-          "https": true,
-          "cors": "no",
-          "slug": "animals-cataas"
         },
         {
           "name": "Cats",
@@ -128,10 +110,10 @@
         },
         {
           "name": "IUCN",
-          "link": "http://apiv3.iucnredlist.org/api/v3/docs",
+          "link": "https://www.iucnredlist.org/en",
           "description": "IUCN Red List of Threatened Species",
           "auth": "apiKey",
-          "https": false,
+          "https": true,
           "cors": "no",
           "slug": "animals-iucn"
         },
@@ -152,15 +134,6 @@
           "https": true,
           "cors": "yes",
           "slug": "animals-movebank"
-        },
-        {
-          "name": "Petfinder",
-          "link": "https://www.petfinder.com/developers/",
-          "description": "Petfinder is dedicated to helping pets find homes, another resource to get pets adopted",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "animals-petfinder"
         },
         {
           "name": "PlaceBear",
@@ -2452,6 +2425,15 @@
           "slug": "cryptocurrency-hirak-exchange-rates"
         },
         {
+          "name": "HostDeFi",
+          "link": "https://hostdefi.com/docs/api/",
+          "description": "Free A+–F token-safety grades across Solana and EVM chains",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-hostdefi"
+        },
+        {
           "name": "Huobi",
           "link": "https://huobiapi.github.io/docs/spot/v1/en/",
           "description": "Seychelles based cryptocurrency exchange",
@@ -2639,6 +2621,15 @@
           "https": true,
           "cors": "no",
           "slug": "cryptocurrency-technical-analysis"
+        },
+        {
+          "name": "The Coin Analysis",
+          "link": "https://www.thecoinanalysis.com/developers",
+          "description": "Live and historical cryptocurrency prices, market caps, volatility and drawdown",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-the-coin-analysis"
         },
         {
           "name": "VALR",
@@ -3035,6 +3026,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-24-pull-requests"
+        },
+        {
+          "name": "Aether Bridge",
+          "link": "https://a-to-mind.com",
+          "description": "Autonomous agent team management and API workflow orchestration",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-aether-bridge"
         },
         {
           "name": "Agify.io",
@@ -4189,6 +4189,15 @@
           "slug": "development-rejax"
         },
         {
+          "name": "Renderwolf",
+          "link": "https://ironfang.uk/renderwolf/docs",
+          "description": "Screenshots, PDFs, dynamic images, QR codes and video from URLs or HTML",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-renderwolf"
+        },
+        {
           "name": "ReqRes",
           "link": "https://reqres.in/",
           "description": "A hosted REST-API ready to respond to your AJAX requests",
@@ -4768,6 +4777,15 @@
           "slug": "documents-productivity-docstruct"
         },
         {
+          "name": "FaturaPDF",
+          "link": "https://rapidapi.com/leosanchees2014/api/brazilian-invoice-receipt-pdf-api-cpf-cnpj",
+          "description": "Generate Brazilian invoice/receipt PDFs with checksum-validated CPF/CNPJ and PIX QR",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "documents-productivity-faturapdf"
+        },
+        {
           "name": "Flowdash",
           "link": "https://docs.flowdash.com/docs/api-introduction",
           "description": "Automate business workflows",
@@ -5107,6 +5125,15 @@
           "slug": "email-email-validation"
         },
         {
+          "name": "Email Validator by LifeStep",
+          "link": "https://email.lifestep.io",
+          "description": "Validate email syntax and MX, detect disposable/role addresses, suggest typo fixes",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "email-email-validator-by-lifestep"
+        },
+        {
           "name": "EVA",
           "link": "https://eva.pingutil.com/",
           "description": "Validate email addresses",
@@ -5213,6 +5240,15 @@
           "https": true,
           "cors": "no",
           "slug": "email-poststack"
+        },
+        {
+          "name": "RankFabrik Verify",
+          "link": "https://rankfabrik.com/produits/verification",
+          "description": "Validate email addresses for deliverability, syntax and disposable detection",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "email-rankfabrik-verify"
         },
         {
           "name": "Sendgrid",
@@ -5488,13 +5524,13 @@
           "slug": "environment-danish-data-service-energi"
         },
         {
-          "name": "gridcarbon",
-          "link": "https://gridcarbon.dev",
-          "description": "Hourly grid carbon intensity in gCO2eq/kWh for 45 zones in Europe, the US and Great Britain",
-          "auth": "No",
+          "name": "GridHub",
+          "link": "https://grid-hub.app/developers",
+          "description": "Live wholesale electricity prices and demand across 25 grid zones",
+          "auth": "apiKey",
           "https": true,
           "cors": "yes",
-          "slug": "environment-gridcarbon"
+          "slug": "environment-gridhub"
         },
         {
           "name": "GrünstromIndex",
@@ -5734,6 +5770,15 @@
           "slug": "finance-bank-data"
         },
         {
+          "name": "Banking Access Index",
+          "link": "https://www.globalsolo.global/data/banking-access-index",
+          "description": "Which US business banking providers accept founders by country of residence, with sources",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-banking-access-index"
+        },
+        {
           "name": "Billplz",
           "link": "https://www.billplz.com/api",
           "description": "Payment platform",
@@ -5795,6 +5840,15 @@
           "https": true,
           "cors": "no",
           "slug": "finance-dino-markets"
+        },
+        {
+          "name": "Drillr",
+          "link": "https://drillr.ai/docs/api",
+          "description": "Fundamentals, filings, earnings, ownership and events for US, China and Japan equities",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "finance-drillr"
         },
         {
           "name": "Econdb",
@@ -7975,6 +8029,15 @@
           "slug": "geocoding-ip2geo-dev"
         },
         {
+          "name": "IP99",
+          "link": "https://ip99.com/api",
+          "description": "IP geolocation with proxy, VPN and datacenter risk and the age of the evidence",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-ip99"
+        },
+        {
           "name": "ipapi.co",
           "link": "https://ipapi.co/api/#introduction",
           "description": "Find IP address location information",
@@ -9874,6 +9937,15 @@
           "slug": "jobs-jobs2careers"
         },
         {
+          "name": "JobsPipe",
+          "link": "https://docs.jobspipe.dev",
+          "description": "Live job postings from 30+ ATS feeds and job boards in one normalized JSON schema",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-jobspipe"
+        },
+        {
           "name": "Jobven",
           "link": "https://jobven.com/docs/getting-started",
           "description": "Job postings tracked as roles open and close, with webhooks on changes, from employer career pages",
@@ -11068,6 +11140,15 @@
           "slug": "open-data-lowy-asia-power-index"
         },
         {
+          "name": "Microburbs",
+          "link": "https://www.microburbs.com.au/developers/api-docs",
+          "description": "Australian property and suburb data: valuations, sales, rents, schools, demographics, risk, zoning",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "open-data-microburbs"
+        },
+        {
           "name": "Microlink.io",
           "link": "https://microlink.io",
           "description": "Extract structured data from any website",
@@ -11969,6 +12050,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "photography-imsea"
+        },
+        {
+          "name": "Kavel",
+          "link": "https://kavel.readthedocs.io/",
+          "description": "Generate and edit images with AI, no key or account required",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "photography-kavel"
         },
         {
           "name": "Lorem Picsum",
@@ -13075,6 +13165,15 @@
           "slug": "shopping-buywhere"
         },
         {
+          "name": "CartScout",
+          "link": "https://rapidapi.com/veselinveselinov06/api/cartscout-api",
+          "description": "Price, stock, variants and GTIN from Shopify, WooCommerce, Walmart and eBay product pages",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "shopping-cartscout"
+        },
+        {
           "name": "Digi-Key",
           "link": "https://www.digikey.com/en/resources/api-solutions",
           "description": "Retrieve price and inventory of electronic components as well as place orders",
@@ -13172,6 +13271,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-olx-poland"
+        },
+        {
+          "name": "Pangolinfo Amazon Data",
+          "link": "https://docs.pangolinfo.com",
+          "description": "Amazon product, review, search and Best Sellers data across 20+ marketplaces",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "shopping-pangolinfo-amazon-data"
         },
         {
           "name": "Rappi",
@@ -15599,6 +15707,15 @@
           "https": true,
           "cors": "yes",
           "slug": "url-shorteners-kutt"
+        },
+        {
+          "name": "Lix.li",
+          "link": "https://lix.li/api",
+          "description": "URL shortener with analytics, QR codes, UTM tags and custom domains",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "url-shorteners-lix-li"
         },
         {
           "name": "Mgnet.me",
