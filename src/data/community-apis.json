@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-09-13T10:29:30.472Z"
+    "lastUpdated": "2026-09-16T18:27:30.305Z"
   },
   "add": [
     {
@@ -140,6 +140,16 @@
       "https": true,
       "cors": "no",
       "source_issue": 76
+    },
+    {
+      "name": "Face Shape Guide Lookup",
+      "link": "https://myfaceshapechart.com/openapi.json",
+      "description": "Read-only lookup for published face-shape guide records",
+      "category": "Art & Design",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 78
     }
   ],
   "remove": [],

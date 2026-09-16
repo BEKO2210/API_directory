@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1825,
+    "totalAPIs": 1826,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-16T08:03:41.945Z"
+    "lastUpdated": "2026-09-16T18:27:30.681Z"
   },
   "categories": [
     {
@@ -773,6 +773,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "art-design-word-cloud"
+        },
+        {
+          "name": "Face Shape Guide Lookup",
+          "slug": "art-design-face-shape-guide-lookup",
+          "description": "Read-only lookup for published face-shape guide records",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://myfaceshapechart.com/openapi.json"
         }
       ]
     },
