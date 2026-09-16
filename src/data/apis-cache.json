@@ -2,7 +2,7 @@
   "meta": {
     "totalAPIs": 1825,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-15T08:10:16.797Z"
+    "lastUpdated": "2026-09-16T08:03:41.945Z"
   },
   "categories": [
     {
@@ -14086,6 +14086,15 @@
           "slug": "sports-fitness-padel-snipe"
         },
         {
+          "name": "Parlay",
+          "link": "https://parlay-api.com/docs",
+          "description": "Real-time sports odds and player props from 45+ sportsbooks and sources across 90+ sports",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-parlay"
+        },
+        {
           "name": "PlayerElo",
           "link": "https://playerelo.football/api-access",
           "description": "Player-level Elo ratings, predictions and history for 176 football leagues",
@@ -14264,15 +14273,6 @@
           "https": true,
           "cors": "yes",
           "link": "https://ay-worldcup2026.zeabur.app/developers"
-        },
-        {
-          "name": "ParlayAPI",
-          "slug": "sports-fitness-parlayapi",
-          "description": "Sports odds for personal/internal research; free tier of 1,000 credits/month",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "link": "https://parlay-api.com/docs"
         }
       ]
     },
