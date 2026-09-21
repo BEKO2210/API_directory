@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1859,
+    "totalAPIs": 1897,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-20T08:03:53.325Z"
+    "lastUpdated": "2026-09-21T08:21:35.932Z"
   },
   "categories": [
     {
@@ -17,6 +17,15 @@
           "https": true,
           "cors": "no",
           "slug": "animals-axolotl"
+        },
+        {
+          "name": "Breed Health Score",
+          "link": "https://breedhealthscore.com/developers/",
+          "description": "Dog breed health scores, median lifespans and conditions",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "animals-breed-health-score"
         },
         {
           "name": "Cat Facts",
@@ -463,6 +472,15 @@
           "slug": "anti-malware-malshare"
         },
         {
+          "name": "Malwagon",
+          "link": "https://malwagon.com/docs/api",
+          "description": "Detonates files and URLs in instrumented VMs and returns behaviour, IOCs and ATT&CK",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "anti-malware-malwagon"
+        },
+        {
           "name": "MalwareBazaar",
           "link": "https://bazaar.abuse.ch/api/",
           "description": "Collect and share malware samples",
@@ -506,6 +524,15 @@
           "https": true,
           "cors": "yes",
           "slug": "anti-malware-scanii"
+        },
+        {
+          "name": "ScanMalware",
+          "link": "https://scanmalware.com",
+          "description": "Scan URLs in a sandboxed browser and search past scans by domain, IP, ASN, JARM or favicon hash",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "anti-malware-scanmalware"
         },
         {
           "name": "URLhaus",
@@ -958,6 +985,15 @@
           "slug": "blockchain-steem"
         },
         {
+          "name": "SwiftNodes",
+          "link": "https://swiftnodes.io",
+          "description": "Multi-chain blockchain RPC nodes (Ethereum, Solana and 75+ networks)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "blockchain-swiftnodes"
+        },
+        {
           "name": "TWZRD Agent Intel",
           "link": "https://intel.twzrd.xyz",
           "description": "Solana on-chain agent trust scoring via MCP; 4 free tools to score, resolve and verify AI agent wallets",
@@ -1258,6 +1294,15 @@
           "slug": "business-clearbit-logo"
         },
         {
+          "name": "Crustdata",
+          "link": "https://docs.crustdata.com",
+          "description": "People and company data covering profiles, headcount, funding and contacts",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "business-crustdata"
+        },
+        {
           "name": "Domainsdb.info",
           "link": "https://domainsdb.info/",
           "description": "Registered Domain Names Search",
@@ -1265,6 +1310,15 @@
           "https": true,
           "cors": "no",
           "slug": "business-domainsdb-info"
+        },
+        {
+          "name": "EuroValidate",
+          "link": "https://eurovalidate.com",
+          "description": "EU VAT (VIES), IBAN and EORI validation with company name & address lookup",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-eurovalidate"
         },
         {
           "name": "Freelancer",
@@ -2425,6 +2479,15 @@
           "slug": "cryptocurrency-exmo"
         },
         {
+          "name": "FraudCoins",
+          "link": "https://fraudcoins.com/data/",
+          "description": "On-chain top-10 holder concentration and contract permissions for crypto tokens",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-fraudcoins"
+        },
+        {
           "name": "Gateio",
           "link": "https://www.gate.io/api2",
           "description": "API provides spot, margin and futures trading operations",
@@ -2531,6 +2594,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-localbitcoins"
+        },
+        {
+          "name": "MadeOnSol",
+          "link": "https://madeonsol.com/developer",
+          "description": "Real-time Solana & Robinhood Chain KOL trades, deployer reputation, and DEX activity",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-madeonsol"
         },
         {
           "name": "Mempool",
@@ -2986,6 +3058,15 @@
           "slug": "data-validation-purgomalum"
         },
         {
+          "name": "RevAddress",
+          "link": "https://revaddress.com/docs/",
+          "description": "US address standardization, congressional and state legislative districts, Census data; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "data-validation-revaddress"
+        },
+        {
           "name": "SchemaShield",
           "link": "https://rapidapi.com/kaiasistentedavid/api/schema-change-risk",
           "description": "Read-only preflight for breaking schema changes and downstream query impact",
@@ -3287,6 +3368,15 @@
           "https": true,
           "cors": "no",
           "slug": "development-ciprand"
+        },
+        {
+          "name": "claudecookie",
+          "link": "https://claudecookie.com/api/",
+          "description": "Convert cookie formats, check Claude sessions and generate Claude Code credentials",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-claudecookie"
         },
         {
           "name": "Cloudflare",
@@ -3955,6 +4045,15 @@
           "slug": "development-mocky"
         },
         {
+          "name": "msgboard",
+          "link": "https://msgboard.dev",
+          "description": "Public message board for agent-to-agent messaging, no account or key",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "development-msgboard"
+        },
+        {
           "name": "MY IP",
           "link": "https://www.myip.com/api-docs/",
           "description": "Get IP address information",
@@ -4250,6 +4349,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-quickchart"
+        },
+        {
+          "name": "Quotable",
+          "link": "https://github.com/lukePeavey/quotable",
+          "description": "Random quotes with authors and tags",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-quotable"
         },
         {
           "name": "Random Stuff",
@@ -4558,6 +4666,15 @@
           "slug": "development-tinymind-agent-tools"
         },
         {
+          "name": "ToolForte",
+          "link": "https://toolforte.com/developers",
+          "description": "Deterministic utilities: IBAN/VAT validation, cron parsing, regex, diffs, Dutch holidays and test data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-toolforte"
+        },
+        {
           "name": "Tyk",
           "link": "https://tyk.io/open-source/",
           "description": "Api and service management platform",
@@ -4610,6 +4727,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-webscraping-ai"
+        },
+        {
+          "name": "XLSX Inspector",
+          "link": "https://api.lifestep.io",
+          "description": "Inspect XLSX/XLSM structure: sheets, formulas, macros and external links",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-xlsx-inspector"
         },
         {
           "name": "ZenRows",
@@ -4665,7 +4791,7 @@
         {
           "name": "Free Dictionary",
           "link": "https://dictionaryapi.dev/",
-          "description": "Definitions, phonetics, pronounciations, parts of speech, examples, synonyms",
+          "description": "Definitions, phonetics, pronunciations, parts of speech, examples, synonyms",
           "auth": "No",
           "https": true,
           "cors": "unknown",
@@ -4715,6 +4841,15 @@
           "https": true,
           "cors": "no",
           "slug": "dictionaries-oxford"
+        },
+        {
+          "name": "Random Lexicon",
+          "link": "https://randomlexicon.com/api-reference",
+          "description": "Random words and definitions using optional filters",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "dictionaries-random-lexicon"
         },
         {
           "name": "SayItVid",
@@ -5587,6 +5722,15 @@
       "slug": "environment",
       "apis": [
         {
+          "name": "AirNow",
+          "link": "https://docs.airnowapi.org/",
+          "description": "US EPA air quality data and forecasts",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-airnow"
+        },
+        {
           "name": "BreezoMeter Pollen",
           "link": "https://docs.breezometer.com/api-documentation/pollen-api/v2/",
           "description": "Daily Forecast pollen conditions data for a specific location",
@@ -5729,6 +5873,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "environment-pm25-in"
+        },
+        {
+          "name": "PVGIS",
+          "link": "https://joint-research-centre.ec.europa.eu/pvgis-photovoltaic-geographical-information-system/getting-started-pvgis/api-non-interactive-service",
+          "description": "EU solar radiation and photovoltaic performance estimates",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "environment-pvgis"
         },
         {
           "name": "PVWatts",
@@ -6040,6 +6193,15 @@
           "slug": "finance-finage"
         },
         {
+          "name": "Finance Clearly Tax Rates",
+          "link": "https://financeclearly.com/tax-rates-api/",
+          "description": "Current UK and US tax rates, allowances and thresholds",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-finance-clearly-tax-rates"
+        },
+        {
           "name": "Financial Modeling Prep",
           "link": "https://site.financialmodelingprep.com/developer/docs",
           "description": "Realtime and historical stock data",
@@ -6047,6 +6209,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-financial-modeling-prep"
+        },
+        {
+          "name": "FinBridge",
+          "link": "https://www.gronox.kr/docs",
+          "description": "Official-source financials, segments, valuation, peers and prices for KR, US, JP, TW companies",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-finbridge"
         },
         {
           "name": "Finnhub",
@@ -6541,6 +6712,15 @@
           "slug": "food-drink-baconmockup"
         },
         {
+          "name": "CalorieNinjas",
+          "link": "https://calorieninjas.com/api",
+          "description": "Nutrition and calorie data for foods and recipes",
+          "auth": "\\\u0007piKey\\",
+          "https": true,
+          "cors": "yes",
+          "slug": "food-drink-calorieninjas"
+        },
+        {
           "name": "Chomp",
           "link": "https://chompthis.com/api/",
           "description": "Data about various grocery products and foods",
@@ -6575,6 +6755,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "food-drink-edamam-recipes"
+        },
+        {
+          "name": "ExactCup",
+          "link": "https://exactcup.github.io/api/",
+          "description": "Cooking ingredient densities: grams per US cup, tablespoon, teaspoon and mL",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "food-drink-exactcup"
         },
         {
           "name": "Food Info",
@@ -7168,6 +7357,15 @@
           "slug": "games-comics-gw2spidy"
         },
         {
+          "name": "GZW Data",
+          "link": "https://gzw-data.vercel.app/docs/",
+          "description": "Gray Zone Warfare weapons, missions, loot, armor and game data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-gzw-data"
+        },
+        {
           "name": "Halo",
           "link": "https://developer.haloapi.com/",
           "description": "Halo 5 and Halo Wars 2 Information",
@@ -7274,6 +7472,15 @@
           "https": true,
           "cors": "no",
           "slug": "games-comics-krakenkeys"
+        },
+        {
+          "name": "L2 Calendar",
+          "link": "https://l2calendar.com/api/servers",
+          "description": "Lineage 2 private servers list with names, websites, chronicles, rates and opening dates",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-l2-calendar"
         },
         {
           "name": "Lichess",
@@ -7546,6 +7753,15 @@
           "slug": "games-comics-scryfall"
         },
         {
+          "name": "SeedFinder",
+          "link": "https://mineseedfinder.vercel.app/seedfinder",
+          "description": "Minecraft Bedrock structures prediction",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-seedfinder"
+        },
+        {
           "name": "SpaceTradersAPI",
           "link": "https://spacetraders.io?rel=pub-apis",
           "description": "A playable inter-galactic space trading MMOAPI",
@@ -7553,6 +7769,15 @@
           "https": true,
           "cors": "yes",
           "slug": "games-comics-spacetradersapi"
+        },
+        {
+          "name": "Sudoku100",
+          "link": "https://www.sudoku100.com/api",
+          "description": "Free Sudoku puzzle generation and embedding with images, solver links and interactive games",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "games-comics-sudoku100"
         },
         {
           "name": "Steam",
@@ -8200,6 +8425,15 @@
           "slug": "geocoding-ipgeolocation"
         },
         {
+          "name": "ipgeolocationapi",
+          "link": "https://ipgeolocationapi.io/docs",
+          "description": "IP geolocation with ASN, timezone, currency and threat data, 5,000 keyless calls a day",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-ipgeolocationapi"
+        },
+        {
           "name": "IPInfoDB",
           "link": "https://www.ipinfodb.com/api",
           "description": "Free Geolocation tools and APIs for country, region, city and time zone lookup by IP address",
@@ -8620,6 +8854,15 @@
           "slug": "government-ai-law-tracker"
         },
         {
+          "name": "Ayes and Noes",
+          "link": "https://ayesandnoes.co.uk/developers",
+          "description": "UK House of Commons MPs, parties and recorded votes",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-ayes-and-noes"
+        },
+        {
           "name": "Bank Negara Malaysia Open Data",
           "link": "https://apikijangportal.bnm.gov.my/",
           "description": "Malaysia Central Bank Open Data",
@@ -8960,6 +9203,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "government-food-standards-agency"
+        },
+        {
+          "name": "gankdat",
+          "link": "https://gankdat.com/docs",
+          "description": "UK & EU tenders, UK planning, UK sanctions, US exclusions, UK insolvency and incorporations as JSON",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-gankdat"
         },
         {
           "name": "Gazette Data, UK",
@@ -9599,6 +9851,15 @@
           "https": true,
           "cors": "yes",
           "slug": "government-vett"
+        },
+        {
+          "name": "VotePredictor",
+          "link": "https://votepredictor.com/developers",
+          "description": "US election forecasts, congressional voting records and forecaster accuracy ratings",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-votepredictor"
         }
       ]
     },
@@ -10045,6 +10306,15 @@
           "slug": "jobs-careerjet"
         },
         {
+          "name": "CuratorSearch",
+          "link": "https://curatorsearch.com/developers",
+          "description": "Museum and gallery jobs from 400+ institutions' own careers pages, with advertised salaries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-curatorsearch"
+        },
+        {
           "name": "DevITjobs UK",
           "link": "https://devitjobs.uk/job_feed.xml",
           "description": "Jobs with GraphQL",
@@ -10171,6 +10441,15 @@
           "slug": "jobs-reed"
         },
         {
+          "name": "RemoteOK",
+          "link": "https://remoteok.com/api",
+          "description": "Remote job board for digital nomads",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-remoteok"
+        },
+        {
           "name": "TechRole Index",
           "link": "https://techrole.ru/open-data-daily",
           "description": "Russian IT profession, vacancy publication and salary aggregates",
@@ -10247,6 +10526,15 @@
           "https": true,
           "cors": "yes",
           "slug": "machine-learning-ai-for-thai"
+        },
+        {
+          "name": "Audexum",
+          "link": "https://audexum.com/docs",
+          "description": "Speech-to-text in 25 languages and text-to-speech with 43 voices in 32 languages",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-audexum"
         },
         {
           "name": "BRAINIALL",
@@ -11749,6 +12037,15 @@
           "slug": "open-source-projects-metabase"
         },
         {
+          "name": "Neuronto ARD Registry",
+          "link": "https://neuronto.com/api-docs",
+          "description": "Search index of MCP servers, agents and APIs, with the tools each server actually exposes",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-source-projects-neuronto-ard-registry"
+        },
+        {
           "name": "Shields",
           "link": "https://shields.io/",
           "description": "Concise, consistent, and legible badges in SVG and raster format",
@@ -12773,6 +13070,15 @@
           "https": true,
           "cors": "no",
           "slug": "science-math-share"
+        },
+        {
+          "name": "Solar System OpenData",
+          "link": "https://api.le-systeme-solaire.net",
+          "description": "Data and facts on solar system bodies and planets",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-solar-system-opendata"
         },
         {
           "name": "SpaceX",
@@ -14881,15 +15187,6 @@
           "slug": "text-analysis-aylien-text-analysis"
         },
         {
-          "name": "Audexum",
-          "link": "https://audexum.com/docs",
-          "description": "Text-to-speech REST API with 43 voices and 33 languages",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "text-analysis-audexum"
-        },
-        {
           "name": "Cloudmersive Natural Language Processing",
           "link": "https://www.cloudmersive.com/nlp-api",
           "description": "Natural language processing and text analysis",
@@ -15523,6 +15820,15 @@
           "slug": "transportation-schiphol-airport"
         },
         {
+          "name": "SMKlog",
+          "link": "https://smklog.com/openapi.json",
+          "description": "Live parcel shipping rates and labels from a plain-words item description",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "transportation-smklog"
+        },
+        {
           "name": "Strait of Hormuz Ship Monitor",
           "link": "https://hormuz.data-tracking.net/llms.txt",
           "description": "Live AIS vessel traffic, crossings and oil flow through the Strait of Hormuz",
@@ -16120,6 +16426,15 @@
           "slug": "vehicle-auto-body-shop-directory"
         },
         {
+          "name": "Bike Reliability",
+          "link": "https://bikereliability.co.uk/developers",
+          "description": "UK motorcycle reliability ranked by first-time MOT pass rates",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "vehicle-bike-reliability"
+        },
+        {
           "name": "Brazilian Vehicles and Prices",
           "link": "https://deividfortuna.github.io/fipe/",
           "description": "Vehicles information from Fundação Instituto de Pesquisas Econômicas - Fipe",
@@ -16432,6 +16747,15 @@
           "slug": "video-open-movie-database"
         },
         {
+          "name": "OpenSubtitles",
+          "link": "https://www.opensubtitles.com/",
+          "description": "Search and download subtitles for movies and TV shows",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-opensubtitles"
+        },
+        {
           "name": "Owen Wilson Wow",
           "link": "https://owen-wilson-wow-api.herokuapp.com",
           "description": "API for actor Owen Wilson's \"wow\" exclamations in movies",
@@ -16592,6 +16916,15 @@
           "https": true,
           "cors": "yes",
           "slug": "video-trakt"
+        },
+        {
+          "name": "TubeToTranscript",
+          "link": "https://www.tubetotranscript.com/youtube-transcript-api",
+          "description": "Extract clean YouTube video transcripts via REST API",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-tubetotranscript"
         },
         {
           "name": "TVDB",
@@ -16841,6 +17174,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-micro-weather"
+        },
+        {
+          "name": "NASA POWER",
+          "link": "https://power.larc.nasa.gov/docs/",
+          "description": "Global solar and weather data for energy and agriculture",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "weather-nasa-power"
         },
         {
           "name": "ODWeather",
