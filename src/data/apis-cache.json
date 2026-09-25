@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1897,
+    "totalAPIs": 1917,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-24T07:57:37.949Z"
+    "lastUpdated": "2026-09-25T08:19:59.504Z"
   },
   "categories": [
     {
@@ -1124,6 +1124,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "books-google-books"
+        },
+        {
+          "name": "Greenlit Books",
+          "link": "https://greenlitbooks.com/developers",
+          "description": "Catalog of practical AI books with search, series, glossary and a claim ledger",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "books-greenlit-books"
         },
         {
           "name": "GurbaniNow",
@@ -2989,6 +2998,15 @@
           "slug": "currency-exchange-paralelo-bo"
         },
         {
+          "name": "Rate-API",
+          "link": "https://rate-api.com/docs/api",
+          "description": "Hourly exchange rates for 160+ currencies in JSON, XML or CSV with free plan 2,500 requests/month",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-rate-api"
+        },
+        {
           "name": "TaxID",
           "link": "https://www.taxid.dev/docs",
           "description": "EU VAT number validation with company name and address lookup across all 27 member states",
@@ -3076,6 +3094,15 @@
           "slug": "data-validation-schemashield"
         },
         {
+          "name": "sthan.io Address Verification",
+          "link": "https://sthan.io/products/address-verification-usa",
+          "description": "Validate and standardize US addresses, with ZIP+4 and deliverability status",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "data-validation-sthan-io-address-verification"
+        },
+        {
           "name": "Temsor",
           "link": "https://api.temsor.com/docs",
           "description": "Validates Turkish national ID, tax number, IBAN, phone, plate and parses addresses",
@@ -3110,6 +3137,15 @@
           "https": true,
           "cors": "yes",
           "slug": "data-validation-us-street-address"
+        },
+        {
+          "name": "VerifNow",
+          "link": "https://docs.verifnow.io",
+          "description": "Validates email, phone, IBAN, EU VAT against VIES, and Canadian, Spanish and US national IDs",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "data-validation-verifnow"
         },
         {
           "name": "Venue Authority",
@@ -3359,6 +3395,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-changelogs-md"
+        },
+        {
+          "name": "ChartBytes",
+          "link": "https://chartbytes.onrender.com",
+          "description": "Chart image API: turn a URL into a PNG or SVG chart (bar, pie, donut, stacked)",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-chartbytes"
         },
         {
           "name": "Ciprand",
@@ -3737,6 +3782,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-host-io"
+        },
+        {
+          "name": "HostDealRadar",
+          "link": "https://hostdealradar.com/ai/",
+          "description": "Source-backed hosting price and provider record lookup",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-hostdealradar"
         },
         {
           "name": "HTTP2.Pro",
@@ -4151,6 +4205,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-open-page-rank"
+        },
+        {
+          "name": "Open VSX",
+          "link": "https://open-vsx.org/",
+          "description": "Search and access VS Code extensions from the Open VSX registry",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-open-vsx"
         },
         {
           "name": "OpenAPIHub",
@@ -5029,6 +5092,15 @@
           "slug": "documents-productivity-flowdash"
         },
         {
+          "name": "Formfeed",
+          "link": "https://docs.formfeed.dev/api/overview",
+          "description": "Render PDFs and images from HTML (Jinja2, Liquid, Handlebars) or Word templates, with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-formfeed"
+        },
+        {
           "name": "Html2PDF",
           "link": "https://html2pdf.app/",
           "description": "HTML/URL to PDF",
@@ -5465,6 +5537,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "email-mailcheck-ai"
+        },
+        {
+          "name": "Mailfornet",
+          "link": "https://mailfornet.com/api",
+          "description": "Disposable inboxes for end-to-end signup tests, with long-polling and HMAC-signed webhooks",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "email-mailfornet"
         },
         {
           "name": "Mailtrap",
@@ -6472,6 +6553,15 @@
           "slug": "finance-polygon"
         },
         {
+          "name": "PolyKal Fees",
+          "link": "https://polymarket-kalshi.com/fee-schedule/",
+          "description": "Kalshi & Polymarket trading fee rates and formulas as verified JSON",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-polykal-fees"
+        },
+        {
           "name": "Portfolio Optimizer",
           "link": "https://portfoliooptimizer.io/",
           "description": "Portfolio analysis and optimization",
@@ -6737,6 +6827,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "food-drink-coffee"
+        },
+        {
+          "name": "Daily Food Recalls",
+          "link": "https://dailyfoodrecalls.com/api/",
+          "description": "U.S. FDA and USDA food recalls, merged and normalized, updated daily",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "food-drink-daily-food-recalls"
         },
         {
           "name": "Edamam nutrition",
@@ -10780,6 +10879,15 @@
           "slug": "machine-learning-perspective"
         },
         {
+          "name": "Requesty",
+          "link": "https://docs.requesty.ai",
+          "description": "OpenAI compatible LLM router for 600+ models, with a free tier for free models",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-requesty"
+        },
+        {
           "name": "Roboflow Universe",
           "link": "https://universe.roboflow.com",
           "description": "Pre-trained computer vision models",
@@ -11552,6 +11660,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "open-data-genesis"
+        },
+        {
+          "name": "HousingFeed",
+          "link": "https://housingfeed.com/docs",
+          "description": "US rental listings from property managers' own websites, verified weekly",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-housingfeed"
         },
         {
           "name": "InfraNode",
@@ -13438,6 +13555,15 @@
           "slug": "security-intelligence-x"
         },
         {
+          "name": "IPGuardian",
+          "link": "https://ipguardian.net/docs",
+          "description": "Check IP addresses against 140+ public threat intelligence blocklists",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-ipguardian"
+        },
+        {
           "name": "IPLogs",
           "link": "https://iplogs.com/docs",
           "description": "Free VPN, proxy, Tor and datacenter IP detection. 13 sources, active probing",
@@ -13544,6 +13670,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "security-pulsedive"
+        },
+        {
+          "name": "Sealed Rose",
+          "link": "https://sealedrose.com/verify-video",
+          "description": "AI media forensics and synthetic content verification for video, audio, image, and text",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-sealed-rose"
         },
         {
           "name": "SecurityTrails",
@@ -13802,6 +13937,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-olx-poland"
+        },
+        {
+          "name": "OpenTiendas",
+          "link": "https://opentiendas.dev/redocusaurus/plugin-redoc-0.yaml",
+          "description": "Official e-commerce API and webhooks",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "shopping-opentiendas"
         },
         {
           "name": "Pangolinfo Amazon Data",
@@ -14579,6 +14723,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "sports-fitness-nhl-records-and-stats"
+        },
+        {
+          "name": "NoPunt",
+          "link": "https://www.nopunt.com/api/picks.json",
+          "description": "Weekly NFL game picks with model win probability, confidence tier and spread",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-nopunt"
         },
         {
           "name": "Odds-API",
@@ -15784,6 +15937,15 @@
           "slug": "transportation-railway-transport-for-france"
         },
         {
+          "name": "Railworks",
+          "link": "https://railworks.paddez.com/docs",
+          "description": "Irish Rail planned engineering works: affected stations, DART closures, change log and ICS feeds",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-railworks"
+        },
+        {
           "name": "REFUGE Restrooms",
           "link": "https://www.refugerestrooms.org/api/docs/#!/restrooms",
           "description": "Provides safe restroom access for transgender, intersex and gender nonconforming individuals",
@@ -16954,6 +17116,15 @@
           "slug": "video-unogs"
         },
         {
+          "name": "Video to Markdown",
+          "link": "https://video-to-markdown.com/api",
+          "description": "Turn a YouTube URL into a markdown thumbnail image link",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-video-to-markdown"
+        },
+        {
           "name": "VidWords",
           "link": "https://vidwords.com/api-docs",
           "description": "YouTube transcripts and subtitles as TXT, SRT, VTT or DOCX, plus AI video analysis",
@@ -17291,6 +17462,15 @@
           "https": true,
           "cors": "yes",
           "slug": "weather-storm-glass"
+        },
+        {
+          "name": "Terrace Weather",
+          "link": "https://terrace.javiermateo.dev/swagger-ui.html",
+          "description": "Terrace open/closed verdict for restaurants, from the weather forecast",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "weather-terrace-weather"
         },
         {
           "name": "Tomorrow",
