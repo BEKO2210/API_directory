@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-09-16T18:27:30.305Z"
+    "lastUpdated": "2026-09-27T06:36:31.571Z"
   },
   "add": [
     {
@@ -150,6 +150,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 78
+    },
+    {
+      "name": "Proof Random API",
+      "link": "https://github.com/kepler-ops-maker/proof-random-api",
+      "description": "Free drand quicknet randomness with nonce-bound integer sampling",
+      "category": "Development",
+      "auth": "",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 80
     }
   ],
   "remove": [],

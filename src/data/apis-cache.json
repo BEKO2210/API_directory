@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1923,
+    "totalAPIs": 1949,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-26T08:06:27.219Z"
+    "lastUpdated": "2026-09-27T06:36:31.814Z"
   },
   "categories": [
     {
@@ -1483,6 +1483,15 @@
           "slug": "business-pick-an-agency"
         },
         {
+          "name": "RankFabrik Places",
+          "link": "https://rankfabrik.com/produits/etablissements",
+          "description": "Search businesses and points of interest by city, deduplicated with a coverage report",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "business-rankfabrik-places"
+        },
+        {
           "name": "Redash",
           "link": "https://redash.io/help/user-guide/integrations-and-api/api",
           "description": "Access your queries and dashboards on Redash",
@@ -1925,6 +1934,15 @@
           "https": true,
           "cors": "yes",
           "slug": "cloud-storage-file-sharing-quip"
+        },
+        {
+          "name": "Revdoku",
+          "link": "https://revdoku.com/api.md",
+          "description": "Cloud file storage, version history, sharing and incoming email attachments",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "cloud-storage-file-sharing-revdoku"
         },
         {
           "name": "Storj",
@@ -2971,6 +2989,15 @@
           "slug": "currency-exchange-freeforexapi"
         },
         {
+          "name": "Fulusly",
+          "link": "https://fulusly.soft9.us/developers",
+          "description": "Exchange rates for 144 currencies with daily history back to the 1990s, English and Arabic",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-fulusly"
+        },
+        {
           "name": "FXpeek",
           "link": "https://fxpeek.com/en/api",
           "description": "Source-linked historical reference exchange rates with CSV, JSON and an MCP server",
@@ -3092,6 +3119,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "data-validation-schemashield"
+        },
+        {
+          "name": "sthan.io Address Parser",
+          "link": "https://sthan.io/products/address-parser-usa",
+          "description": "Parse freeform US addresses into structured fields (house number, street, unit, city, state, ZIP)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "data-validation-sthan-io-address-parser"
         },
         {
           "name": "sthan.io Address Verification",
@@ -3649,6 +3685,15 @@
           "slug": "development-github"
         },
         {
+          "name": "GithubTrends",
+          "link": "https://githubtrends.app/api/",
+          "description": "GitHub Trending repositories with star history and open-source alternatives to paid tools",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-githubtrends"
+        },
+        {
           "name": "Gitlab",
           "link": "https://docs.gitlab.com/ee/api/",
           "description": "Automate GitLab interaction programmatically",
@@ -3674,6 +3719,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-glitterly"
+        },
+        {
+          "name": "Go Module Proxy",
+          "link": "https://go.dev/ref/mod#goproxy-protocol",
+          "description": "Go module versions and source metadata",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-go-module-proxy"
         },
         {
           "name": "Google Docs",
@@ -3773,6 +3827,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-hex"
+        },
+        {
+          "name": "Homebrew Formulae",
+          "link": "https://formulae.brew.sh/api/",
+          "description": "Package and cask data for the Homebrew package manager",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-homebrew-formulae"
         },
         {
           "name": "host-t.com",
@@ -4738,6 +4801,15 @@
           "slug": "development-thunderbit"
         },
         {
+          "name": "Timezone WorldTime",
+          "link": "https://www.timezone.io/docs/worldtimeapi",
+          "description": "Current time, UTC offset and DST for any time zone or IP, a drop-in WorldTimeAPI replacement",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-timezone-worldtime"
+        },
+        {
           "name": "TinyMind Agent Tools",
           "link": "https://tinymind.eu/api/",
           "description": "Free APIs by an AI agent on a VPS: actor lookup, word-of-the-day, poems, jokes, ping",
@@ -4844,6 +4916,15 @@
           "https": true,
           "cors": "no",
           "link": "https://llmsmap.me/api-docs/"
+        },
+        {
+          "name": "Proof Random API",
+          "slug": "development-proof-random-api",
+          "description": "Free drand quicknet randomness with nonce-bound integer sampling",
+          "auth": "",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://github.com/kepler-ops-maker/proof-random-api"
         }
       ]
     },
@@ -5027,6 +5108,15 @@
           "https": true,
           "cors": "yes",
           "slug": "documents-productivity-asana"
+        },
+        {
+          "name": "Assinafy",
+          "link": "https://api.assinafy.com.br/v1/docs",
+          "description": "Brazilian e-signature API with a free plan",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "documents-productivity-assinafy"
         },
         {
           "name": "BuildPDF",
@@ -5618,6 +5708,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "email-sendinblue"
+        },
+        {
+          "name": "SendRaven",
+          "link": "https://sendraven.ai/docs/api",
+          "description": "Email for AI agents: send email, receive replies as threads, with per-key send limits and approvals",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-sendraven"
         },
         {
           "name": "SMTPfast",
@@ -6634,6 +6733,15 @@
           "slug": "finance-smartapi"
         },
         {
+          "name": "Stanza VAT Validator",
+          "link": "https://stanzaapi.com/tools/vat-validator",
+          "description": "Validate EU and UK VAT numbers with country formats, checksums, and VIES status",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "finance-stanza-vat-validator"
+        },
+        {
           "name": "StockData",
           "link": "https://www.StockData.org",
           "description": "Real-Time, Intraday & Historical Market Data, News and Sentiment API",
@@ -6962,6 +7070,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "food-drink-punkapi"
+        },
+        {
+          "name": "Racion",
+          "link": "https://racion.app/developers",
+          "description": "Weekly meal plans with grocery prices and shopping lists, 22 countries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "food-drink-racion"
         },
         {
           "name": "RecipeAPI",
@@ -8857,6 +8974,15 @@
           "slug": "geocoding-spotsense"
         },
         {
+          "name": "sthan.io IP Geolocation",
+          "link": "https://sthan.io/products/ip-geolocation",
+          "description": "Look up the geographic location of any IPv4 or IPv6 address",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "geocoding-sthan-io-ip-geolocation"
+        },
+        {
           "name": "Telize",
           "link": "https://rapidapi.com/fcambus/api/telize/",
           "description": "Telize offers location information from any IP address",
@@ -9059,6 +9185,15 @@
           "https": true,
           "cors": "no",
           "slug": "government-brazilian-chamber-of-deputies-open-data"
+        },
+        {
+          "name": "Bureau of Labor Statistics",
+          "link": "https://www.bls.gov/developers/",
+          "description": "US labor statistics: inflation, unemployment, wages and productivity",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "government-bureau-of-labor-statistics"
         },
         {
           "name": "CPFHub",
@@ -9925,6 +10060,15 @@
           "slug": "government-right-to-disconnect"
         },
         {
+          "name": "Spatial India",
+          "link": "https://api.spatialindia.com",
+          "description": "District-level data for India: Census, NFHS-5, NCRB, RBI and more, reconciled onto one map",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-spatial-india"
+        },
+        {
           "name": "Tollmint",
           "link": "https://api.tollmint.com",
           "description": "Advertising, subscription, AI-disclosure and accessibility rules across the US, EU and UK",
@@ -10174,6 +10318,15 @@
           "slug": "health-dataflow-kit-covid-19"
         },
         {
+          "name": "DeepDNA",
+          "link": "https://deepdna.ai/docs/",
+          "description": "Cited gene, variant and CPIC drug-gene lookups for developers and AI agents",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-deepdna"
+        },
+        {
           "name": "Edamam",
           "link": "https://developer.edamam.com/",
           "description": "Food and nutrition data API with recipe search",
@@ -10412,6 +10565,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "jobs-adzuna"
+        },
+        {
+          "name": "Allowly Hiring Evidence",
+          "link": "https://allowly.ai/docs/solutions/hiring/api/",
+          "description": "Deterministic hiring policy decisions and signed evidence records",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "jobs-allowly-hiring-evidence"
         },
         {
           "name": "Arbeitnow",
@@ -10904,6 +11066,15 @@
           "https": true,
           "cors": "yes",
           "slug": "machine-learning-not-human-search"
+        },
+        {
+          "name": "onomeo",
+          "link": "https://onomeo.com/docs",
+          "description": "OpenAI-compatible, 47 LLMs, small check-in credits, strict limits, optional paid top-up, public beta",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "machine-learning-onomeo"
         },
         {
           "name": "OpenVisionAPI",
@@ -11503,6 +11674,15 @@
           "slug": "news-npr-one"
         },
         {
+          "name": "Scoopkit",
+          "link": "https://scoopkit.dev",
+          "description": "AI-industry news deduplicated into structured events with a versioned category taxonomy",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "news-scoopkit"
+        },
+        {
           "name": "Spaceflight News",
           "link": "https://spaceflightnewsapi.net",
           "description": "Spaceflight related news 🚀",
@@ -11588,6 +11768,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-api-setu"
+        },
+        {
+          "name": "APIllow",
+          "link": "https://apillow.co/docs.html",
+          "description": "Zillow property data: 50+ fields per listing by address, URL, ZPID or ZIP, with sold data and comps",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-apillow"
         },
         {
           "name": "Archive.org",
@@ -12619,6 +12808,15 @@
           "slug": "photography-cheetaho"
         },
         {
+          "name": "Compresso",
+          "link": "https://compresso.space/developers",
+          "description": "Visually lossless image compression for PNG, JPEG and WebP",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "photography-compresso"
+        },
+        {
           "name": "Dagpi",
           "link": "https://dagpi.xyz",
           "description": "Image manipulation and processing",
@@ -12982,6 +13180,15 @@
           "slug": "science-math-cyclecalcs"
         },
         {
+          "name": "DataCite",
+          "link": "https://support.datacite.org/docs/rest-api",
+          "description": "Search and retrieve DOI metadata for research datasets and publications",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-datacite"
+        },
+        {
           "name": "Europe PMC",
           "link": "https://europepmc.org/RestfulWebService",
           "description": "Life-science literature search with abstracts, citations and full-text links",
@@ -13304,6 +13511,15 @@
           "https": true,
           "cors": "no",
           "slug": "science-math-tle"
+        },
+        {
+          "name": "Unpaywall",
+          "link": "https://unpaywall.org/products/api",
+          "description": "Open-access status and legal full-text links for scholarly articles",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-unpaywall"
         },
         {
           "name": "USGS Earthquake Hazards Program",
@@ -13634,6 +13850,15 @@
           "https": true,
           "cors": "yes",
           "slug": "security-loginradius"
+        },
+        {
+          "name": "Maskbreak",
+          "link": "https://maskbreak.com/api",
+          "description": "Detect VPNs, proxies, Tor, bots and antidetect browsers at signup, login and checkout",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-maskbreak"
         },
         {
           "name": "Microsoft Security Response Center (MSRC)",
@@ -15944,6 +16169,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "transportation-navitia"
+        },
+        {
+          "name": "On va où ?",
+          "link": "https://onvaou.app/developers/routing-api.html",
+          "description": "Bike, scooter, motorcycle, wheelchair and walking routes across Europe, with safety indicators",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "transportation-on-va-o"
         },
         {
           "name": "Open Charge Map",
