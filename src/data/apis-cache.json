@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1949,
+    "totalAPIs": 1960,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-27T08:42:37.705Z"
+    "lastUpdated": "2026-09-28T04:46:33.922Z"
   },
   "categories": [
     {
@@ -773,6 +773,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "art-design-smithsonian-open-access"
+        },
+        {
+          "name": "The Color API",
+          "link": "https://www.thecolorapi.com",
+          "description": "Convert and generate color schemes",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-the-color-api"
         },
         {
           "name": "Thisispaper",
@@ -4522,6 +4531,15 @@
           "slug": "development-renderwolf"
         },
         {
+          "name": "ReplyNodes",
+          "link": "https://replynodes.com/markdown-api/",
+          "description": "Convert a public web page into clean Markdown",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "development-replynodes"
+        },
+        {
           "name": "ReqRes",
           "link": "https://reqres.in/",
           "description": "A hosted REST-API ready to respond to your AJAX requests",
@@ -5066,6 +5084,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "dictionaries-words"
+        },
+        {
+          "name": "WordSoHard",
+          "link": "https://wordsohard.com/api",
+          "description": "Word definitions with Scrabble validity and tile score in one call, built for word games",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "dictionaries-wordsohard"
         }
       ]
     },
@@ -5396,6 +5423,15 @@
           "https": true,
           "cors": "no",
           "slug": "documents-productivity-runconvert"
+        },
+        {
+          "name": "Sahifa",
+          "link": "https://sahifa.dev/en/docs",
+          "description": "HTML/URL to PDF and screenshots with Arabic and right-to-left support; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-sahifa"
         },
         {
           "name": "Todoist",
@@ -6169,6 +6205,15 @@
           "slug": "events-eventbrite"
         },
         {
+          "name": "FindLocal",
+          "link": "https://findlocal.community/docs",
+          "description": "Hyper-local US events: concerts, trivia, open mics, readings, storytimes",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "events-findlocal"
+        },
+        {
           "name": "SeatGeek",
           "link": "https://platform.seatgeek.com/",
           "description": "Search events, venues and performers",
@@ -6227,6 +6272,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-alpha-vantage"
+        },
+        {
+          "name": "Arkleon",
+          "link": "https://arkleon.com",
+          "description": "Point-in-time SEC EDGAR fundamentals over /v1",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-arkleon"
         },
         {
           "name": "Banco do Brasil",
@@ -10541,6 +10595,15 @@
           "https": true,
           "cors": "no",
           "link": "https://es-pera.org/metodologia/api/"
+        },
+        {
+          "name": "The Holistic Care Open Mindfulness Resources API",
+          "slug": "health-the-holistic-care-open-mindfulness-resources-api",
+          "description": "Free structured mindfulness resources, games, guided practices, research and glossary data",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://api.theholisticcare.com"
         }
       ]
     },
@@ -10832,6 +10895,15 @@
           "https": true,
           "cors": "yes",
           "slug": "machine-learning-ai-for-thai"
+        },
+        {
+          "name": "AnswerLine",
+          "link": "https://answerline.dev/docs",
+          "description": "ChatGPT, Gemini, Copilot, AI Mode and Google Search/News results as structured JSON",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "machine-learning-answerline"
         },
         {
           "name": "Audexum",
@@ -11149,6 +11221,15 @@
           "slug": "machine-learning-time-door"
         },
         {
+          "name": "TokenRoute",
+          "link": "https://tokenroute.app/docs/quickstart",
+          "description": "One OpenAI-compatible endpoint for hundreds of LLMs, with a free tier and per-token pricing",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-tokenroute"
+        },
+        {
           "name": "Unplugg",
           "link": "https://unplu.gg/test_api.html",
           "description": "Forecasting API for timeseries data",
@@ -11156,6 +11237,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "machine-learning-unplugg"
+        },
+        {
+          "name": "Voxell Forge",
+          "link": "https://voxell.ai/docs/#forge",
+          "description": "OpenAI-compatible text embeddings API, free-forever model with no credit card required",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "machine-learning-voxell-forge"
         },
         {
           "name": "WolframAlpha",
@@ -16982,6 +17072,15 @@
           "https": true,
           "cors": "no",
           "slug": "vehicle-wheelwise"
+        },
+        {
+          "name": "WhichTrim",
+          "link": "https://whichtrim.com/developers/",
+          "description": "US vehicle recalls, complaints, fuel economy, crash ratings, service bulletins and VIN decoding",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "vehicle-whichtrim"
         }
       ]
     },

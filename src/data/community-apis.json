@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-09-27T06:36:31.571Z"
+    "lastUpdated": "2026-09-28T04:46:33.649Z"
   },
   "add": [
     {
@@ -160,6 +160,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 80
+    },
+    {
+      "name": "The Holistic Care Open Mindfulness Resources API",
+      "link": "https://api.theholisticcare.com",
+      "description": "Free structured mindfulness resources, games, guided practices, research and glossary data",
+      "category": "Health",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 81
     }
   ],
   "remove": [],
