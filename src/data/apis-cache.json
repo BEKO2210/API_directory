@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1960,
+    "totalAPIs": 1964,
     "totalCategories": 51,
-    "lastUpdated": "2026-09-28T09:07:00.293Z"
+    "lastUpdated": "2026-09-29T09:16:32.657Z"
   },
   "categories": [
     {
@@ -2308,15 +2308,6 @@
           "slug": "cryptocurrency-coindcx"
         },
         {
-          "name": "CoinDesk",
-          "link": "https://old.coindesk.com/coindesk-api/",
-          "description": "CoinDesk's Bitcoin Price Index (BPI) in multiple currencies",
-          "auth": "No",
-          "https": true,
-          "cors": "unknown",
-          "slug": "cryptocurrency-coindesk"
-        },
-        {
           "name": "CoinGecko",
           "link": "http://www.coingecko.com/api",
           "description": "Cryptocurrency Price, Market, and Developer/Social Data",
@@ -2953,6 +2944,15 @@
           "slug": "currency-exchange-czech-national-bank"
         },
         {
+          "name": "Daleelak",
+          "link": "https://getdaleelak.com/en/api",
+          "description": "Egyptian bank and dealer exchange rates, gold and silver prices",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-daleelak"
+        },
+        {
           "name": "Economia.Awesome",
           "link": "https://docs.awesomeapi.com.br/api-de-moedas",
           "description": "Portuguese free currency prices and conversion with no rate limits",
@@ -3269,6 +3269,15 @@
           "https": true,
           "cors": "no",
           "slug": "development-amberone"
+        },
+        {
+          "name": "AnswerLine",
+          "link": "https://answerline.dev",
+          "description": "Answers, citations and sources from AI assistants and Google surfaces through one API",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-answerline"
         },
         {
           "name": "API Grátis",
@@ -4018,6 +4027,15 @@
           "slug": "development-ipinfo"
         },
         {
+          "name": "Ironfang Render",
+          "link": "https://ironfang.com/render/docs",
+          "description": "Screenshots, PDFs, dynamic images, QR codes and video from URLs or HTML",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-ironfang-render"
+        },
+        {
           "name": "Is This Site Down?",
           "link": "https://downforjustmeoreveryone.com/api",
           "description": "Check if any website is down, from two continents; live status, uptime history and TLS expiry",
@@ -4522,15 +4540,6 @@
           "slug": "development-rejax"
         },
         {
-          "name": "Renderwolf",
-          "link": "https://ironfang.uk/renderwolf/docs",
-          "description": "Screenshots, PDFs, dynamic images, QR codes and video from URLs or HTML",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "no",
-          "slug": "development-renderwolf"
-        },
-        {
           "name": "ReplyNodes",
           "link": "https://replynodes.com/markdown-api/",
           "description": "Convert a public web page into clean Markdown",
@@ -4839,7 +4848,7 @@
         {
           "name": "ToolForte",
           "link": "https://toolforte.com/developers",
-          "description": "Deterministic utilities: IBAN/VAT validation, cron parsing, regex, diffs, Dutch holidays and test data",
+          "description": "Deterministic utilities: IBAN/VAT validation, cron parsing, regex, diffs, Dutch holidays, test data",
           "auth": "apiKey",
           "https": true,
           "cors": "unknown",
@@ -4871,6 +4880,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-utilorax"
+        },
+        {
+          "name": "Vornamencheck",
+          "link": "https://vornamencheck.de/#api",
+          "description": "Gender probability for a first name, optionally per country; documentation in German",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-vornamencheck"
         },
         {
           "name": "Wandbox",
@@ -5432,6 +5450,15 @@
           "https": true,
           "cors": "no",
           "slug": "documents-productivity-sahifa"
+        },
+        {
+          "name": "Shortcut",
+          "link": "https://developer.shortcut.com",
+          "description": "Manage stories, epics, iterations and objectives in a Shortcut workspace",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-shortcut"
         },
         {
           "name": "Todoist",
@@ -6257,7 +6284,7 @@
         },
         {
           "name": "Alpaca",
-          "link": "https://alpaca.markets/docs/api-documentation/api-v2/market-data/alpaca-data-api-v2/",
+          "link": "https://docs.alpaca.markets/us/docs/about-market-data-api",
           "description": "Realtime and historical market data on all US equities and ETFs",
           "auth": "apiKey",
           "https": true,
@@ -6778,6 +6805,15 @@
           "slug": "finance-sec-edgar-data"
         },
         {
+          "name": "Segmara",
+          "link": "https://segmara.com/syndicate",
+          "description": "IPO calendars, filing stages and estimated lockup dates",
+          "auth": "User-Agent",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-segmara"
+        },
+        {
           "name": "SmartAPI",
           "link": "https://smartapi.angelbroking.com/",
           "description": "Gain access to set of <SmartAPI> and create end-to-end broking services",
@@ -6994,7 +7030,7 @@
           "name": "CalorieNinjas",
           "link": "https://calorieninjas.com/api",
           "description": "Nutrition and calorie data for foods and recipes",
-          "auth": "\\\u0007piKey\\",
+          "auth": "apiKey",
           "https": true,
           "cors": "yes",
           "slug": "food-drink-calorieninjas"
@@ -7097,6 +7133,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "food-drink-lcbo"
+        },
+        {
+          "name": "Noms",
+          "link": "https://noms.sh/docs",
+          "description": "Nutrition data for 3.7M foods and 298K brands across 230 countries, with barcodes and images",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "food-drink-noms"
         },
         {
           "name": "Open Brewery DB",
@@ -9529,15 +9574,6 @@
           "slug": "government-federal-register"
         },
         {
-          "name": "Food Standards Agency",
-          "link": "http://ratings.food.gov.uk/open-data/en-GB",
-          "description": "UK food hygiene rating data API",
-          "auth": "No",
-          "https": false,
-          "cors": "unknown",
-          "slug": "government-food-standards-agency"
-        },
-        {
           "name": "gankdat",
           "link": "https://gankdat.com/docs",
           "description": "UK & EU tenders, UK planning, UK sanctions, US exclusions, UK insolvency and incorporations as JSON",
@@ -11824,15 +11860,6 @@
       "slug": "open-data",
       "apis": [
         {
-          "name": "18F",
-          "link": "http://18f.github.io/API-All-the-X/",
-          "description": "Unofficial US Federal Government API Development",
-          "auth": "No",
-          "https": false,
-          "cors": "unknown",
-          "slug": "open-data-18f"
-        },
-        {
           "name": "49 Gallery Historical Data",
           "link": "https://api.181649.com/docs",
           "description": "Normalized historical records and 25 daily-updated reference series",
@@ -11957,6 +11984,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-cuttingtoolsai"
+        },
+        {
+          "name": "DevLifeCheck",
+          "link": "https://devlifecheck.com/developers",
+          "description": "Security-update end dates, recalls and evidence for 1,300+ phones, tablets, Chromebooks and routers",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "open-data-devlifecheck"
         },
         {
           "name": "Enigma Public",
@@ -12272,6 +12308,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-statistics-of-the-world"
+        },
+        {
+          "name": "StatOrigin",
+          "link": "https://statorigin.org/docs/api",
+          "description": "Industry statistics, each traced to its primary source with a verbatim quote, CC BY 4.0",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-statorigin"
         },
         {
           "name": "Teleport",
@@ -12880,15 +12925,6 @@
           "slug": "photography-apitemplate-io"
         },
         {
-          "name": "Bruzu",
-          "link": "https://docs.bruzu.com",
-          "description": "Image generation with query string",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "photography-bruzu"
-        },
-        {
           "name": "CheetahO",
           "link": "https://cheetaho.com/docs/getting-started/",
           "description": "Photo optimization and resize",
@@ -13013,6 +13049,15 @@
           "https": true,
           "cors": "no",
           "slug": "photography-kavel"
+        },
+        {
+          "name": "Lightdrift",
+          "link": "https://docs.lightdrift.ai",
+          "description": "Search 1.85M openly licensed images by text or image, with license and attribution per result",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "photography-lightdrift"
         },
         {
           "name": "Lorem Picsum",
@@ -13428,15 +13473,6 @@
           "description": "Number of the day, random number, number facts and anything else you want to do with numbers",
           "auth": "apiKey",
           "https": true,
-          "cors": "no",
-          "slug": "science-math-numbers"
-        },
-        {
-          "name": "Numbers",
-          "link": "http://numbersapi.com",
-          "description": "Facts about numbers",
-          "auth": "No",
-          "https": false,
           "cors": "no",
           "slug": "science-math-numbers"
         },
@@ -17067,7 +17103,7 @@
         {
           "name": "Wheelwise",
           "link": "https://cars.limoja.ai/api/search?q=BMW&limit=1",
-          "description": "UK used-car listings with fair-price grade, 36-month resale forecast and true monthly cost per advert",
+          "description": "UK used-car listings with fair-price grade, 36-month resale forecast and monthly cost per advert",
           "auth": "No",
           "https": true,
           "cors": "no",
