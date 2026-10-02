@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1964,
+    "totalAPIs": 1977,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-01T09:35:50.847Z"
+    "lastUpdated": "2026-10-02T09:09:38.951Z"
   },
   "categories": [
     {
@@ -3130,6 +3130,15 @@
           "slug": "data-validation-schemashield"
         },
         {
+          "name": "sthan.io Address Autocomplete",
+          "link": "https://sthan.io/products/address-autocomplete-usa",
+          "description": "Real-time US address suggestions as users type",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "data-validation-sthan-io-address-autocomplete"
+        },
+        {
           "name": "sthan.io Address Parser",
           "link": "https://sthan.io/products/address-parser-usa",
           "description": "Parse freeform US addresses into structured fields (house number, street, unit, city, state, ZIP)",
@@ -3242,6 +3251,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-agent-nexus"
+        },
+        {
+          "name": "AgentPay Domain Lookup",
+          "link": "https://agentpay-lookup.agentpay-apis.workers.dev",
+          "description": "DNS records, WHOIS/RDAP, IP ownership and domain reports for AI agents, paid per call via x402",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-agentpay-domain-lookup"
         },
         {
           "name": "Agify.io",
@@ -3452,8 +3470,8 @@
         },
         {
           "name": "ChartBytes",
-          "link": "https://chartbytes.onrender.com",
-          "description": "Chart image API: turn a URL into a PNG or SVG chart (bar, pie, donut, stacked)",
+          "link": "https://chartbytes.meridian-digital.pro",
+          "description": "Chart image API: turn a URL into a PNG or SVG chart (bar, line, area, scatter, pie, donut, stacked)",
           "auth": "No",
           "https": true,
           "cors": "yes",
@@ -4657,6 +4675,15 @@
           "slug": "development-screenshot"
         },
         {
+          "name": "Screenshot Happy",
+          "link": "https://screenshot-api-production-ffd7.up.railway.app/docs",
+          "description": "Website screenshot API (PNG/JPEG/PDF) with full-page capture and visual-diff monitors",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-screenshot-happy"
+        },
+        {
           "name": "ScreenshotAPI.net",
           "link": "https://screenshotapi.net/",
           "description": "Create pixel-perfect website screenshots",
@@ -5118,6 +5145,15 @@
       "name": "Documents & Productivity",
       "slug": "documents-productivity",
       "apis": [
+        {
+          "name": "AgentPay Doc Tools",
+          "link": "https://agentpay-tools.agentpay-apis.workers.dev",
+          "description": "PDF to text, RSS/Atom/JSON feeds to JSON and sitemaps to URL lists, paid per call via x402",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-agentpay-doc-tools"
+        },
         {
           "name": "Airtable",
           "link": "https://airtable.com/api",
@@ -6389,6 +6425,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-congressinvests"
+        },
+        {
+          "name": "contix",
+          "link": "https://contix.es/api/#herramientas",
+          "description": "Spain: IBAN validation with bank and BIC, EU VAT number check (VIES), Modelo 303 VAT sums",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-contix"
         },
         {
           "name": "Dino.markets",
@@ -8185,6 +8230,15 @@
           "slug": "games-comics-tetr-io"
         },
         {
+          "name": "TickerMint",
+          "link": "https://tickermint.cards/developers",
+          "description": "Daily market prices and price history for Pokémon, One Piece, Lorcana and Yu-Gi-Oh cards",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "games-comics-tickermint"
+        },
+        {
           "name": "Tronald Dump",
           "link": "https://www.tronalddump.io/",
           "description": "The dumbest things Donald Trump has ever said",
@@ -9073,6 +9127,15 @@
           "slug": "geocoding-spotsense"
         },
         {
+          "name": "sthan.io India PIN Code Autocomplete",
+          "link": "https://sthan.io/products/pincode-autocomplete-ind",
+          "description": "Autocomplete Indian PIN codes as users type",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "geocoding-sthan-io-india-pin-code-autocomplete"
+        },
+        {
           "name": "sthan.io IP Geolocation",
           "link": "https://sthan.io/products/ip-geolocation",
           "description": "Look up the geographic location of any IPv4 or IPv6 address",
@@ -9080,6 +9143,15 @@
           "https": true,
           "cors": "no",
           "slug": "geocoding-sthan-io-ip-geolocation"
+        },
+        {
+          "name": "sthan.io Reverse Geocoding",
+          "link": "https://sthan.io/products/reverse-geocoding-usa",
+          "description": "Convert latitude and longitude to the nearest US street address",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "geocoding-sthan-io-reverse-geocoding"
         },
         {
           "name": "Telize",
@@ -9944,7 +10016,7 @@
         },
         {
           "name": "Open Government, Portugal",
-          "link": "https://dados.gov.pt/en/docapi/",
+          "link": "https://dados.gov.pt/en/recursos/desenvolvimento/referencia-api",
           "description": "Portugal Government Open Data",
           "auth": "No",
           "https": true,
@@ -10766,7 +10838,7 @@
         },
         {
           "name": "Jobs2Careers",
-          "link": "http://api.jobs2careers.com/api/spec.pdf",
+          "link": "https://docs.talroo.com/api/search",
           "description": "Job aggregator",
           "auth": "apiKey",
           "https": true,
@@ -10889,6 +10961,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "jobs-usajobs"
+        },
+        {
+          "name": "Vibeworker",
+          "link": "https://tryvibeworker.com/docs",
+          "description": "Upwork job listings with client data and AI fit scores, plus webhooks and RSS",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "jobs-vibeworker"
         },
         {
           "name": "WhatJobs",
@@ -11969,7 +12050,7 @@
         },
         {
           "name": "CoworkingView",
-          "link": "https://coworkingview.com/openapi.json",
+          "link": "https://coworkingview.com/en/api",
           "description": "Coworking spaces and offices in 63 European and Gulf cities with operator-published prices",
           "auth": "No",
           "https": true,
@@ -13286,6 +13367,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "science-math-arxiv"
+        },
+        {
+          "name": "Botlero",
+          "link": "https://botlero.com/api/robots",
+          "description": "Sourced, quoted specs for humanoid robots",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-botlero"
         },
         {
           "name": "CodeCogs",
@@ -15058,6 +15148,15 @@
           "slug": "sports-fitness-football-charts"
         },
         {
+          "name": "Football Leagues",
+          "link": "https://football-api.yuvron.online/reference",
+          "description": "Standings, fixtures, live scores, lineups and player stats for 11 European football competitions",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-football-leagues"
+        },
+        {
           "name": "Football Standings",
           "link": "https://github.com/azharimm/football-standings-api",
           "description": "Display football standings e.g epl, la liga, serie a etc. The data is based on espn site",
@@ -15101,6 +15200,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "sports-fitness-mlb-records-and-stats"
+        },
+        {
+          "name": "MoviOdds",
+          "link": "https://moviodds.com/doc",
+          "description": "Real-time bet365 soccer odds, every market, pre-match and in-play, over REST and WebSocket",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-moviodds"
         },
         {
           "name": "NBA Data",
@@ -15532,6 +15640,15 @@
           "slug": "test-data-jsonplaceholder"
         },
         {
+          "name": "loremfile",
+          "link": "https://loremfile.dev/docs/manifest",
+          "description": "Hotlinkable CC0 sample files in 78 formats, each with a SHA-256 in a JSON manifest",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "test-data-loremfile"
+        },
+        {
           "name": "Loripsum",
           "link": "http://loripsum.net/",
           "description": "The \"lorem ipsum\" generator that doesn't suck",
@@ -15647,6 +15764,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "test-data-spanish-random-words"
+        },
+        {
+          "name": "Supercrontab Mock Endpoints",
+          "link": "https://supercrontab.com/mock",
+          "description": "Mock endpoints in 8 formats, each returning any of 14 HTTP status codes",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "test-data-supercrontab-mock-endpoints"
         },
         {
           "name": "This Person Does not Exist",
@@ -16772,15 +16898,6 @@
           "https": true,
           "cors": "no",
           "slug": "transportation-velib-metropolis-paris-france"
-        },
-        {
-          "name": "Wander Atlas",
-          "link": "https://wanderatlasguides.com/api/",
-          "description": "Hourly quiet and busy crowd windows for 620+ tourist attractions in 20 countries",
-          "auth": "No",
-          "https": true,
-          "cors": "yes",
-          "slug": "transportation-wander-atlas"
         },
         {
           "name": "Windsock",
