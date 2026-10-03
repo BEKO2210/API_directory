@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1977,
+    "totalAPIs": 1995,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-02T09:09:38.951Z"
+    "lastUpdated": "2026-10-03T08:43:02.070Z"
   },
   "categories": [
     {
@@ -3424,6 +3424,15 @@
           "slug": "development-bored"
         },
         {
+          "name": "BountyCheck",
+          "link": "https://bountycheck.vercel.app",
+          "description": "Claimability verdicts for GitHub bounty issues; free stats and sample, checks paid per call via x402",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-bountycheck"
+        },
+        {
           "name": "Brainshop.ai",
           "link": "https://brainshop.ai/",
           "description": "Make A Free A.I Brain",
@@ -3998,6 +4007,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-import-io"
+        },
+        {
+          "name": "Index Agentica",
+          "link": "https://indexagentica.com/agents/",
+          "description": "Agent-first directory of skills, MCP servers, tools, protocols and APIs as JSON, markdown, llms.txt",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-index-agentica"
         },
         {
           "name": "ip-fast.com",
@@ -4657,6 +4675,15 @@
           "slug": "development-scrapingdog"
         },
         {
+          "name": "Scrappa",
+          "link": "https://scrappa.co/docs",
+          "description": "Google Search, Maps, Jobs, YouTube and review site results as structured JSON",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-scrappa"
+        },
+        {
           "name": "Scrax",
           "link": "https://rapidapi.com/mtaahoperators/api/scrax",
           "description": "Web scraping API that only bills for successful scrapes",
@@ -5261,6 +5288,15 @@
           "https": true,
           "cors": "no",
           "slug": "documents-productivity-craftmypdf"
+        },
+        {
+          "name": "DocCheap",
+          "link": "https://doc.cheap/docs",
+          "description": "Read passports, ID cards and driver's licences into JSON, $0.01 per recognised document",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-doccheap"
         },
         {
           "name": "DocStruct",
@@ -6722,6 +6758,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-liquilens"
+        },
+        {
+          "name": "matchwire.win",
+          "link": "https://matchwire.win/docs/",
+          "description": "Matched prediction-market games across Kalshi, Polymarket US/Intl and Predict.fun",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "finance-matchwire-win"
         },
         {
           "name": "MercadoPago",
@@ -10231,6 +10276,15 @@
           "slug": "government-spatial-india"
         },
         {
+          "name": "SukuuData",
+          "link": "https://sukuudata.com/quickstart",
+          "description": "Ghana's schools, 2026 SHS placement register and CSSPS choice validation",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-sukuudata"
+        },
+        {
           "name": "Tollmint",
           "link": "https://api.tollmint.com",
           "description": "Advertising, subscription, AI-disclosure and accessibility rules across the US, EU and UK",
@@ -10927,6 +10981,15 @@
           "slug": "jobs-remoteok"
         },
         {
+          "name": "Techmap",
+          "link": "https://api.techmap.io/jobs-api",
+          "description": "Job postings from 185 sources in 250 countries and territories, with an archive since 2020",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-techmap"
+        },
+        {
           "name": "TechRole Index",
           "link": "https://techrole.ru/open-data-daily",
           "description": "Russian IT profession, vacancy publication and salary aggregates",
@@ -11165,15 +11228,6 @@
           "https": true,
           "cors": "unknown",
           "slug": "machine-learning-inferdo"
-        },
-        {
-          "name": "IPS Online",
-          "link": "https://docs.identity.ps/docs",
-          "description": "Face and License Plate Anonymization",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "machine-learning-ips-online"
         },
         {
           "name": "Irisnet",
@@ -12409,6 +12463,15 @@
           "slug": "open-data-teleport"
         },
         {
+          "name": "The Deploy Log",
+          "link": "https://github.com/dotcomjack/the-deploy-log",
+          "description": "1,000+ AI deployments, each linked to the publisher's own page, JSON and CSV, CC BY 4.0",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-the-deploy-log"
+        },
+        {
           "name": "Tilth",
           "link": "https://www.tilth.uk/data",
           "description": "Free daily UK fertiliser price index across nine grades, CC BY 4.0 licensed",
@@ -12962,6 +13025,15 @@
           "https": true,
           "cors": "yes",
           "slug": "phone-phone-validation"
+        },
+        {
+          "name": "PlaceCall",
+          "link": "https://api.voygr.tech/docs",
+          "description": "AI agent places phone calls to US businesses and returns the outcome, transcript and recording",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "phone-placecall"
         },
         {
           "name": "Veriphone",
@@ -13789,6 +13861,15 @@
       "slug": "security",
       "apis": [
         {
+          "name": "Agent Verifier",
+          "link": "https://packet.guru/agents/reference",
+          "description": "Self-check for AI agents: verifies Web Bot Auth signatures and shows how a request looks",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "security-agent-verifier"
+        },
+        {
           "name": "Application Environment Verification",
           "link": "https://github.com/fingerprintjs/aev",
           "description": "Android library and API to verify the safety of user devices, detect rooted devices and other risks",
@@ -14266,6 +14347,15 @@
           "slug": "security-virushee"
         },
         {
+          "name": "VPNDetection",
+          "link": "https://docs.vpndetection.io/api",
+          "description": "Check whether an IPv4 or IPv6 address belongs to VPN infrastructure, no key needed",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-vpndetection"
+        },
+        {
           "name": "VulDB",
           "link": "https://vuldb.com/?doc.api",
           "description": "VulDB API allows to initiate queries for one or more items along with transactional bots",
@@ -14315,6 +14405,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-best-buy"
+        },
+        {
+          "name": "BirkinBagStock",
+          "link": "https://birkinbagstock.com/.well-known/openapi.json",
+          "description": "Independent Hermès resale index: inventory, market prices, auction calendar and results",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-birkinbagstock"
         },
         {
           "name": "BuyWhere",
@@ -14432,6 +14531,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-olx-poland"
+        },
+        {
+          "name": "OneFindMe",
+          "link": "https://onefindme.com/mcp",
+          "description": "Search AliExpress in any language: price, rating and orders for the delivery country",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-onefindme"
         },
         {
           "name": "OpenTiendas",
@@ -14602,6 +14710,15 @@
           "slug": "social-facebook"
         },
         {
+          "name": "FastSocial Instagram Data",
+          "link": "https://fastsocial.co/instagram-api/docs",
+          "description": "Public Instagram data: profiles, posts, reels, stories, comments and a daily top-accounts ranking",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-fastsocial-instagram-data"
+        },
+        {
           "name": "Foursquare",
           "link": "https://developer.foursquare.com/",
           "description": "Interact with Foursquare users and places (geolocation-based checkins, photos, tips, events, etc)",
@@ -14627,6 +14744,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-full-contact"
+        },
+        {
+          "name": "GramScraper",
+          "link": "https://gramscraper.com",
+          "description": "Instagram and TikTok data API with 91 endpoints for profiles, posts, stories, reels, and comments",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-gramscraper"
         },
         {
           "name": "GetXAPI",
@@ -16288,6 +16414,15 @@
           "slug": "transportation-can-i-enter"
         },
         {
+          "name": "ChargeAlong",
+          "link": "https://chargealong.io/docs/",
+          "description": "EV charging sites in AU, NZ, US, UK and Canada, with nearby search and trip planning",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-chargealong"
+        },
+        {
           "name": "Community Transit",
           "link": "https://github.com/transitland/transitland-datastore/blob/master/README.md#api-endpoints",
           "description": "Transitland API",
@@ -17278,6 +17413,15 @@
           "slug": "video-breaking-bad-quotes"
         },
         {
+          "name": "BulkTranscripts",
+          "link": "https://bulktranscripts.co/docs",
+          "description": "YouTube transcripts for a video, a whole channel or a playlist, plus YouTube search",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-bulktranscripts"
+        },
+        {
           "name": "Catalogopolis",
           "link": "https://api.catalogopolis.xyz/docs/",
           "description": "Doctor Who API",
@@ -17620,6 +17764,15 @@
           "slug": "video-trakt"
         },
         {
+          "name": "TranscriptYT",
+          "link": "https://transcript-yt.com/docs",
+          "description": "YouTube transcripts as JSON, text, SRT or VTT in 150+ languages, with AI fallback",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-transcriptyt"
+        },
+        {
           "name": "TubeToTranscript",
           "link": "https://www.tubetotranscript.com/youtube-transcript-api",
           "description": "Extract clean YouTube video transcripts via REST API",
@@ -17645,6 +17798,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "video-tvmaze"
+        },
+        {
+          "name": "UGCdrop",
+          "link": "https://ugcdrop.com/api",
+          "description": "Search real UGC video clips (reactions, hooks, b-roll) by emotion, niche, age and setting",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-ugcdrop"
         },
         {
           "name": "uNoGS",
