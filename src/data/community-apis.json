@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-09-28T04:46:33.649Z"
+    "lastUpdated": "2026-10-04T09:51:56.621Z"
   },
   "add": [
     {
@@ -170,6 +170,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 81
+    },
+    {
+      "name": "Tiny Plates",
+      "link": "https://www.tinyplates.dev/docs",
+      "description": "Structured recipes, semantic search, pantry matching, serving adjustments, and shopping lists",
+      "category": "Food & Drink",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 84
     }
   ],
   "remove": [],

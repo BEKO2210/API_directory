@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2030,
+    "totalAPIs": 2031,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-04T08:58:42.755Z"
+    "lastUpdated": "2026-10-04T09:51:56.904Z"
   },
   "categories": [
     {
@@ -7529,6 +7529,15 @@
           "https": true,
           "cors": "yes",
           "slug": "food-drink-zestful"
+        },
+        {
+          "name": "Tiny Plates",
+          "slug": "food-drink-tiny-plates",
+          "description": "Structured recipes, semantic search, pantry matching, serving adjustments, and shopping lists",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.tinyplates.dev/docs"
         }
       ]
     },
