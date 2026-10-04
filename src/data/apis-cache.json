@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 1995,
+    "totalAPIs": 2030,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-03T08:43:02.070Z"
+    "lastUpdated": "2026-10-04T08:58:42.755Z"
   },
   "categories": [
     {
@@ -757,6 +757,15 @@
           "slug": "art-design-pixel-encounter"
         },
         {
+          "name": "raFont",
+          "link": "https://rafont.com/api-docs",
+          "description": "1,500+ free downloadable fonts with categories, tags and preview images",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-rafont"
+        },
+        {
           "name": "Rijksmuseum",
           "link": "https://data.rijksmuseum.nl/object-metadata/api/",
           "description": "RijksMuseum Data",
@@ -947,6 +956,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "blockchain-covalent"
+        },
+        {
+          "name": "Dwellir",
+          "link": "https://www.dwellir.com/docs",
+          "description": "RPC endpoints for 150+ blockchain networks, including Ethereum, Solana, Polkadot and Hyperliquid",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "blockchain-dwellir"
         },
         {
           "name": "Etherscan",
@@ -1483,6 +1501,15 @@
           "slug": "business-orb-intelligence"
         },
         {
+          "name": "PeopleSearch",
+          "link": "https://peoplesearch.im/developers",
+          "description": "People and company search in plain English, with verified work emails and email verification",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "business-peoplesearch"
+        },
+        {
           "name": "Pick an Agency",
           "link": "https://www.pickanagency.com/developers",
           "description": "Search 47,000+ marketing agencies by service, location and rating",
@@ -1618,6 +1645,15 @@
           "slug": "business-trello"
         },
         {
+          "name": "UGC VZ",
+          "link": "https://ugc-vz.de/developers",
+          "description": "Directory of DACH user-generated-content creators with topics, cities, rates and contact requests",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "business-ugc-vz"
+        },
+        {
           "name": "Village",
           "link": "https://docs.village.ai",
           "description": "Person and company enrichment plus warm introduction paths through your network",
@@ -1721,6 +1757,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "calendar-holidays"
+        },
+        {
+          "name": "India Public Holidays",
+          "link": "https://calendar-api-web.vercel.app/docs",
+          "description": "Official Indian public holidays for the Central government and 36 states/UTs",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "calendar-india-public-holidays"
         },
         {
           "name": "LectServe",
@@ -2137,6 +2182,15 @@
           "slug": "cryptocurrency-bitcoin-halving"
         },
         {
+          "name": "BitcoinYield",
+          "link": "https://bitcoinyield.co/docs",
+          "description": "Live yields on BTC, ETH and stablecoins across DeFi and CeFi, with an A-D risk grade per offer",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-bitcoinyield"
+        },
+        {
           "name": "Bitfinex",
           "link": "https://docs.bitfinex.com/docs",
           "description": "Cryptocurrency Trading Platform",
@@ -2189,6 +2243,15 @@
           "https": true,
           "cors": "yes",
           "slug": "cryptocurrency-blazephoenix"
+        },
+        {
+          "name": "bilbop",
+          "link": "https://api.bilbop.org",
+          "description": "Solana USDC x402 pay-per-call tools for agents: SPL mint info, token brief, text summarize, Piper TTS, brand feedback",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-bilbop"
         },
         {
           "name": "Block Lottos",
@@ -2477,6 +2540,15 @@
           "https": true,
           "cors": "yes",
           "slug": "cryptocurrency-defillama"
+        },
+        {
+          "name": "Dudelytics",
+          "link": "https://dudelytics.com/en/dpmi/data/",
+          "description": "Productive crypto indices, daily benchmarks, sector indices and market-stress data",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "cryptocurrency-dudelytics"
         },
         {
           "name": "dYdX",
@@ -3305,6 +3377,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-api-gr-tis"
+        },
+        {
+          "name": "API Tool Calls",
+          "link": "https://apitoolcalls.com/api/",
+          "description": "API Tool Calls: Home cost planners, page to Markdown, SEO checks and recalls",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "development-api-tool-calls"
         },
         {
           "name": "ApicAgent",
@@ -4666,6 +4747,15 @@
           "slug": "development-scrapingant"
         },
         {
+          "name": "ScrapingBot",
+          "link": "https://scrapingbot.io",
+          "description": "Web scraping, AI extraction, and public TikTok, Instagram, Google and Amazon data as JSON",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-scrapingbot"
+        },
+        {
           "name": "ScrapingDog",
           "link": "https://www.scrapingdog.com/",
           "description": "Proxy API for Web scraping",
@@ -4880,6 +4970,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-thunderbit"
+        },
+        {
+          "name": "TidyTools",
+          "link": "https://tools.yukai.uk/llms.txt",
+          "description": "Web page to clean Markdown and AI crawler robots.txt checks, free without a key (rate limited)",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-tidytools"
         },
         {
           "name": "Timezone WorldTime",
@@ -5560,6 +5659,15 @@
           "slug": "documents-productivity-staffsign"
         },
         {
+          "name": "Thirds",
+          "link": "https://thirds.ai/docs/api",
+          "description": "Create branded PDFs and images from HTML or reusable templates",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-thirds"
+        },
+        {
           "name": "Vector Express v2.0",
           "link": "https://vector.express",
           "description": "Free vector file converting API",
@@ -5798,6 +5906,15 @@
           "https": true,
           "cors": "yes",
           "slug": "email-mailfornet"
+        },
+        {
+          "name": "MailRambo",
+          "link": "https://www.mailrambo.com/developers",
+          "description": "Verify email deliverability with a strict yes/no, disposable and catch-all detection",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-mailrambo"
         },
         {
           "name": "Mailtrap",
@@ -6436,6 +6553,15 @@
           "slug": "finance-boleto-cloud"
         },
         {
+          "name": "Brainy Prices",
+          "link": "https://prices.brainy.ae/developers.html",
+          "description": "UAE living costs: KHDA fees, DLD rents, fuel, utilities, telecom and relocation, with dated sources",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-brainy-prices"
+        },
+        {
           "name": "BriefTape",
           "link": "https://brieftape.com",
           "description": "Real-time AI-summarized SEC filings, Fed, FDA and BLS data, ticker-tagged",
@@ -6823,6 +6949,15 @@
           "slug": "finance-openfigi"
         },
         {
+          "name": "Pink Agentic AI Payments",
+          "link": "https://pinkwallet.com/agentic/developers/",
+          "description": "Approval layer for AI agent payments: per-agent budgets, rules, single-use credentials, sandbox",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-pink-agentic-ai-payments"
+        },
+        {
           "name": "PIT Financial State",
           "link": "https://agent-economy-pit-evaluation.onrender.com/docs",
           "description": "Point-in-time quarterly revenue for 20 U.S. issuers",
@@ -7142,6 +7277,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "food-drink-coffee"
+        },
+        {
+          "name": "CookbookSocial Nutrition",
+          "link": "https://cookbooksocial.app/api",
+          "description": "Nutrition data for 4,631 ingredients with food names in 19 languages",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "food-drink-cookbooksocial-nutrition"
         },
         {
           "name": "Daily Food Recalls",
@@ -8947,6 +9091,15 @@
           "slug": "geocoding-locationiq"
         },
         {
+          "name": "Locio",
+          "link": "https://locio.com.au/docs/",
+          "description": "Australian address autocomplete, validation and geocoding from the G-NAF national register",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-locio"
+        },
+        {
           "name": "Longdo Map",
           "link": "https://map.longdo.com/docs/",
           "description": "Interactive map with detailed places and information portal in Thailand",
@@ -10348,6 +10501,15 @@
           "slug": "government-usaspending-gov"
         },
         {
+          "name": "Veridion",
+          "link": "https://www.veridionmarkets.com/data-api/docs",
+          "description": "US congressional stock-trade disclosures and the President's OGE reports, linked to each filing",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-veridion"
+        },
+        {
           "name": "Vett",
           "link": "https://wimberly.solutions/api/free-sanctions-check/",
           "description": "Screen names & companies against OFAC, PEP, watchlists & recalls",
@@ -10846,6 +11008,15 @@
           "slug": "jobs-curatorsearch"
         },
         {
+          "name": "Dabloons",
+          "link": "https://dabloons.net/llms.txt",
+          "description": "Bounty board where AI agents post and work tasks like PR reviews, bug repros and install checks",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "jobs-dabloons"
+        },
+        {
           "name": "DevITjobs UK",
           "link": "https://devitjobs.uk/job_feed.xml",
           "description": "Jobs with GraphQL",
@@ -11113,6 +11284,15 @@
           "slug": "machine-learning-clarifai"
         },
         {
+          "name": "Cohere",
+          "link": "https://docs.cohere.com/reference/about",
+          "description": "NLP API for text generation, embeddings, classification and summarization with a free trial tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-cohere"
+        },
+        {
           "name": "Cloudmersive",
           "link": "https://www.cloudmersive.com/image-recognition-and-processing-api",
           "description": "Image captioning, face recognition, NSFW classification",
@@ -11165,6 +11345,15 @@
           "https": true,
           "cors": "yes",
           "slug": "machine-learning-exude-api"
+        },
+        {
+          "name": "GEN",
+          "link": "https://gen.pro/docs#ai-agents",
+          "description": "Create and edit video projects, with credit-based AI media generation",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-gen"
         },
         {
           "name": "GoldBean",
@@ -11302,6 +11491,15 @@
           "slug": "machine-learning-nlp-cloud"
         },
         {
+          "name": "Nonobench",
+          "link": "https://www.nonobench.com/how-it-works",
+          "description": "Open-source benchmark of how well LLMs solve nonogram puzzles",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-nonobench"
+        },
+        {
           "name": "Not Human Search",
           "link": "https://nothumansearch.ai/openapi.yaml",
           "description": "AI tool discovery with agentic scoring for 8,600+ tools and MCP servers",
@@ -11318,6 +11516,15 @@
           "https": true,
           "cors": "no",
           "slug": "machine-learning-onomeo"
+        },
+        {
+          "name": "OpenRouter",
+          "link": "https://openrouter.ai/docs/quick-start",
+          "description": "Unified API for 300+ LLMs from OpenAI, Anthropic, Meta, Mistral and more, with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-openrouter"
         },
         {
           "name": "OpenVisionAPI",
@@ -11347,6 +11554,15 @@
           "slug": "machine-learning-requesty"
         },
         {
+          "name": "Replicate",
+          "link": "https://replicate.com/docs/reference/http",
+          "description": "Run open-source AI models in the cloud including image generation, LLMs and audio models",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-replicate"
+        },
+        {
           "name": "Roboflow Universe",
           "link": "https://universe.roboflow.com",
           "description": "Pre-trained computer vision models",
@@ -11365,6 +11581,15 @@
           "slug": "machine-learning-skybiometry"
         },
         {
+          "name": "Speak AI",
+          "link": "https://docs.speakai.co",
+          "description": "Transcribe and analyze audio and video in 100+ languages",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "machine-learning-speak-ai"
+        },
+        {
           "name": "Statlyte",
           "link": "https://statlyte.com/api",
           "description": "Live pricing, context windows and model ids for major LLM APIs",
@@ -11381,6 +11606,15 @@
           "https": true,
           "cors": "yes",
           "slug": "machine-learning-tensorfeed"
+        },
+        {
+          "name": "Together AI",
+          "link": "https://docs.together.ai/docs/quickstart",
+          "description": "Fast inference API for open-source LLMs including Llama, Qwen, DeepSeek with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-together-ai"
         },
         {
           "name": "Time Door",
@@ -12094,6 +12328,15 @@
           "slug": "open-data-carto"
         },
         {
+          "name": "CollegeCalcAI",
+          "link": "https://collegecalcai.com/developers",
+          "description": "US college admission chance estimates and admissions data for 1,100+ colleges",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-collegecalcai"
+        },
+        {
           "name": "CollegeScoreCard.ed.gov",
           "link": "https://collegescorecard.ed.gov/data/",
           "description": "Data on higher education institutions in the United States",
@@ -12128,6 +12371,15 @@
           "https": true,
           "cors": "no",
           "slug": "open-data-devlifecheck"
+        },
+        {
+          "name": "Edgepedia",
+          "link": "https://www.edgechat.ai/developers",
+          "description": "Search and read Edgepedia, a free and growing encyclopedia with citations",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-edgepedia"
         },
         {
           "name": "Enigma Public",
@@ -12535,6 +12787,15 @@
           "slug": "open-data-voidly"
         },
         {
+          "name": "Vuntum",
+          "link": "https://vuntum.com/en/api-mcp",
+          "description": "Sourced, dated facts on consumer robots and physical AI, licensed CC BY 4.0",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-vuntum"
+        },
+        {
           "name": "Warnely",
           "link": "https://warnely.com/developers",
           "description": "Composite travel-safety scores for 180 countries (FCDO + US State + GPI + WGI + live incident wire), OpenAPI 3.1 spec, CC BY 4.0",
@@ -12749,6 +13010,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "personality-advice-slip"
+        },
+        {
+          "name": "Astro Agents",
+          "link": "https://astro-agent.dev/llms.txt",
+          "description": "Deterministic Western and Vedic astrology: natal charts, transits, kundli, dashas, panchang",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "personality-astro-agents"
         },
         {
           "name": "AstroWay",
@@ -14578,6 +14848,15 @@
           "slug": "shopping-shopee"
         },
         {
+          "name": "SoldStack",
+          "link": "https://soldstack.fly.dev/docs",
+          "description": "Sold resale listings from Poshmark with median price, days to sell and net payout after fees",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "shopping-soldstack"
+        },
+        {
           "name": "Sparepilot",
           "link": "https://sparepilot.com/developers",
           "description": "Spare parts catalog, OEM cross-references & price comparison for garden power equipment",
@@ -15625,6 +15904,15 @@
           "slug": "sports-fitness-tredict"
         },
         {
+          "name": "WhensTheRace",
+          "link": "https://whenstherace.com/f1-schedule-json/",
+          "description": "F1 season schedule with UTC session start times as JSON, RSS and iCal",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-whenstherace"
+        },
+        {
           "name": "Wger",
           "link": "https://wger.de/en/software/api",
           "description": "Workout manager data as exercises, muscles or equipment",
@@ -16432,6 +16720,15 @@
           "slug": "transportation-community-transit"
         },
         {
+          "name": "ConnectMeGuru",
+          "link": "https://www.connectmeguru.com/api/mcp",
+          "description": "Search and purchase prepaid travel eSIM data plans across 190+ countries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-connectmeguru"
+        },
+        {
           "name": "Compare Flight Prices",
           "link": "https://rapidapi.com/obryan-software-obryan-software-default/api/compare-flight-prices/",
           "description": "API for comparing flight prices across platforms",
@@ -16439,6 +16736,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "transportation-compare-flight-prices"
+        },
+        {
+          "name": "Cruise Itinerary",
+          "link": "https://cruise-itinerary.com/docs",
+          "description": "Cruise sailings, day-by-day itineraries, weekly fare history, port traffic and a cruise price index",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-cruise-itinerary"
         },
         {
           "name": "CruiseFeed",
@@ -17384,6 +17690,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "video-an-api-of-ice-and-fire"
+        },
+        {
+          "name": "Arcmira",
+          "link": "https://arcmira.com/docs",
+          "description": "Search indexed YouTube transcripts for timestamped passages and mentions",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-arcmira"
         },
         {
           "name": "Bob's Burgers",
