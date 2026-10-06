@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-10-04T09:51:56.621Z"
+    "lastUpdated": "2026-10-06T07:58:29.982Z"
   },
   "add": [
     {
@@ -180,6 +180,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 84
+    },
+    {
+      "name": "MandAPI",
+      "link": "https://mandapi.com/docs/quickstart",
+      "description": "OpenAI-compatible multi-model API for GPT, Claude, Gemini, DeepSeek and more",
+      "category": "Machine Learning",
+      "auth": "",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 88
     }
   ],
   "remove": [],

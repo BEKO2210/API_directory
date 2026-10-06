@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2032,
+    "totalAPIs": 2049,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-05T11:41:01.455Z"
+    "lastUpdated": "2026-10-06T07:58:30.331Z"
   },
   "categories": [
     {
@@ -748,6 +748,15 @@
           "slug": "art-design-php-noise"
         },
         {
+          "name": "PickShade",
+          "link": "https://pickshade.com/api",
+          "description": "Convert colors, check WCAG and APCA contrast, build palettes, gradients and tokens",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-pickshade"
+        },
+        {
           "name": "Pixel Encounter",
           "link": "https://pixelencounter.com/api",
           "description": "SVG Icon Generator",
@@ -1115,6 +1124,15 @@
           "https": true,
           "cors": "yes",
           "slug": "books-bible-api"
+        },
+        {
+          "name": "BookRank",
+          "link": "https://openbookrank.com/en/open-data",
+          "description": "Book rankings from open reader ratings: books, series, reading orders and authors",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "books-bookrank"
         },
         {
           "name": "British National Bibliography",
@@ -2191,6 +2209,15 @@
           "slug": "cryptocurrency-bitcoinyield"
         },
         {
+          "name": "Bitculator",
+          "link": "https://bitculator.com/en/documentation/api/v1",
+          "description": "Crypto prices, OHLCV history, sentiment, technical indicators, exchanges and liquidations",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-bitculator"
+        },
+        {
           "name": "Bitfinex",
           "link": "https://docs.bitfinex.com/docs",
           "description": "Cryptocurrency Trading Platform",
@@ -3095,6 +3122,15 @@
           "https": true,
           "cors": "yes",
           "slug": "currency-exchange-national-bank-of-poland"
+        },
+        {
+          "name": "Nerkhsanj",
+          "link": "https://nerkh.jahankhahan.shop/developers/en",
+          "description": "Iran free-market USD, EUR, CNY, gold and coin rates in toman, live and daily archive since 2010",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "currency-exchange-nerkhsanj"
         },
         {
           "name": "paralelo.bo",
@@ -4207,6 +4243,15 @@
           "slug": "development-jsonplaceholder"
         },
         {
+          "name": "jstash",
+          "link": "https://jstash.app/docs/",
+          "description": "Save JSON with one request and get a URL; private JSON for each signed-in user of your app",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-jstash"
+        },
+        {
           "name": "Keyvalue",
           "link": "https://keyvalue.immanuel.co/",
           "description": "Simple key-value storage REST API for quick prototyping",
@@ -4648,6 +4693,15 @@
           "slug": "development-random-stuff"
         },
         {
+          "name": "RealUptime",
+          "link": "https://realuptime.io/docs/api",
+          "description": "Manage uptime monitors, heartbeat checks, incidents and status pages with an API key",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-realuptime"
+        },
+        {
           "name": "Rejax",
           "link": "https://rejax.io/",
           "description": "Reverse AJAX service to notify clients",
@@ -4880,6 +4934,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-siteintel"
+        },
+        {
+          "name": "SnapRender",
+          "link": "https://snap-render.com/docs",
+          "description": "Website screenshots as PNG, JPEG, WebP or PDF, and page content as markdown, with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-snaprender"
         },
         {
           "name": "SnoopScan",
@@ -6724,6 +6787,15 @@
           "slug": "finance-finnhub"
         },
         {
+          "name": "FloorGuard",
+          "link": "https://floorguard-kappa.vercel.app/api/",
+          "description": "Sourced prop firm daily-loss and max-drawdown rules, plus a drawdown-room check",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-floorguard"
+        },
+        {
           "name": "FRED",
           "link": "https://fred.stlouisfed.org/docs/api/fred/",
           "description": "Economic data from the Federal Reserve Bank of St. Louis",
@@ -7495,6 +7567,15 @@
           "slug": "food-drink-themealdb"
         },
         {
+          "name": "Tiny Plates",
+          "link": "https://www.tinyplates.dev/docs",
+          "description": "Structured recipes, semantic search, serving adjustments and shopping lists",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "food-drink-tiny-plates"
+        },
+        {
           "name": "Untappd",
           "link": "https://untappd.com/api/docs",
           "description": "Social beer sharing",
@@ -7529,15 +7610,6 @@
           "https": true,
           "cors": "yes",
           "slug": "food-drink-zestful"
-        },
-        {
-          "name": "Tiny Plates",
-          "slug": "food-drink-tiny-plates",
-          "description": "Structured recipes, semantic search, pantry matching, serving adjustments, and shopping lists",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "link": "https://www.tinyplates.dev/docs"
         }
       ]
     },
@@ -9316,6 +9388,15 @@
           "slug": "geocoding-rwanda-locations"
         },
         {
+          "name": "SearchPinCode",
+          "link": "https://searchpincode.in/api",
+          "description": "Indian postal PIN code lookup, post office locator and district data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-searchpincode"
+        },
+        {
           "name": "SLF",
           "link": "https://github.com/slftool/slftool.github.io/blob/master/API.md",
           "description": "German city, country, river, database",
@@ -9689,6 +9770,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-colorado-information-marketplace"
+        },
+        {
+          "name": "ContaCLT",
+          "link": "https://contaclt.com/dados/api/",
+          "description": "Brazilian payroll and labor calculations: net salary, INSS, IRRF, unemployment insurance",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-contaclt"
         },
         {
           "name": "Conversor IAE CNAE",
@@ -11581,6 +11671,15 @@
           "slug": "machine-learning-roboflow-universe"
         },
         {
+          "name": "SafeReel",
+          "link": "https://safereel.ai/docs",
+          "description": "NSFW detection for images and full-length videos by URL, free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-safereel"
+        },
+        {
           "name": "SkyBiometry",
           "link": "https://skybiometry.com/documentation/",
           "description": "Face Detection, Face Recognition and Face Grouping",
@@ -11669,6 +11768,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "machine-learning-wolframalpha"
+        },
+        {
+          "name": "MandAPI",
+          "slug": "machine-learning-mandapi",
+          "description": "OpenAI-compatible multi-model API for GPT, Claude, Gemini, DeepSeek and more",
+          "auth": "",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://mandapi.com/docs/quickstart"
         }
       ]
     },
@@ -12283,6 +12391,15 @@
           "slug": "open-data-archive-org"
         },
         {
+          "name": "Band Atlas",
+          "link": "https://www.aiotrf.com/en/ai/band-atlas/developers/",
+          "description": "Cellular IoT bands, 2G/3G sunsets and device compatibility for 46 countries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-band-atlas"
+        },
+        {
           "name": "Big Data Explained",
           "link": "https://bigdataexplained.com/data",
           "description": "Cloud data warehouse list prices, read daily from AWS and Azure pricing APIs, with price history",
@@ -12335,6 +12452,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "open-data-carto"
+        },
+        {
+          "name": "CityAlert",
+          "link": "https://cityalert.live/developers",
+          "description": "Live public-safety incidents: crime, fire, disaster, weather and news from 650+ official feeds",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "open-data-cityalert"
         },
         {
           "name": "CollegeCalcAI",
@@ -12724,6 +12850,15 @@
           "slug": "open-data-teleport"
         },
         {
+          "name": "TerraScoutX",
+          "link": "https://terrascoutx.com/developers/",
+          "description": "US property records by address: parcel, owner, appraised value, tax, flood zone and nearby schools",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-terrascoutx"
+        },
+        {
           "name": "The Deploy Log",
           "link": "https://github.com/dotcomjack/the-deploy-log",
           "description": "1,000+ AI deployments, each linked to the publisher's own page, JSON and CSV, CC BY 4.0",
@@ -12731,6 +12866,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-the-deploy-log"
+        },
+        {
+          "name": "Tickerz",
+          "link": "https://tickerz.com/docs",
+          "description": "Daily indexes of real-world activity from public data, each reading timestamped in Bitcoin",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-tickerz"
         },
         {
           "name": "Tilth",
@@ -12866,7 +13010,7 @@
       "apis": [
         {
           "name": "Countly",
-          "link": "https://api.count.ly/reference",
+          "link": "https://api.count.ly/",
           "description": "Countly web analytics",
           "auth": "No",
           "https": false,
@@ -14357,7 +14501,7 @@
         },
         {
           "name": "GreyNoise",
-          "link": "https://docs.greynoise.io/reference/get_v3-community-ip",
+          "link": "https://docs.greynoise.io/reference/getcommunityip",
           "description": "Query IPs in the GreyNoise dataset and retrieve a subset of the full IP context data",
           "auth": "apiKey",
           "https": true,
@@ -14489,6 +14633,15 @@
           "https": true,
           "cors": "no",
           "slug": "security-neetix-liveliness"
+        },
+        {
+          "name": "OSV",
+          "link": "https://google.github.io/osv.dev/api/",
+          "description": "Open source vulnerability database and distributed triage infrastructure",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-osv"
         },
         {
           "name": "Passwordinator",
