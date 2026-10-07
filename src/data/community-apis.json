@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-10-06T07:58:29.982Z"
+    "lastUpdated": "2026-10-07T22:29:30.008Z"
   },
   "add": [
     {
@@ -190,6 +190,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 88
+    },
+    {
+      "name": "Ball Ranks API",
+      "link": "https://ballranks.com/",
+      "description": "Free NFL and NBA fantasy rankings and player projections with no key required",
+      "category": "Sports & Fitness",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 89
     }
   ],
   "remove": [],

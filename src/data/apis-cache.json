@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2049,
+    "totalAPIs": 2050,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-07T09:31:49.412Z"
+    "lastUpdated": "2026-10-07T22:29:30.313Z"
   },
   "categories": [
     {
@@ -16100,6 +16100,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://ay-worldcup2026.zeabur.app/developers"
+        },
+        {
+          "name": "Ball Ranks API",
+          "slug": "sports-fitness-ball-ranks-api",
+          "description": "Free NFL and NBA fantasy rankings and player projections with no key required",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://ballranks.com/"
         }
       ]
     },
