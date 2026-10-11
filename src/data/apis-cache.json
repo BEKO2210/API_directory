@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2059,
+    "totalAPIs": 2086,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-11T03:10:15.374Z"
+    "lastUpdated": "2026-10-11T21:25:44.090Z"
   },
   "categories": [
     {
@@ -576,6 +576,15 @@
       "name": "Art & Design",
       "slug": "art-design",
       "apis": [
+        {
+          "name": "3DTexel",
+          "link": "https://3dtexel.com/developers/#public-api",
+          "description": "Search free CC0 PBR materials, HDRIs, decals and 3D models for games",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-3dtexel"
+        },
         {
           "name": "Améthyste",
           "link": "https://api.amethyste.moe/",
@@ -1553,6 +1562,15 @@
           "https": true,
           "cors": "yes",
           "slug": "business-redash"
+        },
+        {
+          "name": "RegisterWire",
+          "link": "https://www.registerwire.uk/docs/index.html",
+          "description": "Real-time alerts on UK company register changes",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "business-registerwire"
         },
         {
           "name": "Signaliz",
@@ -3193,6 +3211,15 @@
           "slug": "data-validation-attestwire"
         },
         {
+          "name": "invowerk",
+          "link": "https://invowerk.dev/docs",
+          "description": "Validate e-invoices (ZUGFeRD, Factur-X, XRechnung, Peppol BIS) and get a validation report",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "data-validation-invowerk"
+        },
+        {
           "name": "Lob.com",
           "link": "https://lob.com/",
           "description": "US Address Verification",
@@ -3737,6 +3764,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-docker-hub"
+        },
+        {
+          "name": "Domain Info by LifeStep",
+          "link": "https://dns.lifestep.io",
+          "description": "DNS records, SPF/DMARC detection and TLS certificate expiry",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-domain-info-by-lifestep"
         },
         {
           "name": "DomainDb Info",
@@ -4630,6 +4666,15 @@
           "slug": "development-qr-code"
         },
         {
+          "name": "QR Code by LifeStep",
+          "link": "https://qr.lifestep.io",
+          "description": "Generate QR codes as PNG or SVG with size, border and color options",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-qr-code-by-lifestep"
+        },
+        {
           "name": "QR Code Crafter",
           "link": "https://qrcodecrafter.com/qr-code-api",
           "description": "Generate static QR codes in SVG, PNG, JPG, WebP, PDF, or EPS",
@@ -5443,6 +5488,15 @@
           "slug": "documents-productivity-code-stats"
         },
         {
+          "name": "Convert Online",
+          "link": "https://convert.online/api-docs",
+          "description": "Online file converter for image, video, audio, document, ebook, font, archive and CAD formats",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-convert-online"
+        },
+        {
           "name": "CraftMyPDF",
           "link": "https://craftmypdf.com",
           "description": "Generate PDF documents from templates with a drop-and-drop editor and a simple API",
@@ -5477,6 +5531,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "documents-productivity-faturapdf"
+        },
+        {
+          "name": "flatmark",
+          "link": "https://flatmark.dev/docs",
+          "description": "Convert PDF, Word, PowerPoint, Excel and HTML documents to Markdown for RAG and agents",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "documents-productivity-flatmark"
         },
         {
           "name": "Flowdash",
@@ -5596,6 +5659,15 @@
           "slug": "documents-productivity-pdfmint"
         },
         {
+          "name": "pdfrender",
+          "link": "https://pdfrender.dev/docs",
+          "description": "HTML and CSS to PDF with page headers, footers and page numbers, no headless browser",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "documents-productivity-pdfrender"
+        },
+        {
           "name": "Pocket",
           "link": "https://getpocket.com/developer/",
           "description": "Bookmarking service",
@@ -5693,6 +5765,15 @@
           "https": true,
           "cors": "no",
           "slug": "documents-productivity-shortcut"
+        },
+        {
+          "name": "TeamSort",
+          "link": "https://teamsort.world/developers",
+          "description": "Create a ranked-choice poll from a text prompt and get a shareable link",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-teamsort"
         },
         {
           "name": "Todoist",
@@ -6043,6 +6124,15 @@
           "slug": "email-smtpfast"
         },
         {
+          "name": "TempMailGrab",
+          "link": "https://tempmailgrab.com/api-docs",
+          "description": "Disposable inboxes for email testing with OTP extraction and webhooks",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-tempmailgrab"
+        },
+        {
           "name": "uchecker",
           "link": "https://api.uchecker.net/docs",
           "description": "Bulk email verification with full SMTP server responses",
@@ -6229,6 +6319,15 @@
           "slug": "entertainment-techy"
         },
         {
+          "name": "Yes or No Oracle",
+          "link": "https://yesnooracle.app/api",
+          "description": "Random yes/no/maybe answers in 7 themed oracle voices (Magic 8 Ball, Tarot, and more)",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "entertainment-yes-or-no-oracle"
+        },
+        {
           "name": "Yo Momma Jokes",
           "link": "https://github.com/beanboi7/yomomma-apiv2",
           "description": "REST API for Yo Momma Jokes",
@@ -6316,6 +6415,15 @@
           "slug": "environment-gridhub"
         },
         {
+          "name": "GridVigil",
+          "link": "https://gridvigil.com/developers",
+          "description": "Pressure scores, demand, generation mix and alerts for the 10 major U.S. power grids",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-gridvigil"
+        },
+        {
           "name": "GrünstromIndex",
           "link": "https://gruenstromindex.de/",
           "description": "Green Power Index for Germany (Grünstromindex/GSI)",
@@ -6350,6 +6458,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "environment-luchtmeetnet"
+        },
+        {
+          "name": "Mycelium",
+          "link": "https://api.mycelium.global/docs/v1",
+          "description": "Corporate carbon emissions disclosures (scope 1, 2 and 3), company-reported and estimated",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "environment-mycelium"
         },
         {
           "name": "National Grid ESO",
@@ -6413,6 +6530,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "environment-pvwatts"
+        },
+        {
+          "name": "sensor.community",
+          "link": "https://github.com/opendata-stuttgart/meta/wiki/EN-APIs",
+          "description": "Community air quality sensor network data worldwide",
+          "auth": "User-Agent",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-sensor-community"
         },
         {
           "name": "Solematica",
@@ -6632,6 +6758,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-brieftape"
+        },
+        {
+          "name": "CardBinCheck",
+          "link": "https://cardbincheck.com/bin-lookup-api",
+          "description": "Card BIN/IIN lookup: network, issuer, country and card type for the first 6-8 digits",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-cardbincheck"
         },
         {
           "name": "Citi",
@@ -6911,6 +7046,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-ig"
+        },
+        {
+          "name": "India GST HSN & SAC",
+          "link": "https://gst-hsn-sac-api.vercel.app/docs",
+          "description": "Indian GST HSN and SAC classification code lookup and search",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-india-gst-hsn-sac"
         },
         {
           "name": "Indian Mutual Fund",
@@ -9637,6 +9781,15 @@
           "slug": "government-bidledger"
         },
         {
+          "name": "Boletín Oficial del Estado (BOE)",
+          "link": "https://www.boe.es/datosabiertos/",
+          "description": "Official Spanish State Gazette open data: laws, summaries and XML/JSON APIs",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "government-bolet-n-oficial-del-estado-boe"
+        },
+        {
           "name": "Brazil",
           "link": "https://brasilapi.com.br/",
           "description": "Community driven API for Brazil Public Data",
@@ -10004,6 +10157,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-gun-policy"
+        },
+        {
+          "name": "India LGD Index",
+          "link": "https://india-lgd-index-api.vercel.app/docs",
+          "description": "Free, keyless Indian states, districts, sub-districts and development blocks with LGD codes",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-india-lgd-index"
         },
         {
           "name": "Indian Mandi Prices",
@@ -10652,6 +10814,15 @@
           "https": true,
           "cors": "yes",
           "slug": "government-votepredictor"
+        },
+        {
+          "name": "Invokely",
+          "slug": "government-invokely",
+          "description": "Cited official statistics by indicator and place, with periods and units for AI agents",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "link": "https://invokely.ai/docs"
         }
       ]
     },
@@ -11018,6 +11189,15 @@
           "https": true,
           "cors": "no",
           "slug": "health-stanza-udi-decoder"
+        },
+        {
+          "name": "THC Open Mindfulness Resources",
+          "link": "https://api.theholisticcare.com/docs",
+          "description": "Free mindfulness resources and research metadata",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-thc-open-mindfulness-resources"
         },
         {
           "name": "Urgences Québec",
@@ -12823,6 +13003,15 @@
           "slug": "open-data-peakmetrics"
         },
         {
+          "name": "ProductGuru",
+          "link": "https://myproduct.guru/lookup/",
+          "description": "Consumer product-safety recall notices from 11 government registers, looked up by barcode (EAN/GTIN)",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-productguru"
+        },
+        {
           "name": "PublicDataHub",
           "link": "https://publicdatahub.org/api",
           "description": "US public schools, hospitals and federal agency budgets as JSON/CSV, with provenance",
@@ -14008,6 +14197,15 @@
           "slug": "science-math-idigbio"
         },
         {
+          "name": "iNaturalist",
+          "link": "https://api.inaturalist.org/v1/docs/",
+          "description": "Citizen-science wildlife observations with species identification and mapping",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-inaturalist"
+        },
+        {
           "name": "inspirehep.net",
           "link": "https://github.com/inspirehep/rest-api-doc",
           "description": "High Energy Physics info. system",
@@ -15080,6 +15278,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-pangolinfo-amazon-data"
+        },
+        {
+          "name": "Profitvana",
+          "link": "https://www.profitvana.com/developers",
+          "description": "Seller fees for 31 marketplaces and payment processors, verified monthly",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-profitvana"
         },
         {
           "name": "Rappi",
@@ -16573,6 +16780,15 @@
           "slug": "text-analysis-detect-language"
         },
         {
+          "name": "eidosSpeech",
+          "link": "https://eidosspeech.xyz",
+          "description": "Free text-to-speech API with 1,200+ neural voices in 75+ languages",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "text-analysis-eidosspeech"
+        },
+        {
           "name": "ELI",
           "link": "https://nlp.insightera.co.th/docs/v1.0",
           "description": "Natural Language Processing Tools for Thai Language",
@@ -17249,6 +17465,15 @@
           "https": true,
           "cors": "yes",
           "slug": "transportation-tankerkoenig"
+        },
+        {
+          "name": "TransCAPI",
+          "link": "https://www.transcapi.com/docs",
+          "description": "Live bus and rail departures, vehicles, disruptions and journey planning for Great Britain",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-transcapi"
         },
         {
           "name": "TransitLand",
@@ -18187,6 +18412,15 @@
           "slug": "video-owen-wilson-wow"
         },
         {
+          "name": "RankFabrik Captions",
+          "link": "https://rankfabrik.com/produits/transcription",
+          "description": "Extract transcripts and captions from YouTube videos",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "video-rankfabrik-captions"
+        },
+        {
           "name": "Rendobar",
           "link": "https://rendobar.com",
           "description": "Hosted media processing over REST: transcode, caption, watermark video",
@@ -18533,6 +18767,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-euskalmet"
+        },
+        {
+          "name": "FMI Open Data",
+          "link": "https://en.ilmatieteenlaitos.fi/open-data",
+          "description": "Finnish weather, sea, climate and radar observations via open WFS",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "weather-fmi-open-data"
         },
         {
           "name": "Foreca",
