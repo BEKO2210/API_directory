@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2050,
+    "totalAPIs": 2059,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-10T03:08:29.413Z"
+    "lastUpdated": "2026-10-11T03:10:15.374Z"
   },
   "categories": [
     {
@@ -2078,7 +2078,7 @@
         },
         {
           "name": "CircleCI",
-          "link": "https://circleci.com/docs/api/v1-reference/",
+          "link": "https://circleci.com/docs/api/",
           "description": "Automate the software development process using continuous integration and continuous delivery",
           "auth": "apiKey",
           "https": true,
@@ -2120,7 +2120,7 @@
         },
         {
           "name": "0x",
-          "link": "https://0x.org/api",
+          "link": "https://docs.0x.org/",
           "description": "API for querying token and pool stats across various liquidity pools",
           "auth": "No",
           "https": true,
@@ -2138,7 +2138,7 @@
         },
         {
           "name": "Alchemy Ethereum",
-          "link": "https://docs.alchemy.com/alchemy/",
+          "link": "https://www.alchemy.com/docs/",
           "description": "Ethereum Node-as-a-Service Provider",
           "auth": "apiKey",
           "https": true,
@@ -2345,7 +2345,7 @@
         },
         {
           "name": "Bybit",
-          "link": "https://bybit-exchange.github.io/docs/linear/#t-introduction",
+          "link": "https://www.bybit.com/docs/v5/introduction",
           "description": "Cryptocurrency data feed and algorithmic trading",
           "auth": "apiKey",
           "https": true,
@@ -2417,7 +2417,7 @@
         },
         {
           "name": "Coinlib",
-          "link": "https://coinlib.io/apidocs",
+          "link": "https://coinlib.io/",
           "description": "Crypto Currency Prices",
           "auth": "apiKey",
           "https": true,
@@ -2875,15 +2875,6 @@
           "slug": "cryptocurrency-valr"
         },
         {
-          "name": "ScriptMasterLabs x402",
-          "link": "https://acp-x402-scriptmasterlabs.onrender.com",
-          "description": "100+ SEC, DeFi, crypto, and macro endpoints for AI agents via x402 micropayments",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "cryptocurrency-scriptmasterlabs-x402"
-        },
-        {
           "name": "ScriptMasterLabs MCP",
           "link": "https://mcp-x402.onrender.com",
           "description": "Model Context Protocol server with web search, social search & LLM chat paid via x402",
@@ -2891,6 +2882,15 @@
           "https": true,
           "cors": "yes",
           "slug": "cryptocurrency-scriptmasterlabs-mcp"
+        },
+        {
+          "name": "WhiteBIT",
+          "link": "https://docs.whitebit.com",
+          "description": "European cryptocurrency exchange",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-whitebit"
         },
         {
           "name": "WorldCoinIndex",
@@ -3820,6 +3820,15 @@
           "slug": "development-genderize-io"
         },
         {
+          "name": "GeraCode",
+          "link": "https://www.geracodigo.com.br/api-codigo-de-barras",
+          "description": "Barcode (EAN-13, UPC-A, Code 128, ITF-14) and QR code images, PNG or SVG. Docs in Portuguese",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-geracode"
+        },
+        {
           "name": "GETPing",
           "link": "https://www.getping.info",
           "description": "Trigger an email notification with a simple GET request",
@@ -4043,15 +4052,6 @@
           "https": true,
           "cors": "yes",
           "slug": "development-httpbin"
-        },
-        {
-          "name": "Httpbin Cloudflare",
-          "link": "https://cloudflare-quic.com/b/",
-          "description": "A Simple HTTP Request & Response Service with HTTP/3 Support by Cloudflare",
-          "auth": "No",
-          "https": true,
-          "cors": "yes",
-          "slug": "development-httpbin-cloudflare"
         },
         {
           "name": "Hipsum",
@@ -4451,7 +4451,7 @@
         },
         {
           "name": "OneSignal",
-          "link": "https://documentation.onesignal.com/docs/onesignal-api",
+          "link": "https://developers.onesignal.com/",
           "description": "Self-serve customer engagement solution for Push Notifications, Email, SMS & In-App",
           "auth": "apiKey",
           "https": true,
@@ -4556,15 +4556,6 @@
           "https": true,
           "cors": "yes",
           "slug": "development-peak"
-        },
-        {
-          "name": "Phone Specs",
-          "link": "https://phone-specs-api-production.up.railway.app/docs",
-          "description": "Real-time smartphone specifications database for 263 devices",
-          "auth": "No",
-          "https": true,
-          "cors": "yes",
-          "slug": "development-phone-specs"
         },
         {
           "name": "Postman",
@@ -5015,6 +5006,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-talordata"
+        },
+        {
+          "name": "TheQRCode",
+          "link": "https://theqrcode.io/qr-code-api",
+          "description": "Generate QR codes for URLs, WiFi, contact cards, email and text, with custom colors and styling",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-theqrcode"
         },
         {
           "name": "Thunder Client",
@@ -6017,7 +6017,7 @@
         },
         {
           "name": "Sendinblue",
-          "link": "https://developers.sendinblue.com/docs",
+          "link": "https://developers.brevo.com/",
           "description": "A service that provides solutions relating to marketing and/or transactional email and/or SMS",
           "auth": "apiKey",
           "https": true,
@@ -6932,7 +6932,7 @@
         },
         {
           "name": "Klarna",
-          "link": "https://docs.klarna.com/klarna-payments/api/payments-api/",
+          "link": "https://docs.klarna.com/klarna-payments/",
           "description": "Klarna payment and shopping service",
           "auth": "apiKey",
           "https": true,
@@ -7181,6 +7181,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-tax-data"
+        },
+        {
+          "name": "TickerInside",
+          "link": "https://tickerinside.com/api/",
+          "description": "Holdings of every US ETF, which ETFs hold a stock, and overlap between funds, each dated",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-tickerinside"
         },
         {
           "name": "TickerLayer",
@@ -8374,15 +8383,6 @@
           "slug": "games-comics-riot-games"
         },
         {
-          "name": "RPS 101",
-          "link": "https://rps101.pythonanywhere.com/api",
-          "description": "Rock, Paper, Scissors with 101 objects",
-          "auth": "No",
-          "https": true,
-          "cors": "yes",
-          "slug": "games-comics-rps-101"
-        },
-        {
           "name": "RuneScape",
           "link": "https://runescape.wiki/w/Application_programming_interface",
           "description": "RuneScape and OSRS RPGs information",
@@ -9226,6 +9226,15 @@
           "slug": "geocoding-moradas"
         },
         {
+          "name": "Network Data Labs",
+          "link": "https://www.networkdatalabs.com/docs",
+          "description": "IP geolocation with accuracy radius, ASN, and flags for Tor exits, known VPN networks and hosting",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "geocoding-network-data-labs"
+        },
+        {
           "name": "Nominatim",
           "link": "https://nominatim.org/release-docs/latest/api/Overview/",
           "description": "Provides worldwide forward / reverse geocoding",
@@ -9287,6 +9296,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "geocoding-openstreetmap"
+        },
+        {
+          "name": "ParcelGPS",
+          "link": "https://www.parcelgps.com/en/developers",
+          "description": "European cadastral parcels by reference or point: coordinates, area, land use and geometry",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-parcelgps"
         },
         {
           "name": "Pinball Map",
@@ -9557,6 +9575,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "geocoding-ziptastic"
+        },
+        {
+          "name": "Zornade",
+          "link": "https://app.zornade.com/api/",
+          "description": "Cadastral parcels, geocoding, OMI valuations, risk and demographics for Italy (85M parcels)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-zornade"
         }
       ]
     },
@@ -9961,6 +9988,15 @@
           "slug": "government-gazette-data-uk"
         },
         {
+          "name": "GovContractScout",
+          "link": "https://scout.govbidportals.com",
+          "description": "US state & local government contracts: search, details, NAICS lookup and AI match scoring",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-govcontractscout"
+        },
+        {
           "name": "Gun Policy",
           "link": "https://www.gunpolicy.org/api",
           "description": "International firearm injury prevention and policy",
@@ -9977,6 +10013,15 @@
           "https": true,
           "cors": "yes",
           "slug": "government-indian-mandi-prices"
+        },
+        {
+          "name": "Indian MSP Benchmarks",
+          "link": "https://msp-benchmarks-api.vercel.app/docs",
+          "description": "Statutory Minimum Support Prices and CACP production cost benchmarks across 28 Indian crops",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-indian-msp-benchmarks"
         },
         {
           "name": "Indian Pincode",
@@ -10476,7 +10521,7 @@
         {
           "name": "OpenRegistry",
           "link": "https://openregistry.sophymarine.com",
-          "description": "Real-time queries to 27 national company registries (UK, FR, DE, IT, ES, KR + 21 more)",
+          "description": "Real-time queries to 80+ national company registries (UK, FR, DE, IT, ES, KR and more)",
           "auth": "OAuth",
           "https": true,
           "cors": "unknown",
@@ -10564,15 +10609,6 @@
           "slug": "government-uk-legislation-changes"
         },
         {
-          "name": "US Presidential Election Data by TogaTech",
-          "link": "https://uselection.togatech.org/api/",
-          "description": "Basic candidate data and live electoral vote counts for top two parties in US presidential election",
-          "auth": "No",
-          "https": true,
-          "cors": "no",
-          "slug": "government-us-presidential-election-data-by-togatech"
-        },
-        {
           "name": "USA.gov",
           "link": "https://www.usa.gov/developer",
           "description": "Authoritative information on U.S. programs, events, services and more",
@@ -10580,15 +10616,6 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-usa-gov"
-        },
-        {
-          "name": "US Federal Contracts & Grants",
-          "link": "https://government-data-api.onrender.com/docs",
-          "description": "US federal contracts, grants, and agency spending data updated daily",
-          "auth": "No",
-          "https": true,
-          "cors": "yes",
-          "slug": "government-us-federal-contracts-grants"
         },
         {
           "name": "USAspending.gov",
@@ -10632,15 +10659,6 @@
       "name": "Health",
       "slug": "health",
       "apis": [
-        {
-          "name": "Clinical Trials Directory",
-          "link": "https://trials.starfile.org/api",
-          "description": "Every clinical trial registered with ClinicalTrials.gov, indexed by condition and sponsor",
-          "auth": "No",
-          "https": true,
-          "cors": "yes",
-          "slug": "health-clinical-trials-directory"
-        },
         {
           "name": "CMS.gov",
           "link": "https://data.cms.gov/provider-data/",
@@ -11161,6 +11179,15 @@
           "slug": "jobs-herohunt-people-search"
         },
         {
+          "name": "HireLayer",
+          "link": "https://hirelayer.co/api-docs",
+          "description": "Parse resumes and job descriptions, normalize skills, match and rank candidates",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-hirelayer"
+        },
+        {
           "name": "Jobs2Careers",
           "link": "https://docs.talroo.com/api/search",
           "description": "Job aggregator",
@@ -11312,6 +11339,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "jobs-whatjobs"
+        },
+        {
+          "name": "Worklittle",
+          "link": "https://docs.worklittle.com",
+          "description": "Job search, over 4 million jobs",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-worklittle"
         },
         {
           "name": "ZipRecruiter",
@@ -11545,6 +11581,15 @@
           "slug": "machine-learning-keen-io"
         },
         {
+          "name": "Laya Decision Gateway",
+          "link": "https://laya.harshad.eu.org",
+          "description": "Sub-35ms AI gateway for prompt injection defense, support ticket triage & content moderation",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-laya-decision-gateway"
+        },
+        {
           "name": "Machinetutors",
           "link": "https://www.machinetutors.com/portfolio/MT_api.html",
           "description": "AI Solutions: Video/Image Classification & Tagging, NSFW, Icon/Image/Audio Search, NLP",
@@ -11570,6 +11615,15 @@
           "https": true,
           "cors": "yes",
           "slug": "machine-learning-messengerx-io"
+        },
+        {
+          "name": "Mistral AI",
+          "link": "https://docs.mistral.ai/api/",
+          "description": "High-performance LLM API by Mistral AI including Mistral and Mixtral models, with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-mistral-ai"
         },
         {
           "name": "Modelfax",
@@ -11610,7 +11664,7 @@
         {
           "name": "onomeo",
           "link": "https://onomeo.com/docs",
-          "description": "OpenAI-compatible, 47 LLMs, small check-in credits, strict limits, optional paid top-up, public beta",
+          "description": "OpenAI-compatible, about 30 free LLMs, 30 calls per 5 hours, optional pay-as-you-go, public beta",
           "auth": "apiKey",
           "https": true,
           "cors": "no",
@@ -12671,7 +12725,7 @@
         },
         {
           "name": "Nasdaq Data Link",
-          "link": "https://docs.data.nasdaq.com/",
+          "link": "https://data.nasdaq.com/",
           "description": "Stock market data",
           "auth": "apiKey",
           "https": true,
@@ -13510,6 +13564,15 @@
           "slug": "photography-cheetaho"
         },
         {
+          "name": "CompressGIF",
+          "link": "https://compressgif.net/docs",
+          "description": "Compress GIF files or HTTPS URLs with asynchronous jobs and target-size controls",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "photography-compressgif"
+        },
+        {
           "name": "Compresso",
           "link": "https://compresso.space/developers",
           "description": "Visually lossless image compression for PNG, JPEG and WebP",
@@ -13643,6 +13706,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "photography-lorem-picsum"
+        },
+        {
+          "name": "NexWall",
+          "link": "https://nexwall.kodnextech.com/wallpaper-api/docs",
+          "description": "Curated 4K portrait phone wallpapers across 50+ categories",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "photography-nexwall"
         },
         {
           "name": "ObjectCut",
@@ -13856,7 +13928,7 @@
         },
         {
           "name": "arXiv",
-          "link": "https://arxiv.org/help/api/user-manual",
+          "link": "https://info.arxiv.org/help/api/user-manual.html",
           "description": "Curated research-sharing platform: physics, mathematics, quantitative finance, and economics",
           "auth": "No",
           "https": true,
@@ -14572,6 +14644,15 @@
           "slug": "security-iplogs"
         },
         {
+          "name": "isMalicious",
+          "link": "https://ismalicious.com/api-docs",
+          "description": "Reputation of IPs, domains, URLs and file hashes from aggregated threat feeds, plus CVE lookups",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "security-ismalicious"
+        },
+        {
           "name": "LoginRadius",
           "link": "https://www.loginradius.com/docs/",
           "description": "Managed User Authentication Service",
@@ -15068,6 +15149,15 @@
           "https": true,
           "cors": "yes",
           "slug": "social-4chan"
+        },
+        {
+          "name": "API Direct",
+          "link": "https://apidirect.io/docs",
+          "description": "Real-time social media data from X, LinkedIn, Reddit, YouTube, Instagram, TikTok, Facebook and news",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-api-direct"
         },
         {
           "name": "Ayrshare",
@@ -16945,15 +17035,6 @@
           "slug": "transportation-cts"
         },
         {
-          "name": "FAA N-Number Registry",
-          "link": "https://n-number.starfile.org/api",
-          "description": "Every FAA-registered civil aircraft in the United States, lookup by N-number or Mode S hex code",
-          "auth": "No",
-          "https": true,
-          "cors": "yes",
-          "slug": "transportation-faa-n-number-registry"
-        },
-        {
           "name": "Grab",
           "link": "https://developer.grab.com/docs/",
           "description": "Track deliveries, ride fares, payments and loyalty points",
@@ -17072,7 +17153,7 @@
         },
         {
           "name": "OpenSky Network",
-          "link": "https://opensky-network.org/apidoc/index.html",
+          "link": "https://openskynetwork.github.io/opensky-api/",
           "description": "Free real-time ADS-B aviation data",
           "auth": "No",
           "https": true,
@@ -17654,7 +17735,7 @@
         },
         {
           "name": "owo",
-          "link": "https://owo.vc/api",
+          "link": "https://owo.vc/",
           "description": "A simple link obfuscator/shortener",
           "auth": "No",
           "https": true,
@@ -17699,7 +17780,7 @@
         },
         {
           "name": "Shrtlnk",
-          "link": "https://shrtlnk.dev/developer",
+          "link": "https://shrtlnk.dev/",
           "description": "Simple and efficient short link creation",
           "auth": "apiKey",
           "https": true,
