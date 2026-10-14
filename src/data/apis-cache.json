@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2086,
+    "totalAPIs": 2101,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-13T03:10:34.678Z"
+    "lastUpdated": "2026-10-14T03:04:35.912Z"
   },
   "categories": [
     {
@@ -1802,6 +1802,15 @@
           "https": true,
           "cors": "yes",
           "slug": "calendar-india-public-holidays"
+        },
+        {
+          "name": "Intellibook",
+          "link": "https://www.intellibookai.com/docs",
+          "description": "Appointment booking and availability API for salons and clinics",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "calendar-intellibook"
         },
         {
           "name": "LectServe",
@@ -4990,6 +4999,15 @@
           "slug": "development-snoopscan"
         },
         {
+          "name": "SolidPing",
+          "link": "https://docs.solidping.io/docs/api",
+          "description": "Create and run uptime checks, read results and incidents, manage status pages, with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-solidping"
+        },
+        {
           "name": "Sonar",
           "link": "https://github.com/Cgboal/SonarSearch",
           "description": "Project Sonar DNS Enumeration API",
@@ -5522,6 +5540,15 @@
           "https": true,
           "cors": "yes",
           "slug": "documents-productivity-docstruct"
+        },
+        {
+          "name": "Emboss",
+          "link": "https://getemboss.ai/docs",
+          "description": "Make PDF forms fillable, fill them from JSON or documents, and read filled forms back",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-emboss"
         },
         {
           "name": "FaturaPDF",
@@ -7102,6 +7129,15 @@
           "slug": "finance-liquilens"
         },
         {
+          "name": "Live SEC Form 4 Insider Trades",
+          "link": "https://rapidapi.com/crisp-point-studio-crisp-point-studio-default/api/live-sec-form-4-insider-trades",
+          "description": "Latest SEC Form 4 insider trading filings from EDGAR, by ticker or market-wide",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-live-sec-form-4-insider-trades"
+        },
+        {
           "name": "matchwire.win",
           "link": "https://matchwire.win/docs/",
           "description": "Matched prediction-market games across Kalshi, Polymarket US/Intl and Predict.fun",
@@ -8327,6 +8363,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "games-comics-marvel"
+        },
+        {
+          "name": "Master Setter",
+          "link": "https://api.master-setter.com",
+          "description": "Pokémon TCG cards and sets in 14 languages, with every printing and variant",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-master-setter"
         },
         {
           "name": "Minecraft Server Status",
@@ -11011,6 +11056,15 @@
           "slug": "health-erstat"
         },
         {
+          "name": "FDA Recalls",
+          "link": "https://rapidapi.com/crisp-point-studio-crisp-point-studio-default/api/live-fda-product-food-recalls",
+          "description": "Latest FDA food, drug and product recall notices as JSON with keyword search",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "health-fda-recalls"
+        },
+        {
           "name": "FindSaunaPlunge",
           "link": "https://findsaunaplunge.com/api/",
           "description": "US cold plunge and sauna venues with dated, source-quoted temperatures and prices",
@@ -11759,6 +11813,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "machine-learning-keen-io"
+        },
+        {
+          "name": "Lacuna",
+          "link": "https://lacuna.mergeinc.workers.dev/agents.md",
+          "description": "Public board where AI agents post problems as seeks and agents who solved them offer help",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "machine-learning-lacuna"
         },
         {
           "name": "Laya Decision Gateway",
@@ -12841,6 +12904,15 @@
           "slug": "open-data-kaggle"
         },
         {
+          "name": "Kvartiry-Phuket",
+          "link": "https://kvartiry-phuket.com/otkrytye-dannye/#english",
+          "description": "Russian-language Phuket real estate guides, asking prices, condo assessment rates, weather, beaches",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-kvartiry-phuket"
+        },
+        {
           "name": "LinkPreview",
           "link": "https://www.linkpreview.net",
           "description": "Get JSON formatted summary with title, description and preview image for any requested URL",
@@ -13888,6 +13960,15 @@
           "slug": "photography-lightdrift"
         },
         {
+          "name": "localscreenshot",
+          "link": "https://localscreenshot.com",
+          "description": "Screenshot or PDF rendering of any public page, from 227 countries",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "photography-localscreenshot"
+        },
+        {
           "name": "Lorem Picsum",
           "link": "https://picsum.photos/",
           "description": "Images from Unsplash",
@@ -14626,6 +14707,15 @@
           "slug": "security-censys"
         },
         {
+          "name": "CISA Known Exploited Vulnerabilities",
+          "link": "https://rapidapi.com/crisp-point-studio-crisp-point-studio-default/api/live-cisa-cybersecurity-vulnerabilities-kev",
+          "description": "CISA KEV catalog of actively exploited CVEs as JSON, filterable by vendor, with CWE and due dates",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "security-cisa-known-exploited-vulnerabilities"
+        },
+        {
           "name": "Classify",
           "link": "https://classify-web.herokuapp.com/#/api",
           "description": "Encrypting & decrypting text messages",
@@ -14840,6 +14930,15 @@
           "https": true,
           "cors": "yes",
           "slug": "security-iplogs"
+        },
+        {
+          "name": "IPScanner",
+          "link": "https://ipscanner.io/api-documentation",
+          "description": "IP network class (residential, mobile, hosting, VPN, residential proxy, Tor) with a confidence score",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-ipscanner"
         },
         {
           "name": "isMalicious",
@@ -15877,6 +15976,15 @@
           "slug": "sports-fitness-5dollarfootball"
         },
         {
+          "name": "AcesAPI",
+          "link": "https://acesapi.com/docs",
+          "description": "ATP and WTA tennis since 2007: match results, draws, rankings, head to head, surface Elo and odds",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-acesapi"
+        },
+        {
           "name": "API-FOOTBALL",
           "link": "https://www.api-football.com/documentation-v3",
           "description": "Get information about Football Leagues & Cups",
@@ -15983,6 +16091,15 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-fanline-wire"
+        },
+        {
+          "name": "FastballAPI",
+          "link": "https://fastballapi.com/docs",
+          "description": "MLB since 2015 plus college baseball: pitches, plate appearances, box scores and sportsbook odds",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-fastballapi"
         },
         {
           "name": "Fitbit",
@@ -18109,6 +18226,15 @@
           "slug": "vehicle-nhtsa"
         },
         {
+          "name": "NHTSA Vehicle Recalls",
+          "link": "https://rapidapi.com/crisp-point-studio-crisp-point-studio-default/api/live-nhtsa-vehicle-recalls",
+          "description": "NHTSA safety recalls by model year, make and model with component, consequence and remedy",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "vehicle-nhtsa-vehicle-recalls"
+        },
+        {
           "name": "ProblemsByVin",
           "link": "https://problemsbyvin.com/data/",
           "description": "Owner complaints, recalls and failure-mileage statistics by vehicle make, model and year",
@@ -18875,6 +19001,15 @@
           "https": true,
           "cors": "yes",
           "slug": "weather-nasa-power"
+        },
+        {
+          "name": "NOAA CO-OPS",
+          "link": "https://api.tidesandcurrents.noaa.gov/api/prod/",
+          "description": "US coastal tides, water levels, currents and meteorological observations",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "weather-noaa-co-ops"
         },
         {
           "name": "ODWeather",
