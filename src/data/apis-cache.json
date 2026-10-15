@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2121,
+    "totalAPIs": 2122,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-15T03:04:35.758Z"
+    "lastUpdated": "2026-10-15T03:45:24.743Z"
   },
   "categories": [
     {
@@ -5900,6 +5900,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "documents-productivity-zero-retention-pdf"
+        },
+        {
+          "name": "ReadGZH",
+          "slug": "documents-productivity-readgzh",
+          "description": "Read public WeChat articles as Markdown for AI assistants and research workflows",
+          "auth": "",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://readgzh.site/"
         }
       ]
     },
