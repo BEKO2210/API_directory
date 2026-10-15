@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2122,
+    "totalAPIs": 2123,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-15T03:45:24.743Z"
+    "lastUpdated": "2026-10-15T03:46:26.792Z"
   },
   "categories": [
     {
@@ -5276,6 +5276,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://github.com/kepler-ops-maker/proof-random-api"
+        },
+        {
+          "name": "FaviconDL",
+          "slug": "development-favicondl",
+          "description": "Fetch website favicons, icon sizes and download links without an API key",
+          "auth": "",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://favicondl.com/"
         }
       ]
     },

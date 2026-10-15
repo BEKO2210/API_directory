@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-10-15T03:45:24.549Z"
+    "lastUpdated": "2026-10-15T03:46:26.533Z"
   },
   "add": [
     {
@@ -220,6 +220,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 93
+    },
+    {
+      "name": "FaviconDL",
+      "link": "https://favicondl.com/",
+      "description": "Fetch website favicons, icon sizes and download links without an API key",
+      "category": "Development",
+      "auth": "",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 94
     }
   ],
   "remove": [],
