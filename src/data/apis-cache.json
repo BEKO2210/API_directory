@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2123,
+    "totalAPIs": 2152,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-15T03:46:26.792Z"
+    "lastUpdated": "2026-10-15T21:45:15.710Z"
   },
   "categories": [
     {
@@ -323,7 +323,7 @@
         },
         {
           "name": "MangaDex",
-          "link": "https://api.mangadex.org/docs.html",
+          "link": "https://api.mangadex.org/docs/",
           "description": "Manga Database and Community",
           "auth": "apiKey",
           "https": true,
@@ -338,6 +338,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "anime-mangapi"
+        },
+        {
+          "name": "MangaUpdates",
+          "link": "https://api.mangaupdates.com/",
+          "description": "Manga database: series, releases, groups and reading lists",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "anime-mangaupdates"
         },
         {
           "name": "MyAnimeList",
@@ -1447,13 +1456,13 @@
           "slug": "business-invovate"
         },
         {
-          "name": "Katalis UK Company Enrichment",
+          "name": "Katalis",
           "link": "https://meetkatalis.com/apis",
-          "description": "Verified UK company profiles with an AI summary and accuracy score, from Companies House data",
+          "description": "UK company checks: payment practices, contracts won, registers, filed accounts, change feed",
           "auth": "apiKey",
           "https": true,
-          "cors": "unknown",
-          "slug": "business-katalis-uk-company-enrichment"
+          "cors": "no",
+          "slug": "business-katalis"
         },
         {
           "name": "KontragentPro",
@@ -2470,6 +2479,15 @@
           "slug": "cryptocurrency-coinmarketcap"
         },
         {
+          "name": "Coinmico",
+          "link": "https://docs.coinmico.com",
+          "description": "Crypto prices, volume and liquidity measured from real trades on 50+ exchanges and DEXs",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-coinmico"
+        },
+        {
           "name": "CoinNudge",
           "link": "https://coinnudge.site/data/api-docs",
           "description": "Current crypto market breadth, funding and open-interest research datasets",
@@ -2540,6 +2558,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-cryptingup"
+        },
+        {
+          "name": "Crypto Vision",
+          "link": "https://cryptocurrency.cv/developers",
+          "description": "Free crypto news aggregator with market context, JSON REST and RSS",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-crypto-vision"
         },
         {
           "name": "CryptoCompare",
@@ -3424,6 +3451,15 @@
           "slug": "development-agify-io"
         },
         {
+          "name": "Allscreenshots",
+          "link": "https://allscreenshots.com",
+          "description": "Website screenshots and PDFs with full-page capture, dark mode and ad blocking",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-allscreenshots"
+        },
+        {
           "name": "Amazonscraperapi",
           "link": "https://amazonscraperapi.com",
           "description": "Amazon product, search & batch scraping API with residential proxies (1000 free)",
@@ -3827,6 +3863,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-downstatus"
+        },
+        {
+          "name": "EndOfLife.date",
+          "link": "https://endoflife.date/docs/api",
+          "description": "Software end-of-life dates and support lifecycles",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-endoflife-date"
         },
         {
           "name": "ExtendsClass JSON Storage",
@@ -4747,6 +4792,15 @@
           "slug": "development-qrcode-monkey"
         },
         {
+          "name": "QRX",
+          "link": "https://qrx.codes/developers",
+          "description": "Artistic, branded QR codes from a text prompt and a link, checked to scan",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-qrx"
+        },
+        {
           "name": "QuickChart",
           "link": "https://quickchart.io/",
           "description": "Generate chart and graph images",
@@ -5285,6 +5339,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://favicondl.com/"
+        },
+        {
+          "name": "Breadcrumbs",
+          "slug": "development-breadcrumbs",
+          "description": "HTTP mailbox for asynchronous agent-to-human correspondence",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "link": "https://breadcrumbs-mailbox.pages.dev/discover"
         }
       ]
     },
@@ -6496,6 +6559,15 @@
           "slug": "environment-danish-data-service-energi"
         },
         {
+          "name": "EIA Open Data",
+          "link": "https://www.eia.gov/opendata/",
+          "description": "US energy statistics: electricity, petroleum, gas",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "environment-eia-open-data"
+        },
+        {
           "name": "GridHub",
           "link": "https://grid-hub.app/developers",
           "description": "Live wholesale electricity prices and demand across 25 grid zones",
@@ -6656,6 +6728,15 @@
           "https": true,
           "cors": "yes",
           "slug": "environment-sustainmetrics"
+        },
+        {
+          "name": "Sähkön hinta nyt",
+          "link": "https://xn--shknhintanyt-gcb8w.org/integraatiot/",
+          "description": "Finnish and Nordic day-ahead electricity spot prices (15-minute), cheapest hours",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-s-hk-n-hinta-nyt"
         },
         {
           "name": "UK Carbon Intensity",
@@ -7244,6 +7325,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-moov"
+        },
+        {
+          "name": "Nigeria PAYE",
+          "link": "https://www.orionsoftlimited.com/developers",
+          "description": "Nigerian income tax (PAYE) and take-home pay under the Nigeria Tax Act 2025",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-nigeria-paye"
         },
         {
           "name": "NORTH7 Agent",
@@ -10204,6 +10294,15 @@
           "slug": "government-editalmd"
         },
         {
+          "name": "Election",
+          "link": "https://election.org/data/api",
+          "description": "Source-linked U.S. election and civic records with coverage limits",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-election"
+        },
+        {
           "name": "EPA",
           "link": "https://www.epa.gov/developers/data-data-products#apis",
           "description": "Web services and data sets from the US Environmental Protection Agency",
@@ -10373,6 +10472,15 @@
           "https": true,
           "cors": "yes",
           "slug": "government-localgov-jp"
+        },
+        {
+          "name": "MORVS",
+          "link": "https://morvs.ai/api/",
+          "description": "Source-linked US regulatory and public records: SEC filings, enforcement actions, recalls",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-morvs"
         },
         {
           "name": "National Park Service, US",
@@ -11119,6 +11227,15 @@
           "slug": "health-cure-cancer-with-ai"
         },
         {
+          "name": "DailyMed",
+          "link": "https://dailymed.nlm.nih.gov/dailymed/app-support-web-services.cfm",
+          "description": "FDA drug labeling and package insert information",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "health-dailymed"
+        },
+        {
           "name": "Dataflow Kit COVID-19",
           "link": "https://covid-19.dataflowkit.com",
           "description": "COVID-19 live statistics into sites per hour",
@@ -11263,6 +11380,15 @@
           "slug": "health-myvaccination"
         },
         {
+          "name": "NHS Health A-Z",
+          "link": "https://digital.nhs.uk/developer/api-catalogue/health-a-to-z",
+          "description": "NHS conditions, medicines and guidance",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "health-nhs-health-a-z"
+        },
+        {
           "name": "NPPES",
           "link": "https://npiregistry.cms.hhs.gov/registry/help-api",
           "description": "National Plan & Provider Enumeration System, info on healthcare providers registered in US",
@@ -11299,6 +11425,15 @@
           "slug": "health-open-disease"
         },
         {
+          "name": "Open Targets",
+          "link": "https://platform-docs.opentargets.org/",
+          "description": "Gene-disease-drug target associations",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-open-targets"
+        },
+        {
           "name": "openFDA",
           "link": "https://open.fda.gov",
           "description": "Public FDA data about drugs, devices and foods",
@@ -11324,6 +11459,15 @@
           "https": true,
           "cors": "yes",
           "slug": "health-quarantine"
+        },
+        {
+          "name": "RxNorm",
+          "link": "https://lhncbc.nlm.nih.gov/RxNav/APIs/RxNormAPIs.html",
+          "description": "Normalized drug names, RxCUIs and NDC codes",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-rxnorm"
         },
         {
           "name": "Stanza DSCSA Verifier",
@@ -12110,6 +12254,15 @@
           "https": true,
           "cors": "yes",
           "slug": "machine-learning-statlyte"
+        },
+        {
+          "name": "Tanvo",
+          "link": "https://tanvo.ai/developers/api",
+          "description": "Image, video and song generation on 30 AI models (Nano Banana, Kling, Veo, Suno), with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-tanvo"
         },
         {
           "name": "TensorFeed",
@@ -13372,6 +13525,15 @@
           "slug": "open-data-urban-observatory"
         },
         {
+          "name": "Verified Handles",
+          "link": "https://verifiedhandles.org/developers",
+          "description": "Official social media handles and identifiers of 155,000+ notable people and organisations",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-verified-handles"
+        },
+        {
           "name": "Voidly",
           "link": "https://voidly.ai/api-docs",
           "description": "Internet censorship measurements, incidents, and ISP-level blocking data across 126 countries",
@@ -14386,6 +14548,15 @@
           "slug": "science-math-datacite"
         },
         {
+          "name": "ENA",
+          "link": "https://www.ebi.ac.uk/ena/browser/api/swagger-ui/index.html",
+          "description": "Nucleotide sequences, genomes and raw reads archive",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-ena"
+        },
+        {
           "name": "Europe PMC",
           "link": "https://europepmc.org/RestfulWebService",
           "description": "Life-science literature search with abstracts, citations and full-text links",
@@ -14458,6 +14629,15 @@
           "slug": "science-math-itis"
         },
         {
+          "name": "KEGG",
+          "link": "https://www.kegg.jp/kegg/rest/keggapi.html",
+          "description": "Genes, pathways, compounds and reactions",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "science-math-kegg"
+        },
+        {
           "name": "Launch Library 2",
           "link": "https://thespacedevs.com/llapi",
           "description": "Spaceflight launches and events database",
@@ -14467,6 +14647,15 @@
           "slug": "science-math-launch-library-2"
         },
         {
+          "name": "Macrostrat",
+          "link": "https://macrostrat.org/api",
+          "description": "Geologic maps, rock columns and stratigraphy data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-macrostrat"
+        },
+        {
           "name": "Materials Platform for Data Science",
           "link": "https://mpds.io",
           "description": "Curated experimental data for materials science",
@@ -14474,6 +14663,15 @@
           "https": true,
           "cors": "no",
           "slug": "science-math-materials-platform-for-data-science"
+        },
+        {
+          "name": "MathJS",
+          "link": "https://api.mathjs.org/",
+          "description": "Evaluate math expressions via GET or POST as JSON",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-mathjs"
         },
         {
           "name": "Minor Planet Center",
@@ -14521,6 +14719,15 @@
           "slug": "science-math-nasa-ads"
         },
         {
+          "name": "NCBI E-utilities",
+          "link": "https://www.ncbi.nlm.nih.gov/books/NBK25501/",
+          "description": "Biomedical literature, sequences and gene databases",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-ncbi-e-utilities"
+        },
+        {
           "name": "Newton",
           "link": "https://newton.vercel.app",
           "description": "Symbolic and Arithmetic Math Calculator",
@@ -14546,6 +14753,15 @@
           "https": true,
           "cors": "no",
           "slug": "science-math-numbers"
+        },
+        {
+          "name": "OBIS",
+          "link": "https://manual.obis.org/access",
+          "description": "Global marine species occurrence and distribution data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-obis"
         },
         {
           "name": "Ocean Facts",
@@ -14636,6 +14852,15 @@
           "https": true,
           "cors": "yes",
           "slug": "science-math-remote-calc"
+        },
+        {
+          "name": "SatNOGS",
+          "link": "https://docs.satnogs.org/projects/satnogs-network/en/stable/api.html",
+          "description": "Satellite observations from open ground stations",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "science-math-satnogs"
         },
         {
           "name": "Semantic Scholar",
@@ -14762,6 +14987,15 @@
           "https": true,
           "cors": "no",
           "slug": "science-math-world-bank"
+        },
+        {
+          "name": "WoRMS",
+          "link": "https://www.marinespecies.org/rest/",
+          "description": "Marine species taxonomy, synonyms and distributions",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "science-math-worms"
         },
         {
           "name": "xMath",
@@ -15467,6 +15701,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-mercadolibre"
+        },
+        {
+          "name": "Nuvinty",
+          "link": "https://nuvinty.com/api-docs",
+          "description": "UK luxury list prices, price history, increases and partner pre-owned asking prices",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-nuvinty"
         },
         {
           "name": "Octopart",
@@ -17674,6 +17917,15 @@
           "slug": "transportation-openvan"
         },
         {
+          "name": "Pumperly",
+          "link": "https://geiserx.github.io/Pumperly/reference/api/",
+          "description": "Fuel prices and EV chargers near a point, in a map area or along a route, as GeoJSON",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "transportation-pumperly"
+        },
+        {
           "name": "Railway Transport for France",
           "link": "https://www.digital.sncf.com/startup/api",
           "description": "SNCF public API",
@@ -19163,6 +19415,15 @@
           "https": true,
           "cors": "no",
           "slug": "weather-meltema"
+        },
+        {
+          "name": "Met Office DataHub",
+          "link": "https://datahub.metoffice.gov.uk/docs/",
+          "description": "UK weather forecasts and climate data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "weather-met-office-datahub"
         },
         {
           "name": "Météo-France",
