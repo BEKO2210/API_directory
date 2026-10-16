@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2152,
+    "totalAPIs": 2153,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-16T03:04:27.711Z"
+    "lastUpdated": "2026-10-16T10:48:10.183Z"
   },
   "categories": [
     {
@@ -16346,6 +16346,15 @@
           "https": true,
           "cors": "no",
           "slug": "social-xflux"
+        },
+        {
+          "name": "Instagram Scraper Real-Time",
+          "slug": "social-instagram-scraper-real-time",
+          "description": "Real-time public Instagram profiles, posts, Reels, comments and tagged posts via RapidAPI",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "link": "https://rapidapi.com/elijahme2000/api/instagram-scraper-api-real-time-affordable"
         }
       ]
     },

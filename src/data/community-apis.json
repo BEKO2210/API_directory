@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-10-15T21:45:15.451Z"
+    "lastUpdated": "2026-10-16T10:48:09.568Z"
   },
   "add": [
     {
@@ -240,6 +240,16 @@
       "https": true,
       "cors": "no",
       "source_issue": 95
+    },
+    {
+      "name": "Instagram Scraper Real-Time",
+      "link": "https://rapidapi.com/elijahme2000/api/instagram-scraper-api-real-time-affordable",
+      "description": "Real-time public Instagram profiles, posts, Reels, comments and tagged posts via RapidAPI",
+      "category": "Social",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 96
     }
   ],
   "remove": [],
