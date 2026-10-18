@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2153,
+    "totalAPIs": 2172,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-17T03:04:09.455Z"
+    "lastUpdated": "2026-10-18T03:04:28.303Z"
   },
   "categories": [
     {
@@ -674,6 +674,15 @@
           "https": true,
           "cors": "yes",
           "slug": "art-design-face-shape-guide-lookup"
+        },
+        {
+          "name": "Favicondl",
+          "link": "https://favicondl.com/documentation.html",
+          "description": "Get any website's favicon by URL (SVG/PNG/ICO), with JSON metadata and fallbacks",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-favicondl"
         },
         {
           "name": "Harvard Art Museums",
@@ -1427,6 +1436,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "business-google-analytics"
+        },
+        {
+          "name": "gstinapi",
+          "link": "https://www.gstinapi.in/docs",
+          "description": "Verify Indian GST numbers (GSTIN): legal name, status, address and return filing history; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "business-gstinapi"
         },
         {
           "name": "Instatus",
@@ -2866,6 +2884,15 @@
           "slug": "cryptocurrency-okex"
         },
         {
+          "name": "Paribu",
+          "link": "https://docs.paribu.com/api",
+          "description": "Turkish cryptocurrency exchange with real-time market data, trading and WebSocket streams",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "cryptocurrency-paribu"
+        },
+        {
           "name": "Poloniex",
           "link": "https://docs.poloniex.com",
           "description": "US based digital asset exchange",
@@ -3000,8 +3027,8 @@
         {
           "name": "Exchangerate.host",
           "link": "https://exchangerate.host?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
-          "description": "Free foreign exchange & crypto rates API",
-          "auth": "No",
+          "description": "Foreign exchange & crypto rates API (keyless access ended 2023)",
+          "auth": "apiKey",
           "https": true,
           "cors": "unknown",
           "slug": "currency-exchange-exchangerate-host"
@@ -3730,6 +3757,15 @@
           "slug": "development-cloudflare-trace"
         },
         {
+          "name": "Codeberg",
+          "link": "https://codeberg.org/api/swagger",
+          "description": "Git hosting, repos and issues via Gitea API",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-codeberg"
+        },
+        {
           "name": "Codex",
           "link": "https://github.com/Jaagrav/CodeX",
           "description": "Online Compiler for Various Languages",
@@ -3782,6 +3818,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-crawl-readiness"
+        },
+        {
+          "name": "CurlShot",
+          "link": "https://curlshot.com/docs",
+          "description": "Screenshots, PDFs and scrolling videos of any URL, HTML or Markdown; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-curlshot"
         },
         {
           "name": "Databricks",
@@ -5258,6 +5303,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-vornamencheck"
+        },
+        {
+          "name": "W3C Validator",
+          "link": "https://validator.w3.org/docs/api.html",
+          "description": "Validate HTML and check markup errors",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "development-w3c-validator"
         },
         {
           "name": "Wandbox",
@@ -8797,6 +8851,15 @@
           "slug": "games-comics-seedfinder"
         },
         {
+          "name": "Social Casino Index",
+          "link": "https://socialcasinoindex.com/data/",
+          "description": "Daily-checked US social casino toplist: signup bonuses, payout times, minimums, sources",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-social-casino-index"
+        },
+        {
           "name": "SpaceTradersAPI",
           "link": "https://spacetraders.io?rel=pub-apis",
           "description": "A playable inter-galactic space trading MMOAPI",
@@ -9712,6 +9775,15 @@
           "slug": "geocoding-positionstack"
         },
         {
+          "name": "PostalCodeCheck",
+          "link": "https://postalcodecheck.com/postal-code-api",
+          "description": "City, region and coordinates for 887,000+ postal codes across 95 countries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-postalcodecheck"
+        },
+        {
           "name": "Postali",
           "link": "https://postali.app/api",
           "description": "Mexico Zip Codes API",
@@ -9977,6 +10049,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-ai-law-tracker"
+        },
+        {
+          "name": "apipj",
+          "link": "https://apipj.com.br/docs",
+          "description": "Brazilian company data by CNPJ from Receita Federal open data, incl. alphanumeric CNPJ; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-apipj"
         },
         {
           "name": "Ayes and Noes",
@@ -10942,6 +11023,15 @@
           "slug": "government-openregistry"
         },
         {
+          "name": "OpenStates",
+          "link": "https://openstates.org/api/",
+          "description": "US state legislature bills and lawmakers",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "government-openstates"
+        },
+        {
           "name": "PRC Exam Schedule",
           "link": "https://api.whenisthenextboardexam.com/docs/",
           "description": "Unofficial Philippine Professional Regulation Commission's examination schedule",
@@ -10958,6 +11048,15 @@
           "https": true,
           "cors": "no",
           "slug": "government-radar-cnpj"
+        },
+        {
+          "name": "Regulations.gov",
+          "link": "https://open.gsa.gov/api/regulationsgov/",
+          "description": "US federal rulemaking comments and dockets",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "government-regulations-gov"
         },
         {
           "name": "Represent by Open North",
@@ -12191,6 +12290,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "machine-learning-perspective"
+        },
+        {
+          "name": "QuelLLM",
+          "link": "https://quelllm.fr/api/",
+          "description": "Open-weight language model catalogue with memory requirements and installation metadata",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-quelllm"
         },
         {
           "name": "Requesty",
@@ -15586,6 +15694,15 @@
       "slug": "shopping",
       "apis": [
         {
+          "name": "ARC",
+          "link": "https://www.arcreport.ai/developers",
+          "description": "Open data on whether AI shopping agents can reach checkout at specific online stores",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-arc"
+        },
+        {
           "name": "Best Buy",
           "link": "https://bestbuyapis.github.io/api-documentation/#overview",
           "description": "Products, Buying Options, Categories, Recommendations, Stores and Commerce",
@@ -16426,6 +16543,15 @@
           "slug": "sports-fitness-bet-better"
         },
         {
+          "name": "BirdieAPI",
+          "link": "https://birdieapi.com/docs",
+          "description": "PGA Tour golf since 2001: leaderboards, hole-by-hole scores, courses, ratings and major winner odds",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-birdieapi"
+        },
+        {
           "name": "Canadian Football League (CFL)",
           "link": "http://api.cfl.ca/",
           "description": "Official JSON API providing real-time league, team and player statistics about the CFL",
@@ -16478,6 +16604,15 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-discgolf"
+        },
+        {
+          "name": "DunkAPI",
+          "link": "https://dunkapi.com/docs",
+          "description": "NBA, WNBA and college basketball: play-by-play, shot locations, box scores and sportsbook odds",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-dunkapi"
         },
         {
           "name": "Ergast F1",
@@ -16568,6 +16703,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "sports-fitness-football-data"
+        },
+        {
+          "name": "HaterPicks",
+          "link": "https://www.haterpicks.app/api",
+          "description": "Australian sports odds and player props from every major Australian bookmaker, free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "sports-fitness-haterpicks"
         },
         {
           "name": "JCDecaux Bike",
@@ -16856,6 +17000,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "sports-fitness-strava"
+        },
+        {
+          "name": "StrikerAPI",
+          "link": "https://strikerapi.com/docs",
+          "description": "Football from 16 leagues incl. Premier League and MLS: lineups, shot maps, xG and odds",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-strikerapi"
         },
         {
           "name": "SuredBits",
@@ -17204,6 +17357,15 @@
           "https": true,
           "cors": "yes",
           "slug": "test-data-supercrontab-mock-endpoints"
+        },
+        {
+          "name": "TestingAPIs",
+          "link": "https://testingapis.com/docs/",
+          "description": "Free fake REST API with products, posts, todos, any HTTP status code and request echo",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "test-data-testingapis"
         },
         {
           "name": "This Person Does not Exist",
@@ -17582,6 +17744,15 @@
           "https": true,
           "cors": "yes",
           "slug": "transportation-aether-x-port-congestion"
+        },
+        {
+          "name": "AirportMiles",
+          "link": "https://airportmiles.com/api",
+          "description": "Airport codes, distances, routes and passenger numbers as static JSON files",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-airportmiles"
         },
         {
           "name": "airportsapi",
