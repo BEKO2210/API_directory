@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2172,
+    "totalAPIs": 2179,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-19T03:05:20.560Z"
+    "lastUpdated": "2026-10-20T03:04:34.469Z"
   },
   "categories": [
     {
@@ -1732,6 +1732,15 @@
       "slug": "calendar",
       "apis": [
         {
+          "name": "Africa Compliance Data",
+          "link": "https://africacompliancedata.com/docs",
+          "description": "Public holidays and business days for all 54 African countries, from official sources",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "calendar-africa-compliance-data"
+        },
+        {
           "name": "caldays",
           "link": "https://caldays.com/api",
           "description": "Public holidays for 195+ countries",
@@ -1766,6 +1775,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "calendar-church-calendar"
+        },
+        {
+          "name": "CountdownsHQ",
+          "link": "https://countdownshq.com/developers",
+          "description": "Dates and timezone-correct countdowns for 150+ holidays and observances in 18 countries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "calendar-countdownshq"
         },
         {
           "name": "Czech Namedays Calendar",
@@ -6277,6 +6295,15 @@
           "slug": "email-mailtrap"
         },
         {
+          "name": "Nitrosend",
+          "link": "https://docs.nitrosend.com/api",
+          "description": "Send marketing and transactional email; manage contacts, segments and flows",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-nitrosend"
+        },
+        {
           "name": "PostStack",
           "link": "https://poststack.dev/docs",
           "description": "EU-hosted email API for transactional and marketing email, with contacts, broadcasts, and analytics",
@@ -7826,6 +7853,15 @@
           "https": true,
           "cors": "yes",
           "slug": "food-drink-exactcup"
+        },
+        {
+          "name": "FiberUp Fiber Database",
+          "link": "https://fiberup.app/data/",
+          "description": "Dietary fiber per serving and per 100 g, split into soluble and insoluble, for ~200 common foods",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "food-drink-fiberup-fiber-database"
         },
         {
           "name": "Food Info",
@@ -11131,6 +11167,15 @@
           "slug": "government-uk-legislation-changes"
         },
         {
+          "name": "UK Public Tenders by Trade",
+          "link": "https://tools.gptshopltd.com/api/uk-tenders/",
+          "description": "Live open UK public sector tenders by trade from Find a Tender and Contracts Finder (OGL v3.0)",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-uk-public-tenders-by-trade"
+        },
+        {
           "name": "USAspending.gov",
           "link": "https://api.usaspending.gov/",
           "description": "US federal spending data",
@@ -11834,6 +11879,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "jobs-open-skills"
+        },
+        {
+          "name": "Present of AI",
+          "link": "https://presentofai.com/developers",
+          "description": "AI company profiles, open AI jobs and dated AI news, REST and MCP",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-present-of-ai"
         },
         {
           "name": "RankFabrik Jobs",
@@ -13523,6 +13577,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-socrata"
+        },
+        {
+          "name": "StackRates",
+          "link": "https://stackrates.ai/ask/",
+          "description": "VPS and cloud server prices from 46 providers, read daily from their own pricing pages and APIs",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-stackrates"
         },
         {
           "name": "Statistics of the World",
@@ -15979,15 +16042,6 @@
           "slug": "social-ayrshare"
         },
         {
-          "name": "aztro",
-          "link": "https://aztro.sameerkumar.website/",
-          "description": "Daily horoscope info for yesterday, today, and tomorrow",
-          "auth": "No",
-          "https": true,
-          "cors": "unknown",
-          "slug": "social-aztro"
-        },
-        {
           "name": "Blogger",
           "link": "https://developers.google.com/blogger/",
           "description": "The Blogger APIs allows client applications to view and update Blogger content",
@@ -16130,6 +16184,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-hashnode"
+        },
+        {
+          "name": "InsightSocial",
+          "link": "https://www.insightsocial.app/docs",
+          "description": "Public profiles, posts, comments and followers from 25 social platforms, free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-insightsocial"
         },
         {
           "name": "Instagram",
@@ -16277,7 +16340,7 @@
         },
         {
           "name": "Revolt",
-          "link": "https://developers.revolt.chat/api/",
+          "link": "https://developers.revolt.chat/",
           "description": "Revolt open source Discord alternative",
           "auth": "apiKey",
           "https": true,
@@ -16436,6 +16499,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-twitterapis"
+        },
+        {
+          "name": "TwittrAPI",
+          "link": "https://www.twittrapi.com/docs",
+          "description": "Public Twitter/X data: profiles, tweets, replies, search, followers, lists, communities, trends",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-twittrapi"
         },
         {
           "name": "vk",
@@ -16919,15 +16991,6 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-realtime-sports"
-        },
-        {
-          "name": "Sport Data",
-          "link": "https://sportdataapi.com",
-          "description": "Get sports data from all over the world",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "sports-fitness-sport-data"
         },
         {
           "name": "Sport List & Data",
@@ -19715,7 +19778,7 @@
         },
         {
           "name": "Pirate Weather",
-          "link": "https://pirateweather.net/en/latest/",
+          "link": "https://pirateweather.readthedocs.io/en/latest/",
           "description": "Free weather API with forecast data similar to Dark Sky",
           "auth": "No",
           "https": true,
