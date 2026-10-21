@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-10-16T10:48:09.568Z"
+    "lastUpdated": "2026-10-21T21:31:38.661Z"
   },
   "add": [
     {
@@ -250,6 +250,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 96
+    },
+    {
+      "name": "SanctionsKit",
+      "link": "https://www.sanctionskit.com/docs/quickstart",
+      "description": "Free synthetic sanctions screening sandbox for integration tests; production screening is paid",
+      "category": "Test Data",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 98
     }
   ],
   "remove": [],

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2179,
+    "totalAPIs": 2188,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-21T03:04:58.679Z"
+    "lastUpdated": "2026-10-21T21:31:39.085Z"
   },
   "categories": [
     {
@@ -1708,6 +1708,15 @@
           "slug": "business-ugc-vz"
         },
         {
+          "name": "Verif Entreprise FR",
+          "link": "https://api-production-24833.up.railway.app",
+          "description": "French company checks by SIREN: status, insolvency (BODACC), VAT (VIES); free preview",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-verif-entreprise-fr"
+        },
+        {
           "name": "Village",
           "link": "https://docs.village.ai",
           "description": "Person and company enrichment plus warm introduction paths through your network",
@@ -2819,6 +2828,15 @@
           "https": true,
           "cors": "yes",
           "slug": "cryptocurrency-madeonsol"
+        },
+        {
+          "name": "MarginPad",
+          "link": "https://marginpad.io/free-crypto-api/",
+          "description": "Crypto futures prices, candles, funding, open interest, long/short and liquidations, 9 exchanges",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-marginpad"
         },
         {
           "name": "Mempool",
@@ -8698,6 +8716,15 @@
           "slug": "games-comics-monster-hunter-world"
         },
         {
+          "name": "Online Sudoku - Sudokumax",
+          "link": "https://sudokumax.com/developers",
+          "description": "Free Sudoku puzzles, printable Sudoku worksheets and online play: https://sudokumax.com",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-online-sudoku-sudokumax"
+        },
+        {
           "name": "Open Trivia",
           "link": "https://opentdb.com/api_config.php",
           "description": "Trivia Questions",
@@ -9029,6 +9056,15 @@
           "https": true,
           "cors": "no",
           "slug": "games-comics-wargaming-net"
+        },
+        {
+          "name": "weBump",
+          "link": "https://developer.webump.app/",
+          "description": "Connect games to nearby players' profiles, small saves and recent visitors with consent",
+          "auth": "OAuth",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-webump"
         },
         {
           "name": "When is next MCU film",
@@ -12123,7 +12159,7 @@
         {
           "name": "GEN",
           "link": "https://gen.pro/docs#ai-agents",
-          "description": "Create and edit video projects, with credit-based AI media generation",
+          "description": "Creative AI video engineer for ads, AI UGC and microdramas; free editor and social publishing",
           "auth": "apiKey",
           "https": true,
           "cors": "yes",
@@ -13721,6 +13757,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-vuntum"
+        },
+        {
+          "name": "w14n",
+          "link": "https://api.w14n.dev/v1",
+          "description": "Brazilian company profiles by CNPJ, CNAE establishment counts and municipality coordinates",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-w14n"
         },
         {
           "name": "Warnely",
@@ -15661,6 +15706,15 @@
           "slug": "security-ssl-labs"
         },
         {
+          "name": "Tanod",
+          "link": "https://tanod.dev/",
+          "description": "Pay-per-call scans of smart contracts, addresses and MCP/skill packages; small free daily tier",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "security-tanod"
+        },
+        {
           "name": "Threat Jammer",
           "link": "https://threatjammer.com/docs/index",
           "description": "Risk scoring service from curated threat intelligence data",
@@ -17492,6 +17546,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "test-data-yes-no"
+        },
+        {
+          "name": "SanctionsKit",
+          "slug": "test-data-sanctionskit",
+          "description": "Free synthetic sanctions screening sandbox for integration tests; production screening is paid",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://www.sanctionskit.com/docs/quickstart"
         }
       ]
     },
@@ -18626,6 +18689,15 @@
           "https": true,
           "cors": "no",
           "slug": "transportation-velib-metropolis-paris-france"
+        },
+        {
+          "name": "Vessel Class Finder",
+          "link": "https://vesselclassfinder.com/blog/vessel-classification-api.html",
+          "description": "IACS class society, class status and survey dates for ships by IMO number",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-vessel-class-finder"
         },
         {
           "name": "Windsock",
@@ -19847,6 +19919,15 @@
           "https": true,
           "cors": "yes",
           "slug": "weather-us-weather"
+        },
+        {
+          "name": "Veabird",
+          "link": "https://veabird.com/api/v1",
+          "description": "Beach (sargassum, waves, hurricanes) and ski snow forecasts for 1,900+ resorts, no key",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "weather-veabird"
         },
         {
           "name": "Visual Crossing",
