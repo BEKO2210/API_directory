@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2189,
+    "totalAPIs": 2190,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-22T12:16:01.956Z"
+    "lastUpdated": "2026-10-22T22:03:39.150Z"
   },
   "categories": [
     {
@@ -8096,6 +8096,15 @@
           "https": true,
           "cors": "yes",
           "slug": "food-drink-zestful"
+        },
+        {
+          "name": "IndiaRestros API",
+          "slug": "food-drink-indiarestros-api",
+          "description": "Free keyless REST API and MCP for restaurants, menus, prices and timings across India",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://indiarestros.com/for-agents"
         }
       ]
     },

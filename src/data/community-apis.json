@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-10-22T11:48:53.032Z"
+    "lastUpdated": "2026-10-22T22:03:38.903Z"
   },
   "add": [
     {
@@ -270,6 +270,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 99
+    },
+    {
+      "name": "IndiaRestros API",
+      "link": "https://indiarestros.com/for-agents",
+      "description": "Free keyless REST API and MCP for restaurants, menus, prices and timings across India",
+      "category": "Food & Drink",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 101
     }
   ],
   "remove": [],
