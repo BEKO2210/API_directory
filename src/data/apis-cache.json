@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2188,
+    "totalAPIs": 2189,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-22T03:04:39.598Z"
+    "lastUpdated": "2026-10-22T11:48:53.316Z"
   },
   "categories": [
     {
@@ -16061,6 +16061,15 @@
           "https": true,
           "cors": "yes",
           "slug": "shopping-woocommerce"
+        },
+        {
+          "name": "SoldFetch",
+          "slug": "shopping-soldfetch",
+          "description": "Search eBay sold and active listings, browse categories, and retrieve item details via REST or MCP",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://docs.soldfetch.com"
         }
       ]
     },

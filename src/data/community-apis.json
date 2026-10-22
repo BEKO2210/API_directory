@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-10-21T21:31:38.661Z"
+    "lastUpdated": "2026-10-22T11:48:53.032Z"
   },
   "add": [
     {
@@ -260,6 +260,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 98
+    },
+    {
+      "name": "SoldFetch",
+      "link": "https://docs.soldfetch.com",
+      "description": "Search eBay sold and active listings, browse categories, and retrieve item details via REST or MCP",
+      "category": "Shopping",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 99
     }
   ],
   "remove": [],
