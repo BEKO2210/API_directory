@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-10-22T22:03:38.903Z"
+    "lastUpdated": "2026-10-23T05:08:09.961Z"
   },
   "add": [
     {
@@ -280,6 +280,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 101
+    },
+    {
+      "name": "Reclip Video API",
+      "link": "https://www.reclip.io/docs",
+      "description": "Video, audio and image tools for apps and AI agents via REST API and hosted MCP.",
+      "category": "Video",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 102
     }
   ],
   "remove": [],

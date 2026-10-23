@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2190,
+    "totalAPIs": 2191,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-23T03:04:51.967Z"
+    "lastUpdated": "2026-10-23T05:08:10.256Z"
   },
   "categories": [
     {
@@ -19589,6 +19589,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "video-youtube"
+        },
+        {
+          "name": "Reclip Video API",
+          "slug": "video-reclip-video-api",
+          "description": "Video, audio and image tools for apps and AI agents via REST API and hosted MCP.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://www.reclip.io/docs"
         }
       ]
     },
