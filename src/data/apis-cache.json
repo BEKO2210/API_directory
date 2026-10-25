@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2191,
+    "totalAPIs": 2212,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-24T03:04:18.634Z"
+    "lastUpdated": "2026-10-25T03:04:45.978Z"
   },
   "categories": [
     {
@@ -1021,6 +1021,15 @@
           "slug": "blockchain-helium"
         },
         {
+          "name": "MELEK",
+          "link": "https://witness.melek.salon/dev/melek",
+          "description": "Graphene social blockchain (Steem family) with a keyless condenser_api JSON-RPC",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "blockchain-melek"
+        },
+        {
           "name": "Nownodes",
           "link": "https://nownodes.io/",
           "description": "Blockchain-as-a-service solution that provides high-quality connection via API",
@@ -1492,6 +1501,15 @@
           "slug": "business-kontragentpro"
         },
         {
+          "name": "Leadgen Romania",
+          "link": "https://leadgen.adrianhomelab.com/docs",
+          "description": "Romanian company registry, ANAF tax status and financial statements",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-leadgen-romania"
+        },
+        {
           "name": "Legal Sandbox Georgia",
           "link": "https://legal.ge/api/openapi.json",
           "description": "Find verified legal specialists in Georgia from natural-language queries",
@@ -1589,6 +1607,15 @@
           "https": true,
           "cors": "no",
           "slug": "business-registerwire"
+        },
+        {
+          "name": "RunDossier",
+          "link": "https://rundossier.com/docs/api",
+          "description": "Pre-meeting briefing on a person from public professional and web sources, as JSON",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "business-rundossier"
         },
         {
           "name": "Signaliz",
@@ -1724,6 +1751,15 @@
           "https": true,
           "cors": "yes",
           "slug": "business-village"
+        },
+        {
+          "name": "W System EU Business Data",
+          "link": "https://api.wsystem.dev/docs",
+          "description": "EU VAT (VIES) and EORI validation, company registers, EU/UN/OFAC/UK sanctions screening",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-w-system-eu-business-data"
         },
         {
           "name": "Mydentify Public API",
@@ -3206,7 +3242,7 @@
         },
         {
           "name": "Frankfurter",
-          "link": "https://www.frankfurter.app/docs",
+          "link": "https://frankfurter.dev",
           "description": "Exchange rates, currency conversion and time series",
           "auth": "No",
           "https": true,
@@ -3854,6 +3890,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-crawl-readiness"
+        },
+        {
+          "name": "crawlbrulee",
+          "link": "https://crawlbrulee.com/docs",
+          "description": "EU-native web scraping for AI agents & developers: turn any page into markdown, screenshots and more",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-crawlbrulee"
         },
         {
           "name": "CurlShot",
@@ -5314,6 +5359,15 @@
           "slug": "development-tyk"
         },
         {
+          "name": "unfurlr",
+          "link": "https://unfurlr.onrender.com/docs",
+          "description": "Link-preview metadata for any URL: title, Open Graph, Twitter tags, favicon, oEmbed",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-unfurlr"
+        },
+        {
           "name": "URLpipe",
           "link": "https://urlpipe.dev/docs",
           "description": "Turn a URL into Markdown, screenshots, metadata or Lighthouse audits, rendered in real Chrome",
@@ -5386,6 +5440,15 @@
           "slug": "development-webscraping-ai"
         },
         {
+          "name": "WeInc",
+          "link": "https://my.we.inc/docs/api",
+          "description": "AI website builder: manage clients, website projects, templates and webhooks",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "development-weinc"
+        },
+        {
           "name": "XLSX Inspector",
           "link": "https://api.lifestep.io",
           "description": "Inspect XLSX/XLSM structure: sheets, formulas, macros and external links",
@@ -5393,6 +5456,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-xlsx-inspector"
+        },
+        {
+          "name": "Yumi Wheel Evidence",
+          "link": "https://noqt.no-qt.chatgpt.site/yumi/wheel-evidence",
+          "description": "Intersect wheel tags for explicit PyPI releases with caller-supplied tags",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-yumi-wheel-evidence"
         },
         {
           "name": "ZenRows",
@@ -6122,6 +6194,15 @@
           "https": true,
           "cors": "yes",
           "slug": "email-cloudmersive-validate"
+        },
+        {
+          "name": "ContactLint",
+          "link": "https://contactlint.com/",
+          "description": "Validate email syntax, MX, disposable and role addresses with typo suggestions, plus phone numbers",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "email-contactlint"
         },
         {
           "name": "Disban",
@@ -6896,6 +6977,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "events-seatgeek"
+        },
+        {
+          "name": "Things To Do",
+          "link": "https://thingstodoapi.com/docs/",
+          "description": "Local events in plain words: concerts, pop-ups, markets, classes, gallery nights",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "events-things-to-do"
         },
         {
           "name": "Ticketmaster",
@@ -7696,6 +7786,15 @@
           "slug": "finance-us-mortgage-calculator"
         },
         {
+          "name": "USTariffRates",
+          "link": "https://api.ustariffrates.com/openapi.json",
+          "description": "US HTS lookup and origin-specific tariff breakdowns with source context",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-ustariffrates"
+        },
+        {
           "name": "VAT Validation",
           "link": "https://www.abstractapi.com/vat-validation-rates-api",
           "description": "Validate VAT numbers and calculate VAT rates",
@@ -7907,6 +8006,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "food-drink-fruityvice"
+        },
+        {
+          "name": "IndiaRestros",
+          "link": "https://indiarestros.com/api/docs",
+          "description": "Indian restaurants, menus with rupee prices, dish search and timings across 9,000+ cities",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "food-drink-indiarestros"
         },
         {
           "name": "Kroger",
@@ -9631,6 +9739,15 @@
           "slug": "geocoding-ipinfodb"
         },
         {
+          "name": "IPKit",
+          "link": "https://ipkit.dev/docs",
+          "description": "IP lookup with location, ASN/ISP and VPN/proxy/Tor signals",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-ipkit"
+        },
+        {
           "name": "ipstack",
           "link": "https://ipstack.com/",
           "description": "Locate and identify website visitors by IP address",
@@ -9746,6 +9863,15 @@
           "https": true,
           "cors": "yes",
           "slug": "geocoding-moradas"
+        },
+        {
+          "name": "MyPincode",
+          "link": "https://mypincode.live",
+          "description": "Indian PIN code and postal office lookup",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "geocoding-mypincode"
         },
         {
           "name": "Network Data Labs",
@@ -11728,6 +11854,15 @@
           "slug": "jobs-ai-dev-jobs"
         },
         {
+          "name": "AI Trainer Work",
+          "link": "https://aitrainer.work/open-data#api",
+          "description": "Open AI training jobs (RLHF, data annotation, expert evaluation) from 20+ platforms, with pay",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-ai-trainer-work"
+        },
+        {
           "name": "Adzuna",
           "link": "https://developer.adzuna.com/overview",
           "description": "Job board aggregator",
@@ -12820,6 +12955,15 @@
           "slug": "music-spotify"
         },
         {
+          "name": "StemConsole",
+          "link": "https://stemconsole.ai/developers/",
+          "description": "Split songs into vocals, drums, bass and other stems with AI",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "music-stemconsole"
+        },
+        {
           "name": "Sunor",
           "link": "https://docs.sunor.cc",
           "description": "AI music generation API via Suno, with pay-as-you-go credits",
@@ -13163,6 +13307,15 @@
           "https": true,
           "cors": "no",
           "slug": "open-data-archive-org"
+        },
+        {
+          "name": "Auregistre",
+          "link": "https://auregistre.fr/api",
+          "description": "French company history from the official gazette (BODACC) since 2008, with insolvency counts",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-auregistre"
         },
         {
           "name": "Band Atlas",
@@ -14606,6 +14759,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "photography-sirv"
+        },
+        {
+          "name": "snapWONDERS",
+          "link": "https://snapwonders.com/developers",
+          "description": "Photo and video forensic analysis, steganography and media format conversion",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "photography-snapwonders"
         },
         {
           "name": "Tinify.dev",
@@ -18151,6 +18313,15 @@
           "slug": "transportation-impala-hotel-bookings"
         },
         {
+          "name": "India EV Charging Stations",
+          "link": "https://ev-charging-stations-api.vercel.app/docs",
+          "description": "Directory of public EV charging stations across India with connector and power specs",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-india-ev-charging-stations"
+        },
+        {
           "name": "Izi",
           "link": "http://api-docs.izi.travel/",
           "description": "Audio guide for travellers",
@@ -18356,6 +18527,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "transportation-transitland"
+        },
+        {
+          "name": "TransitRadar",
+          "link": "https://transitradar.co.uk/scalar/",
+          "description": "Live GB train and bus departures, train positions, journey planning and a daily punctuality archive",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "transportation-transitradar"
         },
         {
           "name": "Transport for Atlanta, US",
@@ -18953,6 +19133,15 @@
           "https": true,
           "cors": "no",
           "slug": "vehicle-brazilian-vehicles-and-prices"
+        },
+        {
+          "name": "CarSpecs",
+          "link": "https://carspecsapi.com/docs",
+          "description": "Car specs for 70,000+ trims since 1945 (make, model, generation, trim) and a VIN decoder",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "vehicle-carspecs"
         },
         {
           "name": "CarVector",
