@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-10-23T05:08:09.961Z"
+    "lastUpdated": "2026-10-27T11:44:23.768Z"
   },
   "add": [
     {
@@ -290,6 +290,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 102
+    },
+    {
+      "name": "DevPros Calculator API",
+      "link": "https://devpros.uk/tools/api",
+      "description": "565 free calculator endpoints (finance, tax, maths, health, conversions) returning JSON results.",
+      "category": "Finance",
+      "auth": "No — no API key or signup required",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 104
     }
   ],
   "remove": [],
