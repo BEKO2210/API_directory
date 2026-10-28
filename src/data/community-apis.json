@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-10-27T11:44:23.768Z"
+    "lastUpdated": "2026-10-28T06:25:11.271Z"
   },
   "add": [
     {
@@ -300,6 +300,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 104
+    },
+    {
+      "name": "IPWho.org",
+      "link": "https://www.ipwho.org",
+      "description": "IP geolocation API with location, ASN, timezone, currency, and VPN/proxy/Tor signals.",
+      "category": "Geocoding",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 100
     }
   ],
   "remove": [],

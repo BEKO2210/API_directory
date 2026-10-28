@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2213,
+    "totalAPIs": 2214,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-28T03:03:19.630Z"
+    "lastUpdated": "2026-10-28T06:25:11.461Z"
   },
   "categories": [
     {
@@ -10250,6 +10250,15 @@
           "https": true,
           "cors": "yes",
           "slug": "geocoding-zornade"
+        },
+        {
+          "name": "IPWho.org",
+          "slug": "geocoding-ipwho-org",
+          "description": "IP geolocation API with location, ASN, timezone, currency, and VPN/proxy/Tor signals.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.ipwho.org"
         }
       ]
     },
