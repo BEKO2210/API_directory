@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2214,
+    "totalAPIs": 2239,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-29T03:03:39.084Z"
+    "lastUpdated": "2026-10-30T09:16:50.632Z"
   },
   "categories": [
     {
@@ -1636,6 +1636,15 @@
           "slug": "business-smartsheet"
         },
         {
+          "name": "Softoteca",
+          "link": "https://softoteca.com.br/v1",
+          "description": "Catalog of Brazilian software with the source of each data point and prices in BRL",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-softoteca"
+        },
+        {
           "name": "Square",
           "link": "https://developer.squareup.com/reference/square",
           "description": "Easy way to take payments, manage refunds, and help customers checkout online",
@@ -2920,6 +2929,15 @@
           "slug": "cryptocurrency-monerometrics"
         },
         {
+          "name": "MyCryptoSignal",
+          "link": "https://mycryptosignal.com/api/",
+          "description": "Crypto market data: daily direction signals, prices, on-chain and news snapshots",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-mycryptosignal"
+        },
+        {
           "name": "Nexchange",
           "link": "https://nexchange2.docs.apiary.io/",
           "description": "Automated cryptocurrency exchange service",
@@ -3062,6 +3080,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-worldcoinindex"
+        },
+        {
+          "name": "XRPL.to",
+          "link": "https://xrpl.to/docs",
+          "description": "XRP Ledger token prices, holders, trades and NFT data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-xrpl-to"
         },
         {
           "name": "Zennet",
@@ -3998,6 +4025,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-endoflife-date"
+        },
+        {
+          "name": "Enterno",
+          "link": "https://enterno.io/en/api-docs",
+          "description": "HTTP headers, DNS, SSL, WHOIS and redirect checks as plain text, JSON or CSV",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-enterno"
         },
         {
           "name": "ExtendsClass JSON Storage",
@@ -5134,6 +5170,15 @@
           "slug": "development-segmentlite"
         },
         {
+          "name": "seodata",
+          "link": "https://www.seodata.dev/",
+          "description": "Keyword search volume, CPC and competition by country, no key needed",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-seodata"
+        },
+        {
           "name": "Serialif Color",
           "link": "https://color.serialif.com/",
           "description": "Color conversion, complementary, grayscale and contrasted text",
@@ -5177,6 +5222,15 @@
           "https": true,
           "cors": "no",
           "slug": "development-shotanvil"
+        },
+        {
+          "name": "Shotkiln",
+          "link": "https://shotkiln.com/docs",
+          "description": "Screenshots, PDFs and Open Graph images from a URL or HTML, with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-shotkiln"
         },
         {
           "name": "SHOUTCLOUD",
@@ -6178,6 +6232,15 @@
           "slug": "email-atomic-mail"
         },
         {
+          "name": "B2B Email & Domain Scorer",
+          "link": "https://rapidapi.com/MohamedBahaa/api/b2b-email-domain-scorer",
+          "description": "Email verification: MX, disposable/free/role detection, typo fix and a keep/fix/drop action",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "email-b2b-email-domain-scorer"
+        },
+        {
           "name": "Best Temp Mail",
           "link": "https://best-tempmail.com/api",
           "description": "Disposable inboxes for automated email testing, with OTP extraction",
@@ -6356,6 +6419,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "email-mailcheck-ai"
+        },
+        {
+          "name": "mailfloss",
+          "link": "https://developers.mailfloss.com",
+          "description": "Stop spam signups: block disposable and invalid emails and suggest typo fixes. 500 free a month",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "email-mailfloss"
         },
         {
           "name": "Mailfornet",
@@ -6694,6 +6766,15 @@
           "slug": "environment-breezometer-pollen"
         },
         {
+          "name": "Calendrier Tempo",
+          "link": "https://www.calendrier-tempo.fr/api-tempo",
+          "description": "French EDF Tempo tariff: today's and tomorrow's colour, kWh prices and 15-day colour forecasts",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-calendrier-tempo"
+        },
+        {
           "name": "Carbon Interface",
           "link": "https://docs.carboninterface.com/",
           "description": "API to calculate carbon (C02) emissions estimates for common C02 emitting activities",
@@ -6881,6 +6962,15 @@
           "https": true,
           "cors": "yes",
           "slug": "environment-sensor-community"
+        },
+        {
+          "name": "SoilPoint",
+          "link": "https://soilpoint.dev/docs",
+          "description": "US soil properties at a lat/lon from USDA SSURGO: texture, drainage, pH, organic matter",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "environment-soilpoint"
         },
         {
           "name": "Solematica",
@@ -7442,6 +7532,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-intrinio"
+        },
+        {
+          "name": "Invoice & Payment ID Validator",
+          "link": "https://rapidapi.com/MohamedBahaa/api/invoice-payment-id-validator",
+          "description": "Validate IBAN, BIC, EU VAT (live VIES), UK VAT and EIN, with a pay/review/hold payee check",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-invoice-payment-id-validator"
         },
         {
           "name": "Klarna",
@@ -8318,6 +8417,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "games-comics-call-of-duty-mobile"
+        },
+        {
+          "name": "CardZ Marketcap",
+          "link": "https://cardzmarketcap.com/data",
+          "description": "Daily PSA 10 market cap, prices and population for Pokémon and One Piece cards",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-cardz-marketcap"
         },
         {
           "name": "CheapShark",
@@ -10771,6 +10879,15 @@
           "slug": "government-istanbul-i-bb-open-data"
         },
         {
+          "name": "Kurtaxe",
+          "link": "https://keyset.cloud/kurtaxe/api/",
+          "description": "German tourist tax (Kurtaxe) rates by municipality, each quoted from the municipal statute",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-kurtaxe"
+        },
+        {
           "name": "LocalGov.jp",
           "link": "https://localgov.jp/",
           "description": "Japan grants and subsidies (central J-Grants + 1,916 municipalities)",
@@ -11401,6 +11518,15 @@
           "slug": "government-votepredictor"
         },
         {
+          "name": "YiminShuju Visa Bulletin",
+          "link": "https://yiminshuju.com/cite/",
+          "description": "US Department of State Visa Bulletin cutoff dates (EB/F charts) as open JSON (/paiqi.json)",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-yiminshuju-visa-bulletin"
+        },
+        {
           "name": "Invokely",
           "slug": "government-invokely",
           "description": "Cited official statistics by indicator and place, with periods and units for AI agents",
@@ -11785,6 +11911,15 @@
           "slug": "health-orion-health"
         },
         {
+          "name": "Peptide Library",
+          "link": "https://peptidelibrary.app/developers/docs",
+          "description": "Peptide research profiles, cited studies and regulatory status; vendor prices with a free key",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-peptide-library"
+        },
+        {
           "name": "Quarantine",
           "link": "https://quarantine.country/coronavirus/api/",
           "description": "Coronavirus API with free COVID-19 live updates",
@@ -12007,6 +12142,15 @@
           "slug": "jobs-hirelayer"
         },
         {
+          "name": "Job Opportunities",
+          "link": "https://jobopportunitiesapi.org/docs",
+          "description": "Live jobs from employers' own career sites and ATSs, closed jobs re-checked daily",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-job-opportunities"
+        },
+        {
           "name": "Jobs2Careers",
           "link": "https://docs.talroo.com/api/search",
           "description": "Job aggregator",
@@ -12220,6 +12364,15 @@
           "slug": "machine-learning-ai-for-thai"
         },
         {
+          "name": "AI Stupid Level",
+          "link": "https://aistupidlevel.info/api-docs",
+          "description": "Benchmark scores, rankings and drift data for major LLM APIs, re-measured on a fixed schedule",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-ai-stupid-level"
+        },
+        {
           "name": "AnswerLine",
           "link": "https://answerline.dev/docs",
           "description": "ChatGPT, Gemini, Copilot, AI Mode and Google Search/News results as structured JSON",
@@ -12272,6 +12425,15 @@
           "https": true,
           "cors": "yes",
           "slug": "machine-learning-cloudmersive"
+        },
+        {
+          "name": "ContextFetch",
+          "link": "https://contextfetch.dev/docs",
+          "description": "Web search for AI agents, each result as Markdown pruned to the passages relevant to the query",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "machine-learning-contextfetch"
         },
         {
           "name": "DeepAI",
@@ -13273,6 +13435,15 @@
       "slug": "open-data",
       "apis": [
         {
+          "name": "10ML Fragrance Index",
+          "link": "https://mcp.10ml.com/openapi.json",
+          "description": "Perfume knowledge: notes, accords, families, similar scents, houses, guides. By 10ML",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-10ml-fragrance-index"
+        },
+        {
           "name": "221",
           "link": "https://221.orvlabs.com/documentation",
           "description": "Senegal reference data: public holidays, mobile operators, banks, communes, legal forms",
@@ -13631,6 +13802,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-modelpartfinder-error-codes"
+        },
+        {
+          "name": "Namedesk",
+          "link": "https://namedesk.app/docs/api/stats",
+          "description": "Domain name registration statistics by TLD, registry and registrar",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-namedesk"
         },
         {
           "name": "Nasdaq Data Link",
@@ -15841,6 +16021,15 @@
           "slug": "security-pulsedive"
         },
         {
+          "name": "RealBots",
+          "link": "https://aibots.kaderagha.com/api-docs",
+          "description": "Verify whether requests claiming to be GPTBot, ClaudeBot & other AI crawlers are real",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "security-realbots"
+        },
+        {
           "name": "Sealed Rose",
           "link": "https://sealedrose.com/verify-video",
           "description": "AI media forensics and synthetic content verification for video, audio, image, and text",
@@ -16178,6 +16367,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-pangolinfo-amazon-data"
+        },
+        {
+          "name": "Product Page Extractor",
+          "link": "https://rapidapi.com/MohamedBahaa/api/product-page-extractor",
+          "description": "Product name, price, currency, stock and offers from store pages via JSON-LD and OpenGraph",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "shopping-product-page-extractor"
         },
         {
           "name": "Profitvana",
@@ -16771,6 +16969,15 @@
           "slug": "social-vk"
         },
         {
+          "name": "Weir",
+          "link": "https://docs.weirapp.io",
+          "description": "Public Reddit and X (Twitter) data: search, posts, comment threads, profiles and followers",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "social-weir"
+        },
+        {
           "name": "xfetch",
           "link": "https://xfetch.io",
           "description": "Read API for X/Twitter search, profiles, tweets, and social graph",
@@ -17351,6 +17558,15 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-thesportsdb"
+        },
+        {
+          "name": "Touchline Wire",
+          "link": "https://touchlinewire.com/docs",
+          "description": "Premier League predicted starting lineups, tactics, injuries, and standings",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-touchline-wire"
         },
         {
           "name": "TourneyRadar",
@@ -19373,6 +19589,15 @@
           "https": true,
           "cors": "yes",
           "slug": "video-dune"
+        },
+        {
+          "name": "FFmpeg Micro",
+          "link": "https://www.ffmpeg-micro.com/docs",
+          "description": "Hosted FFmpeg over REST: transcode, compress, trim and caption video, audio and images",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "video-ffmpeg-micro"
         },
         {
           "name": "Final Space",
