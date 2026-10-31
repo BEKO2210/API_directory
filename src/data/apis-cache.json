@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2239,
+    "totalAPIs": 2257,
     "totalCategories": 51,
-    "lastUpdated": "2026-10-30T09:16:50.632Z"
+    "lastUpdated": "2026-10-31T09:03:41.415Z"
   },
   "categories": [
     {
@@ -880,15 +880,6 @@
           "slug": "authentication-authorization-getotp"
         },
         {
-          "name": "Micro User Service",
-          "link": "https://m3o.com/user",
-          "description": "User management and authentication",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "no",
-          "slug": "authentication-authorization-micro-user-service"
-        },
-        {
           "name": "MojoAuth",
           "link": "https://mojoauth.com",
           "description": "Secure and modern passwordless authentication platform",
@@ -1733,6 +1724,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "business-trello"
+        },
+        {
+          "name": "TrendsAGI",
+          "link": "https://trendsagi.com/api-docs",
+          "description": "Trending topic volume, velocity and growth with AI insights; free plan of 100 calls/day",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "business-trendsagi"
         },
         {
           "name": "UGC VZ",
@@ -2621,6 +2621,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-coinstats"
+        },
+        {
+          "name": "CoinXview",
+          "link": "https://coinxview.com/en/api-mien-phi",
+          "description": "Real-time crypto prices aggregated from 22 exchanges, OHLC, market stats, Fear & Greed",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-coinxview"
         },
         {
           "name": "CorpStacking",
@@ -4306,6 +4315,15 @@
           "slug": "development-hostdealradar"
         },
         {
+          "name": "Hourora",
+          "link": "https://hourora.app/en/developers",
+          "description": "Current time, DST-aware conversion, all IANA zones with clock changes, city and coordinate lookup",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-hourora"
+        },
+        {
           "name": "HTTP2.Pro",
           "link": "https://http2.pro/doc/api",
           "description": "Test endpoints for client and server HTTP/2 protocol support",
@@ -4610,15 +4628,6 @@
           "https": true,
           "cors": "yes",
           "slug": "development-macadress"
-        },
-        {
-          "name": "Micro DB",
-          "link": "https://m3o.com/db",
-          "description": "Simple database service",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "development-micro-db"
         },
         {
           "name": "Micro-SaaS AI Suite",
@@ -5188,6 +5197,15 @@
           "slug": "development-serialif-color"
         },
         {
+          "name": "SerpKite",
+          "link": "https://serpkite.com/docs",
+          "description": "Google Search, News, Maps, Images, Scholar and Patents results as JSON or Markdown for AI agents",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-serpkite"
+        },
+        {
           "name": "Serply",
           "link": "https://serply.io/docs",
           "description": "Google, Bing, News, Scholar and Maps search results and page scraping as JSON",
@@ -5384,6 +5402,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-timezone-worldtime"
+        },
+        {
+          "name": "Timezones",
+          "link": "https://timezones.in/api",
+          "description": "Time now, conversions and DST changes for every IANA time zone, no key needed",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-timezones"
         },
         {
           "name": "TinyMind Agent Tools",
@@ -6412,6 +6439,15 @@
           "slug": "email-mailboxvalidator"
         },
         {
+          "name": "MailChannels",
+          "link": "https://www.mailchannels.com/email-api/",
+          "description": "Send transactional email over HTTPS with official JavaScript, Python and PHP SDKs",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-mailchannels"
+        },
+        {
           "name": "MailCheck.ai",
           "link": "https://www.mailcheck.ai/#documentation",
           "description": "Prevent users to sign up with temporary email addresses",
@@ -6980,6 +7016,15 @@
           "https": true,
           "cors": "no",
           "slug": "environment-solematica"
+        },
+        {
+          "name": "SpotWave",
+          "link": "https://spotwave.eu/api-docs",
+          "description": "Day-ahead electricity prices for 40+ European market zones, incl. taxes and VAT",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-spotwave"
         },
         {
           "name": "Srp Energy",
@@ -7703,6 +7748,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-portfolio-optimizer"
+        },
+        {
+          "name": "QuiVad",
+          "link": "https://www.quivad.com/api",
+          "description": "Net short positions disclosed to 23 market regulators, fund by fund, since 2010",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-quivad"
         },
         {
           "name": "Razorpay IFSC",
@@ -9202,6 +9256,15 @@
           "slug": "games-comics-steamgpt"
         },
         {
+          "name": "SuperDuperBundle",
+          "link": "https://superduperbundle.com/tools/api/",
+          "description": "Lowest listed PC game key prices across official and key stores, by name or Steam app ID",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-superduperbundle"
+        },
+        {
           "name": "SuperHeroes",
           "link": "https://superheroapi.com",
           "description": "All SuperHeroes and Villains data from all universes under a single API",
@@ -9342,6 +9405,15 @@
       "name": "Geocoding",
       "slug": "geocoding",
       "apis": [
+        {
+          "name": "17NAS",
+          "link": "https://17nas.com",
+          "description": "Free IP geolocation API with IPv4/IPv6 detection, ASN and country info, no auth required",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-17nas"
+        },
         {
           "name": "IPstack",
           "link": "https://ipstack.com/?utm_source=Github&utm_medium=Referral&utm_campaign=Public-apis-repo-Best-sellers",
@@ -10043,6 +10115,15 @@
           "https": true,
           "cors": "yes",
           "slug": "geocoding-opencage"
+        },
+        {
+          "name": "OpenGeocoding",
+          "link": "https://opengeocoding.com/docs",
+          "description": "Forward and reverse geocoding and address autocomplete on open data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-opengeocoding"
         },
         {
           "name": "openrouteservice.org",
@@ -11738,6 +11819,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "health-fda-recalls"
+        },
+        {
+          "name": "FertilityClinics",
+          "link": "https://fertilityclinics.fyi/developers",
+          "description": "US fertility and IVF clinics built from CDC public data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-fertilityclinics"
         },
         {
           "name": "FindSaunaPlunge",
@@ -13597,6 +13687,15 @@
           "slug": "open-data-collegescorecard-ed-gov"
         },
         {
+          "name": "ConsumerSun Recalls",
+          "link": "https://consumersun.com/data/recalls.json",
+          "description": "US product, food, drug, device and vehicle recalls from CPSC, FDA and NHTSA",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-consumersun-recalls"
+        },
+        {
           "name": "CoworkingView",
           "link": "https://coworkingview.com/en/api",
           "description": "Coworking spaces and offices in 63 European and Gulf cities with operator-published prices",
@@ -13705,15 +13804,6 @@
           "slug": "open-data-joshua-project"
         },
         {
-          "name": "K-Data Gate",
-          "link": "https://kdata-gate.vercel.app/docs",
-          "description": "Korean market data: K-beauty/K-food products, Naver trends, stocks, real estate, weather",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "open-data-k-data-gate"
-        },
-        {
           "name": "Kaggle",
           "link": "https://www.kaggle.com/docs/api",
           "description": "Create and interact with Datasets, Notebooks, and connect with Kaggle",
@@ -13739,6 +13829,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-linkpreview"
+        },
+        {
+          "name": "Lottizen",
+          "link": "https://lottizen.com/api",
+          "description": "Lottery draw history and stats (Canada, US, Europe) and Canadian scratch-ticket remaining prizes",
+          "auth": "X-Mashape-Key",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-lottizen"
         },
         {
           "name": "LottoLens PH",
@@ -15268,6 +15367,15 @@
           "slug": "science-math-minor-planet-center"
         },
         {
+          "name": "Molicheck",
+          "link": "https://molicheck.com/api",
+          "description": "Anonymous JSON lab/GMP calculators (molarity, dilution, ICH limits); no API key",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-molicheck"
+        },
+        {
           "name": "MyGene.info",
           "link": "https://docs.mygene.info/",
           "description": "Gene annotation queries and ID lookup",
@@ -15527,6 +15635,15 @@
           "https": true,
           "cors": "no",
           "slug": "science-math-tle"
+        },
+        {
+          "name": "Toolalize",
+          "link": "https://toolalize.com/openapi.json",
+          "description": "Unit and live currency conversion with NIST SI factors, no key needed",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-toolalize"
         },
         {
           "name": "Unpaywall",
@@ -16234,6 +16351,15 @@
           "slug": "shopping-cartscout"
         },
         {
+          "name": "DeepScout",
+          "link": "https://docs.deepscout.ai",
+          "description": "Scrape product data from any e-shop and match the same products across shops, without EAN",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "shopping-deepscout"
+        },
+        {
           "name": "Digi-Key",
           "link": "https://www.digikey.com/en/resources/api-solutions",
           "description": "Retrieve price and inventory of electronic components as well as place orders",
@@ -16439,6 +16565,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-tokopedia"
+        },
+        {
+          "name": "VantaSpec",
+          "link": "https://vantaspec.com/api-docs",
+          "description": "UK PC hardware prices, price history and specs across UK retailers",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-vantaspec"
         },
         {
           "name": "WooCommerce",
@@ -17432,6 +17567,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "sports-fitness-propline"
+        },
+        {
+          "name": "RaceHooks",
+          "link": "https://racehooks.io/docs",
+          "description": "Motorsport analytics platform and ML analytics API: live F1 timing data and race intelligence",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "sports-fitness-racehooks"
         },
         {
           "name": "RacingHub",
@@ -18529,6 +18673,15 @@
           "slug": "transportation-gtfs-scorecard"
         },
         {
+          "name": "HaulierScope",
+          "link": "https://haulierscope.co.uk/developers",
+          "description": "Great Britain goods vehicle and PSV operator licences, change history and public inquiries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-haulierscope"
+        },
+        {
           "name": "Icelandic APIs",
           "link": "http://docs.apis.is/",
           "description": "Open APIs that deliver services in or regarding Iceland",
@@ -19360,6 +19513,15 @@
           "slug": "vehicle-bike-reliability"
         },
         {
+          "name": "BoltPatternHQ",
+          "link": "https://boltpatternhq.com/mcp/",
+          "description": "Vehicle wheel fitment, bolt pattern (PCD), offset, and center bore specifications",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "vehicle-boltpatternhq"
+        },
+        {
           "name": "Brazilian Vehicles and Prices",
           "link": "https://deividfortuna.github.io/fipe/",
           "description": "Vehicles information from Fundação Instituto de Pesquisas Econômicas - Fipe",
@@ -19448,6 +19610,15 @@
           "https": true,
           "cors": "yes",
           "slug": "vehicle-revcardata"
+        },
+        {
+          "name": "SalvageAlert",
+          "link": "https://salvagealert.com/developers/docs",
+          "description": "IAA, Copart and GovDeals salvage auction lots, VIN history and buyer-fee estimates",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "vehicle-salvagealert"
         },
         {
           "name": "Smartcar",
@@ -20216,15 +20387,6 @@
           "https": true,
           "cors": "unknown",
           "slug": "weather-meteorologisk-institutt"
-        },
-        {
-          "name": "Micro Weather",
-          "link": "https://m3o.com/weather/api",
-          "description": "Real time weather forecasts and historic data",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "unknown",
-          "slug": "weather-micro-weather"
         },
         {
           "name": "NASA POWER",
