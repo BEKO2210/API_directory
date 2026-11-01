@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2257,
+    "totalAPIs": 2258,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-01T09:53:34.812Z"
+    "lastUpdated": "2026-11-01T14:12:22.909Z"
   },
   "categories": [
     {
@@ -14279,6 +14279,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://lottolensph.com/research/pcso-results-data-coverage"
+        },
+        {
+          "name": "ROMSO API",
+          "slug": "open-data-romso-api",
+          "description": "Free, keyless Wikipedia search API returning SearXNG-compatible JSON.",
+          "auth": "",
+          "https": true,
+          "cors": "no",
+          "link": "https://api.romso.com/"
         }
       ]
     },
