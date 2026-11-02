@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2258,
+    "totalAPIs": 2276,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-01T14:12:22.909Z"
+    "lastUpdated": "2026-11-02T10:16:21.152Z"
   },
   "categories": [
     {
@@ -1788,7 +1788,7 @@
         {
           "name": "Africa Compliance Data",
           "link": "https://africacompliancedata.com/docs",
-          "description": "Public holidays and business days for all 54 African countries, from official sources",
+          "description": "Public holidays and business days for African countries, with sources and per-country coverage",
           "auth": "apiKey",
           "https": true,
           "cors": "yes",
@@ -2677,6 +2677,15 @@
           "slug": "cryptocurrency-cryptocompare"
         },
         {
+          "name": "CryptoKeyhole",
+          "link": "https://cryptokeyhole.com/data-access/",
+          "description": "On-chain and market metrics for Bitcoin, Ethereum and more, computed from self-hosted nodes",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "cryptocurrency-cryptokeyhole"
+        },
+        {
           "name": "CryptoMarket",
           "link": "https://api.exchange.cryptomkt.com/",
           "description": "Cryptocurrencies Trading platform",
@@ -2849,7 +2858,7 @@
         },
         {
           "name": "Kraken",
-          "link": "https://docs.kraken.com/rest/",
+          "link": "https://docs.kraken.com/exchange/guides/rest/introduction",
           "description": "Cryptocurrencies Exchange",
           "auth": "apiKey",
           "https": true,
@@ -3053,6 +3062,15 @@
           "https": true,
           "cors": "yes",
           "slug": "cryptocurrency-the-coin-analysis"
+        },
+        {
+          "name": "TronOrb",
+          "link": "https://tronorb.com/developers/api",
+          "description": "TRON data: USDT TRC-20 fees, address checks, Tether freezes, dApp and exchange rankings",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-tronorb"
         },
         {
           "name": "VALR",
@@ -3920,8 +3938,8 @@
         },
         {
           "name": "Crawl Readiness",
-          "link": "https://crawlreadiness.com",
-          "description": "Check if AI crawlers (ChatGPT, Claude, Perplexity, 30+ others) can access any website",
+          "link": "https://www.crawlreadiness.com",
+          "description": "Check what 50+ AI crawlers can read on a website and whether a page permits an AI use",
           "auth": "apiKey",
           "https": true,
           "cors": "yes",
@@ -4781,6 +4799,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-openapihub"
+        },
+        {
+          "name": "OpenApps",
+          "link": "https://theopenapps.com/docs/api",
+          "description": "Rankings, launches and featuring across the ChatGPT, Claude, Cursor and Grok Bot app stores",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-openapps"
         },
         {
           "name": "OpenGraphr",
@@ -6592,6 +6619,15 @@
           "slug": "email-verifier"
         },
         {
+          "name": "Vetto",
+          "link": "https://usevetto.com/docs#domain-lookup",
+          "description": "Check email domains in bulk for disposable providers and dead domains, no key needed",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "email-vetto"
+        },
+        {
           "name": "Xeramail Temp Mail",
           "link": "https://xeramail.com/docs/api",
           "description": "Temp email address REST API for privacy, testing, automation with OTP extraction",
@@ -7273,6 +7309,15 @@
           "slug": "finance-citi"
         },
         {
+          "name": "Clear Street",
+          "link": "https://docs.clearstreet.com/?utm_source=github&utm_medium=developer&utm_campaign=api_listings&utm_content=public_apis",
+          "description": "Trade US stocks and options, with market data, fundamentals and account data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "finance-clear-street"
+        },
+        {
           "name": "CongressInvests",
           "link": "https://congressinvests.com",
           "description": "Real-time U.S. congressional stock trade disclosures from Senate EFD and House Clerk",
@@ -7451,6 +7496,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-front-accounting-apis"
+        },
+        {
+          "name": "FundBiz",
+          "link": "https://fundbiz.co.uk/data/api/",
+          "description": "UK specialty business finance lender terms, typical rates and decision times",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-fundbiz"
         },
         {
           "name": "Futures Clock",
@@ -7642,6 +7696,15 @@
           "slug": "finance-mercadopago"
         },
         {
+          "name": "Metal Sentinel",
+          "link": "https://metal-sentinel.com/endpoints",
+          "description": "Live and historical precious and base metal prices in 180+ currencies",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-metal-sentinel"
+        },
+        {
           "name": "Mono",
           "link": "https://mono.co/",
           "description": "Connect with users’ bank accounts and access transaction data in Africa",
@@ -7694,6 +7757,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-openfigi"
+        },
+        {
+          "name": "OpenTaxRate",
+          "link": "https://opentaxrate.com",
+          "description": "US sales tax rates by street address, from the states' own published data",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-opentaxrate"
         },
         {
           "name": "Pink Agentic AI Payments",
@@ -8271,7 +8343,7 @@
         {
           "name": "Systembolaget",
           "link": "https://api-portal.systembolaget.se",
-          "description": "Govornment owned liqour store in Sweden",
+          "description": "Government owned liquor store in Sweden",
           "auth": "apiKey",
           "https": true,
           "cors": "unknown",
@@ -9593,6 +9665,15 @@
           "https": true,
           "cors": "no",
           "slug": "geocoding-ducks-unlimited"
+        },
+        {
+          "name": "FindIP",
+          "link": "https://www.findip.net/Docs/api-response",
+          "description": "IP geolocation with VPN, proxy, Tor, datacenter and malicious IP detection, free",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-findip"
         },
         {
           "name": "GeoApi",
@@ -11005,6 +11086,15 @@
           "slug": "government-neotimo-dgfip-mirror"
         },
         {
+          "name": "nu:legal Deutsches Recht",
+          "link": "https://recht.nulegal.eu/developers",
+          "description": "German federal and state statutes and 640,000 court decisions as JSON, with citation links",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-nu-legal-deutsches-recht"
+        },
+        {
           "name": "Open Government, ACT",
           "link": "https://www.data.act.gov.au/",
           "description": "Australian Capital Territory Open Data",
@@ -11623,6 +11713,15 @@
       "slug": "health",
       "apis": [
         {
+          "name": "CheckWaitingTimes",
+          "link": "https://checkwaitingtimes.co.uk/developers",
+          "description": "NHS England waiting times by hospital and area: planned care, A&E with live waits, scans, ambulances",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "health-checkwaitingtimes"
+        },
+        {
           "name": "CMS.gov",
           "link": "https://data.cms.gov/provider-data/",
           "description": "Access to the data from the CMS - medicare.gov",
@@ -12187,6 +12286,15 @@
           "slug": "jobs-devitjobs-uk"
         },
         {
+          "name": "Fast Data Job Search",
+          "link": "https://apify.com/fast_data_asap/job-search-api",
+          "description": "Jobs from Arbeitsagentur, Arbeitnow, Remote OK and company ATS boards as one deduplicated JSON list",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-fast-data-job-search"
+        },
+        {
           "name": "Findwork",
           "link": "https://findwork.dev/developers/",
           "description": "Job board",
@@ -12349,6 +12457,15 @@
           "slug": "jobs-remoteok"
         },
         {
+          "name": "Siftsmith Company Jobs",
+          "link": "https://apify.com/siftsmith/company-jobs/api",
+          "description": "Open jobs from company career pages on Greenhouse, Lever, Ashby, Workday and more, as JSON or XML",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-siftsmith-company-jobs"
+        },
+        {
           "name": "Techmap",
           "link": "https://api.techmap.io/jobs-api",
           "description": "Job postings from 185 sources in 250 countries and territories, with an archive since 2020",
@@ -12421,6 +12538,15 @@
           "slug": "jobs-worklittle"
         },
         {
+          "name": "YubHub",
+          "link": "https://yubhub.co/developers/api-reference/",
+          "description": "Job listings read from employers' careers pages, with salary, skills and hiring statistics",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-yubhub"
+        },
+        {
           "name": "ZipRecruiter",
           "link": "https://www.ziprecruiter.com/publishers",
           "description": "Job search app and website",
@@ -12459,7 +12585,7 @@
           "description": "Benchmark scores, rankings and drift data for major LLM APIs, re-measured on a fixed schedule",
           "auth": "apiKey",
           "https": true,
-          "cors": "yes",
+          "cors": "no",
           "slug": "machine-learning-ai-stupid-level"
         },
         {
@@ -12998,6 +13124,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "music-bandsintown"
+        },
+        {
+          "name": "Daydream",
+          "link": "https://gen.daydream.live/docs",
+          "description": "Make instrumental songs with five stems from a description",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "music-daydream"
         },
         {
           "name": "Deezer",
@@ -14677,6 +14812,15 @@
           "slug": "personality-vadivelu-http-codes"
         },
         {
+          "name": "VedIntel™ AstroAPI",
+          "link": "https://vedintelastroapi.com/docs",
+          "description": "Vedic astrology computation — birth charts, dashas, panchang, AI narratives",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "personality-vedintel-astroapi"
+        },
+        {
           "name": "Zen Quotes",
           "link": "https://zenquotes.io/",
           "description": "Large collection of Zen quotes for inspiration",
@@ -14912,6 +15056,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "photography-imsea"
+        },
+        {
+          "name": "isGenAI",
+          "link": "https://isgenai.com/api",
+          "description": "Check images, URLs and text for C2PA Content Credentials, AI labels and saved prompts",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "photography-isgenai"
         },
         {
           "name": "Kavel",
@@ -15680,15 +15833,6 @@
           "https": true,
           "cors": "no",
           "slug": "science-math-usgs-water-services"
-        },
-        {
-          "name": "VedIntel™ AstroAPI",
-          "link": "https://vedintelastroapi.com/docs",
-          "description": "Vedic astrology computation — birth charts, dashas, panchang, AI narratives",
-          "auth": "apiKey",
-          "https": true,
-          "cors": "yes",
-          "slug": "science-math-vedintel-astroapi"
         },
         {
           "name": "World Bank",
@@ -17463,7 +17607,7 @@
         {
           "name": "Odds-API",
           "link": "https://docs.odds-api.io",
-          "description": "Real-time sports betting odds from 365+ bookmakers across 34 sports via REST and WebSocket",
+          "description": "Real-time sports betting odds from 415+ bookmakers across 34 sports via REST and WebSocket",
           "auth": "apiKey",
           "https": true,
           "cors": "yes",
@@ -18302,7 +18446,7 @@
         },
         {
           "name": "Watson Natural Language Understanding",
-          "link": "https://cloud.ibm.com/apidocs/natural-language-understanding/natural-language-understanding",
+          "link": "https://cloud.ibm.com/apidocs/natural-language-understanding",
           "description": "Natural language processing for advanced text analysis",
           "auth": "OAuth",
           "https": true,
@@ -18473,6 +18617,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "transportation-ais-hub"
+        },
+        {
+          "name": "AIS Trail",
+          "link": "https://aistrail.com/docs/",
+          "description": "Live and historical AIS ship positions, vessel search, port calls and events worldwide",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "transportation-ais-trail"
         },
         {
           "name": "Amadeus for Developers",
@@ -18905,6 +19058,15 @@
           "https": true,
           "cors": "yes",
           "slug": "transportation-tankerkoenig"
+        },
+        {
+          "name": "TieredTravel",
+          "link": "https://tieredtravel.com/api-docs",
+          "description": "Daily travel costs at budget, mid-range and luxury for 100 cities, plus walking routes",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "transportation-tieredtravel"
         },
         {
           "name": "TransCAPI",
@@ -20335,13 +20497,13 @@
           "slug": "weather-hg-weather"
         },
         {
-          "name": "Hong Kong Obervatory",
+          "name": "Hong Kong Observatory",
           "link": "https://www.hko.gov.hk/en/abouthko/opendata_intro.htm",
           "description": "Provide weather information, earthquake information, and climate data",
           "auth": "No",
           "https": true,
           "cors": "unknown",
-          "slug": "weather-hong-kong-obervatory"
+          "slug": "weather-hong-kong-observatory"
         },
         {
           "name": "IPMA",
