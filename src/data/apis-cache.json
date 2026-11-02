@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2276,
+    "totalAPIs": 2277,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-02T10:16:21.152Z"
+    "lastUpdated": "2026-11-02T12:04:59.081Z"
   },
   "categories": [
     {
@@ -8108,6 +8108,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://devpros.uk/tools/api"
+        },
+        {
+          "name": "SiftingIO",
+          "slug": "finance-siftingio",
+          "description": "Real-time and historical data for US stocks, forex, commodities and crypto. Free plan available",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://sifting.io/docs"
         }
       ]
     },

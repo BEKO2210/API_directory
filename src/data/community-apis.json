@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-01T14:12:22.631Z"
+    "lastUpdated": "2026-11-02T12:04:58.892Z"
   },
   "add": [
     {
@@ -320,6 +320,16 @@
       "https": true,
       "cors": "no",
       "source_issue": 105
+    },
+    {
+      "name": "SiftingIO",
+      "link": "https://sifting.io/docs",
+      "description": "Real-time and historical data for US stocks, forex, commodities and crypto. Free plan available",
+      "category": "Finance",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 106
     }
   ],
   "remove": [],
