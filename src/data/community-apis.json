@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-02T12:04:58.892Z"
+    "lastUpdated": "2026-11-03T20:53:52.703Z"
   },
   "add": [
     {
@@ -330,6 +330,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 106
+    },
+    {
+      "name": "Access File Extractor",
+      "link": "https://rapidapi.com/IsraelDiego/api/access-file-extractor",
+      "description": "Export eligible local MDB/ACCDB tables to CSV ZIP or typed JSON; 40 MiB input limit.",
+      "category": "Documents & Productivity",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 107
     }
   ],
   "remove": [],

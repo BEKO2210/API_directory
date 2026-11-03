@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2277,
+    "totalAPIs": 2278,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-03T10:17:05.243Z"
+    "lastUpdated": "2026-11-03T20:53:52.971Z"
   },
   "categories": [
     {
@@ -6251,6 +6251,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://readgzh.site/"
+        },
+        {
+          "name": "Access File Extractor",
+          "slug": "documents-productivity-access-file-extractor",
+          "description": "Export eligible local MDB/ACCDB tables to CSV ZIP or typed JSON; 40 MiB input limit.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://rapidapi.com/IsraelDiego/api/access-file-extractor"
         }
       ]
     },
