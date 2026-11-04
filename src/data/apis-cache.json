@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2281,
+    "totalAPIs": 2282,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-04T00:21:41.387Z"
+    "lastUpdated": "2026-11-04T00:23:23.202Z"
   },
   "categories": [
     {
@@ -16496,6 +16496,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://docs.vettly.dev/"
+        },
+        {
+          "name": "Synthient",
+          "slug": "security-synthient",
+          "description": "IP intelligence API for proxy, VPN and Tor detection, provider attribution and risk scores.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://synthient.com/context"
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-04T00:21:41.099Z"
+    "lastUpdated": "2026-11-04T00:23:22.971Z"
   },
   "add": [
     {
@@ -370,6 +370,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 110
+    },
+    {
+      "name": "Synthient",
+      "link": "https://synthient.com/context",
+      "description": "IP intelligence API for proxy, VPN and Tor detection, provider attribution and risk scores.",
+      "category": "Security",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 111
     }
   ],
   "remove": [],
