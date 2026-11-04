@@ -14,6 +14,8 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.diff.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -59,3 +61,17 @@ jobs:
           git add src/data/apis-cache.json src/data/community-apis.json src/data/reported-issues.json
           git commit -m "chore(data): sync APIs & process issues [$(date -u +%Y-%m-%d)]"
           git push
+
+  deploy:
+    needs: sync
+    if: needs.sync.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Dispatch Pages deployment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: gh workflow run deploy.yml --ref "$DEFAULT_BRANCH"
