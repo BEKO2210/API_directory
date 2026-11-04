@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2280,
+    "totalAPIs": 2281,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-04T00:17:56.244Z"
+    "lastUpdated": "2026-11-04T00:21:41.387Z"
   },
   "categories": [
     {
@@ -10565,6 +10565,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://db-ip.com/api/free"
+        },
+        {
+          "name": "IPLocate",
+          "slug": "geocoding-iplocate",
+          "description": "IPv4 and IPv6 geolocation, ASN, company and VPN/proxy/Tor detection with a free API tier.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://www.iplocate.io/docs/"
         }
       ]
     },

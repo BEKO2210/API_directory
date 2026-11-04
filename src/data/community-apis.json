@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-04T00:17:55.999Z"
+    "lastUpdated": "2026-11-04T00:21:41.099Z"
   },
   "add": [
     {
@@ -360,6 +360,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 109
+    },
+    {
+      "name": "IPLocate",
+      "link": "https://www.iplocate.io/docs/",
+      "description": "IPv4 and IPv6 geolocation, ASN, company and VPN/proxy/Tor detection with a free API tier.",
+      "category": "Geocoding",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 110
     }
   ],
   "remove": [],
