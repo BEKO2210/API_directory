@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-03T20:53:52.703Z"
+    "lastUpdated": "2026-11-04T00:10:44.601Z"
   },
   "add": [
     {
@@ -340,6 +340,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 107
+    },
+    {
+      "name": "IPQuery",
+      "link": "https://ipquery.io/developers/api",
+      "description": "IPv4 and IPv6 geolocation, ASN, ISP, VPN, proxy and Tor detection without an API key.",
+      "category": "Geocoding",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 108
     }
   ],
   "remove": [],

@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2278,
+    "totalAPIs": 2279,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-03T20:53:52.971Z"
+    "lastUpdated": "2026-11-04T00:10:44.781Z"
   },
   "categories": [
     {
@@ -10547,6 +10547,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://www.ipwho.org"
+        },
+        {
+          "name": "IPQuery",
+          "slug": "geocoding-ipquery",
+          "description": "IPv4 and IPv6 geolocation, ASN, ISP, VPN, proxy and Tor detection without an API key.",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://ipquery.io/developers/api"
         }
       ]
     },
