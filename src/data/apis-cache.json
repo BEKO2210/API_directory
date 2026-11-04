@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2279,
+    "totalAPIs": 2280,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-04T00:10:44.781Z"
+    "lastUpdated": "2026-11-04T00:17:56.244Z"
   },
   "categories": [
     {
@@ -10556,6 +10556,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://ipquery.io/developers/api"
+        },
+        {
+          "name": "DB-IP Free IP Geolocation",
+          "slug": "geocoding-db-ip-free-ip-geolocation",
+          "description": "IP geolocation with country, region and city data through a keyless free JSON API.",
+          "auth": "",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://db-ip.com/api/free"
         }
       ]
     },
