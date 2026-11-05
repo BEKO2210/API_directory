@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-04T00:23:22.971Z"
+    "lastUpdated": "2026-11-05T02:04:55.215Z"
   },
   "add": [
     {
@@ -380,6 +380,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 111
+    },
+    {
+      "name": "RealtyCrawl",
+      "link": "https://realtycrawl.dev",
+      "description": "Source-linked real estate listings and observations with explicit credit budgets",
+      "category": "Business",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 112
     }
   ],
   "remove": [],

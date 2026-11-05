@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2282,
+    "totalAPIs": 2310,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-04T00:23:23.202Z"
+    "lastUpdated": "2026-11-05T02:04:55.478Z"
   },
   "categories": [
     {
@@ -766,6 +766,15 @@
           "slug": "art-design-php-noise"
         },
         {
+          "name": "pic2svg",
+          "link": "https://pic2svg.com/mcp/",
+          "description": "Trace raster images to SVG with a free daily allowance",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "art-design-pic2svg"
+        },
+        {
           "name": "PickShade",
           "link": "https://pickshade.com/api",
           "description": "Convert colors, check WCAG and APCA contrast, build palettes, gradients and tokens",
@@ -1010,6 +1019,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "blockchain-helium"
+        },
+        {
+          "name": "HEY Research Lab",
+          "link": "https://heyresearch.xyz/developers",
+          "description": "Builder activity for Robinhood Chain tokens and projects: who is shipping, each ship with its source",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "blockchain-hey-research-lab"
         },
         {
           "name": "MELEK",
@@ -1391,6 +1409,15 @@
           "https": true,
           "cors": "yes",
           "slug": "business-eurovalidate"
+        },
+        {
+          "name": "Firmbase",
+          "link": "https://firmbase.be/en/api/docs",
+          "description": "Belgian company register (KBO/CBE), Official Gazette notices and VAT validation",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-firmbase"
         },
         {
           "name": "Freelancer",
@@ -1778,6 +1805,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://mydentify.com/openapi.json"
+        },
+        {
+          "name": "RealtyCrawl",
+          "slug": "business-realtycrawl",
+          "description": "Source-linked real estate listings and observations with explicit credit budgets",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://realtycrawl.dev"
         }
       ]
     },
@@ -1912,6 +1948,15 @@
           "slug": "calendar-lectserve"
         },
         {
+          "name": "Mother's Day Calendar",
+          "link": "https://mothersdaycalendar.com/en/api/",
+          "description": "Mother's Day dates, country rules, sources and confidence as static JSON and CSV",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "calendar-mother-s-day-calendar"
+        },
+        {
           "name": "Nager.Date",
           "link": "https://date.nager.at",
           "description": "Public holidays for more than 90 countries",
@@ -2006,6 +2051,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cloud-storage-file-sharing-ddownload"
+        },
+        {
+          "name": "Deed",
+          "link": "https://deed.page/docs",
+          "description": "Publish an HTML file or folder to a permanent public URL with one PUT, no account",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cloud-storage-file-sharing-deed"
         },
         {
           "name": "Dropbox",
@@ -3028,6 +3082,15 @@
           "slug": "cryptocurrency-shumi"
         },
         {
+          "name": "SoChain",
+          "link": "https://sochain.com/docs",
+          "description": "Bitcoin, Litecoin, Dogecoin and Zcash addresses, transactions, blocks and fees",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-sochain"
+        },
+        {
           "name": "Solana JSON RPC",
           "link": "https://docs.solana.com/developing/clients/jsonrpc-api",
           "description": "Provides various endpoints to interact with the Solana Blockchain",
@@ -3347,6 +3410,15 @@
           "https": true,
           "cors": "no",
           "slug": "currency-exchange-nerkhsanj"
+        },
+        {
+          "name": "Open Exchange Rates",
+          "link": "https://docs.openexchangerates.org/",
+          "description": "Live and historical exchange rates for 200+ currencies with free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-open-exchange-rates"
         },
         {
           "name": "paralelo.bo",
@@ -3845,6 +3917,15 @@
           "https": true,
           "cors": "no",
           "slug": "development-ciprand"
+        },
+        {
+          "name": "CitedBy",
+          "link": "https://citedby.eu/ai-access-api",
+          "description": "Which AI crawlers can read a site: robots.txt and server answer for each",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-citedby"
         },
         {
           "name": "Clair",
@@ -4486,6 +4567,15 @@
           "slug": "development-ipinfo"
         },
         {
+          "name": "ipv4 Network Tools",
+          "link": "https://ipv4.fr/docs.html",
+          "description": "DNS, WHOIS, SSL, email validation, IP geolocation and blacklist lookups",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-ipv4-network-tools"
+        },
+        {
           "name": "Ironfang Render",
           "link": "https://ironfang.com/render/docs",
           "description": "Screenshots, PDFs, dynamic images, QR codes and video from URLs or HTML",
@@ -4682,6 +4772,15 @@
           "https": true,
           "cors": "no",
           "slug": "development-msgboard"
+        },
+        {
+          "name": "mxverify",
+          "link": "https://bklink.uk/docs/api",
+          "description": "Dollar value of one followed backlink from any website, with the published model behind it",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-mxverify"
         },
         {
           "name": "MY IP",
@@ -6064,6 +6163,15 @@
           "slug": "documents-productivity-pdfrender"
         },
         {
+          "name": "PenlyDoc",
+          "link": "https://penlydoc.com/docs",
+          "description": "EU e-signature API: templates, embedded signing page, webhooks and sealed PDFs; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-penlydoc"
+        },
+        {
           "name": "Pocket",
           "link": "https://getpocket.com/developer/",
           "description": "Bookmarking service",
@@ -6284,6 +6392,15 @@
           "https": true,
           "cors": "yes",
           "slug": "email-agpc-domain-check"
+        },
+        {
+          "name": "anon.li",
+          "link": "https://anon.li/docs/api",
+          "description": "Create and manage anonymous email aliases, forwarding recipients and custom domains",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-anon-li"
         },
         {
           "name": "Atomic Mail",
@@ -7730,6 +7847,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-moov"
+        },
+        {
+          "name": "MortgageCalculator",
+          "link": "https://mortgagecalculator.me/developers",
+          "description": "16 mortgage calculators: payment, refinance, APR, rent vs. buy, points and amortization schedules",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-mortgagecalculator"
         },
         {
           "name": "Nigeria PAYE",
@@ -9407,6 +9533,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "games-comics-tronald-dump"
+        },
+        {
+          "name": "Unicum",
+          "link": "https://unicum.gg/docs",
+          "description": "World of Tanks player, clan and tank stats, ratings and leaderboards for EU, NA and Asia",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-unicum"
         },
         {
           "name": "Universalis",
@@ -11590,6 +11725,15 @@
           "slug": "government-openstates"
         },
         {
+          "name": "PourWire",
+          "link": "https://github.com/Tintin-Intellegence-Limited/us-liquor-license-applications#free-json-api",
+          "description": "New restaurant and bar liquor license applications in 7 US metros (TX, NY, Los Angeles)",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "government-pourwire"
+        },
+        {
           "name": "PRC Exam Schedule",
           "link": "https://api.whenisthenextboardexam.com/docs/",
           "description": "Unofficial Philippine Professional Regulation Commission's examination schedule",
@@ -12100,6 +12244,15 @@
           "slug": "health-nutritionix"
         },
         {
+          "name": "OMOPHub",
+          "link": "https://docs.omophub.com",
+          "description": "Search and map OHDSI OMOP medical vocabularies (SNOMED CT, ICD-10, LOINC, RxNorm)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "health-omophub"
+        },
+        {
           "name": "Open Data NHS Scotland",
           "link": "https://www.opendata.nhs.scot",
           "description": "Medical reference data and statistics by Public Health Scotland",
@@ -12293,6 +12446,15 @@
           "https": true,
           "cors": "yes",
           "slug": "jobs-artificial-intelligence-jobs"
+        },
+        {
+          "name": "ATS Jobs",
+          "link": "https://rapidapi.com/fikrimarhan/api/ats-jobs-api4",
+          "description": "Open jobs from a company's Greenhouse, Lever, Ashby or SmartRecruiters board in one schema",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "jobs-ats-jobs"
         },
         {
           "name": "Careerjet",
@@ -12529,6 +12691,15 @@
           "slug": "jobs-techrole-index"
         },
         {
+          "name": "The Jobs",
+          "link": "https://rapidapi.com/thejobsapi/api/the-jobs-api-us-canada-job-search",
+          "description": "US and Canada employer jobs, search and change feeds; 250 free records per month",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "jobs-the-jobs"
+        },
+        {
           "name": "The Muse",
           "link": "https://www.themuse.com/developers/api/v2",
           "description": "Job board and company profiles",
@@ -12572,6 +12743,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "jobs-whatjobs"
+        },
+        {
+          "name": "Working Student Jobs",
+          "link": "https://www.workingstudentjobs.de/developers",
+          "description": "Working student and internship jobs in Germany, filterable by city, field and language",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-working-student-jobs"
         },
         {
           "name": "Worklittle",
@@ -15359,6 +15539,15 @@
           "https": true,
           "cors": "yes",
           "slug": "programming-mintlify"
+        },
+        {
+          "name": "OnlineCompiler",
+          "link": "https://onlinecompiler.io/docs?utm_source=public-apis",
+          "description": "Compile and run code in 46 languages, with test-case judging and a Judge0-compatible endpoint",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "programming-onlinecompiler"
         }
       ]
     },
@@ -16039,6 +16228,15 @@
           "slug": "security-dead-drop"
         },
         {
+          "name": "DefenceLevel Index",
+          "link": "https://defencelevel.com/index/api",
+          "description": "Daily cyber threat level (DEFCON 5 to 1) with open method, history in JSON/CSV and a badge",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-defencelevel-index"
+        },
+        {
           "name": "Dehash.lt",
           "link": "https://github.com/Dehash-lt/api",
           "description": "Hash decryption MD5, SHA1, SHA3, SHA256, SHA384, SHA512",
@@ -16471,6 +16669,15 @@
           "slug": "security-vuldb"
         },
         {
+          "name": "Website Security Scanner",
+          "link": "https://rapidapi.com/Hitler-HlDevZDwP/api/website-security-scanner-api",
+          "description": "Passive website security audit: TLS, security headers, exposed files and a 0-100 score",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "security-website-security-scanner"
+        },
+        {
           "name": "DomainIntel",
           "slug": "security-domainintel",
           "description": "Real-time domain intelligence with RDAP, DNS-over-HTTPS, Certificate Transparency and bulk lookups",
@@ -16630,6 +16837,15 @@
           "slug": "shopping-lazada"
         },
         {
+          "name": "Lianex",
+          "link": "https://lianex.ai/developers",
+          "description": "Australian product prices compared across eBay, Amazon, JB Hi-Fi and more, as read-only JSON",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "shopping-lianex"
+        },
+        {
           "name": "Marketplace Fee Data",
           "link": "https://www.sellerscalc.com/data",
           "description": "Seller fee schedules for 21 e-commerce marketplaces and payment processors as JSON",
@@ -16682,6 +16898,15 @@
           "https": true,
           "cors": "yes",
           "slug": "shopping-onefindme"
+        },
+        {
+          "name": "OpenShopGraph",
+          "link": "https://openshopgraph.com/en/developers/",
+          "description": "Source-dated return, shipping and payment facts for online shops",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "shopping-openshopgraph"
         },
         {
           "name": "OpenTiendas",
@@ -17425,6 +17650,15 @@
           "slug": "sports-fitness-birdieapi"
         },
         {
+          "name": "Boxerbook",
+          "link": "https://boxerbook.com/developers",
+          "description": "Professional boxing: boxers, bouts, schedule, results, world titles and rankings, ODbL",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-boxerbook"
+        },
+        {
           "name": "Canadian Football League (CFL)",
           "link": "http://api.cfl.ca/",
           "description": "Official JSON API providing real-time league, team and player statistics about the CFL",
@@ -17594,6 +17828,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "sports-fitness-jcdecaux-bike"
+        },
+        {
+          "name": "KickoffAPI",
+          "link": "https://kickoffapi.com",
+          "description": "Football data API for live scores, fixtures, odds, and predictive xG models",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-kickoffapi"
         },
         {
           "name": "Lumify",
@@ -17828,6 +18071,15 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-sport-vision"
+        },
+        {
+          "name": "Sports Odds API (BetRivers, Unibet & 22 more books)",
+          "link": "https://apify.com/publicrecords/sports-odds-api",
+          "description": "Live odds from 24 Kambi-powered sportsbooks incl. BetRivers & Unibet, best price per outcome",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "sports-fitness-sports-odds-api-betrivers-unibet-22-more-books"
         },
         {
           "name": "SportScore",
