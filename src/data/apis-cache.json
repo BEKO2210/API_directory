@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2310,
+    "totalAPIs": 2342,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-05T10:03:04.514Z"
+    "lastUpdated": "2026-11-06T10:07:11.293Z"
   },
   "categories": [
     {
@@ -757,6 +757,15 @@
           "slug": "art-design-noun-project"
         },
         {
+          "name": "Paint Color HQ",
+          "link": "https://www.paintcolorhq.com/api",
+          "description": "Closest real paint colors across 13 brands for any hex value, scored with CIEDE2000",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-paint-color-hq"
+        },
+        {
           "name": "PHP-Noise",
           "link": "https://php-noise.com/",
           "description": "Noise Background Image Generator",
@@ -1384,6 +1393,15 @@
           "slug": "business-compabase"
         },
         {
+          "name": "Company Enrichment",
+          "link": "https://dataandapis.com/apis/companies",
+          "description": "Domain, URL or email to company name, industry, size, HQ, tickers and socials, 125k companies",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "business-company-enrichment"
+        },
+        {
           "name": "Crustdata",
           "link": "https://docs.crustdata.com",
           "description": "People and company data covering profiles, headcount, funding and contacts",
@@ -1537,6 +1555,15 @@
           "slug": "business-legal-sandbox-georgia"
         },
         {
+          "name": "Logoapi",
+          "link": "https://logoapi.sh/docs",
+          "description": "Free SVG company logos by domain, plus search by name. No signup",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-logoapi"
+        },
+        {
           "name": "Mailchimp",
           "link": "https://mailchimp.com/developer/",
           "description": "Send marketing campaigns and transactional mails",
@@ -1634,6 +1661,15 @@
           "https": true,
           "cors": "no",
           "slug": "business-rundossier"
+        },
+        {
+          "name": "Seller Fee",
+          "link": "https://seller-fee-api.narwhalapis.workers.dev",
+          "description": "Marketplace and payment fees for Gumroad, Etsy, Stripe and PayPal with net payout breakdowns",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-seller-fee"
         },
         {
           "name": "Signaliz",
@@ -2326,6 +2362,15 @@
           "slug": "cryptocurrency-alpha-mossland"
         },
         {
+          "name": "AlphaGrowth",
+          "link": "https://alphagrowth.io/openapi.json",
+          "description": "Crypto project metrics, community growth, funding rounds, investors, chains, fees and DAO treasuries",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "cryptocurrency-alphagrowth"
+        },
+        {
           "name": "Binance",
           "link": "https://github.com/binance/binance-spot-api-docs",
           "description": "Exchange for Trading Cryptocurrencies based in China",
@@ -2938,6 +2983,15 @@
           "slug": "cryptocurrency-localbitcoins"
         },
         {
+          "name": "Lucyd",
+          "link": "https://lucyd.trade/api-docs",
+          "description": "Bitcoin Up/Down prediction markets on testnet: markets, trades, positions, order books",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-lucyd"
+        },
+        {
           "name": "MadeOnSol",
           "link": "https://madeonsol.com/developer",
           "description": "Real-time Solana & Robinhood Chain KOL trades, deployer reputation, and DEX activity",
@@ -3044,6 +3098,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-okex"
+        },
+        {
+          "name": "OptimistFi Perps",
+          "link": "https://optimistfi.com/perps/data",
+          "description": "Funding, open interest, prices and leverage caps for perps on 40+ venues, in one schema",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-optimistfi-perps"
         },
         {
           "name": "Paribu",
@@ -3250,6 +3313,15 @@
           "slug": "currency-exchange-1forge"
         },
         {
+          "name": "AllRatesToday",
+          "link": "https://allratestoday.com/central-bank-rates-api/",
+          "description": "Official exchange rates published by 121 central banks and tax authorities, keyless latest table",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-allratestoday"
+        },
+        {
           "name": "Amdoren",
           "link": "https://www.amdoren.com/currency-api/",
           "description": "Free currency API with over 150 currencies",
@@ -3367,6 +3439,15 @@
           "slug": "currency-exchange-frankfurter"
         },
         {
+          "name": "FreeCurrency",
+          "link": "https://freecurrencyapi.com",
+          "description": "Real-time and historical foreign exchange rates",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-freecurrency"
+        },
+        {
           "name": "FreeForexAPI",
           "link": "https://freeforexapi.com/Home/Api",
           "description": "Real-time foreign exchange rates for major currency pairs",
@@ -3455,6 +3536,15 @@
           "https": true,
           "cors": "yes",
           "slug": "currency-exchange-vatcomply-com"
+        },
+        {
+          "name": "XRates",
+          "link": "https://xratesapi.com/docs",
+          "description": "Latest and historical exchange rates aggregated from ECB, CBR and open data feeds, 300+ currencies",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-xrates"
         }
       ]
     },
@@ -3764,6 +3854,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-apizone"
+        },
+        {
+          "name": "AppGoat",
+          "link": "https://docs.appgoat.ai",
+          "description": "App Store and Google Play apps, reviews, keywords, rankings, top charts and competitors",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-appgoat"
         },
         {
           "name": "Aquanode",
@@ -4079,6 +4178,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-digmyname"
+        },
+        {
+          "name": "Discord Timestamp Generator",
+          "link": "https://discordtimestampgen.com/developers",
+          "description": "Discord timestamp codes in every style from an ISO 8601 datetime or a Unix time",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-discord-timestamp-generator"
         },
         {
           "name": "Docker Hub",
@@ -5143,6 +5251,15 @@
           "slug": "development-rejax"
         },
         {
+          "name": "Rendlet",
+          "link": "https://rendlet.com/docs.md",
+          "description": "HTML or JSON templates (invoice, itinerary) to PDF; free tier 100 docs/month",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-rendlet"
+        },
+        {
           "name": "ReplyNodes",
           "link": "https://replynodes.com/markdown-api/",
           "description": "Convert a public web page into clean Markdown",
@@ -6134,6 +6251,15 @@
           "https": true,
           "cors": "no",
           "slug": "documents-productivity-pandadoc"
+        },
+        {
+          "name": "PDFDispatch",
+          "link": "https://docs.pdfdispatch.com/",
+          "description": "HTML, URLs, Markdown and Office files to PDF, plus merge, split and PDF/A. EU-hosted, free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-pdfdispatch"
         },
         {
           "name": "PDFFleet",
@@ -7660,6 +7786,15 @@
           "slug": "finance-goldprice-dev"
         },
         {
+          "name": "Grizzly Bulls",
+          "link": "https://grizzlybulls.com/economic-data-api",
+          "description": "U.S. GDP, CPI, unemployment, and payroll history",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-grizzly-bulls"
+        },
+        {
           "name": "Halal Terminal",
           "link": "https://api.halalterminal.com/docs",
           "description": "Shariah-compliant stock and ETF screening across 5 methodologies, zakat and purification",
@@ -8074,6 +8209,15 @@
           "slug": "finance-sales-tax-calculator"
         },
         {
+          "name": "Sanctions Screening",
+          "link": "https://dataandapis.com/apis/sanctions",
+          "description": "Fuzzy name screening against OFAC, UN, EU and UK sanctions lists plus PEPs, with list versions",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "finance-sanctions-screening"
+        },
+        {
           "name": "Tax Data",
           "link": "https://apilayer.com/marketplace/tax_data-api",
           "description": "Instant VAT number and tax validation across the globe",
@@ -8135,6 +8279,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-undertow"
+        },
+        {
+          "name": "US Freelancer Tax",
+          "link": "https://narwhalthepong.github.io/gumroad-license-check/free-tax-finance-api",
+          "description": "2026 US self-employment tax, quarterly estimates, QBI, mileage and home office deductions",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-us-freelancer-tax"
         },
         {
           "name": "US Mortgage Calculator",
@@ -10378,6 +10531,15 @@
           "slug": "geocoding-openstreetmap"
         },
         {
+          "name": "Pandlens",
+          "link": "https://pandlens.nl/docs",
+          "description": "Dutch property, building, energy label, 3D roof/solar, parcel and neighbourhood data by postal code",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "geocoding-pandlens"
+        },
+        {
           "name": "ParcelGPS",
           "link": "https://www.parcelgps.com/en/developers",
           "description": "European cadastral parcels by reference or point: coordinates, area, land use and geometry",
@@ -11122,6 +11284,15 @@
           "slug": "government-federal-register"
         },
         {
+          "name": "FIRMSapi",
+          "link": "https://docs.firmsapi.com/",
+          "description": "Look up, search and validate US CBP FIRMS facility codes for ports, warehouses and FTZs",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-firmsapi"
+        },
+        {
           "name": "gankdat",
           "link": "https://gankdat.com/docs",
           "description": "UK & EU tenders, UK planning, UK sanctions, US exclusions, UK insolvency and incorporations as JSON",
@@ -11779,6 +11950,15 @@
           "slug": "government-right-to-disconnect"
         },
         {
+          "name": "ShelfWatch CPSC Recalls",
+          "link": "https://stxai.app/developers",
+          "description": "US CPSC product recall notices, filterable by product category; no key required",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-shelfwatch-cpsc-recalls"
+        },
+        {
           "name": "Spatial India",
           "link": "https://api.spatialindia.com",
           "description": "District-level data for India: Census, NFHS-5, NCRB, RBI and more, reconciled onto one map",
@@ -11840,6 +12020,15 @@
           "https": true,
           "cors": "yes",
           "slug": "government-uk-public-tenders-by-trade"
+        },
+        {
+          "name": "US Per Diem",
+          "link": "https://us-per-diem-api.narwhalapis.workers.dev",
+          "description": "GSA lodging and M&IE per diem rates for US cities by ZIP, state and fiscal year",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-us-per-diem"
         },
         {
           "name": "USAspending.gov",
@@ -12709,6 +12898,15 @@
           "slug": "jobs-the-muse"
         },
         {
+          "name": "TryHired",
+          "link": "https://tryhired.co/data/#api",
+          "description": "Read-only U.S. career data: pay, outlook, requirements and comparisons from BLS and O*NET",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "jobs-tryhired"
+        },
+        {
           "name": "Upwork",
           "link": "https://developers.upwork.com/",
           "description": "Freelance job board and management system",
@@ -13145,6 +13343,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "machine-learning-perspective"
+        },
+        {
+          "name": "Pictograph",
+          "link": "https://pictograph.io/docs/api-reference",
+          "description": "Train custom vision models and run them as real-time detection endpoints, with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "machine-learning-pictograph"
         },
         {
           "name": "QuelLLM",
@@ -14002,6 +14209,15 @@
           "slug": "open-data-btu-graph"
         },
         {
+          "name": "Caliber",
+          "link": "https://caliberapi.com/data/",
+          "description": "Which red dot optics fit which pistols, each fit cited to a maker or retailer",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-caliber"
+        },
+        {
           "name": "Callook.info",
           "link": "https://callook.info",
           "description": "United States ham radio callsigns",
@@ -14027,6 +14243,15 @@
           "https": true,
           "cors": "no",
           "slug": "open-data-cityalert"
+        },
+        {
+          "name": "Close Knit",
+          "link": "https://getcloseknit.com/openapi.json",
+          "description": "Neighbourhoods and homes in London and England: sale prices, rents, crime, schools, flood risk",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "open-data-close-knit"
         },
         {
           "name": "CollegeCalcAI",
@@ -14090,6 +14315,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-edgepedia"
+        },
+        {
+          "name": "ek litre",
+          "link": "https://eklitre.pk/data/",
+          "description": "Pakistan's petrol, diesel and kerosene prices since 2006, with OGRA's line-by-line price build-up",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-ek-litre"
         },
         {
           "name": "Enigma Public",
@@ -14389,6 +14623,15 @@
           "slug": "open-data-publicdatahub"
         },
         {
+          "name": "RebateHub",
+          "link": "https://rebatehub.ca/data",
+          "description": "Canadian home energy rebate, grant and loan programs with status, deadlines and official sources",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-rebatehub"
+        },
+        {
           "name": "Recreation Information Database",
           "link": "https://ridb.recreation.gov/",
           "description": "Recreational areas, federal lands, historic sites, museums, and other attractions/resources(US)",
@@ -14504,6 +14747,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-tilth"
+        },
+        {
+          "name": "Turkpidya",
+          "link": "https://turkpidya.com/developers/",
+          "description": "Türkiye data: gold prices, lira rates, earthquakes, prayer times, fuel, duty pharmacies",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-turkpidya"
         },
         {
           "name": "Umeå Open Data",
@@ -14768,6 +15020,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "patent-epo"
+        },
+        {
+          "name": "PatentRef",
+          "link": "https://patentref.io/docs/?utm_source=publicapis",
+          "description": "PatentsView-compatible API for US patent grants since 1976: claims, citations, CPC, fee status",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "patent-patentref"
         },
         {
           "name": "PatentsView",
@@ -16727,6 +16988,15 @@
           "https": true,
           "cors": "yes",
           "slug": "shopping-arc"
+        },
+        {
+          "name": "Barcode Lookup",
+          "link": "https://dataandapis.com/apis/barcode-lookup",
+          "description": "Product name, brand, ingredients, Nutri-Score and nutrition for 4.3M EAN, UPC and GTIN barcodes",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "shopping-barcode-lookup"
         },
         {
           "name": "Best Buy",
@@ -19114,6 +19384,15 @@
           "slug": "transportation-cts"
         },
         {
+          "name": "FlyItalyADSB",
+          "link": "https://flyitalyadsb.com/en/data/api/docs/",
+          "description": "Live and historical ADS-B and MLAT aircraft positions worldwide, from a community receiver network",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-flyitalyadsb"
+        },
+        {
           "name": "Grab",
           "link": "https://developer.grab.com/docs/",
           "description": "Track deliveries, ride fares, payments and loyalty points",
@@ -20060,6 +20339,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "vehicle-nhtsa"
+        },
+        {
+          "name": "NHTSA Edge VIN Decoder",
+          "link": "https://data.ai-kit.net",
+          "description": "Decode US VINs offline from the NHTSA vPIC dataset, served from edge locations",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "vehicle-nhtsa-edge-vin-decoder"
         },
         {
           "name": "NHTSA Vehicle Recalls",
