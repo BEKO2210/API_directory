@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2342,
+    "totalAPIs": 2343,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-06T10:07:11.293Z"
+    "lastUpdated": "2026-11-06T15:21:02.179Z"
   },
   "categories": [
     {
@@ -1850,6 +1850,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://realtycrawl.dev"
+        },
+        {
+          "name": "Datacircle",
+          "slug": "business-datacircle",
+          "description": "Find the best GTM APIs. We benchmark all the GTM APIs and we put the results on our website.",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://datacircle.dev"
         }
       ]
     },
