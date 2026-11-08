@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2343,
+    "totalAPIs": 2372,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-07T09:25:04.451Z"
+    "lastUpdated": "2026-11-08T02:05:34.881Z"
   },
   "categories": [
     {
@@ -1654,6 +1654,15 @@
           "slug": "business-registerwire"
         },
         {
+          "name": "Requstory",
+          "link": "https://requstory.com/developers/api/",
+          "description": "How companies work: teams, processes, ease scores and AI-readiness from public websites",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-requstory"
+        },
+        {
           "name": "RunDossier",
           "link": "https://rundossier.com/docs/api",
           "description": "Pre-meeting briefing on a person from public professional and web sources, as JSON",
@@ -2965,6 +2974,15 @@
           "slug": "cryptocurrency-infura-ethereum"
         },
         {
+          "name": "Ironflow",
+          "link": "https://docs.ironflow.sh",
+          "description": "Hyperliquid trades, liquidations, candles, funding and wallet data, plus SQL; no key to start",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-ironflow"
+        },
+        {
           "name": "Kraken",
           "link": "https://docs.kraken.com/exchange/guides/rest/introduction",
           "description": "Cryptocurrencies Exchange",
@@ -3706,6 +3724,15 @@
           "slug": "data-validation-verifnow"
         },
         {
+          "name": "Veriport",
+          "link": "https://veriport.io/docs",
+          "description": "EU VAT validation (VIES), VAT rates, IBAN validation, French company data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "data-validation-veriport"
+        },
+        {
           "name": "Venue Authority",
           "slug": "data-validation-venue-authority",
           "description": "Verify US food-service facilities against supported regulator records",
@@ -4088,6 +4115,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-codex"
+        },
+        {
+          "name": "Compute Comparison",
+          "link": "https://computecomparison.com/api-docs",
+          "description": "GPU rental prices, providers, models and price history across cloud providers",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "development-compute-comparison"
         },
         {
           "name": "Contentful Images",
@@ -5107,6 +5143,15 @@
           "slug": "development-postman"
         },
         {
+          "name": "Proxifly",
+          "link": "https://proxifly.dev",
+          "description": "Rotating proxy API that returns tested HTTP, SOCKS4 and SOCKS5 proxies, filterable by country",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-proxifly"
+        },
+        {
           "name": "ProxyCrawl",
           "link": "https://proxycrawl.com",
           "description": "Scraping and crawling anticaptcha service",
@@ -5683,6 +5728,15 @@
           "slug": "development-toolforte"
         },
         {
+          "name": "ToolsFox Utils",
+          "link": "https://cf-workers-demo.pianfox345.workers.dev",
+          "description": "Free developer utility API: UUID, timestamps, SHA-256, Base64, URL encode/decode, random strings",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-toolsfox-utils"
+        },
+        {
           "name": "Tyk",
           "link": "https://tyk.io/open-source-api-gateway/",
           "description": "Api and service management platform",
@@ -5887,6 +5941,15 @@
           "slug": "dictionaries-free-dictionary"
         },
         {
+          "name": "High Valyrian Translators",
+          "link": "https://github.com/HVTranslators/high-valyrian-api",
+          "description": "High Valyrian dictionary (400 words with IPA) and Dothraki phrases as free open JSON datasets",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "dictionaries-high-valyrian-translators"
+        },
+        {
           "name": "Indonesia Dictionary",
           "link": "https://new-kbbi-api.herokuapp.com/",
           "description": "Indonesia dictionary many words",
@@ -6053,6 +6116,15 @@
           "https": true,
           "cors": "yes",
           "slug": "documents-productivity-buildpdf"
+        },
+        {
+          "name": "CleverUtils",
+          "link": "https://cleverutils.com/api",
+          "description": "Convert files between 200+ formats, free with no API key",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-cleverutils"
         },
         {
           "name": "ClickUp",
@@ -6226,6 +6298,15 @@
           "slug": "documents-productivity-mercury"
         },
         {
+          "name": "MiConvert",
+          "link": "https://miconvert.com/en/api-docs#marketplace",
+          "description": "File conversion for 140+ formats incl. 3D/CAD (STEP, IGES, STL), OFD to PDF and WEM; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "documents-productivity-miconvert"
+        },
+        {
           "name": "Monday",
           "link": "https://api.developer.monday.com/docs",
           "description": "Programmatically access and update data inside a monday.com account",
@@ -6251,6 +6332,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "documents-productivity-ocr-space"
+        },
+        {
+          "name": "Optiic",
+          "link": "https://optiic.dev",
+          "description": "OCR that extracts text from images and PDFs, with optional translation of the result",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-optiic"
         },
         {
           "name": "PandaDoc",
@@ -7402,6 +7492,15 @@
           "slug": "events-findlocal"
         },
         {
+          "name": "NeedATicket",
+          "link": "https://needaticket.co.uk/developers",
+          "description": "UK and US resale ticket prices from StubHub",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "events-needaticket"
+        },
+        {
           "name": "SeatGeek",
           "link": "https://platform.seatgeek.com/",
           "description": "Search events, venues and performers",
@@ -8272,6 +8371,15 @@
           "slug": "finance-tradier"
         },
         {
+          "name": "Tradoshi",
+          "link": "https://tradoshi.com/en/developers",
+          "description": "Rankings of trading schools and prop firms, every criterion with its source",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-tradoshi"
+        },
+        {
           "name": "Twelve Data",
           "link": "https://twelvedata.com/",
           "description": "Stock market data (real-time & historical)",
@@ -8342,6 +8450,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "finance-wallstreetbets"
+        },
+        {
+          "name": "Wealthnow",
+          "link": "https://app.wealthnow.io/docs/introduction",
+          "description": "Real-time and historical stock and crypto prices, fundamentals, SEC filings, insider and 13F data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "finance-wealthnow"
         },
         {
           "name": "XFINLAB",
@@ -11122,6 +11239,15 @@
           "slug": "government-contaclt"
         },
         {
+          "name": "Contratero",
+          "link": "https://contratero.es/docs",
+          "description": "Spanish public tenders and awards from the official PLACSP platform, updated hourly",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "government-contratero"
+        },
+        {
           "name": "Conversor IAE CNAE",
           "link": "https://www.conversoriaecnae.es/api/v1/docs",
           "description": "Spanish IAE/CNAE tax activity codes, 2009→2025 crosswalk and AEAT obligations",
@@ -11923,6 +12049,15 @@
           "slug": "government-prc-exam-schedule"
         },
         {
+          "name": "Probative Legal Marketing Data",
+          "link": "https://probativegrowth.com/resources/rules-api/",
+          "description": "US lawyer advertising rules, court filings, fees and legal-market statistics, sourced, with DOIs",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-probative-legal-marketing-data"
+        },
+        {
           "name": "Radar CNPJ",
           "link": "https://radar-cnpj.com/api/",
           "description": "Brazilian companies (CNPJ) lookup and search, with a market check by area and monitoring",
@@ -11939,6 +12074,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-regulations-gov"
+        },
+        {
+          "name": "Rent Limits",
+          "link": "https://glazeddata.com/rent-limits/api/",
+          "description": "HUD Fair Market Rents by US ZIP; paid tiers add tax-credit and Section 8 limits",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-rent-limits"
         },
         {
           "name": "Represent by Open North",
@@ -12047,6 +12191,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-usaspending-gov"
+        },
+        {
+          "name": "Vergabeweiser",
+          "link": "https://vergabeweiser.de/api",
+          "description": "German public tenders and contract awards from open procurement data",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "government-vergabeweiser"
         },
         {
           "name": "Veridion",
@@ -12422,6 +12575,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "health-nhs-health-a-z"
+        },
+        {
+          "name": "NPI Lookup",
+          "link": "https://dataandapis.com/apis/healthcare-providers",
+          "description": "Search 9.4M US healthcare providers by NPI, name, taxonomy or location from NPPES data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "health-npi-lookup"
         },
         {
           "name": "NPPES",
@@ -13345,6 +13507,15 @@
           "slug": "machine-learning-openvisionapi"
         },
         {
+          "name": "Opper",
+          "link": "https://docs.opper.ai/build/gateway/drop-in-sdks",
+          "description": "EU-hosted OpenAI-compatible gateway to 700+ models from 50+ providers, with free models",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-opper"
+        },
+        {
           "name": "Perspective",
           "link": "https://perspectiveapi.com",
           "description": "NLP API to return probability that if text is toxic, obscene, insulting or threatening",
@@ -13682,6 +13853,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "music-lastfm"
+        },
+        {
+          "name": "ListenBrainz",
+          "link": "https://listenbrainz.readthedocs.io/en/latest/users/api/index.html",
+          "description": "Open music listening data: scrobble history, statistics and recommendations",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "music-listenbrainz"
         },
         {
           "name": "Lyrics.ovh",
@@ -14461,6 +14641,15 @@
           "slug": "open-data-lowy-asia-power-index"
         },
         {
+          "name": "Mapa Oswiatowa",
+          "link": "https://mapaoswiatowa.pl/dla-deweloperow",
+          "description": "Polish schools, preschools, nurseries and universities from public registers, with exam results",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-mapa-oswiatowa"
+        },
+        {
           "name": "Microburbs",
           "link": "https://www.microburbs.com.au/developers/api-docs",
           "description": "Australian property and suburb data: valuations, sales, rents, schools, demographics, risk, zoning",
@@ -14668,6 +14857,15 @@
           "slug": "open-data-scoop-it"
         },
         {
+          "name": "Security Startups",
+          "link": "https://securitystartups.com/for-agents",
+          "description": "Curated directory of young security companies with proof-of-life signals",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-security-startups"
+        },
+        {
           "name": "SlashYear",
           "link": "https://slashyear.com/api",
           "description": "Dated historical events as JSON, each quoted from a cited Wikipedia revision",
@@ -14855,6 +15053,15 @@
           "https": true,
           "cors": "yes",
           "slug": "open-data-warnely"
+        },
+        {
+          "name": "WhatsApp Rate Cards",
+          "link": "https://github.com/tobachat/whatsapp-api-rates#json",
+          "description": "Meta's WhatsApp Business API per-message rates per country in 16 currencies, checked weekly",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-whatsapp-rate-cards"
         },
         {
           "name": "Wikidata",
@@ -15383,6 +15590,15 @@
           "https": true,
           "cors": "no",
           "slug": "phone-placecall"
+        },
+        {
+          "name": "TextKit",
+          "link": "https://jointextkit.com/docs",
+          "description": "Send and receive SMS, verify phones and buy US and Canada numbers; free sandbox",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "phone-textkit"
         },
         {
           "name": "Veriphone",
@@ -16651,6 +16867,15 @@
           "slug": "security-intelligence-x"
         },
         {
+          "name": "IP Intelligence",
+          "link": "https://dataandapis.com/apis/ip-intelligence",
+          "description": "Country, ASN, datacenter, cloud and Tor detection with an explainable risk score for any IP",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "security-ip-intelligence"
+        },
+        {
           "name": "IPGuardian",
           "link": "https://ipguardian.net/docs",
           "description": "Check IP addresses against 140+ public threat intelligence blocklists",
@@ -17303,6 +17528,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://docs.soldfetch.com"
+        },
+        {
+          "name": "OpenAxia",
+          "slug": "shopping-openaxia",
+          "description": "Source-linked specifications and certifications for blind, shutter, awning and door motors",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://openaxia.com/agent"
         }
       ]
     },
@@ -18253,6 +18487,15 @@
           "slug": "sports-fitness-padel-snipe"
         },
         {
+          "name": "PadelAPI",
+          "link": "https://padelapi.org/docs",
+          "description": "Query professional padel tournament data, player stats, and live match results",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-padelapi"
+        },
+        {
           "name": "Parlay",
           "link": "https://parlay-api.com/docs",
           "description": "Real-time sports odds and player props from 45+ sportsbooks and sources across 90+ sports",
@@ -18467,6 +18710,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "sports-fitness-tredict"
+        },
+        {
+          "name": "UFCalendar Fight Data",
+          "link": "https://api.ufcalendar.com/docs",
+          "description": "UFC, PFL, OKTAGON, BKFC and RIZIN events, results, round stats, rankings history",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-ufcalendar-fight-data"
         },
         {
           "name": "WhensTheRace",
@@ -20750,6 +21002,15 @@
           "https": false,
           "cors": "no",
           "slug": "video-stapi"
+        },
+        {
+          "name": "Star Wars Images",
+          "link": "https://starwarsgallery.netlify.app/swapi-image-api/",
+          "description": "Images for SWAPI people, planets, species, starships and vehicles by ID",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-star-wars-images"
         },
         {
           "name": "Stranger Things Quotes",
