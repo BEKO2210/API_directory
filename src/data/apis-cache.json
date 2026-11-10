@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2372,
+    "totalAPIs": 2373,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-10T10:36:42.685Z"
+    "lastUpdated": "2026-11-10T23:21:34.414Z"
   },
   "categories": [
     {
@@ -21236,6 +21236,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://www.reclip.io/docs"
+        },
+        {
+          "name": "Vidmoat",
+          "slug": "video-vidmoat",
+          "description": "Video editing API on the same engine as the Vidmoat editor, with free test keys",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "link": "https://developer.vidmoat.com/developer/docs/api"
         }
       ]
     },
