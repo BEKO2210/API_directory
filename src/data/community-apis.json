@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-11T08:25:46.614Z"
+    "lastUpdated": "2026-11-11T09:32:37.810Z"
   },
   "add": [
     {
@@ -440,6 +440,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 122
+    },
+    {
+      "name": "IP2WHOIS Domain WHOIS API",
+      "link": "https://www.ip2location.io/ip2whois-documentation",
+      "description": "Retrieve domain WHOIS information, including registration details, registrar, nameservers, and domain status.",
+      "category": "Geocoding",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 123
     }
   ],
   "remove": [],

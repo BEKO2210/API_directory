@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2374,
+    "totalAPIs": 2375,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-11T08:25:46.830Z"
+    "lastUpdated": "2026-11-11T09:32:38.079Z"
   },
   "categories": [
     {
@@ -11006,6 +11006,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://www.ip2location.io/ip2location-documentation"
+        },
+        {
+          "name": "IP2WHOIS Domain WHOIS API",
+          "slug": "geocoding-ip2whois-domain-whois-api",
+          "description": "Retrieve domain WHOIS information, including registration details, registrar, nameservers, and domain status.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.ip2location.io/ip2whois-documentation"
         }
       ]
     },
