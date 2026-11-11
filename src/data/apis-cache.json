@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2373,
+    "totalAPIs": 2374,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-11T08:15:35.820Z"
+    "lastUpdated": "2026-11-11T08:25:46.830Z"
   },
   "categories": [
     {
@@ -10997,6 +10997,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://www.iplocate.io/docs/"
+        },
+        {
+          "name": "IP2Location.io IP Geolocation API",
+          "slug": "geocoding-ip2location-io-ip-geolocation-api",
+          "description": "Retrieve accurate IP geolocation data, including location, ISP, ASN, timezone, and proxy detection.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.ip2location.io/ip2location-documentation"
         }
       ]
     },
