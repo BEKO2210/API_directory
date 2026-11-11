@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-10T23:21:34.141Z"
+    "lastUpdated": "2026-11-11T08:15:35.488Z"
   },
   "add": [
     {
@@ -420,6 +420,16 @@
       "https": true,
       "cors": "no",
       "source_issue": 120
+    },
+    {
+      "name": "BookRank API",
+      "link": "https://openbookrank.com/en/open-data",
+      "description": "Book scores, rankings, series and ISBN/Wikidata lookups as static JSON",
+      "category": "Books",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 121
     }
   ],
   "remove": [],
