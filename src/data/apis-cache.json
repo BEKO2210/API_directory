@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2404,
+    "totalAPIs": 2405,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-12T04:07:13.107Z"
+    "lastUpdated": "2026-11-12T09:54:35.221Z"
   },
   "categories": [
     {
@@ -7121,6 +7121,15 @@
           "https": true,
           "cors": "no",
           "slug": "email-xeramail-temp-mail"
+        },
+        {
+          "name": "FairValid",
+          "slug": "email-fairvalid",
+          "description": "Verify individual email addresses and bulk lists, and retrieve per-address results.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://fairvalid.com/en/help/api"
         }
       ]
     },
