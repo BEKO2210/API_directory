@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2403,
+    "totalAPIs": 2404,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-12T01:21:49.479Z"
+    "lastUpdated": "2026-11-12T04:07:13.107Z"
   },
   "categories": [
     {
@@ -3314,6 +3314,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://www.bitpont.com/developers/free-access/"
+        },
+        {
+          "name": "LimitQuant",
+          "slug": "cryptocurrency-limitquant",
+          "description": "Free crypto ticket metadata; direction and price levels require paid API keys",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.limitquant.com/"
         }
       ]
     },
