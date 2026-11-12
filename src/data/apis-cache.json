@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2402,
+    "totalAPIs": 2403,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-12T01:09:55.389Z"
+    "lastUpdated": "2026-11-12T01:21:49.479Z"
   },
   "categories": [
     {
@@ -3305,6 +3305,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-zmok"
+        },
+        {
+          "name": "Bitpont Public Market Data",
+          "slug": "cryptocurrency-bitpont-public-market-data",
+          "description": "Free keyless DeFi market discovery, supported market data and unsigned workflow drafts",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.bitpont.com/developers/free-access/"
         }
       ]
     },
