@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-11T09:32:37.810Z"
+    "lastUpdated": "2026-11-12T00:47:04.256Z"
   },
   "add": [
     {
@@ -450,6 +450,46 @@
       "https": true,
       "cors": "yes",
       "source_issue": 123
+    },
+    {
+      "name": "IP2WHOIS Hosted Domain API",
+      "link": "https://www.ip2location.io/ip2whois-domains-documentation",
+      "description": "Retrieve all domain names hosted on an IP address in real time.",
+      "category": "Geocoding",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 127
+    },
+    {
+      "name": "Quotelinks Exchange Rates",
+      "link": "https://www.quotelinks.com/api/exchange-rates/",
+      "description": "ECB daily euro reference rates for 30 currencies since 1999, with conversion",
+      "category": "Currency Exchange",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 126
+    },
+    {
+      "name": "Quotelinks SEC Fundamentals",
+      "link": "https://www.quotelinks.com/api/sec-fundamentals/",
+      "description": "Standardized SEC EDGAR financial statements, profiles and filings for 21,000+ companies",
+      "category": "Finance",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 125
+    },
+    {
+      "name": "Quotelinks Credit Market Data",
+      "link": "https://www.quotelinks.com/api/credit-market-data/",
+      "description": "NY Fed corporate bond distress index, Treasury HQM yield curve and CFTC credit default swap data",
+      "category": "Finance",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 124
     }
   ],
   "remove": [],

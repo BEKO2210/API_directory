@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2375,
+    "totalAPIs": 2401,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-11T10:00:52.884Z"
+    "lastUpdated": "2026-11-12T00:47:04.549Z"
   },
   "categories": [
     {
@@ -1135,6 +1135,15 @@
           "slug": "books-amanah-sunnah"
         },
         {
+          "name": "Bayan",
+          "link": "https://bayan.alwa7i.com/api",
+          "description": "Arabic Islamic encyclopedia: hadith with grades and takhrij, Quran with tafsir, narrators",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "books-bayan"
+        },
+        {
           "name": "Bhagavad Gita",
           "link": "https://docs.bhagavadgitaapi.in",
           "description": "Open Source Shrimad Bhagavad Gita API including 21+ authors translation in Sanskrit/English/Hindi",
@@ -1178,6 +1187,15 @@
           "https": false,
           "cors": "unknown",
           "slug": "books-british-national-bibliography"
+        },
+        {
+          "name": "Buku Indonesia",
+          "link": "https://github.com/khrlanamm/buku-indonesia#api",
+          "description": "Open data for Indonesian books by ISBN, author, and category",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "books-buku-indonesia"
         },
         {
           "name": "Crossref Metadata Search",
@@ -3430,6 +3448,15 @@
           "slug": "currency-exchange-daleelak"
         },
         {
+          "name": "DolarKaç",
+          "link": "https://dolarkac.com/gelistirici-api",
+          "description": "Turkish lira exchange rates, gold and crypto prices from the Istanbul free market",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-dolarka"
+        },
+        {
           "name": "Economia.Awesome",
           "link": "https://docs.awesomeapi.com.br/api-de-moedas",
           "description": "Portuguese free currency prices and conversion with no rate limits",
@@ -3572,6 +3599,15 @@
           "https": true,
           "cors": "yes",
           "slug": "currency-exchange-xrates"
+        },
+        {
+          "name": "Quotelinks Exchange Rates",
+          "slug": "currency-exchange-quotelinks-exchange-rates",
+          "description": "ECB daily euro reference rates for 30 currencies since 1999, with conversion",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.quotelinks.com/api/exchange-rates/"
         }
       ]
     },
@@ -4828,6 +4864,15 @@
           "slug": "development-labelixa"
         },
         {
+          "name": "latest@",
+          "link": "https://latestat.com/api",
+          "description": "Latest versions and end-of-life dates for 500+ software products",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-latest"
+        },
+        {
           "name": "License-API",
           "link": "https://github.com/cmccandless/license-api/blob/master/README.md",
           "description": "Unofficial REST API for choosealicense.com",
@@ -4889,6 +4934,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-macadress"
+        },
+        {
+          "name": "MacVendorCheck",
+          "link": "https://macvendorcheck.com/mac-address-lookup-api",
+          "description": "MAC address and OUI vendor lookup from the IEEE MA-L, MA-M and MA-S registries",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-macvendorcheck"
         },
         {
           "name": "Micro-SaaS AI Suite",
@@ -6181,6 +6235,15 @@
           "slug": "documents-productivity-convert-online"
         },
         {
+          "name": "ConvertFly",
+          "link": "https://convertfly.io/docs/api",
+          "description": "Convert documents, images, audio, video, ebooks and archives between formats",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-convertfly"
+        },
+        {
           "name": "CraftMyPDF",
           "link": "https://craftmypdf.com",
           "description": "Generate PDF documents from templates with a drop-and-drop editor and a simple API",
@@ -6197,6 +6260,15 @@
           "https": true,
           "cors": "yes",
           "slug": "documents-productivity-doccheap"
+        },
+        {
+          "name": "DocSpring",
+          "link": "https://docspring.com/docs/api/",
+          "description": "Fill PDF forms, generate PDFs and Word documents, and collect e-signatures. Free plan",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-docspring"
         },
         {
           "name": "DocStruct",
@@ -6251,6 +6323,15 @@
           "https": true,
           "cors": "no",
           "slug": "documents-productivity-formfeed"
+        },
+        {
+          "name": "FynePDF",
+          "link": "https://fynepdf.com/developers/docs",
+          "description": "Compress, convert, OCR, redact, merge, split and generate PDFs, and read them with AI",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-fynepdf"
         },
         {
           "name": "Html2PDF",
@@ -6503,6 +6584,15 @@
           "https": true,
           "cors": "yes",
           "slug": "documents-productivity-teamsort"
+        },
+        {
+          "name": "The Drive AI",
+          "link": "https://dev.thedrive.ai/docs",
+          "description": "Extract and analyze data from 107+ file types and URLs into structured JSON, with a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "documents-productivity-the-drive-ai"
         },
         {
           "name": "Todoist",
@@ -6943,6 +7033,15 @@
           "slug": "email-smtpfast"
         },
         {
+          "name": "StopMailing",
+          "link": "https://stopmailing.net/developer-guide",
+          "description": "Disposable email addresses with a free, no-signup REST API",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "email-stopmailing"
+        },
+        {
           "name": "TempMailGrab",
           "link": "https://tempmailgrab.com/api-docs",
           "description": "Disposable inboxes for email testing with OTP extraction and webhooks",
@@ -6950,6 +7049,15 @@
           "https": true,
           "cors": "no",
           "slug": "email-tempmailgrab"
+        },
+        {
+          "name": "TrustLookup",
+          "link": "https://trustlookup.io/docs",
+          "description": "Verify email syntax, MX and live mailbox; detect disposable, role and catch-all addresses",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-trustlookup"
         },
         {
           "name": "uchecker",
@@ -7340,6 +7448,15 @@
           "https": true,
           "cors": "yes",
           "slug": "environment-open-meteo"
+        },
+        {
+          "name": "PixelGust Soil",
+          "link": "https://pixelgust.com/docs#soil",
+          "description": "Soil properties at 6 depths for any point (SoilGrids 2.0, 250 m), ISRIC-compatible",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-pixelgust-soil"
         },
         {
           "name": "PM2.5 Open Data Portal",
@@ -8353,6 +8470,15 @@
           "slug": "finance-tickerlayer"
         },
         {
+          "name": "TILLA",
+          "link": "https://tillacrypto.com/docs",
+          "description": "Crypto, US stocks, FX, macro and spot ETF flows on one UTC clock, with 280,675 derived indicators",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-tilla"
+        },
+        {
           "name": "Top 5 Stocks",
           "link": "https://top5stocks.netlify.app/developers",
           "description": "Daily AI-ranked stock and crypto watchlists",
@@ -8531,6 +8657,24 @@
           "https": true,
           "cors": "unknown",
           "link": "https://sifting.io/docs"
+        },
+        {
+          "name": "Quotelinks SEC Fundamentals",
+          "slug": "finance-quotelinks-sec-fundamentals",
+          "description": "Standardized SEC EDGAR financial statements, profiles and filings for 21,000+ companies",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.quotelinks.com/api/sec-fundamentals/"
+        },
+        {
+          "name": "Quotelinks Credit Market Data",
+          "slug": "finance-quotelinks-credit-market-data",
+          "description": "NY Fed corporate bond distress index, Treasury HQM yield curve and CFTC credit default swap data",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.quotelinks.com/api/credit-market-data/"
         }
       ]
     },
@@ -10450,6 +10594,15 @@
           "slug": "geocoding-ipkit"
         },
         {
+          "name": "IPSnapshot",
+          "link": "https://ipsnapshot.com/ip-lookup-api",
+          "description": "IP geolocation, ASN and ISP, plus VPN, datacenter and Tor detection for IPv4 and IPv6",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-ipsnapshot"
+        },
+        {
           "name": "ipstack",
           "link": "https://ipstack.com/",
           "description": "Locate and identify website visitors by IP address",
@@ -11015,6 +11168,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://www.ip2location.io/ip2whois-documentation"
+        },
+        {
+          "name": "IP2WHOIS Hosted Domain API",
+          "slug": "geocoding-ip2whois-hosted-domain-api",
+          "description": "Retrieve all domain names hosted on an IP address in real time.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.ip2location.io/ip2whois-domains-documentation"
         }
       ]
     },
@@ -14830,6 +14992,15 @@
           "slug": "open-data-productguru"
         },
         {
+          "name": "PropRaven",
+          "link": "https://propraven.com/developers",
+          "description": "US parcel, owner and permit records for all 50 states, with an OpenAPI 3.1 spec",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "open-data-propraven"
+        },
+        {
           "name": "PublicDataHub",
           "link": "https://publicdatahub.org/api",
           "description": "US public schools, hospitals and federal agency budgets as JSON/CSV, with provenance",
@@ -15686,6 +15857,15 @@
           "https": true,
           "cors": "no",
           "slug": "photography-compresso"
+        },
+        {
+          "name": "CropDen",
+          "link": "https://github.com/geektao1024/social-media-image-sizes#json-over-http",
+          "description": "Image sizes, safe zones and upload limits for 14 social platforms and passport photos",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "photography-cropden"
         },
         {
           "name": "Dagpi",
@@ -17485,6 +17665,15 @@
           "slug": "shopping-shopee"
         },
         {
+          "name": "SoldSignal",
+          "link": "https://www.aiplannermail.com/free-resale-price-api/",
+          "description": "Weekly resale prices for sneakers, consoles and watches with sample size and fees",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-soldsignal"
+        },
+        {
           "name": "SoldStack",
           "link": "https://soldstack.fly.dev/docs",
           "description": "Sold resale listings from Poshmark with median price, days to sell and net payout after fees",
@@ -17633,6 +17822,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-discord"
+        },
+        {
+          "name": "disdex",
+          "link": "https://disdex.io/api",
+          "description": "Search public Discord servers by name, language, guild tag and size, with member history",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-disdex"
         },
         {
           "name": "Disqus",
@@ -17786,6 +17984,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-linkedin"
+        },
+        {
+          "name": "LurkAPI",
+          "link": "https://lurkapi.com/docs",
+          "description": "Public posts, profiles, ads and transcripts from 16 social platforms as JSON",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-lurkapi"
         },
         {
           "name": "Meetup.com",
@@ -18233,6 +18440,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "sports-fitness-collegefootballdata-com"
+        },
+        {
+          "name": "DeepChamp for Agents",
+          "link": "https://deepchampai.com/docs/agents",
+          "description": "Free sports slate and matchup research context for AI agents, over REST and MCP; research only",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-deepchamp-for-agents"
         },
         {
           "name": "DiscGolf",
@@ -20584,6 +20800,15 @@
           "slug": "vehicle-carvector"
         },
         {
+          "name": "FuelEconomy",
+          "link": "https://www.fueleconomy.gov/feg/ws/index.shtml",
+          "description": "US EPA fuel economy data by year, make and model",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "vehicle-fueleconomy"
+        },
+        {
           "name": "Helipaddy sites",
           "link": "https://helipaddy.com/api/",
           "description": "Helicopter and passenger drone landing site directory, Helipaddy data and much more",
@@ -21137,6 +21362,15 @@
           "https": true,
           "cors": "yes",
           "slug": "video-trakt"
+        },
+        {
+          "name": "Transcript Dock",
+          "link": "https://www.transcriptdock.com/docs",
+          "description": "Transcripts of YouTube, TikTok and Instagram videos, with timing and SRT or VTT exports",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "video-transcript-dock"
         },
         {
           "name": "TranscriptYT",
