@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2401,
+    "totalAPIs": 2402,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-12T00:47:04.549Z"
+    "lastUpdated": "2026-11-12T01:09:55.389Z"
   },
   "categories": [
     {
@@ -3776,6 +3776,15 @@
           "https": true,
           "cors": "no",
           "link": "https://venueauthority.com/developers"
+        },
+        {
+          "name": "Pactman Nonprofit Check Plus API",
+          "slug": "data-validation-pactman-nonprofit-check-plus-api",
+          "description": "Look up U.S. nonprofits by EIN and access IRS and OFAC data.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "link": "https://pactman.org/nonprofitcheckplus-api/docs"
         }
       ]
     },
