@@ -5,6 +5,15 @@
   },
   "add": [
     {
+      "name": "SandBase",
+      "link": "https://www.sandbase.ai/docs/getting-started/quickstart",
+      "description": "AI models and data APIs with 100 free daily calls on eligible data APIs",
+      "category": "Machine Learning",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "no"
+    },
+    {
       "name": "PostalCodes.info",
       "link": "https://postalcodes.info/api",
       "description": "Postal-code lookup, country exports, and address validation data",
