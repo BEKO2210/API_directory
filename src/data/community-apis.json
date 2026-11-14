@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-12T09:54:34.963Z"
+    "lastUpdated": "2026-11-14T01:58:25.472Z"
   },
   "add": [
     {
@@ -530,6 +530,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 131
+    },
+    {
+      "name": "链小知区块链",
+      "link": "https://lianxiaozhi.com/agent",
+      "description": "Chinese blockchain news, event timelines, knowledge guides and onchain tool tutorials",
+      "category": "Blockchain",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 132
     }
   ],
   "remove": [],
