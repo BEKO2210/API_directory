@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2435,
+    "totalAPIs": 2436,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-14T13:42:14.134Z"
+    "lastUpdated": "2026-11-14T16:13:16.211Z"
   },
   "categories": [
     {
@@ -1376,6 +1376,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "books-wolne-lektury"
+        },
+        {
+          "name": "List Of Books",
+          "slug": "books-list-of-books",
+          "description": "Book series reading orders, author series and book-to-series lookups",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "link": "https://www.listofbooks.net/developers"
         }
       ]
     },

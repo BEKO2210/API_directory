@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-14T01:58:25.472Z"
+    "lastUpdated": "2026-11-14T16:13:15.851Z"
   },
   "add": [
     {
@@ -540,6 +540,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 132
+    },
+    {
+      "name": "List Of Books",
+      "link": "https://www.listofbooks.net/developers",
+      "description": "Book series reading orders, author series and book-to-series lookups",
+      "category": "Books",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "no",
+      "source_issue": 135
     }
   ],
   "remove": [],
