@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-14T16:13:15.851Z"
+    "lastUpdated": "2026-11-14T19:29:53.978Z"
   },
   "add": [
     {
@@ -550,6 +550,16 @@
       "https": true,
       "cors": "no",
       "source_issue": 135
+    },
+    {
+      "name": "BeliefState Company Coverage API",
+      "link": "https://beliefstate.ai/about#investor-thesis-coverage",
+      "description": "Lists stocks with released investor research, including coverage counts and observation dates.",
+      "category": "Finance",
+      "auth": "",
+      "https": true,
+      "cors": "no",
+      "source_issue": 136
     }
   ],
   "remove": [],

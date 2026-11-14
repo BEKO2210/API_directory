@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2436,
+    "totalAPIs": 2437,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-14T16:13:16.211Z"
+    "lastUpdated": "2026-11-14T19:29:54.248Z"
   },
   "categories": [
     {
@@ -8882,6 +8882,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://www.quotelinks.com/api/credit-market-data/"
+        },
+        {
+          "name": "BeliefState Company Coverage API",
+          "slug": "finance-beliefstate-company-coverage-api",
+          "description": "Lists stocks with released investor research, including coverage counts and observation dates.",
+          "auth": "",
+          "https": true,
+          "cors": "no",
+          "link": "https://beliefstate.ai/about#investor-thesis-coverage"
         }
       ]
     },
