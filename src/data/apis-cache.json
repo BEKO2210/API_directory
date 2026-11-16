@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2464,
+    "totalAPIs": 2465,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-16T10:21:50.718Z"
+    "lastUpdated": "2026-11-16T14:05:24.069Z"
   },
   "categories": [
     {
@@ -14324,6 +14324,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://mandapi.com/docs/quickstart"
+        },
+        {
+          "name": "SFW API",
+          "slug": "machine-learning-sfw-api",
+          "description": "Nudity detection for images, GIFs and videos with four content levels. 500 free credits a month",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "link": "https://sfwapi.dev"
         }
       ]
     },

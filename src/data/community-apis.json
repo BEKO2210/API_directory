@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-14T19:29:53.978Z"
+    "lastUpdated": "2026-11-16T14:05:23.807Z"
   },
   "add": [
     {
@@ -560,6 +560,16 @@
       "https": true,
       "cors": "no",
       "source_issue": 136
+    },
+    {
+      "name": "SFW API",
+      "link": "https://sfwapi.dev",
+      "description": "Nudity detection for images, GIFs and videos with four content levels. 500 free credits a month",
+      "category": "Machine Learning",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 138
     }
   ],
   "remove": [],
