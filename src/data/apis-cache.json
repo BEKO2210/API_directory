@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2465,
+    "totalAPIs": 2466,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-16T14:05:24.069Z"
+    "lastUpdated": "2026-11-16T16:55:14.418Z"
   },
   "categories": [
     {
@@ -3770,6 +3770,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://www.quotelinks.com/api/exchange-rates/"
+        },
+        {
+          "name": "Crystal Ball Markets",
+          "slug": "currency-exchange-crystal-ball-markets",
+          "description": "Free exchange rates for 60 currencies, gold prices in 69 countries and 211 market quotes",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://crystalballmarkets.com/markets/rates-api"
         }
       ]
     },
