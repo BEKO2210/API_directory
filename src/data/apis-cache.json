@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2437,
+    "totalAPIs": 2464,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-15T10:09:07.600Z"
+    "lastUpdated": "2026-11-16T10:21:50.718Z"
   },
   "categories": [
     {
@@ -304,6 +304,15 @@
           "slug": "anime-danbooru-anime"
         },
         {
+          "name": "FillerLists",
+          "link": "https://fillerlists.com/data",
+          "description": "Filler, mixed and canon labels for every episode of 13 long anime (JSON and CSV)",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "anime-fillerlists"
+        },
+        {
           "name": "Jikan",
           "link": "https://jikan.moe",
           "description": "Unofficial MyAnimeList API",
@@ -434,6 +443,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "anti-malware-alienvault-open-threat-exchange-otx"
+        },
+        {
+          "name": "Bewary",
+          "link": "https://bewary.app/docs",
+          "description": "Scam checks for links, domains, phone numbers, emails, crypto wallets and IBANs",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "anti-malware-bewary"
         },
         {
           "name": "CAPEsandbox",
@@ -1093,6 +1111,15 @@
           "slug": "blockchain-the-graph"
         },
         {
+          "name": "Verifyum",
+          "link": "https://verifyum.com/agents",
+          "description": "File timestamp proofs anchored on Solana from a locally computed commitment, no file upload",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "blockchain-verifyum"
+        },
+        {
           "name": "Walltime",
           "link": "https://walltime.info/api.html",
           "description": "To retrieve Walltime's market info",
@@ -1322,6 +1349,15 @@
           "https": true,
           "cors": "yes",
           "slug": "books-quran-api"
+        },
+        {
+          "name": "Readark",
+          "link": "https://readark.app/developers/",
+          "description": "Dark romance books with spice and darkness ratings, subgenres, tropes and authors",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "books-readark"
         },
         {
           "name": "Runyankole Bible",
@@ -2038,6 +2074,15 @@
           "slug": "calendar-intellibook"
         },
         {
+          "name": "Kalenderblick",
+          "link": "https://kalenderblick.de/api/",
+          "description": "Public holidays and school holidays for Germany, Austria and Switzerland as static JSON",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "calendar-kalenderblick"
+        },
+        {
           "name": "LectServe",
           "link": "http://www.lectserve.com",
           "description": "Protestant liturgical calendar",
@@ -2110,6 +2155,15 @@
           "slug": "calendar-russian-calendar"
         },
         {
+          "name": "SalahTable",
+          "link": "https://salahtable.com/prayer-times-api",
+          "description": "Islamic prayer times for 400+ cities, by day or month, with six calculation methods",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "calendar-salahtable"
+        },
+        {
           "name": "The Calendar",
           "link": "https://the-calendar.net/api/",
           "description": "Public holidays for US states and 30 countries plus sports and finance calendars as static JSON",
@@ -2117,6 +2171,15 @@
           "https": true,
           "cors": "yes",
           "slug": "calendar-the-calendar"
+        },
+        {
+          "name": "TradingCalendars",
+          "link": "https://tradingcalendars.com/documentation",
+          "description": "Market holidays and business days for FX, banks, payment systems and exchanges, with early closes",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "calendar-tradingcalendars"
         },
         {
           "name": "UK Bank Holidays",
@@ -2803,6 +2866,15 @@
           "slug": "cryptocurrency-corpstacking"
         },
         {
+          "name": "Cosmos Pay",
+          "link": "https://dev.cosmospay.lat/docs/api/",
+          "description": "Stablecoin payment links, checkout and swaps on Stellar, Solana and Monad",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "cryptocurrency-cosmos-pay"
+        },
+        {
           "name": "CryptAPI",
           "link": "https://docs.cryptapi.io/",
           "description": "Cryptocurrency Payment Processor",
@@ -2837,6 +2909,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "cryptocurrency-cryptocompare"
+        },
+        {
+          "name": "CryptoDataAPI",
+          "link": "https://cryptodataapi.com/api/docs",
+          "description": "Prices, derivatives, funding, liquidations, Hyperliquid, ETF flows, volatility index and regimes",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "cryptocurrency-cryptodataapi"
         },
         {
           "name": "CryptoKeyhole",
@@ -2936,6 +3017,15 @@
           "https": true,
           "cors": "yes",
           "slug": "cryptocurrency-fraudcoins"
+        },
+        {
+          "name": "Gasrent",
+          "link": "https://gasrent.click/api.html",
+          "description": "TRON energy and bandwidth rental aggregator with public price and health endpoints",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-gasrent"
         },
         {
           "name": "Gateio",
@@ -3917,6 +4007,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-agify-io"
+        },
+        {
+          "name": "AI SENSE",
+          "link": "https://aisense.no/free-public-apis",
+          "description": "Utility endpoints: time, hashing, encoding, QR, JSON, images, webhooks, temporary storage",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-ai-sense"
         },
         {
           "name": "Allscreenshots",
@@ -5152,6 +5251,15 @@
           "slug": "development-nuget"
         },
         {
+          "name": "Octocrawl",
+          "link": "https://octocrawl.dev/docs/reference/",
+          "description": "Web pages as Markdown or JSON with an Evidence Record: final URL, HTTP status, robots.txt, hashes",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "development-octocrawl"
+        },
+        {
           "name": "OneSignal",
           "link": "https://developers.onesignal.com/",
           "description": "Self-serve customer engagement solution for Push Notifications, Email, SMS & In-App",
@@ -5375,6 +5483,15 @@
           "https": true,
           "cors": "no",
           "slug": "development-qr-codes"
+        },
+        {
+          "name": "QR Kept",
+          "link": "https://qrkept.com/free-qr-code-api",
+          "description": "Free QR code API: one GET request returns an SVG, no key or account",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-qr-kept"
         },
         {
           "name": "Qrcode Monkey",
@@ -5807,6 +5924,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-supportivekoala"
+        },
+        {
+          "name": "SuprSend",
+          "link": "https://docs.suprsend.com/reference/overview",
+          "description": "Multi-channel notifications: workflows, templates and preferences for email, SMS, push and in-app",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-suprsend"
         },
         {
           "name": "Suprsonic",
@@ -6505,6 +6631,15 @@
           "slug": "documents-productivity-jira"
         },
         {
+          "name": "KaijuConverter",
+          "link": "https://kaijuconverter.com/api-docs",
+          "description": "Convert 201+ file formats, OCR, PDF/A & exact KB compression",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "documents-productivity-kaijuconverter"
+        },
+        {
           "name": "Mattermost",
           "link": "https://api.mattermost.com/",
           "description": "An open source platform for developer collaboration",
@@ -7114,6 +7249,15 @@
           "slug": "email-mailsenpai-dns-check"
         },
         {
+          "name": "MailTester Ninja",
+          "link": "https://mailtester.ninja/api/",
+          "description": "Verify email addresses live with the mail server, catch-all and disposable detection, free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "email-mailtester-ninja"
+        },
+        {
           "name": "Mailtrap",
           "link": "https://mailtrap.io",
           "description": "Email API and SMTP for sending transactional and bulk emails, with email testing sandbox for safe development",
@@ -7343,6 +7487,15 @@
           "https": true,
           "cors": "yes",
           "slug": "entertainment-fun-fact"
+        },
+        {
+          "name": "Green Screen Memes",
+          "link": "https://api.greenscreenmemes.app/docs",
+          "description": "Search 2,000+ green screen meme video clips, most with sound, new clips daily",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "entertainment-green-screen-memes"
         },
         {
           "name": "Imgflip",
@@ -7849,6 +8002,15 @@
           "slug": "finance-marketstack"
         },
         {
+          "name": "AIR Stock Discovery",
+          "link": "https://www.aistockradars.com/developers",
+          "description": "AI-scored SEC filing events for small and mid-cap US companies",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "finance-air-stock-discovery"
+        },
+        {
           "name": "Aletheia",
           "link": "https://aletheiaapi.com/",
           "description": "Insider trading data, earnings call analysis, financial statements, and more",
@@ -8264,8 +8426,8 @@
         },
         {
           "name": "IBANforge",
-          "link": "https://api.ibanforge.com",
-          "description": "IBAN validation and BIC/SWIFT lookup for 89 countries with 121k+ BIC entries",
+          "link": "https://ibanforge.com/docs",
+          "description": "IBAN checks and sourced bank/BIC references; free format checks and a keyless validation trial",
           "auth": "apiKey",
           "https": true,
           "cors": "no",
@@ -10167,7 +10329,7 @@
         {
           "name": "TickerMint",
           "link": "https://tickermint.cards/developers",
-          "description": "Daily market prices and price history for Pokémon, One Piece, Lorcana and Yu-Gi-Oh cards",
+          "description": "Daily card prices and history for Pokémon, One Piece, Lorcana, Riftbound, Yu-Gi-Oh and Gundam",
           "auth": "No",
           "https": true,
           "cors": "no",
@@ -10199,6 +10361,15 @@
           "https": true,
           "cors": "yes",
           "slug": "games-comics-universalis"
+        },
+        {
+          "name": "Valo.Data",
+          "link": "https://valotcg.com/developers/api/pokemon",
+          "description": "Pokémon TCG cards in EN/FR/JA/ZH, Cardmarket, US market and eBay prices, PSA populations, 14 TCGs",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-valo-data"
         },
         {
           "name": "Valorant (non-official)",
@@ -10592,6 +10763,15 @@
           "https": true,
           "cors": "yes",
           "slug": "geocoding-geoplugin"
+        },
+        {
+          "name": "GetParcelData",
+          "link": "https://getparceldata.com/api",
+          "description": "US parcel boundaries, owners and assessor values by APN, point or polygon",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-getparceldata"
         },
         {
           "name": "Google Earth Engine",
@@ -11759,6 +11939,15 @@
           "https": true,
           "cors": "yes",
           "slug": "government-election"
+        },
+        {
+          "name": "Election Night Results",
+          "link": "https://pushbuild.com/apis/election-night-results.html",
+          "description": "Live US election results from official state feeds, statewide and by county; free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "government-election-night-results"
         },
         {
           "name": "EPA",
@@ -13606,6 +13795,15 @@
           "slug": "machine-learning-ai-for-thai"
         },
         {
+          "name": "AI Rate Card",
+          "link": "https://airatecard.com/docs",
+          "description": "Daily-checked AI model API prices from 120+ providers, price history and cost estimates",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-ai-rate-card"
+        },
+        {
           "name": "AI Stupid Level",
           "link": "https://aistupidlevel.info/api-docs",
           "description": "Benchmark scores, rankings and drift data for major LLM APIs, re-measured on a fixed schedule",
@@ -14348,6 +14546,15 @@
           "https": true,
           "cors": "yes",
           "slug": "music-napster"
+        },
+        {
+          "name": "Open Guitar Chords",
+          "link": "https://openguitarchords.com/data",
+          "description": "Free JSON data for guitar chords, scales and fretboard positions",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "music-open-guitar-chords"
         },
         {
           "name": "Openwhyd",
@@ -17479,6 +17686,15 @@
           "slug": "security-neetix-liveliness"
         },
         {
+          "name": "openshield",
+          "link": "https://www.openshield.dev/docs",
+          "description": "Image and text moderation, plus fraud scoring for sign-ups, logins and payments",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "security-openshield"
+        },
+        {
           "name": "OSV",
           "link": "https://google.github.io/osv.dev/api/",
           "description": "Open source vulnerability database and distributed triage infrastructure",
@@ -18705,8 +18921,8 @@
         {
           "name": "Boxerbook",
           "link": "https://boxerbook.com/developers",
-          "description": "Professional boxing: boxers, bouts, schedule, results, world titles and rankings, ODbL",
-          "auth": "No",
+          "description": "Professional boxing: boxers, bouts, schedule, results, world titles and rankings",
+          "auth": "apiKey",
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-boxerbook"
@@ -20842,6 +21058,15 @@
           "slug": "transportation-uber"
         },
         {
+          "name": "VakayMood",
+          "link": "https://vakaymood.com/developers",
+          "description": "Live timeshare resort rental inventory: stay dates, nightly rates, resort fees and booking URLs",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "transportation-vakaymood"
+        },
+        {
           "name": "Velib metropolis, Paris, France",
           "link": "https://www.velib-metropole.fr/donnees-open-data-gbfs-du-service-velib-metropole",
           "description": "Velib Open Data API",
@@ -21373,6 +21598,15 @@
           "slug": "video-final-space"
         },
         {
+          "name": "Galaxy Movies",
+          "link": "https://galaxymovies.app/api/streaming-changes?provider=netflix",
+          "description": "Daily arrivals and departures per US streaming service",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-galaxy-movies"
+        },
+        {
           "name": "Game of Thrones Quotes",
           "link": "https://gameofthronesquotes.xyz/",
           "description": "Some Game of Thrones quotes",
@@ -21758,6 +21992,15 @@
           "https": true,
           "cors": "yes",
           "slug": "video-video-to-markdown"
+        },
+        {
+          "name": "VidSmaller",
+          "link": "https://vidsmaller.com/api-docs",
+          "description": "Compress videos to an exact target file size, with estimates and async jobs",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-vidsmaller"
         },
         {
           "name": "VidWords",
