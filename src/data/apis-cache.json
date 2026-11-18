@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2466,
+    "totalAPIs": 2467,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-17T11:19:43.467Z"
+    "lastUpdated": "2026-11-18T00:04:22.846Z"
   },
   "categories": [
     {
@@ -18857,6 +18857,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://rapidapi.com/elijahme2000/api/instagram-scraper-api-real-time-affordable"
+        },
+        {
+          "name": "Tapline",
+          "slug": "social-tapline",
+          "description": "Structured JSON from YouTube, Airbnb, TikTok, Instagram, LinkedIn, Zillow and Google Maps.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://tapline.sh/docs"
         }
       ]
     },

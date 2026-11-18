@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-16T16:55:14.240Z"
+    "lastUpdated": "2026-11-18T00:04:22.532Z"
   },
   "add": [
     {
@@ -580,6 +580,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 139
+    },
+    {
+      "name": "Tapline",
+      "link": "https://tapline.sh/docs",
+      "description": "Structured JSON from YouTube, Airbnb, TikTok, Instagram, LinkedIn, Zillow and Google Maps.",
+      "category": "Social",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 140
     }
   ],
   "remove": [],
