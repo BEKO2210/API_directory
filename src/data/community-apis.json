@@ -5,6 +5,15 @@
   },
   "add": [
     {
+      "name": "AgentSEO",
+      "link": "https://www.agentseo.dev/docs/api-reference",
+      "description": "SEO API for Google SERPs, rank tracking, and AI Overview citations. 100 free credits once.",
+      "category": "Development",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown"
+    },
+    {
       "name": "PostalCodes.info",
       "link": "https://postalcodes.info/api",
       "description": "Postal-code lookup, country exports, and address validation data",
