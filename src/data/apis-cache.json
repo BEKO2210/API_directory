@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2492,
+    "totalAPIs": 2493,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-19T04:53:16.113Z"
+    "lastUpdated": "2026-11-19T08:08:13.868Z"
   },
   "categories": [
     {
@@ -16007,6 +16007,15 @@
           "https": true,
           "cors": "no",
           "link": "https://api.romso.com/"
+        },
+        {
+          "name": "NextReset Codex Reset API",
+          "slug": "open-data-nextreset-codex-reset-api",
+          "description": "Read public Codex reset status, event history and links to original sources.",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://nextreset.org/developers/"
         }
       ]
     },
