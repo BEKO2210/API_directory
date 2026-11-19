@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2491,
+    "totalAPIs": 2492,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-19T03:53:43.565Z"
+    "lastUpdated": "2026-11-19T04:53:16.113Z"
   },
   "categories": [
     {
@@ -22307,6 +22307,15 @@
           "https": true,
           "cors": "no",
           "link": "https://developer.vidmoat.com/developer/docs/api"
+        },
+        {
+          "name": "GetYouTubeTranscript",
+          "slug": "video-getyoutubetranscript",
+          "description": "YouTube video transcripts in any caption language, with timestamps, from one request.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "link": "https://getyoutubetranscript.com/youtube-transcript-api"
         }
       ]
     },

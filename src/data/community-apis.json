@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-19T01:06:10.908Z"
+    "lastUpdated": "2026-11-19T04:53:15.851Z"
   },
   "add": [
     {
@@ -600,6 +600,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 141
+    },
+    {
+      "name": "GetYouTubeTranscript",
+      "link": "https://getyoutubetranscript.com/youtube-transcript-api",
+      "description": "YouTube video transcripts in any caption language, with timestamps, from one request.",
+      "category": "Video",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "no",
+      "source_issue": 142
     }
   ],
   "remove": [],
