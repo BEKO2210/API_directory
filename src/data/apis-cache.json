@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2493,
+    "totalAPIs": 2517,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-20T10:43:49.021Z"
+    "lastUpdated": "2026-11-21T10:27:09.908Z"
   },
   "categories": [
     {
@@ -907,6 +907,15 @@
           "slug": "authentication-authorization-auth0"
         },
         {
+          "name": "Frontegg",
+          "link": "https://developers.frontegg.com/ciam/api/overview",
+          "description": "Customer identity for B2B SaaS: authentication, SSO, SCIM, MFA, RBAC and multi-tenancy",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "authentication-authorization-frontegg"
+        },
+        {
           "name": "GetOTP",
           "link": "https://otp.dev/en/docs/",
           "description": "Implement OTP flow quickly",
@@ -1636,6 +1645,15 @@
           "slug": "business-leadgen-romania"
         },
         {
+          "name": "LeadMerlin",
+          "link": "https://leadmerlin.com/docs/",
+          "description": "Local business leads from Google Maps with owner names, checked emails and website tech stack",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-leadmerlin"
+        },
+        {
           "name": "Legal Sandbox Georgia",
           "link": "https://legal.ge/api/openapi.json",
           "description": "Find verified legal specialists in Georgia from natural-language queries",
@@ -1733,6 +1751,15 @@
           "https": true,
           "cors": "yes",
           "slug": "business-redash"
+        },
+        {
+          "name": "RegBase Japan Company Verification",
+          "link": "https://regbase.local-connect-design.trade",
+          "description": "Signed evidence records for Japanese companies by corporate number, with Ed25519 verification",
+          "auth": "No",
+          "https": true,
+          "cors": "unknown",
+          "slug": "business-regbase-japan-company-verification"
         },
         {
           "name": "RegisterWire",
@@ -3808,6 +3835,15 @@
           "slug": "currency-exchange-vatcomply-com"
         },
         {
+          "name": "VeriApi",
+          "link": "https://veriapi.pro/dokumantasyon",
+          "description": "Turkish exchange rates, gold prices, prayer times, earthquakes and holidays",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "currency-exchange-veriapi"
+        },
+        {
           "name": "XRates",
           "link": "https://xratesapi.com/docs",
           "description": "Latest and historical exchange rates aggregated from ECB, CBR and open data feeds, 300+ currencies",
@@ -3848,6 +3884,15 @@
           "https": true,
           "cors": "yes",
           "slug": "data-validation-attestwire"
+        },
+        {
+          "name": "EU VAT Format Check",
+          "link": "https://rapidapi.com/sorobandataworks/eu-vat-number-format-checksum-checker",
+          "description": "EU VAT format and check-digit checker for 11 countries (format only, not a registration check)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "data-validation-eu-vat-format-check"
         },
         {
           "name": "invowerk",
@@ -6232,6 +6277,15 @@
           "slug": "development-weinc"
         },
         {
+          "name": "What Is My IP by RahaKit",
+          "link": "https://rahakit.com/what-is-my-ip/",
+          "description": "Free IP lookup API returning IPv4/IPv6, geolocation, ASN and network details as JSON",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-what-is-my-ip-by-rahakit"
+        },
+        {
           "name": "XLSX Inspector",
           "link": "https://api.lifestep.io",
           "description": "Inspect XLSX/XLSM structure: sheets, formulas, macros and external links",
@@ -7633,6 +7687,15 @@
           "slug": "entertainment-meme-maker"
         },
         {
+          "name": "memeidea",
+          "link": "https://memeidea.com/api/",
+          "description": "Meme trend scoreboards: lifecycle stage, momentum, trending and new templates",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "entertainment-memeidea"
+        },
+        {
           "name": "Memesio",
           "link": "https://memesio.com/developers/api",
           "description": "Meme creation API with templates, editable captions and hosted share links",
@@ -8050,6 +8113,15 @@
           "slug": "events-findlocal"
         },
         {
+          "name": "Lineup Atlas",
+          "link": "https://lineupatlas.com/en/data-partners",
+          "description": "Club nights, festivals and artist tour dates worldwide",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "events-lineup-atlas"
+        },
+        {
           "name": "NeedATicket",
           "link": "https://needaticket.co.uk/developers",
           "description": "UK and US resale ticket prices from StubHub",
@@ -8209,6 +8281,15 @@
           "slug": "finance-binlist"
         },
         {
+          "name": "bluerate",
+          "link": "https://www.bluerate.ai/developers",
+          "description": "Licensed US mortgage loan officers by state, city, ZIP, loan type or language, with NMLS IDs",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-bluerate"
+        },
+        {
           "name": "Boleto.Cloud",
           "link": "https://boleto.cloud/",
           "description": "A api to generate boletos in Brazil",
@@ -8234,6 +8315,15 @@
           "https": true,
           "cors": "yes",
           "slug": "finance-brieftape"
+        },
+        {
+          "name": "CalcBloc",
+          "link": "https://calcbloc.com/developers",
+          "description": "Take-home pay, employer cost and official tax tables for US, UK, AU, NZ, CA, IE, IN",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "finance-calcbloc"
         },
         {
           "name": "CardBinCheck",
@@ -10237,6 +10327,15 @@
           "slug": "games-comics-pok-sprite"
         },
         {
+          "name": "PokéWallet",
+          "link": "https://pokewallet.io/api-docs",
+          "description": "Pokémon TCG, One Piece and 10 more card games: cards, sets, TCGplayer and Cardmarket prices",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "games-comics-pok-wallet"
+        },
+        {
           "name": "Psychonauts",
           "link": "https://psychonauts-api.netlify.app/",
           "description": "Psychonauts World Characters Information and PSI Powers",
@@ -10316,6 +10415,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "games-comics-riot-games"
+        },
+        {
+          "name": "RoWatcher",
+          "link": "https://rowatcher.com/docs/api",
+          "description": "Roblox game player counts every 5 minutes, plus daily history",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "games-comics-rowatcher"
         },
         {
           "name": "RuneScape",
@@ -11168,6 +11276,15 @@
           "https": true,
           "cors": "yes",
           "slug": "geocoding-ipwhois"
+        },
+        {
+          "name": "Japan Places",
+          "link": "https://japan-places.local-connect-design.trade/",
+          "description": "Japan POI datasets and derived signals: municipality census, station catchments, chains, grants",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-japan-places"
         },
         {
           "name": "Kakao Maps",
@@ -14101,6 +14218,15 @@
           "slug": "machine-learning-dreamthreads"
         },
         {
+          "name": "Eden AI",
+          "link": "https://www.edenai.co/docs/v3/quickstart/first-llm-call",
+          "description": "Unified API for 500+ LLMs and expert models for OCR, speech and translation",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "machine-learning-eden-ai"
+        },
+        {
           "name": "EXUDE-API",
           "link": "http://uttesh.com/exude-api/",
           "description": "Used for the primary ways for filtering the stopping, stemming words from the text data",
@@ -15163,6 +15289,15 @@
           "slug": "open-data-acrelens"
         },
         {
+          "name": "Agent Data Hub",
+          "link": "https://api.agentdatahub.de/docs",
+          "description": "Official statistics, central bank rates and FX, with source and licence in every answer",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-agent-data-hub"
+        },
+        {
           "name": "API Setu",
           "link": "https://www.apisetu.gov.in/",
           "description": "An Indian Government platform that provides a lot of APIS for KYC, business, education & employment",
@@ -15287,6 +15422,15 @@
           "https": true,
           "cors": "no",
           "slug": "open-data-close-knit"
+        },
+        {
+          "name": "Cloudflare Radar",
+          "link": "https://developers.cloudflare.com/radar/",
+          "description": "Internet traffic, attack, outage and domain ranking trends from Cloudflare's network",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "open-data-cloudflare-radar"
         },
         {
           "name": "CollegeCalcAI",
@@ -15838,6 +15982,15 @@
           "slug": "open-data-tilth"
         },
         {
+          "name": "Tranco",
+          "link": "https://tranco-list.eu/api_documentation",
+          "description": "Research-oriented top sites ranking hardened against manipulation, with daily domain ranks",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "open-data-tranco"
+        },
+        {
           "name": "Turkpidya",
           "link": "https://turkpidya.com/developers/",
           "description": "Türkiye data: gold prices, lira rates, earthquakes, prayer times, fuel, duty pharmacies",
@@ -15921,7 +16074,7 @@
         {
           "name": "Vuntum",
           "link": "https://vuntum.com/en/api-mcp",
-          "description": "Sourced, dated facts on consumer robots and physical AI, licensed CC BY 4.0",
+          "description": "Sourced, dated facts on consumer robots and physical AI, licensed CC BY-NC 4.0",
           "auth": "No",
           "https": true,
           "cors": "yes",
@@ -16438,6 +16591,15 @@
       "slug": "phone",
       "apis": [
         {
+          "name": "AreaCodeCheck",
+          "link": "https://areacodecheck.com/phone-api",
+          "description": "Country and dialling code for any phone number, plus area code and timezone for +1 numbers",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "phone-areacodecheck"
+        },
+        {
           "name": "Numlookup",
           "link": "https://numlookupapi.com",
           "description": "Phone number validation and carrier lookup API with global coverage",
@@ -16934,6 +17096,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "programming-kontests"
+        },
+        {
+          "name": "LeekCF Hinter",
+          "link": "https://leekcf-hinter-api.leekcf.workers.dev",
+          "description": "Graded hints for Codeforces problems, from a small nudge to the full solution",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "programming-leekcf-hinter"
         },
         {
           "name": "Mintlify",
@@ -18010,6 +18181,15 @@
           "slug": "security-shodan"
         },
         {
+          "name": "Shodan InternetDB",
+          "link": "https://internetdb.shodan.io/docs",
+          "description": "Open ports, hostnames, CPEs, tags and known vulnerabilities for an IP address",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "security-shodan-internetdb"
+        },
+        {
           "name": "Spyse",
           "link": "https://spyse-dev.readme.io/reference/quick-start",
           "description": "Access data on all Internet assets and build powerful attack surface management applications",
@@ -18349,6 +18529,15 @@
           "slug": "shopping-onefindme"
         },
         {
+          "name": "OpenAxia",
+          "link": "https://openaxia.com/agent",
+          "description": "Source-linked specifications and certifications for blind, shutter, awning and door motors",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-openaxia"
+        },
+        {
           "name": "OpenShopGraph",
           "link": "https://openshopgraph.com/en/developers/",
           "description": "Source-dated return, shipping and payment facts for online shops",
@@ -18365,6 +18554,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-opentiendas"
+        },
+        {
+          "name": "Outfit Showcase",
+          "link": "https://github.com/hanchenxing1/outfit-showcase-card-api",
+          "description": "Issue a 30-day, 100-use virtual clothing try-on showcase link per request",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "shopping-outfit-showcase"
         },
         {
           "name": "Pangolinfo Amazon Data",
@@ -18482,15 +18680,6 @@
           "https": true,
           "cors": "unknown",
           "link": "https://docs.soldfetch.com"
-        },
-        {
-          "name": "OpenAxia",
-          "slug": "shopping-openaxia",
-          "description": "Source-linked specifications and certifications for blind, shutter, awning and door motors",
-          "auth": "",
-          "https": true,
-          "cors": "yes",
-          "link": "https://openaxia.com/agent"
         }
       ]
     },
@@ -18715,6 +18904,15 @@
           "slug": "social-lanyard"
         },
         {
+          "name": "Lemmy",
+          "link": "https://join-lemmy.org/api/main",
+          "description": "Federated link aggregator and forum; read posts, comments and communities on any instance",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-lemmy"
+        },
+        {
           "name": "Line",
           "link": "https://developers.line.biz/",
           "description": "Line Login, Share on Line, Social Plugins and more",
@@ -18839,6 +19037,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "social-redditapis"
+        },
+        {
+          "name": "Redlisten",
+          "link": "https://redlisten.com",
+          "description": "Public Reddit posts and comments: search, live feeds, keyword alerts and trends",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "social-redlisten"
         },
         {
           "name": "Revolt",
@@ -19367,6 +19574,15 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-kickoffapi"
+        },
+        {
+          "name": "LiftRadar",
+          "link": "https://liftradar.eu/api",
+          "description": "Ski resorts across Europe: open lifts and slopes, snow depth and avalanche level",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-liftradar"
         },
         {
           "name": "Lumify",
@@ -21744,7 +21960,7 @@
         {
           "name": "Arcmira",
           "link": "https://arcmira.com/docs",
-          "description": "Search indexed YouTube transcripts for timestamped passages and mentions",
+          "description": "YouTube transcript search and monitoring for your AI: exact quotes, full transcripts and speakers",
           "auth": "apiKey",
           "https": true,
           "cors": "yes",
