@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # GITHUB_TOKEN pushes from sync-apis.yml do not trigger push workflows.
+  workflow_run:
+    workflows: ["Sync APIs & Process Issues"]
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
@@ -16,9 +21,18 @@ concurrency:
 
 jobs:
   build:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main' &&
+       github.event.workflow_run.head_repository.full_name == github.repository)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The sync run's head_sha predates the data commit it creates.
+          # Always build trusted main after sync, not a workflow artifact or PR ref.
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || github.sha }}
 
       - uses: pnpm/action-setup@v4
         with:
