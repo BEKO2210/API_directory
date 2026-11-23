@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2517,
+    "totalAPIs": 2544,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-22T10:30:11.868Z"
+    "lastUpdated": "2026-11-23T11:30:08.606Z"
   },
   "categories": [
     {
@@ -667,6 +667,15 @@
           "slug": "art-design-dummyimage"
         },
         {
+          "name": "DummyImg",
+          "link": "https://www.dummyimg.in/",
+          "description": "Generate placeholder images of any size with custom text, colors, fonts and formats",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-dummyimg"
+        },
+        {
           "name": "EmojiHub",
           "link": "https://github.com/cheatsnake/emojihub",
           "description": "Get emojis by categories and groups",
@@ -746,6 +755,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "art-design-icons8"
+        },
+        {
+          "name": "Logoapi Favicons",
+          "link": "https://logoapi.sh/favicon",
+          "description": "Favicon for any website by domain: curated SVG, else the site's own favicon, else a name tile",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "art-design-logoapi-favicons"
         },
         {
           "name": "Lordicon",
@@ -1465,6 +1483,15 @@
           "slug": "business-apache-superset"
         },
         {
+          "name": "CEA Digital",
+          "link": "https://ceadigital.io/tools",
+          "description": "Real estate LLC skip trace, video hook transcripts, eBay sold comps and building permits",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-cea-digital"
+        },
+        {
           "name": "Charity Search",
           "link": "http://charityapi.orghunter.com/",
           "description": "Non-profit charity data",
@@ -1665,7 +1692,7 @@
         {
           "name": "Logoapi",
           "link": "https://logoapi.sh/docs",
-          "description": "Free SVG company logos by domain, plus search by name. No signup",
+          "description": "SVG logos by domain, stock ticker or crypto symbol, plus favicons and search by name. No signup",
           "auth": "No",
           "https": true,
           "cors": "yes",
@@ -1940,6 +1967,15 @@
           "https": true,
           "cors": "yes",
           "slug": "business-verif-entreprise-fr"
+        },
+        {
+          "name": "Vibe Manufacturing",
+          "link": "https://vibe-manufacturing.com/agents",
+          "description": "Manufacturer directory with supplier matching, cost estimates and prototype sourcing plans",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "business-vibe-manufacturing"
         },
         {
           "name": "Village",
@@ -4612,6 +4648,15 @@
           "slug": "development-downstatus"
         },
         {
+          "name": "DuckDuckGo",
+          "link": "https://api.duckduckgo.com/",
+          "description": "Instant answers, abstracts and definitions",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-duckduckgo"
+        },
+        {
           "name": "EndOfLife.date",
           "link": "https://endoflife.date/docs/api",
           "description": "Software end-of-life dates and support lifecycles",
@@ -4655,6 +4700,15 @@
           "https": true,
           "cors": "no",
           "slug": "development-framejet"
+        },
+        {
+          "name": "FreeQrly",
+          "link": "https://freeqrly.com/developers/",
+          "description": "Generate static QR codes (URL, WiFi, vCard, text, geo) as SVG or PNG. Free, no API key",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-freeqrly"
         },
         {
           "name": "GeekFlare",
@@ -4934,6 +4988,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "development-hipsum"
+        },
+        {
+          "name": "Hundredth Run GPU Prices",
+          "link": "https://hundredthrun-compute-desk.pages.dev/open-data",
+          "description": "GPU rental prices from 25 cloud providers with source URLs, as static JSON and CSV, CC BY 4.0",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-hundredth-run-gpu-prices"
         },
         {
           "name": "Hunter",
@@ -6178,6 +6241,15 @@
           "slug": "development-toolsfox-utils"
         },
         {
+          "name": "TradingAIHub",
+          "link": "https://tradingaihub.com/developers/",
+          "description": "Directory of finance and trading AI tools (MCP servers, agent skills, APIs), re-checked weekly",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-tradingaihub"
+        },
+        {
           "name": "Tyk",
           "link": "https://tyk.io/open-source-api-gateway/",
           "description": "Api and service management platform",
@@ -6194,6 +6266,15 @@
           "https": true,
           "cors": "yes",
           "slug": "development-unfurlr"
+        },
+        {
+          "name": "Unique.domains",
+          "link": "https://unique.domains/api",
+          "description": "Analyse any domain name in depth and search 34 million one-word names for the right one to buy",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "development-unique-domains"
         },
         {
           "name": "URLpipe",
@@ -6856,6 +6937,15 @@
           "slug": "documents-productivity-optiic"
         },
         {
+          "name": "PagedPDF",
+          "link": "https://pagedpdf.com/docs/",
+          "description": "Convert HTML to PDF in current Chrome, with repeating table headers and page numbers",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-pagedpdf"
+        },
+        {
           "name": "PandaDoc",
           "link": "https://developers.pandadoc.com",
           "description": "DocGen and eSignatures API",
@@ -7141,6 +7231,15 @@
           "slug": "email-mailboxlayer"
         },
         {
+          "name": "AgentiSend",
+          "link": "https://agentisend.com/docs",
+          "description": "Transactional email API for apps, with per-key send budgets and a kill switch for AI agents",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-agentisend"
+        },
+        {
           "name": "AGPC Domain Check",
           "link": "https://guild.tradeuniquecapital.com/api",
           "description": "Check a domain's SPF, DKIM, DMARC and MX with a graded shareable report",
@@ -7382,6 +7481,15 @@
           "https": true,
           "cors": "yes",
           "slug": "email-mailfornet"
+        },
+        {
+          "name": "MailMint",
+          "link": "https://mailmint.app.mintapis.com/docs",
+          "description": "Parse inbound emails into JSON fields you define, each with a confidence score and evidence",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "email-mailmint"
         },
         {
           "name": "MailRambo",
@@ -7988,6 +8096,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "environment-pvwatts"
+        },
+        {
+          "name": "Rebase Grid",
+          "link": "https://grid.rebase.energy/docs/v1",
+          "description": "European electricity prices, load, generation, forecasts and cross-border flows",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "environment-rebase-grid"
         },
         {
           "name": "sensor.community",
@@ -10882,6 +10999,15 @@
           "slug": "geocoding-countrystatecity"
         },
         {
+          "name": "Danadresse",
+          "link": "https://api.danadresse.dk/docs",
+          "description": "Danish addresses: autocomplete, lookup, reverse geocoding, cleansing (DAWA-compatible)",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "geocoding-danadresse"
+        },
+        {
           "name": "Ducks Unlimited",
           "link": "https://gis.ducks.org/datasets/du-university-chapters/api",
           "description": "API explorer that gives a query URL with a JSON response of locations and cities",
@@ -11775,7 +11901,7 @@
         {
           "name": "Zornade",
           "link": "https://app.zornade.com/api/",
-          "description": "Cadastral parcels, geocoding, OMI valuations, risk and demographics for Italy (85M parcels)",
+          "description": "Cadastral parcels, geocoding, OMI valuations, risk and demographics for Italy (88M parcels)",
           "auth": "apiKey",
           "https": true,
           "cors": "yes",
@@ -12317,6 +12443,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-gazette-data-uk"
+        },
+        {
+          "name": "Global law",
+          "link": "https://lexifina.com/api/global-law",
+          "description": "Legislation of 200+ countries as a dated history: find by citation, read as of a date, search",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "government-global-law"
         },
         {
           "name": "GovContractScout",
@@ -12911,6 +13046,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "government-openstates"
+        },
+        {
+          "name": "Political Polls",
+          "link": "https://pushbuild.com/apis/political-polls.html",
+          "description": "Election vote-intention polls and averages by country, each poll with its release link",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "government-political-polls"
         },
         {
           "name": "PourWire",
@@ -14030,6 +14174,15 @@
           "https": true,
           "cors": "no",
           "slug": "jobs-vibeworker"
+        },
+        {
+          "name": "WARN Layoff Notices",
+          "link": "https://pushbuild.com/apis/warn-layoff-notices.html",
+          "description": "US state WARN Act layoff and plant-closure notices: employer, location, date, workers affected",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "jobs-warn-layoff-notices"
         },
         {
           "name": "WhatJobs",
@@ -16705,6 +16858,15 @@
           "slug": "photography-screenshotlayer"
         },
         {
+          "name": "AI GIF Maker",
+          "link": "https://aigifmaker.readthedocs.io/en/latest/",
+          "description": "Turn text into animated GIFs with AI GIF Maker",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "photography-ai-gif-maker"
+        },
+        {
           "name": "APITemplate.io",
           "link": "https://apitemplate.io",
           "description": "Dynamically generate images and PDFs from templates with a simple API",
@@ -17147,6 +17309,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "science-math-arxiv"
+        },
+        {
+          "name": "Astroletra",
+          "link": "https://astroletra.com/datos/api/",
+          "description": "Moon phase and sign, aspects, retrogrades and next lunation by time zone",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "science-math-astroletra"
         },
         {
           "name": "Botlero",
@@ -18448,6 +18619,15 @@
           "slug": "shopping-etsy"
         },
         {
+          "name": "EverBee Research",
+          "link": "https://research-open-api.everbee.com/docs/swagger.html",
+          "description": "Etsy listing, shop and keyword analytics: estimated sales, revenue, search volume and competition",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-everbee-research"
+        },
+        {
           "name": "Flipkart Marketplace",
           "link": "https://seller.flipkart.com/api-docs/FMSAPI.html",
           "description": "Product listing management, Order Fulfilment in the Flipkart Marketplace",
@@ -18653,6 +18833,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "shopping-tokopedia"
+        },
+        {
+          "name": "uglyHD",
+          "link": "https://uglyhd.com/api-docs",
+          "description": "Cost per TB of new, used and refurbished drives and per GB of server RAM, from eBay and retailers",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-uglyhd"
         },
         {
           "name": "VantaSpec",
@@ -19549,6 +19738,15 @@
           "slug": "sports-fitness-football-data"
         },
         {
+          "name": "GolfCourse",
+          "link": "https://api.golfcourseapi.com/docs/api/",
+          "description": "Data for 30,000+ golf courses: location, tee boxes, par, yardages, course rating and slope rating",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-golfcourse"
+        },
+        {
           "name": "HaterPicks",
           "link": "https://www.haterpicks.app/api",
           "description": "Australian sports odds and player props from every major Australian bookmaker, free tier",
@@ -19738,6 +19936,15 @@
           "slug": "sports-fitness-parlay"
         },
         {
+          "name": "PinnFeed",
+          "link": "https://pinnfeed.io/docs",
+          "description": "Real-time Pinnacle odds over REST and WebSocket, with no-vig prices, drops and closing lines",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "sports-fitness-pinnfeed"
+        },
+        {
           "name": "PinnWire",
           "link": "https://pinnwire.com/docs.html",
           "description": "Real-time Pinnacle odds for 13 sports — live and prematch over REST, WebSocket and SSE drop alerts",
@@ -19826,6 +20033,15 @@
           "https": true,
           "cors": "yes",
           "slug": "sports-fitness-sport-vision"
+        },
+        {
+          "name": "Sports Jedi",
+          "link": "https://api.sportsjedi.com/v1/docs",
+          "description": "Model picks, confidence scores, win probabilities and parlay scoring for NFL, NCAAF, NBA and MLB",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "sports-fitness-sports-jedi"
         },
         {
           "name": "Sports Odds API (BetRivers, Unibet & 22 more books)",
@@ -20546,6 +20762,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "tracking-correios"
+        },
+        {
+          "name": "lastscanned",
+          "link": "https://docs.lastscanned.com",
+          "description": "Parcel and ocean-container tracking across 549 carriers with webhooks and a free tier",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "tracking-lastscanned"
         },
         {
           "name": "Mapbox",
@@ -22084,6 +22309,15 @@
           "slug": "video-game-of-thrones-quotes"
         },
         {
+          "name": "GenMagic",
+          "link": "https://genmagic.co/developers",
+          "description": "One key for 90+ image and video models (Veo, Kling, Seedance, FLUX) plus speech, OpenAI-compatible",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-genmagic"
+        },
+        {
           "name": "Harry Potter Charactes",
           "link": "https://hp-api.herokuapp.com/",
           "description": "Harry Potter Characters Data with with imagery",
@@ -22343,6 +22577,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "video-the-lord-of-the-rings"
+        },
+        {
+          "name": "The Subtitle Database",
+          "link": "https://thesubtitledb.org/developer/api",
+          "description": "Subtitles for movies and TV episodes by IMDb or TMDB id",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "video-the-subtitle-database"
         },
         {
           "name": "The Vampire Diaries",
