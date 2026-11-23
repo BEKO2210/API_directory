@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-19T08:08:13.666Z"
+    "lastUpdated": "2026-11-23T21:35:15.154Z"
   },
   "add": [
     {
@@ -620,6 +620,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 143
+    },
+    {
+      "name": "Cloudbrowser REST API",
+      "link": "https://cloudbrowser.tv/docs/api",
+      "description": "Create, pause, resume, and fork persistent cloud Chrome browsers for AI agents.",
+      "category": "Development",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "no",
+      "source_issue": 144
     }
   ],
   "remove": [],

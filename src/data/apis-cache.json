@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2544,
+    "totalAPIs": 2545,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-23T11:30:08.606Z"
+    "lastUpdated": "2026-11-23T21:35:15.604Z"
   },
   "categories": [
     {
@@ -6428,6 +6428,15 @@
           "https": true,
           "cors": "no",
           "link": "https://breadcrumbs-mailbox.pages.dev/discover"
+        },
+        {
+          "name": "Cloudbrowser REST API",
+          "slug": "development-cloudbrowser-rest-api",
+          "description": "Create, pause, resume, and fork persistent cloud Chrome browsers for AI agents.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "link": "https://cloudbrowser.tv/docs/api"
         }
       ]
     },
