@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2545,
+    "totalAPIs": 2546,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-23T21:35:15.604Z"
+    "lastUpdated": "2026-11-24T00:12:29.817Z"
   },
   "categories": [
     {
@@ -15407,6 +15407,15 @@
           "https": true,
           "cors": "unknown",
           "slug": "news-trove"
+        },
+        {
+          "name": "Quotelinks Stock News",
+          "slug": "news-quotelinks-stock-news",
+          "description": "News headlines for 10,000 US stocks with topic tags and sentiment",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.quotelinks.com/api/stock-news/"
         }
       ]
     },

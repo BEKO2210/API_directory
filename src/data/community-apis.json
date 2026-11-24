@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-23T21:35:15.154Z"
+    "lastUpdated": "2026-11-24T00:12:29.417Z"
   },
   "add": [
     {
@@ -630,6 +630,16 @@
       "https": true,
       "cors": "no",
       "source_issue": 144
+    },
+    {
+      "name": "Quotelinks Stock News",
+      "link": "https://www.quotelinks.com/api/stock-news/",
+      "description": "News headlines for 10,000 US stocks with topic tags and sentiment",
+      "category": "News",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 145
     }
   ],
   "remove": [],
