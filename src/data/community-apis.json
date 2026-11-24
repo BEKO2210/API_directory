@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-24T00:12:29.417Z"
+    "lastUpdated": "2026-11-24T13:53:08.323Z"
   },
   "add": [
     {
@@ -640,6 +640,16 @@
       "https": true,
       "cors": "yes",
       "source_issue": 145
+    },
+    {
+      "name": "AI Crawler Reference Dataset",
+      "link": "https://www.gotopseo.com/api/public/ai-crawlers",
+      "description": "Dataset of AI crawler user-agents: operator, purpose, robots.txt behavior. CC BY 4.0, JSON/CSV.",
+      "category": "Open Data",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 134
     }
   ],
   "remove": [],

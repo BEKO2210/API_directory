@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2546,
+    "totalAPIs": 2547,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-24T13:03:57.629Z"
+    "lastUpdated": "2026-11-24T13:53:08.508Z"
   },
   "categories": [
     {
@@ -16340,6 +16340,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://nextreset.org/developers/"
+        },
+        {
+          "name": "AI Crawler Reference Dataset",
+          "slug": "open-data-ai-crawler-reference-dataset",
+          "description": "Dataset of AI crawler user-agents: operator, purpose, robots.txt behavior. CC BY 4.0, JSON/CSV.",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://www.gotopseo.com/api/public/ai-crawlers"
         }
       ]
     },
