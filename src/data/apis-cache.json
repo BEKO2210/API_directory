@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2547,
+    "totalAPIs": 2548,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-24T13:53:08.508Z"
+    "lastUpdated": "2026-11-24T15:45:17.666Z"
   },
   "categories": [
     {
@@ -6437,6 +6437,15 @@
           "https": true,
           "cors": "no",
           "link": "https://cloudbrowser.tv/docs/api"
+        },
+        {
+          "name": "NOTABIS Discovery API",
+          "slug": "development-notabis-discovery-api",
+          "description": "Submit public sites to NOTABIS Discovery and retrieve its category list.",
+          "auth": "",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://discovery.notabis.com/api/docs"
         }
       ]
     },
