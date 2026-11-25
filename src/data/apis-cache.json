@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2548,
+    "totalAPIs": 2549,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-24T15:45:17.666Z"
+    "lastUpdated": "2026-11-25T05:10:39.915Z"
   },
   "categories": [
     {
@@ -7232,6 +7232,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://rapidapi.com/IsraelDiego/api/access-file-extractor"
+        },
+        {
+          "name": "FastScribe MCP Server",
+          "slug": "documents-productivity-fastscribe-mcp-server",
+          "description": "Transcribe public video links and retrieve timestamped transcripts or SRT captions via MCP.",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://fastscribe.org/help/mcp-server"
         }
       ]
     },

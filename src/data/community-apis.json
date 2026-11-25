@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-24T15:45:17.413Z"
+    "lastUpdated": "2026-11-25T05:10:39.680Z"
   },
   "add": [
     {
@@ -660,6 +660,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 146
+    },
+    {
+      "name": "FastScribe MCP Server",
+      "link": "https://fastscribe.org/help/mcp-server",
+      "description": "Transcribe public video links and retrieve timestamped transcripts or SRT captions via MCP.",
+      "category": "Documents & Productivity",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "unknown",
+      "source_issue": 147
     }
   ],
   "remove": [],
