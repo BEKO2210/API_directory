@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2550,
+    "totalAPIs": 2551,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-26T12:02:14.503Z"
+    "lastUpdated": "2026-11-26T19:27:43.861Z"
   },
   "categories": [
     {
@@ -14837,6 +14837,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://sfwapi.dev"
+        },
+        {
+          "name": "Autelica Capture QA API",
+          "slug": "machine-learning-autelica-capture-qa-api",
+          "description": "Per-second usable/unusable QA and sync offsets for multi-camera robot-learning video",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "link": "https://app.autelica.com/check/docs/api"
         }
       ]
     },

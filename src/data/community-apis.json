@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-26T12:02:14.250Z"
+    "lastUpdated": "2026-11-26T19:27:43.585Z"
   },
   "add": [
     {
@@ -680,6 +680,16 @@
       "https": true,
       "cors": "no",
       "source_issue": 148
+    },
+    {
+      "name": "Autelica Capture QA API",
+      "link": "https://app.autelica.com/check/docs/api",
+      "description": "Per-second usable/unusable QA and sync offsets for multi-camera robot-learning video",
+      "category": "Machine Learning",
+      "auth": "apiKey",
+      "https": true,
+      "cors": "no",
+      "source_issue": 149
     }
   ],
   "remove": [],
