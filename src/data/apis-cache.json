@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2549,
+    "totalAPIs": 2550,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-26T11:41:44.261Z"
+    "lastUpdated": "2026-11-26T12:02:14.503Z"
   },
   "categories": [
     {
@@ -9404,6 +9404,15 @@
           "https": true,
           "cors": "no",
           "link": "https://beliefstate.ai/about#investor-thesis-coverage"
+        },
+        {
+          "name": "MacroDial",
+          "slug": "finance-macrodial",
+          "description": "Public macro methods, modules, and factor explanations.",
+          "auth": "",
+          "https": true,
+          "cors": "no",
+          "link": "https://macrodial.org/ai-resources"
         }
       ]
     },
