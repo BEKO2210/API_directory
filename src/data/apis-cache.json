@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2551,
+    "totalAPIs": 2552,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-27T11:34:50.809Z"
+    "lastUpdated": "2026-11-27T13:58:33.203Z"
   },
   "categories": [
     {
@@ -19532,6 +19532,15 @@
           "https": true,
           "cors": "unknown",
           "link": "https://tapline.sh/docs"
+        },
+        {
+          "name": "Left Unsaid Site Information API",
+          "slug": "social-left-unsaid-site-information-api",
+          "description": "Read public information and navigation links for the Left Unsaid social web app.",
+          "auth": "",
+          "https": true,
+          "cors": "unknown",
+          "link": "https://leftunsaid.app/"
         }
       ]
     },
