@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Community-contributed APIs that supplement the original public-apis dataset",
-    "lastUpdated": "2026-11-27T13:58:33.009Z"
+    "lastUpdated": "2026-11-28T05:16:55.546Z"
   },
   "add": [
     {
@@ -700,6 +700,16 @@
       "https": true,
       "cors": "unknown",
       "source_issue": 150
+    },
+    {
+      "name": "Melega Space Public Read API",
+      "link": "https://melega.space/developers",
+      "description": "Read the public beta API catalogue and component status for Melega Space.",
+      "category": "Blockchain",
+      "auth": "",
+      "https": true,
+      "cors": "yes",
+      "source_issue": 151
     }
   ],
   "remove": [],

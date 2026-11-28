@@ -1,8 +1,8 @@
 {
   "meta": {
-    "totalAPIs": 2552,
+    "totalAPIs": 2561,
     "totalCategories": 51,
-    "lastUpdated": "2026-11-27T13:58:33.203Z"
+    "lastUpdated": "2026-11-28T05:16:55.717Z"
   },
   "categories": [
     {
@@ -1181,6 +1181,15 @@
           "https": true,
           "cors": "yes",
           "link": "https://lianxiaozhi.com/agent"
+        },
+        {
+          "name": "Melega Space Public Read API",
+          "slug": "blockchain-melega-space-public-read-api",
+          "description": "Read the public beta API catalogue and component status for Melega Space.",
+          "auth": "",
+          "https": true,
+          "cors": "yes",
+          "link": "https://melega.space/developers"
         }
       ]
     },
@@ -1412,6 +1421,15 @@
           "https": true,
           "cors": "yes",
           "slug": "books-runyankole-bible"
+        },
+        {
+          "name": "Sovereign Logos",
+          "link": "https://sovereignlogos.com/developers",
+          "description": "Septuagint, KJV with Apocrypha, Geneva and WEB Bible text with citation links",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "books-sovereign-logos"
         },
         {
           "name": "The Bible",
@@ -2578,6 +2596,15 @@
           "slug": "cryptocurrency-alphagrowth"
         },
         {
+          "name": "BaniPool",
+          "link": "https://banipool.com/docs/api",
+          "description": "Multichain DEX liquidity pools (Uniswap, Aerodrome, Orca, Raydium) with TVL, volume and fee APR",
+          "auth": "No",
+          "https": true,
+          "cors": "no",
+          "slug": "cryptocurrency-banipool"
+        },
+        {
           "name": "Binance",
           "link": "https://github.com/binance/binance-spot-api-docs",
           "description": "Exchange for Trading Cryptocurrencies based in China",
@@ -3404,6 +3431,15 @@
           "https": true,
           "cors": "yes",
           "slug": "cryptocurrency-sochain"
+        },
+        {
+          "name": "SODAX",
+          "link": "https://docs.sodax.com/developers/http-api",
+          "description": "Cross-network swap quotes and intents across 20+ networks, plus token, price and intent data",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "yes",
+          "slug": "cryptocurrency-sodax"
         },
         {
           "name": "Solana JSON RPC",
@@ -6791,6 +6827,15 @@
           "https": true,
           "cors": "yes",
           "slug": "documents-productivity-docstruct"
+        },
+        {
+          "name": "EditPDF Tools",
+          "link": "https://editpdf.tools/compress-pdf-api",
+          "description": "Compress PDF files over HTTPS with 3 quality levels. Free tier: 30 files/month, up to 10 MB",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "no",
+          "slug": "documents-productivity-editpdf-tools"
         },
         {
           "name": "Emboss",
@@ -15151,6 +15196,15 @@
           "slug": "music-spotify"
         },
         {
+          "name": "Static Radio",
+          "link": "https://staticradio.app/developers",
+          "description": "Live schedule and listener counts for nine radio stations of independent podcasts",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "music-static-radio"
+        },
+        {
           "name": "StemConsole",
           "link": "https://stemconsole.ai/developers/",
           "description": "Split songs into vocals, drums, bass and other stems with AI",
@@ -18817,6 +18871,15 @@
           "slug": "shopping-pangolinfo-amazon-data"
         },
         {
+          "name": "Prezzi in Vista",
+          "link": "https://www.prezzinvista.it/developers/",
+          "description": "Offers in the weekly flyers of Italian supermarket and electronics chains, with the nearest store",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "shopping-prezzi-in-vista"
+        },
+        {
           "name": "Product Page Extractor",
           "link": "https://rapidapi.com/MohamedBahaa/api/product-page-extractor",
           "description": "Product name, price, currency, stock and offers from store pages via JSON-LD and OpenGraph",
@@ -21184,6 +21247,15 @@
           "slug": "transportation-flyitalyadsb"
         },
         {
+          "name": "GADUIN",
+          "link": "https://gaduin.com/docs/api",
+          "description": "Flight status, airport and rail station boards, ship traffic at 28 chokepoints, 667 port boards",
+          "auth": "apiKey",
+          "https": true,
+          "cors": "unknown",
+          "slug": "transportation-gaduin"
+        },
+        {
           "name": "Grab",
           "link": "https://developer.grab.com/docs/",
           "description": "Track deliveries, ride fares, payments and loyalty points",
@@ -22112,6 +22184,15 @@
           "https": true,
           "cors": "yes",
           "slug": "vehicle-carvector"
+        },
+        {
+          "name": "Census EV",
+          "link": "https://censusev.com/api/v1",
+          "description": "Electric and plug-in hybrid cars for sale in the US, with price, mileage, range and price history",
+          "auth": "No",
+          "https": true,
+          "cors": "yes",
+          "slug": "vehicle-census-ev"
         },
         {
           "name": "FuelEconomy",
